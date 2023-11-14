@@ -1,0 +1,280 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>CLICK TO ENTER</title>
+<script language="JavaScript" fptype="dynamicanimation">
+<!--
+function dynAnimation() {}
+function clickSwapImg() {}
+//-->
+</script>
+<script language="JavaScript1.2" fptype="dynamicanimation" src="animate.js">
+</script>
+<script language="JavaScript1.2">
+
+/*
+Animated Document title- By Dynamicdrive.com
+For full source, TOS, and 100s DTHML scripts
+Visit http://dynamicdrive.com
+*/
+
+if (document.all||document.getElementById){
+var thetitle=document.title
+document.title=''
+}
+
+////Animation code below
+////based on script from http://wsabstract.com/script/script2/statusanimate.shtml
+
+var data="0123456789";
+
+var done=1;
+function statusIn(text){
+	decrypt(text,2,1);
+}
+
+function statusOut(){
+self.status='';
+done=1;
+}
+
+//-------------------------\\
+//decrypt(string, int, int)\\
+//-------------------------\\
+//
+//text(string): the text to be decrypted on 
+//the status bar.
+//
+//max(int): the number of times a random string
+//is displayed before the next character is
+//'decrypted'.
+//
+//delay(int): the number of milliseconds between
+//each display of a random string
+//
+//Example:
+//decrypt('Enter my site.',10,10);
+//
+//text = 'Enter my site.' :: 'Enter my site.' is 
+//eventually decrypted
+//
+//max = 10 :: a different random string is dis-
+//played 10 times before a new character is
+//decrypted
+
+function decrypt(text, max, delay){
+	if (done){
+		done = 0;
+		decrypt_helper(text, max, delay,  0, max);
+		}
+	
+}
+
+function decrypt_helper(text, runs_left, delay, charvar, max){
+	if (!done){
+	runs_left = runs_left - 1;
+	var status = text.substring(0,charvar);
+	for(var current_char = charvar; current_char < text.length; current_char++){
+		status += data.charAt(Math.round(Math.random()*data.length));
+		}
+	document.title = status;
+	var rerun = "decrypt_helper('" + text + "'," + runs_left + "," + delay + "," + charvar + "," + max + ");"
+	var new_char = charvar + 1;
+	var next_char = "decrypt_helper('" + text + "'," + max + "," + delay + "," + new_char + "," + max + ");"
+	if(runs_left > 0){
+		setTimeout(rerun, delay);
+		}
+	else{
+		if (charvar < text.length){
+			setTimeout(next_char, Math.round(delay*(charvar+3)/(charvar+1)));
+			}
+		else
+			{
+			done = 1;
+			}
+		}
+	}
+}
+
+//if IE 4+ or NS 6+
+if (document.all||document.getElementById)
+statusIn(thetitle)
+</script>
+</head>
+
+<body bgcolor="#000000" text="#FFFFFF" link="#000080" vlink="#C0C0C0" alink="#808080" onload="dynAnimation()">
+<!-- following code added by server. PLEASE REMOVE -->
+<!-- preceding code added by server. PLEASE REMOVE -->
+<SCRIPT LANGUAGE="JavaScript">
+/*
+Script by Matthew Musgrove (http://free.prohosting.com/~musgrove)
+For this script and more,
+visit http://java-scripts.net
+or http://wsabstract.com
+*/
+
+
+<!-- Begin
+var no = 50;
+var speed = 1;
+var ns4up = (document.layers) ? 1 : 0;
+var ie4up = (document.all) ? 1 : 0;
+var s, x, y, sn, cs;
+var a, r, cx, cy;
+var i, doc_width = 800, doc_height = 600;
+
+if (ns4up) {
+doc_width = self.innerWidth;
+doc_height = self.innerHeight;
+}
+else
+
+if (ie4up) {
+doc_width = document.body.clientWidth;
+doc_height = document.body.clientHeight;
+}
+
+x = new Array();
+y = new Array();
+r = new Array();
+cx = new Array();
+cy = new Array();
+s = 8;
+
+for (i = 0; i < no; ++ i) {
+initRain();
+
+if (ns4up) {
+
+if (i == 0) {
+document.write("<layer name=\"dot"+ i +"\" left=\"1\" ");
+document.write("top=\"1\" visibility=\"show\"><font color=\"blue\">");
+document.write(",</font></layer>");
+
+}
+else {
+document.write("<layer name=\"dot"+ i +"\" left=\"1\" ");
+document.write("top=\"1\" visibility=\"show\"><font color=\"blue\">");
+document.write(",</font></layer>");
+}
+}
+else
+
+if (ie4up) {
+
+if (i == 0) {
+document.write("<div id=\"dot"+ i +"\" style=\"POSITION: ");
+document.write("absolute; Z-INDEX: "+ i +"; VISIBILITY: ");
+document.write("visible; TOP: 15px; LEFT: 15px;\"><font color=\"blue\">");
+document.write(",</font></div>");
+}
+
+else {
+document.write("<div id=\"dot"+ i +"\" style=\"POSITION: ");
+document.write("absolute; Z-INDEX: "+ i +"; VISIBILITY: ");
+document.write("visible; TOP: 15px; LEFT: 15px;\"><font color=\"blue\">");
+document.write(",</font></div>");
+}
+}
+}
+
+function initRain() {
+a = 6;
+r[i] = 1;
+sn = Math.sin(a);
+cs = Math.cos(a);
+cx[i] = Math.random() * doc_width + 1;
+cy[i] = Math.random() * doc_height + 1;
+x[i] = r[i] * sn + cx[i];
+y[i] = cy[i];
+}
+
+function makeRain() {
+r[i] = 1;
+cx[i] = Math.random() * doc_width + 1;
+cy[i] = 1;
+x[i] = r[i] * sn + cx[i];
+y[i] = r[i] * cs + cy[i];
+}
+
+function updateRain() {
+r[i] += s;
+x[i] = r[i] * sn + cx[i];
+y[i] = r[i] * cs + cy[i];
+}
+
+function raindropNS() {
+for (i = 0; i < no; ++ i) {
+
+updateRain();
+
+if ((x[i] <= 1) || (x[i] >= (doc_width - 20)) || (y[i] >= (doc_height - 20))) {
+makeRain();
+doc_width = self.innerWidth;
+doc_height = self.innerHeight;
+}
+
+document.layers["dot"+i].top = y[i];
+document.layers["dot"+i].left = x[i];
+
+}
+
+setTimeout("raindropNS()", speed);
+
+}
+
+function raindropIE() {
+
+for (i = 0; i < no; ++ i) {
+updateRain();
+
+if ((x[i] <= 1) || (x[i] >= (doc_width - 60)) || (y[i] >= (doc_height - 60))) {
+makeRain();
+doc_width = document.body.clientWidth;
+doc_height = document.body.clientHeight;
+}
+
+document.all["dot"+i].style.pixelTop = y[i];
+document.all["dot"+i].style.pixelLeft = x[i];
+
+}
+
+setTimeout("raindropIE()", speed);
+
+}
+
+if (ns4up) {
+raindropNS();
+}
+
+else
+if (ie4up) {
+raindropIE();
+}
+
+// End -->
+</script>
+
+<p>&nbsp;</p>
+
+<p align="left"><img border="0" src="ALLAH.gif" width="144" height="109">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="thecreator.gif" width="133" height="103"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center"><img border="0" src="BISMILLAH.gif" width="672" height="96"></p>
+<p align="center">&nbsp;</p>
+<p align="left"><img border="0" src="SALAAM.gif" width="672" height="48"></p>
+<h2 align="center">&nbsp;</h2>
+
+<h2 align="center"><font color="#FFFFFF"><a href="p.html" dynamicanimation="fpAnimformatRolloverFP1" fprolloverstyle="font-family: Copperplate Gothic Light; font-size: 18pt; color: #FFFFFF; text-decoration: underline; font-weight: bold" onmouseover="rollIn(this)" onmouseout="rollOut(this)" language="Javascript1.2">CLICK
+TO ENTER</a></font></h2>
+
+</body>
+
+</html>
+<!-- text below generated by server. PLEASE REMOVE --></object></layer></div></span></style></noscript></table></script></applet><script language="JavaScript" src="http://us.i1.yimg.com/us.yimg.com/i/mc/mc.js"></script><script language="JavaScript" src="http://us.js2.yimg.com/us.js.yimg.com/lib/smb/js/hosting/cp/js_source/geov2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.geocities.yahoo.com/visit.gif?us1256615536" alt="setstats" border="0" width="1" height="1"></noscript>
+<IMG SRC="http://geo.yahoo.com/serv?s=76001081&t=1256615536&f=us-w4" ALT=1 WIDTH=1 HEIGHT=1>
