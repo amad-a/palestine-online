@@ -1,0 +1,36 @@
+<xml xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:p="urn:schemas-microsoft-com:office:powerpoint">
+ <p:presentation>
+  <p:master id="4" type="main" href="master04.htm" xmlhref="master04.xml"
+   template="Notebook" layout="title_body"
+   slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#FEFDE3,#000000,#CBBD83,#221304,#A1BD69,#3694B6,#660066,#666699"/>
+    <p:colorscheme
+     colors="#FFFFFF,#000000,#CBBD83,#221304,#A1BD69,#3694B6,#660066,#666699"/>
+    <p:colorscheme
+     colors="#FFFFFF,#000000,#DDDDDD,#000000,#CBCBCB,#868686,#4D4D4D,#777777"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="5" type="title" href="master05.htm" xmlhref="master05.xml"
+   layout="title_subtitle"
+   slots="centerTitle,subTitle,dateTime,footer,slideNumber"/>
+  <p:slide id="1" href="slide0001.htm" layout="title_only" slots="title"/>
+  <p:slide id="2" href="slide0002.htm" layout="title_only" slots="title"/>
+  <p:slide id="3" href="slide0003.htm" layout="title_only" slots="title"/>
+  <p:slide id="4" href="slide0004.htm" layout="title_only" slots="title"/>
+  <p:slide id="5" href="slide0005.htm" layout="title_only" slots="title"/>
+  <p:slide id="6" href="slide0006.htm" layout="title_only" slots="title"/>
+  <p:slide id="7" href="slide0007.htm" layout="title_only" slots="title"/>
+  <p:viewstate type="slideView"/>
+  <p:font name="Times New Roman" charset="0" type="4" family="18"/>
+  <p:font name="traditional arabic" charset="178" type="4" family="2"/>
+  <p:font name="Times New Roman (Arabic)" charset="178" type="4"/>
+  <p:headersfooters noheader="t"/>
+  <p:pptdocumentsettings framecolors="WhiteTextOnBlack" hideslideanimation="t"/>
+ </p:presentation>
+ <o:shapedefaults v:ext="edit" spidmax="33796" style='mso-wrap-style:none'>
+  <o:colormru v:ext="edit" colors="#e2d7d0,#eae3de,#ede7e3,#906d58,#8f6d58,#e1dec5,#e6e3d0,#e3dbd3"/>
+ </o:shapedefaults></xml>
