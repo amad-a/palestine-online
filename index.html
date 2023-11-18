@@ -15,10 +15,7 @@
     rel="stylesheet">
 </head>
 <style>
-  /* @font-face {
-    font-family: monospace;
-    src: url(public/Iosevka-Term-SS04-56.ttf);
-  } */
+
 
   h2 {
     font-family: monospace;
@@ -42,7 +39,6 @@
 
   ul {
     text-align: left;
-    
   }
 
   li {
@@ -88,8 +84,35 @@
   }
 
   #intro {
+    display: flex;
     text-align: center;
-    width: 800px;
+    width: 1500px;
+  }
+
+  .section-title {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-style: italic;
+  }
+
+  .section-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-item {
+    margin-bottom: 40px;
+  }
+
+  .entry-title {
+    margin-bottom: 20px;
+  }
+
+  .entry-description {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 </style>
 
@@ -116,20 +139,59 @@
       </li>
 
     </ul>
-
-
-
   </div>
+  <nav>
+
+    <a href="#art">ART + CULTURE</a>
+    <a href="#personal">PERSONAL</a>
+    <a href="#homepages">HOMEPAGES</a>
+    <a href="#mags">MAGS</a>
+    <!-- Add more links for other sections if needed -->
+
+  </nav>
+
+  <section id="art">
+    <div class="section-title">ART + CULTURE</div>
+    <div class="section-grid">
 
 
+    </div>
+  </section>
+
+  <section id="personal">
+    <div class="section-title">PERSONAL PAGES</div>
+    <div class="section-grid">
+
+      <div class="grid-item">
+        <div class="entry-title">Amnah’s Page</div>
+        <img src="public/amnah.jpg" width="500"/>
+        <div class="entry-description">Website created Amnah, a graduate of University of Jordan</div>
+        <a href="sites/personal-pages/amnah_samara/index.htm">Go to page ↗</a>
+      </div>
+      <div class="grid-item">
+        <div class="entry-title">Zuhair’s Page</div>
+        <img src="public/zuhair.jpg" width="500"/>
+        <div class="entry-description">Bio Page of zuhair Annab, a retired doctor who owns a farm he calls Serenity World</div>
+        <a href="sites/personal-pages/zuhairhm/zuhairhm.html">Go to page ↗</a>
+      </div>
+      <div class="grid-item">
+        <div class="entry-title">Page Dedicated to Martyr Alaa Barghouthi</div>
+        <img src="public/alaa.jpg" width="500"/>
+        <div class="entry-description">A page mourning the loss of a martyr named Alaa Barghouti</div>
+        <a href="sites/personal-pages/barghouti/alaa/index.html">Go to page ↗</a>
+      </div>
+    </div>
 
 
+    
+  </section>
+  <section id="homepages">
+    <div class="section-title">HOMEPAGES</div>
+  </section>
+  <section id="mags">
+    <div class="section-title">MAGS</div>
+  </section>
 
-
-
-
-
-
-</body>
+  <div </body>
 
 </html>
