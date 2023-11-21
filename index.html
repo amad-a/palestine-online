@@ -5,16 +5,44 @@
   <title>Palestine Online</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link
     href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="public/98.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 </head>
 <style>
+  @font-face {
+    font-family: "Pixelated MS Sans Serif";
+    src: url("fonts/converted/ms_sans_serif.woff") format("woff");
+    src: url("fonts/converted/ms_sans_serif.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Pixelated MS Sans Serif";
+    src: url("fonts/converted/ms_sans_serif_bold.woff") format("woff");
+    src: url("fonts/converted/ms_sans_serif_bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .window-link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .window-link:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
   h2 {
     font-family: monospace;
     color: darkgreen;
@@ -23,6 +51,8 @@
   body {
     line-height: 25px;
     font-size: 20px;
+    margin: 0px 100px 0px 100px;
+    font-family: monospace;
   }
 
   ul {
@@ -36,11 +66,8 @@
   :root {
     font-family: monospace;
     color: #004522;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
 
+  }
 
   #intro {
     text-align: center;
@@ -49,18 +76,21 @@
   }
 
   .section-title {
-    margin-left: 20px;
     text-align: left;
     font-size: 30px;
     margin-bottom: 50px;
-    font-style: italic;
+    font-style: bold;
+    font-weight: 800;
     margin-top: 20px;
-    color: black;
+    color: rgb(173, 0, 0);
+    font-family: "Pixelated MS Sans Serif", Arial;
+
   }
 
   .section-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 50px
   }
 
   .grid-item {
@@ -78,13 +108,26 @@
   .entry-description {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin: 20px 10px 20px 10px;
-
+    margin: 20px 0px 20px 0px;
+    font-size: 18px;
+    font-family: "Pixelated MS Sans Serif", Arial;
   }
 
   nav {
-    padding: 50px 0px 50px 0px;
-    font-size: 30px;
+    line-height: 35px;
+    margin: 50px 0px 50px 0px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Pixelated MS Sans Serif", Arial;
+  }
+
+  .nav-item {
+    margin: 0px 10px 50px 5px;
+    top: 50px;
+  }
+
+  .nav-item-alt {
+    margin: 50px 10px 0px 5px;
   }
 
   a {
@@ -94,183 +137,356 @@
   a:hover {
     color: rgb(255, 105, 105)
   }
+
+  .window {
+    max-width: 400px;
+    max-height: 325px;
+    align-self: center;
+    zoom: 1.25;
+  }
+
+  .window-container {
+    display: grid;
+    grid-template-columns: 1;
+    align-self: center;
+  }
+
+  @media screen and (max-width: 1215px) {
+    .window {
+      zoom: 1;
+      max-height: 330px;
+    }
+
+    body {
+      margin: 0px 50px 0px 50px;
+    }
+  }
+
+  @media screen and (max-width: 1010px) {
+    .window {
+      zoom: .9;
+      max-height: 332px;
+    }
+  }
+
+  @media screen and (max-width: 875px) {
+    .section-grid {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    body {
+      margin: 0px 20px 0px 20px;
+    }
+
+
+    .window {
+      max-width: 400px;
+      max-height: 325px;
+      align-self: center;
+      zoom: 1.25;
+    }
+
+  }
+
+  @media screen and (max-width: 575px) {
+    .section-grid {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    body {
+      margin: 0px 0px 0px 0px;
+    }
+
+    .entry-description {
+      padding-left: 10px;
+    }
+
+    .window {
+      max-width: 400px;
+      max-height: 330px;
+      align-self: center;
+      zoom: 1;
+    }
+
+    .section-title {
+      padding-left: 10px;
+    }
+
+    a {
+      padding-left: 10px;
+    }
+
+  }
 </style>
 
 <body>
 
-  <header style="text-align:center;"><img src="public/palestineflag.gif" width="100" />
+  <header style="text-align:center;padding-top: 20px;"><img src="public/palestineflag.gif" width="100" />
     <br>
-    <img src="public/p-o.png" width="200" />
+    <img src="public/p-o.png" width="200" /><br>
+    <a style="font-style: italic;" href="info.html">Information ↗</a>
   </header>
-  <div id="intro">
-    <i>Palestine Online</i> is a collection of webpages creates by Palestinians, primarily in the late 90s and early
-    00s, sourced from the Internet Archive’s Wayback Machine. Included here are personal webpages, news websites and
-    online magazines, sites showcasing Palestinian art and culture, and homepages compiling and linking out to other
-    relevant pages.
-    <br><br>
-    Many of the pages here were created during or shortly after the Second Intefada, and demonstrate the rich history of
-    Palestinian internet presence, showing the use of the web as a tool for resistance, connection, and expression under
-    ongoing occupation.
-    <br><br>
-    <i>Palestine Online</i> is a mirror to Palestinian internet presence and resistance today, highlighting the history
-    of
-    resilience and anger under occupation, as well as the immense pride, love, and joy for their ancestral land, no
-    matter what the internet has looked like and has been technologically capable of. When barraged with constant
-    misrepresentation and demonization by mainstream media, international governments, and Israeli propaganda, the
-    internet has proven to be a critical outlet for Palestinians to be seen and heard around the world.
-    <br><br><i>Usage:</i> pages are divided into 5 categories below. In order to maintain focus on a particular page or avoid navigation
-    to
-    broken or lost pages, these pages have been edited to remove some or all links. You’ll know a link is clickable
-    when the mouse cursor turns into pointer on hover.
-  </div>
   <nav>
-    <a href="#personal">PERSONAL PAGES</a>
-    <a href="#art">ART + CULTURE</a>
-    <a href="#homepages">HOMEPAGES</a>
-    <a href="#mags">MAGS</a>
-    <a href="#news">NEWS</a>
+    Go to....
+    <a class="nav-item" href="#personal">Personal Pages</a>
+    <a class="nav-item-alt" href="#art">Art + Culture</a>
+    <a class="nav-item" href="#homepages">Homepages</a>
+    <a class="nav-item-alt" href="#mags">Magazines</a>
+    <a class="nav-item" href="#news">News</a>
   </nav>
 
   <section id="personal">
-    <div class="section-title">PERSONAL PAGES</div>
+    <div class="section-title">Personal Pages</div>
     <div class="section-grid">
 
       <div class="grid-item">
-        <div class="entry-title">Amnah’s Page</div>
-        <img src="public/amnah.jpg" width="400" />
+        <a class="window-link" href="amnah.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Amnah’s Page</div>
+              </div>
+              <img src="public/amnah.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">Geocities Website created by Amnah, a graduate of University of Jordan’s Pharmacy
           Program. Featuring Amnah’s photography of her colleagues, study notes, and a page with photos of the Second
-          Intefada</div>
-        <a href="sites/personal-pages/amnah_samara/index.htm">Go to page ↗</a>
+          Intifada</div>
       </div>
       <div class="grid-item">
-        <div class="entry-title">Zuhair’s Page</div>
-        <img src="public/zuhair.jpg" width="400" />
+        <a class="window-link" href="zuhair.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Zuhair’s Page</div>
+              </div>
+              <img src="public/zuhair.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">Bio Page on the Geocities website of Zuhair Annab, a retired doctor born in 1922
           who owns a farm he calls Serenity World, proudly details the success of his siblings and children, and
           recounts devastating stories of Israeli occupation</div>
-        <a href="sites/personal-pages/zuhairhm/zuhairhm.html">Go to page ↗</a>
       </div>
       <div class="grid-item">
-        <div class="entry-title">Reality of Palestine</div>
-        <img src="public/realityofpalestine.jpg" width="400" />
+        <a class="window-link" href="reality-of-palestine.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Reality of Palestine</div>
+              </div>
+              <img src="public/realityofpalestine.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">A Passionate statement decrying the Occupation of Palestine, and the media's
           failure to expose it. Filled with very
           moving gifs</div>
-        <a href="sites/personal-pages/realityofpalestine/index.html">Go to page ↗</a>
       </div>
+
       <div class="grid-item">
-        <div class="entry-title">The Martyr Alaa Barghouthi</div>
-        <img src="public/alaa.jpg" width="400" />
+        <a class="window-link" href="alaa-barghouti.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">The Martyr Alaa Barghouthi</div>
+              </div>
+              <img src="public/alaa-barghouti.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">A page mourning the loss of a martyr named Alaa Barghouti</div>
-        <a href="sites/personal-pages/barghouti/alaa/index.html">Go to page ↗</a>
       </div>
     </div>
 
-
-
   </section>
   <section id="art">
-    <div class="section-title">ART + CULTURE</div>
+    <div class="section-title">Art + Culture</div>
     <div class="section-grid">
 
       <div class="grid-item">
-        <div class="entry-title">Al Aqsa Tour</div>
-        <img src="public/alaqsa.jpg" width="400" />
+        <a class="window-link" href="al-aqsa-tour.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Al Aqsa Tour</div>
+              </div>
+              <img src="public/alaqsa.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">An interactive tour of Al-Aqsa mosque, featuring a labeled map and sequential
           gallery of images of various parts and structures of the mosque </div>
-        <a href="sites/art-culture-history/al-aqsa-tour/aqsa/index.html">Go to page ↗</a>
       </div>
       <div class="grid-item">
-        <div class="entry-title">Samia Halaby's Page</div>
-        <img src="public/samia.jpg" width="400" />
+        <a class="window-link" href="samia-halaby.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Samia Halaby's Page</div>
+              </div>
+              <img src="public/samia.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">Writings on Palestine by visual artist Samia Halaby, sequenced with her own
           artwork. Also includes writings by Samia on fellow Palestinian artists
         </div>
-        <a href="sites/art-culture-history/samia-halaby/pal/samsub.html">Go to page ↗</a>
       </div>
       <div class="grid-item">
-        <div class="entry-title">Funny Pictures!</div>
-        <img src="public/funnypics.jpg" width="400" />
+        <a class="window-link" href="funny-pictures.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Funny Pictures!</div>
+              </div>
+              <img src="public/funnypics.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">A compilation of funny and damning photo edits and political cartoons of
           American, Israeli, and Palestinian Leaders</div>
-        <a href="sites/art-culture-history/palestinum/funny.html">Go to page ↗</a>
       </div>
     </div>
   </section>
   <section id="homepages">
-    <div class="section-title">HOMEPAGES</div>
+    <div class="section-title">Homepages</div>
     <div class="section-grid">
-
       <div class="grid-item">
-        <div class="entry-title">Aqwa Man's Page</div>
-        <img src="public/aqwaman.jpg" width="400" />
-        <div class="entry-description">- Homepage created by a Palestinian student in the Chicago area compiling links
+        <a class="window-link" href="aqwa-man.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Aqwa Man's Page</div>
+              </div>
+              <img src="public/aqwaman.jpg" width="400" />
+            </div>
+          </div>
+        </a>
+        <div class="entry-description">Homepage created by a Palestinian student in the Chicago area compiling links
           to cultural, arts, religious, and news websites</div>
-        <a href="sites/homepages/aqwa_man/aqwa.html">Go to page ↗</a>
       </div>
       <div class="grid-item">
-        <div class="entry-title">The holly Land</div>
-        <img src="public/hollyland.jpg" width="400" />
+        <a class="window-link" href="holly-land.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">The holly land......Palestine</div>
+              </div>
+              <img src="public/hollyland.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">Homepage compiling English and Arabic links to various news sites among others,
           which bookend gifs of Al-Aqsa and the murder of Mohammed Al Durrah</div>
-        <a href="sites/homepages/holly-land/index.htm">Go to page ↗</a>
       </div>
       <div class="grid-item">
-        <div class="entry-title">Palestine Times Jerusalem</div>
-        <img src="public/ptimesjerusalem.jpg" width="400" />
+        <a class="window-link" href="palestine-times-jerusalem.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Palestine Times Jerusalem</div>
+              </div>
+              <img src="public/ptimesjerusalem.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">Front page of an online magazine created on AOL. Featuring many gifs and links to
           Palestinian and International websites, as well as advertisements for a dating service</div>
-        <a href="sites/homepages/pal-times-jerusalem/index.html">Go to page ↗</a>
       </div>
       <div class="grid-item">
-        <div class="entry-title">Palestine Papers</div>
-        <img src="public/palestinepapers.jpg" width="400" />
+        <a class="window-link" href="palestine-papers.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Palestine Papers</div>
+              </div>
+              <img src="public/palestine-papers.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">A webpage of compiled writings on Palestine by two activists in California</div>
-        <a href="sites/homepages/palestine-files/palesndx.html">Go to page ↗</a>
       </div>
     </div>
   </section>
   <section id="mags">
-    <div class="section-title">MAGS</div>
+    <div class="section-title">Online Magazines</div>
     <div class="section-grid">
       <div class="grid-item">
-        <div class="entry-title">Falasteen</div>
-        <img src="public/falasteen.jpg" width="400" />
+        <a class="window-link" href="falasteen-magazine.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Falasteen</div>
+              </div>
+              <img src="public/falasteen.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">Front page of a primarily educational and literary Arabic language magazine</div>
-        <a href="sites/news/falasteen/falasteen-2004.html">Go to page ↗</a>
       </div>
       <div class="grid-item">
-        <div class="entry-title">Jerusalem, I love you</div>
-        <img src="public/jerusalem-ily.jpg" width="400" />
+        <a class="window-link" href="jerusalem-i-love-you.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Jerusalem, I love you</div>
+              </div>
+              <img src="public/jerusalem-ily.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">Monthly magazine based out of Saint Paul, Minneapolis, featuring writing on
           culture, news articles, pictures, readers mail, and links </div>
-        <a href="sites/mags/jerusalem-i-love-you/index.html">Go to page ↗</a>
       </div>
       <div class="grid-item">
-        <div class="entry-title">Palestine Times UK</div>
-        <img src="public/ptimes.jpg" width="400" />
+        <a class="window-link" href="palestine-times-uk.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Palestine Times UK</div>
+              </div>
+              <img src="public/ptimes.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">Monthly magazine based out of London featuring articles, analysis, comments, and
           press cuttings</div>
-        <a href="sites/mags/palestine-times-uk/index.html">Go to page ↗</a>
       </div>
   </section>
   <section id="news">
-    <div class="section-title">NEWS</div>
+    <div class="section-title">News Front Pages</div>
     <div class="section-grid">
 
       <div class="grid-item">
-        <div class="entry-title">Palestine Info Center</div>
-        <img src="public/pal-info-center.jpg" width="400" />
+        <a class="window-link" href="palestine-info-center.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Palestine Info Center</div>
+              </div>
+              <img src="public/palestine-info-center.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">Front page of English language daily news site containing stories and photos of
           the occupation, as well as political analysis</div>
-        <a href="sites/news/palestine-info/pi.html">Go to page ↗</a>
       </div>
       <div class="grid-item">
-        <div class="entry-title">Al Quds</div>
-        <img src="public/al-quds.jpg" width="400" />
+        <a class="window-link" href="al-quds.html">
+          <div class="window-container">
+            <div class="window">
+              <div class="title-bar">
+                <div class="title-bar-text">Al Quds</div>
+              </div>
+              <img src="public/al-quds.jpg" width="400" />
+            </div>
+          </div>
+        </a>
         <div class="entry-description">Front page of Arabic language daily newspaper based in Jerusalem</div>
-        <a href="sites/news/al-quds/alquds.html">Go to page ↗</a>
       </div>
   </section>
 

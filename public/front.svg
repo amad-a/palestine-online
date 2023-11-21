@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="12px" version="1.1" viewBox="0 0 12 12" width="12px">
+  <defs/>
+  <g id="xffffff_r255_g255_b255_a1.0">
+    <path d="M 8,6 9,6 9,7 7,7 7,5 8,5 z" fill="#ffffff" fill-opacity="1.0" id="xffffff_r255_g255_b255_a1.0_shape1"/>
+    <path d="M 6,4 7,4 7,5 6,5 z" fill="#ffffff" fill-opacity="1.0" id="xffffff_r255_g255_b255_a1.0_shape2"/>
+    <path d="M 7,8 7,9 6,9 6,8 z" fill="#ffffff" fill-opacity="1.0" id="xffffff_r255_g255_b255_a1.0_shape3"/>
+  </g>
+  <g id="x2baa2b_r43_g170_b43_a0.023529411764705882">
+    <path d="M 4,0 5,0 5,1 4,1 z" fill="#2baa2b" fill-opacity="0.023529411764705882" id="x2baa2b_r43_g170_b43_a0.023529411764705882_shape1"/>
+    <path d="M 6,0 7,0 7,1 6,1 z" fill="#2baa2b" fill-opacity="0.023529411764705882" id="x2baa2b_r43_g170_b43_a0.023529411764705882_shape2"/>
+  </g>
+  <g id="xfffffe_r255_g255_b254_a1.0">
+    <path d="M 5,3 6,3 6,4 5,4 z" fill="#fffffe" fill-opacity="1.0" id="xfffffe_r255_g255_b254_a1.0_shape1"/>
+    <path d="M 8,7 8,8 7,8 7,7 z" fill="#fffffe" fill-opacity="1.0" id="xfffffe_r255_g255_b254_a1.0_shape2"/>
+  </g>
+  <g id="x2da51e_r45_g165_b30_a0.06666666666666667">
+    <path d="M 6,1 5,1 5,0 6,0 z" fill="#2da51e" fill-opacity="0.06666666666666667" id="x2da51e_r45_g165_b30_a0.06666666666666667_shape1"/>
+  </g>
+  <g id="x46a740_r70_g167_b64_a0.32941176470588235">
+    <path d="M 2,2 2,1 3,1 3,2 z" fill="#46a740" fill-opacity="0.32941176470588235" id="x46a740_r70_g167_b64_a0.32941176470588235_shape1"/>
+  </g>
+  <g id="x45ab29_r69_g171_b41_a0.9764705882352941">
+    <path d="M 4,2 3,2 3,1 4,1 z" fill="#45ab29" fill-opacity="0.9764705882352941" id="x45ab29_r69_g171_b41_a0.9764705882352941_shape1"/>
+  </g>
+  <g id="x55c32b_r85_g195_b43_a1.0">
+    <path d="M 4,2 4,1 5,1 5,2 z" fill="#55c32b" fill-opacity="1.0" id="x55c32b_r85_g195_b43_a1.0_shape1"/>
+  </g>
+  <g id="x71d146_r113_g209_b70_a1.0">
+    <path d="M 6,1 6,2 5,2 5,1 z" fill="#71d146" fill-opacity="1.0" id="x71d146_r113_g209_b70_a1.0_shape1"/>
+  </g>
+  <g id="x7fd568_r127_g213_b104_a1.0">
+    <path d="M 6,1 7,1 7,2 6,2 z" fill="#7fd568" fill-opacity="1.0" id="x7fd568_r127_g213_b104_a1.0_shape1"/>
+  </g>
+  <g id="x78ce6f_r120_g206_b111_a0.8901960784313725">
+    <path d="M 7,1 8,1 8,2 7,2 z" fill="#78ce6f" fill-opacity="0.8901960784313725" id="x78ce6f_r120_g206_b111_a0.8901960784313725_shape1"/>
+  </g>
+  <g id="x4ec548_r78_g197_b72_a0.34509803921568627">
+    <path d="M 9,2 8,2 8,1 9,1 z" fill="#4ec548" fill-opacity="0.34509803921568627" id="x4ec548_r78_g197_b72_a0.34509803921568627_shape1"/>
+  </g>
+  <g id="x3a992f_r58_g153_b47_a0.5490196078431373">
+    <path d="M 2,2 2,3 1,3 1,2 z" fill="#3a992f" fill-opacity="0.5490196078431373" id="x3a992f_r58_g153_b47_a0.5490196078431373_shape1"/>
+  </g>
+  <g id="x51bb19_r81_g187_b25_a1.0">
+    <path d="M 3,2 3,3 2,3 2,2 z" fill="#51bb19" fill-opacity="1.0" id="x51bb19_r81_g187_b25_a1.0_shape1"/>
+  </g>
+  <g id="x5cbb1f_r92_g187_b31_a1.0">
+    <path d="M 3,3 3,2 4,2 4,3 z" fill="#5cbb1f" fill-opacity="1.0" id="x5cbb1f_r92_g187_b31_a1.0_shape1"/>
+  </g>
+  <g id="x60ba25_r96_g186_b37_a0.9607843137254902">
+    <path d="M 4,3 4,2 5,2 5,3 z" fill="#60ba25" fill-opacity="0.9607843137254902" id="x60ba25_r96_g186_b37_a0.9607843137254902_shape1"/>
+  </g>
+  <g id="x82cc59_r130_g204_b89_a0.9372549019607843">
+    <path d="M 6,3 5,3 5,2 6,2 z" fill="#82cc59" fill-opacity="0.9372549019607843" id="x82cc59_r130_g204_b89_a0.9372549019607843_shape1"/>
+  </g>
+  <g id="x77c946_r119_g201_b70_a0.9764705882352941">
+    <path d="M 6,2 7,2 7,3 6,3 z" fill="#77c946" fill-opacity="0.9764705882352941" id="x77c946_r119_g201_b70_a0.9764705882352941_shape1"/>
+  </g>
+  <g id="x94d877_r148_g216_b119_a1.0">
+    <path d="M 8,3 7,3 7,2 8,2 z" fill="#94d877" fill-opacity="1.0" id="x94d877_r148_g216_b119_a1.0_shape1"/>
+  </g>
+  <g id="xa7ee91_r167_g238_b145_a1.0">
+    <path d="M 8,3 8,2 9,2 9,3 z" fill="#a7ee91" fill-opacity="1.0" id="xa7ee91_r167_g238_b145_a1.0_shape1"/>
+  </g>
+  <g id="x5ec457_r94_g196_b87_a0.5294117647058824">
+    <path d="M 9,2 10,2 10,3 9,3 z" fill="#5ec457" fill-opacity="0.5294117647058824" id="x5ec457_r94_g196_b87_a0.5294117647058824_shape1"/>
+  </g>
+  <g id="x006600_r0_g102_b0_a0.0196078431372549">
+    <path d="M 0,3 1,3 1,4 0,4 z" fill="#006600" fill-opacity="0.0196078431372549" id="x006600_r0_g102_b0_a0.0196078431372549_shape1"/>
+  </g>
+  <g id="x52bb1f_r82_g187_b31_a1.0">
+    <path d="M 2,3 2,4 1,4 1,3 z" fill="#52bb1f" fill-opacity="1.0" id="x52bb1f_r82_g187_b31_a1.0_shape1"/>
+  </g>
+  <g id="x66c02d_r102_g192_b45_a0.9019607843137255">
+    <path d="M 3,4 2,4 2,3 3,3 z" fill="#66c02d" fill-opacity="0.9019607843137255" id="x66c02d_r102_g192_b45_a0.9019607843137255_shape1"/>
+  </g>
+  <g id="x57b81b_r87_g184_b27_a0.9882352941176471">
+    <path d="M 3,3 4,3 4,4 3,4 z" fill="#57b81b" fill-opacity="0.9882352941176471" id="x57b81b_r87_g184_b27_a0.9882352941176471_shape1"/>
+  </g>
+  <g id="x79c653_r121_g198_b83_a1.0">
+    <path d="M 4,3 5,3 5,4 4,4 z" fill="#79c653" fill-opacity="1.0" id="x79c653_r121_g198_b83_a1.0_shape1"/>
+  </g>
+  <g id="xd0e8c6_r208_g232_b198_a1.0">
+    <path d="M 7,4 6,4 6,3 7,3 z" fill="#d0e8c6" fill-opacity="1.0" id="xd0e8c6_r208_g232_b198_a1.0_shape1"/>
+  </g>
+  <g id="x59bd00_r89_g189_b0_a0.9882352941176471">
+    <path d="M 8,4 7,4 7,3 8,3 z" fill="#59bd00" fill-opacity="0.9882352941176471" id="x59bd00_r89_g189_b0_a0.9882352941176471_shape1"/>
+  </g>
+  <g id="x82cc59_r130_g204_b89_a0.9137254901960784">
+    <path d="M 9,3 9,4 8,4 8,3 z" fill="#82cc59" fill-opacity="0.9137254901960784" id="x82cc59_r130_g204_b89_a0.9137254901960784_shape1"/>
+  </g>
+  <g id="x99e77e_r153_g231_b126_a1.0">
+    <path d="M 10,3 10,4 9,4 9,3 z" fill="#99e77e" fill-opacity="1.0" id="x99e77e_r153_g231_b126_a1.0_shape1"/>
+  </g>
+  <g id="x3cb92f_r60_g185_b47_a0.3843137254901961">
+    <path d="M 10,4 10,3 11,3 11,4 z" fill="#3cb92f" fill-opacity="0.3843137254901961" id="x3cb92f_r60_g185_b47_a0.3843137254901961_shape1"/>
+  </g>
+  <g id="x329513_r50_g149_b19_a0.3215686274509804">
+    <path d="M 1,4 1,5 0,5 0,4 z" fill="#329513" fill-opacity="0.3215686274509804" id="x329513_r50_g149_b19_a0.3215686274509804_shape1"/>
+  </g>
+  <g id="x51be1f_r81_g190_b31_a1.0">
+    <path d="M 1,4 2,4 2,5 1,5 z" fill="#51be1f" fill-opacity="1.0" id="x51be1f_r81_g190_b31_a1.0_shape1"/>
+  </g>
+  <g id="x47b400_r71_g180_b0_a0.9607843137254902">
+    <path d="M 2,4 3,4 3,5 2,5 z" fill="#47b400" fill-opacity="0.9607843137254902" id="x47b400_r71_g180_b0_a0.9607843137254902_shape1"/>
+  </g>
+  <g id="x48b500_r72_g181_b0_a1.0">
+    <path d="M 3,5 3,4 4,4 4,5 z" fill="#48b500" fill-opacity="1.0" id="x48b500_r72_g181_b0_a1.0_shape1"/>
+  </g>
+  <g id="x45b400_r69_g180_b0_a1.0">
+    <path d="M 5,4 5,5 4,5 4,4 z" fill="#45b400" fill-opacity="1.0" id="x45b400_r69_g180_b0_a1.0_shape1"/>
+  </g>
+  <g id="xb9e0a8_r185_g224_b168_a1.0">
+    <path d="M 6,4 6,5 5,5 5,4 z" fill="#b9e0a8" fill-opacity="1.0" id="xb9e0a8_r185_g224_b168_a1.0_shape1"/>
+  </g>
+  <g id="xd3eac9_r211_g234_b201_a1.0">
+    <path d="M 8,5 7,5 7,4 8,4 z" fill="#d3eac9" fill-opacity="1.0" id="xd3eac9_r211_g234_b201_a1.0_shape1"/>
+  </g>
+  <g id="x52b900_r82_g185_b0_a1.0">
+    <path d="M 9,4 9,5 8,5 8,4 z" fill="#52b900" fill-opacity="1.0" id="x52b900_r82_g185_b0_a1.0_shape1"/>
+  </g>
+  <g id="x6dc237_r109_g194_b55_a0.9490196078431372">
+    <path d="M 9,5 9,4 10,4 10,5 z" fill="#6dc237" fill-opacity="0.9490196078431372" id="x6dc237_r109_g194_b55_a0.9490196078431372_shape1"/>
+  </g>
+  <g id="x61c644_r97_g198_b68_a1.0">
+    <path d="M 11,5 10,5 10,4 11,4 z" fill="#61c644" fill-opacity="1.0" id="x61c644_r97_g198_b68_a1.0_shape1"/>
+  </g>
+  <g id="x00bf00_r0_g191_b0_a0.01568627450980392">
+    <path d="M 11,5 11,4 12,4 12,5 z" fill="#00bf00" fill-opacity="0.01568627450980392" id="x00bf00_r0_g191_b0_a0.01568627450980392_shape1"/>
+  </g>
+  <g id="x2fa212_r47_g162_b18_a0.5490196078431373">
+    <path d="M 1,6 0,6 0,5 1,5 z" fill="#2fa212" fill-opacity="0.5490196078431373" id="x2fa212_r47_g162_b18_a0.5490196078431373_shape1"/>
+  </g>
+  <g id="x48bc1b_r72_g188_b27_a1.0">
+    <path d="M 1,6 1,5 2,5 2,6 z" fill="#48bc1b" fill-opacity="1.0" id="x48bc1b_r72_g188_b27_a1.0_shape1"/>
+  </g>
+  <g id="xa8dc94_r168_g220_b148_a0.9607843137254902">
+    <path d="M 2,5 3,5 3,6 2,6 z" fill="#a8dc94" fill-opacity="0.9607843137254902" id="xa8dc94_r168_g220_b148_a0.9607843137254902_shape1"/>
+  </g>
+  <g id="xbde3ad_r189_g227_b173_a1.0">
+    <path d="M 3,6 3,5 4,5 4,6 z" fill="#bde3ad" fill-opacity="1.0" id="xbde3ad_r189_g227_b173_a1.0_shape1"/>
+  </g>
+  <g id="xbae0a6_r186_g224_b166_a1.0">
+    <path d="M 5,5 5,6 4,6 4,5 z" fill="#bae0a6" fill-opacity="1.0" id="xbae0a6_r186_g224_b166_a1.0_shape1"/>
+  </g>
+  <g id="xb8e1a2_r184_g225_b162_a1.0">
+    <path d="M 6,6 5,6 5,5 6,5 z" fill="#b8e1a2" fill-opacity="1.0" id="xb8e1a2_r184_g225_b162_a1.0_shape1"/>
+  </g>
+  <g id="xf1faed_r241_g250_b237_a1.0">
+    <path d="M 7,6 6,6 6,5 7,5 z" fill="#f1faed" fill-opacity="1.0" id="xf1faed_r241_g250_b237_a1.0_shape1"/>
+  </g>
+  <g id="xd8ecce_r216_g236_b206_a1.0">
+    <path d="M 8,6 8,5 9,5 9,6 z" fill="#d8ecce" fill-opacity="1.0" id="xd8ecce_r216_g236_b206_a1.0_shape1"/>
+  </g>
+  <g id="x69c037_r105_g192_b55_a0.9372549019607843">
+    <path d="M 9,5 10,5 10,6 9,6 z" fill="#69c037" fill-opacity="0.9372549019607843" id="x69c037_r105_g192_b55_a0.9372549019607843_shape1"/>
+  </g>
+  <g id="x56c320_r86_g195_b32_a1.0">
+    <path d="M 10,5 11,5 11,6 10,6 z" fill="#56c320" fill-opacity="1.0" id="x56c320_r86_g195_b32_a1.0_shape1"/>
+  </g>
+  <g id="x1caa1c_r28_g170_b28_a0.03529411764705882">
+    <path d="M 12,6 11,6 11,5 12,5 z" fill="#1caa1c" fill-opacity="0.03529411764705882" id="x1caa1c_r28_g170_b28_a0.03529411764705882_shape1"/>
+  </g>
+  <g id="x28a211_r40_g162_b17_a0.4745098039215686">
+    <path d="M 1,6 1,7 0,7 0,6 z" fill="#28a211" fill-opacity="0.4745098039215686" id="x28a211_r40_g162_b17_a0.4745098039215686_shape1"/>
+  </g>
+  <g id="x3ebc18_r62_g188_b24_a1.0">
+    <path d="M 2,6 2,7 1,7 1,6 z" fill="#3ebc18" fill-opacity="1.0" id="x3ebc18_r62_g188_b24_a1.0_shape1"/>
+  </g>
+  <g id="xdcf4d3_r220_g244_b211_a0.9607843137254902">
+    <path d="M 2,7 2,6 3,6 3,7 z" fill="#dcf4d3" fill-opacity="0.9607843137254902" id="xdcf4d3_r220_g244_b211_a0.9607843137254902_shape1"/>
+  </g>
+  <g id="xf9fef6_r249_g254_b246_a1.0">
+    <path d="M 4,7 3,7 3,6 4,6 z" fill="#f9fef6" fill-opacity="1.0" id="xf9fef6_r249_g254_b246_a1.0_shape1"/>
+  </g>
+  <g id="xf5fcf1_r245_g252_b241_a1.0">
+    <path d="M 5,7 4,7 4,6 5,6 z" fill="#f5fcf1" fill-opacity="1.0" id="xf5fcf1_r245_g252_b241_a1.0_shape1"/>
+  </g>
+  <g id="xf2fbef_r242_g251_b239_a1.0">
+    <path d="M 6,7 5,7 5,6 6,6 z" fill="#f2fbef" fill-opacity="1.0" id="xf2fbef_r242_g251_b239_a1.0_shape1"/>
+  </g>
+  <g id="xf4faf0_r244_g250_b240_a1.0">
+    <path d="M 6,6 7,6 7,7 6,7 z" fill="#f4faf0" fill-opacity="1.0" id="xf4faf0_r244_g250_b240_a1.0_shape1"/>
+  </g>
+  <g id="x8bcd69_r139_g205_b105_a0.9490196078431372">
+    <path d="M 9,7 9,6 10,6 10,7 z" fill="#8bcd69" fill-opacity="0.9490196078431372" id="x8bcd69_r139_g205_b105_a0.9490196078431372_shape1"/>
+  </g>
+  <g id="x4abb00_r74_g187_b0_a1.0">
+    <path d="M 10,7 10,6 11,6 11,7 z" fill="#4abb00" fill-opacity="1.0" id="x4abb00_r74_g187_b0_a1.0_shape1"/>
+  </g>
+  <g id="x249224_r36_g146_b36_a0.027450980392156862">
+    <path d="M 12,6 12,7 11,7 11,6 z" fill="#249224" fill-opacity="0.027450980392156862" id="x249224_r36_g146_b36_a0.027450980392156862_shape1"/>
+  </g>
+  <g id="x1e8f0b_r30_g143_b11_a0.5372549019607843">
+    <path d="M 0,7 1,7 1,8 0,8 z" fill="#1e8f0b" fill-opacity="0.5372549019607843" id="x1e8f0b_r30_g143_b11_a0.5372549019607843_shape1"/>
+  </g>
+  <g id="x2bb412_r43_g180_b18_a1.0">
+    <path d="M 1,7 2,7 2,8 1,8 z" fill="#2bb412" fill-opacity="1.0" id="x2bb412_r43_g180_b18_a1.0_shape1"/>
+  </g>
+  <g id="x3cb31f_r60_g179_b31_a0.9764705882352941">
+    <path d="M 2,7 3,7 3,8 2,8 z" fill="#3cb31f" fill-opacity="0.9764705882352941" id="x3cb31f_r60_g179_b31_a0.9764705882352941_shape1"/>
+  </g>
+  <g id="x4db828_r77_g184_b40_a1.0">
+    <path d="M 3,7 4,7 4,8 3,8 z" fill="#4db828" fill-opacity="1.0" id="x4db828_r77_g184_b40_a1.0_shape1"/>
+  </g>
+  <g id="x42b507_r66_g181_b7_a1.0">
+    <path d="M 4,8 4,7 5,7 5,8 z" fill="#42b507" fill-opacity="1.0" id="x42b507_r66_g181_b7_a1.0_shape1"/>
+  </g>
+  <g id="x6dc448_r109_g196_b72_a1.0">
+    <path d="M 6,7 6,8 5,8 5,7 z" fill="#6dc448" fill-opacity="1.0" id="x6dc448_r109_g196_b72_a1.0_shape1"/>
+  </g>
+  <g id="xf3faee_r243_g250_b238_a1.0">
+    <path d="M 7,8 6,8 6,7 7,7 z" fill="#f3faee" fill-opacity="1.0" id="xf3faee_r243_g250_b238_a1.0_shape1"/>
+  </g>
+  <g id="x90ce73_r144_g206_b115_a1.0">
+    <path d="M 8,8 8,7 9,7 9,8 z" fill="#90ce73" fill-opacity="1.0" id="x90ce73_r144_g206_b115_a1.0_shape1"/>
+  </g>
+  <g id="x52b800_r82_g184_b0_a0.9254901960784314">
+    <path d="M 9,8 9,7 10,7 10,8 z" fill="#52b800" fill-opacity="0.9254901960784314" id="x52b800_r82_g184_b0_a0.9254901960784314_shape1"/>
+  </g>
+  <g id="x58bf29_r88_g191_b41_a1.0">
+    <path d="M 11,7 11,8 10,8 10,7 z" fill="#58bf29" fill-opacity="1.0" id="x58bf29_r88_g191_b41_a1.0_shape1"/>
+  </g>
+  <g id="x008000_r0_g128_b0_a0.0392156862745098">
+    <path d="M 12,8 11,8 11,7 12,7 z" fill="#008000" fill-opacity="0.0392156862745098" id="x008000_r0_g128_b0_a0.0392156862745098_shape1"/>
+  </g>
+  <g id="x146c09_r20_g108_b9_a0.35294117647058826">
+    <path d="M 0,8 1,8 1,9 0,9 z" fill="#146c09" fill-opacity="0.35294117647058826" id="x146c09_r20_g108_b9_a0.35294117647058826_shape1"/>
+  </g>
+  <g id="x20af0b_r32_g175_b11_a1.0">
+    <path d="M 1,9 1,8 2,8 2,9 z" fill="#20af0b" fill-opacity="1.0" id="x20af0b_r32_g175_b11_a1.0_shape1"/>
+  </g>
+  <g id="x23a90c_r35_g169_b12_a0.9490196078431372">
+    <path d="M 3,9 2,9 2,8 3,8 z" fill="#23a90c" fill-opacity="0.9490196078431372" id="x23a90c_r35_g169_b12_a0.9490196078431372_shape1"/>
+  </g>
+  <g id="x19a800_r25_g168_b0_a1.0">
+    <path d="M 4,9 3,9 3,8 4,8 z" fill="#19a800" fill-opacity="1.0" id="x19a800_r25_g168_b0_a1.0_shape1"/>
+  </g>
+  <g id="x4ab631_r74_g182_b49_a1.0">
+    <path d="M 4,9 4,8 5,8 5,9 z" fill="#4ab631" fill-opacity="1.0" id="x4ab631_r74_g182_b49_a1.0_shape1"/>
+  </g>
+  <g id="xf0f7ec_r240_g247_b236_a1.0">
+    <path d="M 6,8 6,9 5,9 5,8 z" fill="#f0f7ec" fill-opacity="1.0" id="xf0f7ec_r240_g247_b236_a1.0_shape1"/>
+  </g>
+  <g id="x84c96c_r132_g201_b108_a1.0">
+    <path d="M 8,9 7,9 7,8 8,8 z" fill="#84c96c" fill-opacity="1.0" id="x84c96c_r132_g201_b108_a1.0_shape1"/>
+  </g>
+  <g id="x3eb200_r62_g178_b0_a0.9607843137254902">
+    <path d="M 8,8 9,8 9,9 8,9 z" fill="#3eb200" fill-opacity="0.9607843137254902" id="x3eb200_r62_g178_b0_a0.9607843137254902_shape1"/>
+  </g>
+  <g id="x62c22c_r98_g194_b44_a1.0">
+    <path d="M 10,9 9,9 9,8 10,8 z" fill="#62c22c" fill-opacity="1.0" id="x62c22c_r98_g194_b44_a1.0_shape1"/>
+  </g>
+  <g id="x3ca217_r60_g162_b23_a0.8196078431372549">
+    <path d="M 11,9 10,9 10,8 11,8 z" fill="#3ca217" fill-opacity="0.8196078431372549" id="x3ca217_r60_g162_b23_a0.8196078431372549_shape1"/>
+  </g>
+  <g id="x168709_r22_g135_b9_a1.0">
+    <path d="M 1,9 2,9 2,10 1,10 z" fill="#168709" fill-opacity="1.0" id="x168709_r22_g135_b9_a1.0_shape1"/>
+  </g>
+  <g id="x23ac13_r35_g172_b19_a0.9764705882352941">
+    <path d="M 3,10 2,10 2,9 3,9 z" fill="#23ac13" fill-opacity="0.9764705882352941" id="x23ac13_r35_g172_b19_a0.9764705882352941_shape1"/>
+  </g>
+  <g id="x09a600_r9_g166_b0_a0.9254901960784314">
+    <path d="M 3,10 3,9 4,9 4,10 z" fill="#09a600" fill-opacity="0.9254901960784314" id="x09a600_r9_g166_b0_a0.9254901960784314_shape1"/>
+  </g>
+  <g id="x61be54_r97_g190_b84_a0.9882352941176471">
+    <path d="M 5,9 5,10 4,10 4,9 z" fill="#61be54" fill-opacity="0.9882352941176471" id="x61be54_r97_g190_b84_a0.9882352941176471_shape1"/>
+  </g>
+  <g id="xe5f4e3_r229_g244_b227_a0.9764705882352941">
+    <path d="M 5,10 5,9 6,9 6,10 z" fill="#e5f4e3" fill-opacity="0.9764705882352941" id="xe5f4e3_r229_g244_b227_a0.9764705882352941_shape1"/>
+  </g>
+  <g id="x7ac36a_r122_g195_b106_a0.9882352941176471">
+    <path d="M 6,10 6,9 7,9 7,10 z" fill="#7ac36a" fill-opacity="0.9882352941176471" id="x7ac36a_r122_g195_b106_a0.9882352941176471_shape1"/>
+  </g>
+  <g id="x16ac00_r22_g172_b0_a0.9490196078431372">
+    <path d="M 8,10 7,10 7,9 8,9 z" fill="#16ac00" fill-opacity="0.9490196078431372" id="x16ac00_r22_g172_b0_a0.9490196078431372_shape1"/>
+  </g>
+  <g id="x4eb728_r78_g183_b40_a0.9764705882352941">
+    <path d="M 8,10 8,9 9,9 9,10 z" fill="#4eb728" fill-opacity="0.9764705882352941" id="x4eb728_r78_g183_b40_a0.9764705882352941_shape1"/>
+  </g>
+  <g id="x43b119_r67_g177_b25_a1.0">
+    <path d="M 10,9 10,10 9,10 9,9 z" fill="#43b119" fill-opacity="1.0" id="x43b119_r67_g177_b25_a1.0_shape1"/>
+  </g>
+  <g id="x158015_r21_g128_b21_a0.047058823529411764">
+    <path d="M 10,9 11,9 11,10 10,10 z" fill="#158015" fill-opacity="0.047058823529411764" id="x158015_r21_g128_b21_a0.047058823529411764_shape1"/>
+  </g>
+  <g id="x004000_r0_g64_b0_a0.01568627450980392">
+    <path d="M 2,11 1,11 1,10 2,10 z" fill="#004000" fill-opacity="0.01568627450980392" id="x004000_r0_g64_b0_a0.01568627450980392_shape1"/>
+  </g>
+  <g id="x147e08_r20_g126_b8_a1.0">
+    <path d="M 3,10 3,11 2,11 2,10 z" fill="#147e08" fill-opacity="1.0" id="x147e08_r20_g126_b8_a1.0_shape1"/>
+  </g>
+  <g id="x1da80c_r29_g168_b12_a1.0">
+    <path d="M 4,11 3,11 3,10 4,10 z" fill="#1da80c" fill-opacity="1.0" id="x1da80c_r29_g168_b12_a1.0_shape1"/>
+  </g>
+  <g id="x16ab00_r22_g171_b0_a1.0">
+    <path d="M 4,11 4,10 5,10 5,11 z" fill="#16ab00" fill-opacity="1.0" id="x16ab00_r22_g171_b0_a1.0_shape1"/>
+  </g>
+  <g id="x00ad00_r0_g173_b0_a1.0">
+    <path d="M 5,10 6,10 6,11 5,11 z" fill="#00ad00" fill-opacity="1.0" id="x00ad00_r0_g173_b0_a1.0_shape1"/>
+  </g>
+  <g id="x16b000_r22_g176_b0_a1.0">
+    <path d="M 6,10 7,10 7,11 6,11 z" fill="#16b000" fill-opacity="1.0" id="x16b000_r22_g176_b0_a1.0_shape1"/>
+  </g>
+  <g id="x36b51e_r54_g181_b30_a1.0">
+    <path d="M 7,11 7,10 8,10 8,11 z" fill="#36b51e" fill-opacity="1.0" id="x36b51e_r54_g181_b30_a1.0_shape1"/>
+  </g>
+  <g id="x30a212_r48_g162_b18_a1.0">
+    <path d="M 9,10 9,11 8,11 8,10 z" fill="#30a212" fill-opacity="1.0" id="x30a212_r48_g162_b18_a1.0_shape1"/>
+  </g>
+  <g id="x177400_r23_g116_b0_a0.043137254901960784">
+    <path d="M 9,10 10,10 10,11 9,11 z" fill="#177400" fill-opacity="0.043137254901960784" id="x177400_r23_g116_b0_a0.043137254901960784_shape1"/>
+  </g>
+  <g id="x0a5c00_r10_g92_b0_a0.09803921568627451">
+    <path d="M 3,11 4,11 4,12 3,12 z" fill="#0a5c00" fill-opacity="0.09803921568627451" id="x0a5c00_r10_g92_b0_a0.09803921568627451_shape1"/>
+  </g>
+  <g id="x16780a_r22_g120_b10_a0.6941176470588235">
+    <path d="M 4,11 5,11 5,12 4,12 z" fill="#16780a" fill-opacity="0.6941176470588235" id="x16780a_r22_g120_b10_a0.6941176470588235_shape1"/>
+  </g>
+  <g id="x1b7d11_r27_g125_b17_a0.6941176470588235">
+    <path d="M 6,11 6,12 5,12 5,11 z" fill="#1b7d11" fill-opacity="0.6941176470588235" id="x1b7d11_r27_g125_b17_a0.6941176470588235_shape1"/>
+  </g>
+  <g id="x1e8114_r30_g129_b20_a0.788235294117647">
+    <path d="M 6,12 6,11 7,11 7,12 z" fill="#1e8114" fill-opacity="0.788235294117647" id="x1e8114_r30_g129_b20_a0.788235294117647_shape1"/>
+  </g>
+  <g id="x1f7810_r31_g120_b16_a0.3843137254901961">
+    <path d="M 7,11 8,11 8,12 7,12 z" fill="#1f7810" fill-opacity="0.3843137254901961" id="x1f7810_r31_g120_b16_a0.3843137254901961_shape1"/>
+  </g>
+  <g id="x008000_r0_g128_b0_a0.00784313725490196">
+    <path d="M 9,12 8,12 8,11 9,11 z" fill="#008000" fill-opacity="0.00784313725490196" id="x008000_r0_g128_b0_a0.00784313725490196_shape1"/>
+  </g>
+</svg>

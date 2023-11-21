@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Palestine Online - Jerusalem, I love you</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="public/98.css"
+    />
+    <link rel="stylesheet" href="public/window-style.css" />
+  </head>
+
+  <body class="mobile-body">
+    <div class="window">
+      <div class="title-bar">
+        <div class="title-bar-text">
+            Palestine Online - Jerusalem, I love you
+        </div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <section
+          class="field-row"
+          style="justify-content: flex-start"
+        >
+          <input
+            type="image"
+            onclick="window.history.back()"
+            src="public/back.svg"
+            height="20px"
+          />
+          <input
+            type="image"
+            onclick="window.history.forward()"
+            src="public/front.svg"
+            height="20px"
+          />
+          <div class="divider">|</div>
+          <a href="index.html">
+            <input type="image" src="public/home.svg" height="20px" />
+          </a>
+        </section>
+      </div>
+      <iframe
+        id="frame"
+        title="Funny Pictures"
+        width="99.5%"
+        src="sites/MAGS/jerusalem-i-love-you/index.html"
+      >
+      </iframe>
+    </div>
+  </body>
+</html>

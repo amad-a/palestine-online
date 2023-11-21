@@ -1,0 +1,47 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+
+.divider {
+    margin: 0px 3px 1px 5px;
+    font-size: 15px;
+    color: #6f6f6f;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+body {
+    zoom: 1.1;
+    display: grid;
+    grid-template-columns: 1;
+    align-items: center;
+    margin: 30px 15vw 0px 15vw;
+}
+
+iframe {
+    height: 72vh;
+}
+
+@media only screen and (max-width: 480px) {
+    .mobile-body {
+        zoom: 1;
+        display: grid;
+        grid-template-columns: 1;
+        align-items: center;
+        margin: 0px;
+        background-color: #b5b5b5;
+        height: 100%;
+    }
+
+    iframe {
+        height: 92.5vh;
+    }
+
+    /* … */
+}

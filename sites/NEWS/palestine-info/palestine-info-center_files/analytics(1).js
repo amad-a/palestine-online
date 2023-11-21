@@ -394,7 +394,7 @@ window.archive_analytics = (function defineArchiveAnalytics() {
      * To enable click tracking for a link, add a `data-event-click-tracking`
      * attribute containing the Google Analytics Event Category and Action, separated
      * by a vertical pipe (|).
-     * e.g. `<a style="pointer-events:none;cursor:default;" href="foobar" data-event-click-tracking="TopNav|FooBar">`
+     * e.g. `<a href="foobar" data-event-click-tracking="TopNav|FooBar">`
      *
      * To enable form submit tracking, add a `data-event-form-tracking` attribute
      * to the `form` tag.
