@@ -1,0 +1,93 @@
+
+		<html><head><title>The Condolences and Support Book</title> 
+		<script>
+		function checkrequired(which){
+			var pass=true
+			if (document.images){
+				for (i=0;i<which.length;i++){
+					var tempobj=which.elements[i]
+					if (tempobj.name.substring(0,8)=="required"){
+						if (((tempobj.type=="text"||tempobj.type=="textarea")&&tempobj.value=='')||(tempobj.type.toString().charAt(0)=="s"&&tempobj.selectedIndex==-1)){
+							pass=false
+							break
+					}
+				}
+			}
+		}
+		if (!pass){
+			alert("Please fill in all required fields.")
+				return false
+		}
+		else
+			return true
+	}
+	</script>
+		 <!-- You can add css information here --> 
+<style type="text/css">
+a {text-decoration: none; color: #ff0000 }
+a:hover {text-decoration: none; color: #0000ff }
+</style>
+ 
+		</head>
+		<BODY BGCOLOR="#ffffff"
+		
+				background = "http://www.palestinehistory.com/image/bg3.gif"
+				
+		TEXT="#000000" LINK="#000000" VLINK="#000000" ALINK="#000000" marginwidth="5" marginheight="0" LEFTMARGIN="5" TOPMARGIN="0" >
+
+<div align=center>     <table border=0 cellspacing=0 cellpadding=0 width=600><tr><td width=600 align=center> 
+			<img src = "http://www.palestinehistory.com/image/palst.gif"><br>
+			
+		<center><font face="Arial"> <h1><b>The Condolences and Support Book</b></h1></font></center>
+		 <div align="center"><b>View our old condolences book | <A href="http://www.palestinehistory.com/comments3.html"> 1 </A> |<A href="http://www.palestinehistory.com/comments2.html"> 2 </A> |<A href="http://www.palestinehistory.com/comments1.html"> 3 </A> |</b></div>
+ 
+		<font size=2 face= "Arial" color=#000000>
+		<b>
+  
+		
+			<a href="http://www.palestinehistory.com"
+			 target = "_top" 
+			>Palestine - Home of history</a> :
+			
+			<a href="javascript:history.go(-1)">Back to Condolences Book</a> :
+			
+			<a href="/cgi-bin/comment/guestbook.cgi?action=reload#searchform">Search</a> </b><br>
+			
+		</font>
+		 <center><FORM ACTION="/cgi-bin/comment/guestbook.cgi" METHOD="POST" onSubmit="return checkrequired(this)"><input type=hidden name=action value="preview">
+
+
+		<center>
+		<table border=0>
+
+		<tr><td width="200"><font face="Arial" size=2><B>Name</B> (required) </td>
+		<td><font face="Arial" size=2><INPUT TYPE="text" maxlength = 60 NAME="requiredfull_name" SIZE="50"></td></tr>
+
+		<tr valign="top"><td><font face="Arial" size=2>
+		<B>Comments</B> (required)</td><td><font face="Arial" size=2>
+		<TEXTAREA wrap="virtual" NAME="requiredmessage" ROWS="6" COLS="50"></TEXTAREA></td></tr>
+
+		<tr valign="top"><td><font face="Arial" size=2>
+		<B>Country</B></td><td><font face="Arial" size=2>
+		<INPUT TYPE="text" maxlength = 60 NAME="location" SIZE="50"></td></tr>
+
+		<tr valign="top"><td><font face="Arial" size=2>
+		<B>eMail</B></td><td><font face="Arial" size=2>
+		<INPUT TYPE="text" maxlength = 60 NAME="guest_email" SIZE="50"></td></tr>
+
+		<tr valign="top"><td><font face="Arial" size=2>
+		<B>Web site</B> <br>(if you have one)</td><td><font face="Arial" size=2>
+		<INPUT TYPE="text" maxlength = 120 NAME="url" SIZE="50"></td></tr>
+
+  
+		<tr><td colspan=2> <font face="Arial" size=2>
+		<INPUT TYPE="submit" VALUE="Continue"></td></tr>
+
+		</table></form>
+		 <IMG alt="line" src="http://www.palestinehistory.com/image/line1.gif">
+ <center><font size="-1">This site created by <A href="http://www.palestinehistory.com/esam.htm">Esam Shashaa</A><br>
+ <A href="http://www.palestinehistory.com/contact.htm">Contact us..</A></font></center>
+ <center><A href="http://www.palestinehistory.com/index.html" target=_top><IMG alt="HomePage Index" src="http://www.palestinehistory.com/image/home.gif" border=1 ></A></center>
+ </td></tr></table> 
+
+</body>

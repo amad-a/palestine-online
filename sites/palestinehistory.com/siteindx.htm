@@ -1,0 +1,308 @@
+<html><head><title>Site Index</title></head>
+<LINK href="java/palstyle.css" rel=STYLESHEET title="Palestine Styles Sheet" type=text/css>
+<body background="image/bg5.gif">
+<center><a href="index.html" target="_top"><img src="image/palst.gif" width=520 height=100 border=0 alt="Palestine - Home of history"></a></center>
+<center><font size="+4" color="Blue"><b>Site Index</b></font></center>
+<center><img src="image/line1.gif" border=0 alt="Line"></center>
+<center>| <a href="sitemap.htm" target="_top">Site Map</a> | 
+<a href="simages.htm" target="_top">Site Images Map</a> |</center>
+<center><img src="image/line1.gif" border=0 alt="Line"></center><br>
+<!-- *************** DHTML Outline (begin) ***************** -->
+
+<style type='text/css'>
+<!--
+/*Define elements with children with the class='outlineParentItem', and all elements without children with class='outlineItem'*/
+li.oItem { color: #000000; cursor: text; } ;
+li.oParent { color: #0000FF; cursor: hand; } ;
+ul ul { display: none; } ;
+// -->
+</style>
+
+<script language='javascript'>
+<!--
+	// Returns the closest parent tag with tagName containing
+	// the src tag. If no such tag is found - null is returned.
+	function checkParent( src, tagName ) {
+		while ( src != null ) {
+			if (src.tagName == tagName) 
+				return src;
+			src = src.parentElement;
+		}
+		return null;
+	}
+
+	
+	// Returns the first tag with tagName contained by
+	// the src tag. If no such tag is found - null is returned.
+	function checkContent( src, tagName ) {
+		var pos = src.sourceIndex ;
+		while ( src.contains( document.all[++pos] ) )
+			if ( document.all[pos].tagName == tagName )
+				return document.all[pos] ;
+		return null ;
+	}
+
+      
+	// Handle onClick event in the outline box
+	function outlineAction() {     
+		var src = event.srcElement ;
+		var item = checkParent( src, "LI" ) ;
+
+		if ( parent != null ) {
+			var content = checkContent( item, "UL" ) ;
+
+			if ( content != null )
+				if ( content.style.display == "" )
+					content.style.display = "block" ;
+				else
+					content.style.display = "" ;
+		}
+		event.cancelBubble = true;
+	}
+    
+// -->
+</script>
+<div onClick="JavaScript: outlineAction();">
+	<ul>
+	<li class='oparent'>Palestine - Home of history
+		<ul>
+		<li class='oitem'><a href="history.htm">Brief History of Palestine</a></li>
+		<li class='oitem'><a href="palst.htm">Ancient history of Palestine</a></li>
+		<li class='oparent'>History Timeline
+			<ul>
+			<li class='oitem'><a href="ptime.htm">Photo 1900-2000</a></li>
+			<li class='oitem'><a href="qtime.htm">Quick 1900-2000</a></li>
+			<li class='oitem'><a href="time1900.htm">1900-1979</a></li>
+			<li class='oitem'><a href="time1980.htm">1980-1995</a></li>
+			<li class='oitem'><a href="time1996.htm">1996</a></li>
+			<li class='oitem'><a href="time1997.htm">1997</a></li>
+			<li class='oitem'><a href="time1998.htm">1998</a></li>
+			<li class='oitem'><a href="time1999.htm">1999</a></li>
+			<li class='oitem'><a href="time2000.htm">2000</a></li>
+			<li class='oitem'><a href="time2001.htm">2001</a></li>
+			</ul>
+		</li>	
+		<li class='oparent'>Calendar
+			<ul>
+			<li class='oitem'><a href="calfrm96.htm">1996</a></li>
+			<li class='oitem'><a href="calfrm97.htm">1997</a></li>
+			<li class='oitem'><a href="calfrm98.htm">1998</a></li>
+			<li class='oitem'><a href="calfrm99.htm">1999</a></li>
+			<li class='oitem'><a href="calfrm00.htm">2000</a></li>
+			<li class='oitem'><a href="calfrm01.htm">2001</a></li>
+			</ul>
+		</li>	
+		<li class='oitem'><a href="faq.htm">Q&A About Palestine history</a></li>	
+		<li class='oitem'><a href="israel.htm">Israel history</a></li>
+		<li class='oitem'><a href="refugee.htm">Palestinian Refugees</a></li>
+		<li class='oitem'><a href="massacre.htm">Zionism Massacres</a></li>	
+		<li class='oitem'><a href="war.htm">Arab-Israeli Wars history</a></li>
+		<li class='oitem'><a href="un.htm">UN and the Arab-israeli Conflict</a></li>
+		<li class='oitem'><a href="blines.htm">Between the lines..</a></li>
+		<li class='oitem'><a href="bl.htm">Books Library</a></li>
+		<li class='oparent'>Historical Documents
+			<ul>
+			<li class='oitem'><a href="document.htm">Index</a></li>
+			<li class='oitem'><a href="doc16.htm">Sykes Picot Agreement</a></li>
+			<li class='oitem'><a href="doc08.htm">The Balfour Declaration</a></li>
+			<li class='oitem'><a href="doc09.htm">The Proclamation of 'Israel's Independence'</a></li>
+ 			<li class='oitem'><a href="doc11.htm">The Palestinian National Charter</a></li>
+			<li class='oitem'><a href="doc13.htm">The Camp David Accords</a></li>
+			<li class='oitem'><a href="doc10.htm">State of Palestine Declaration of Independence</a></li>
+			<li class='oitem'><a href="doc01.htm">The Madrid Declaration</a></li>
+			<li class='oitem'><a href="doc02.htm">Declaration of Principles on Interim Self-Government Authority</a></li>
+			<li class='oitem'><a href="doc03.htm">Protocol on Economic Relations</a></li>
+			<li class='oitem'><a href="doc04.htm">Gaza-Jericho Autonomy Agreement</a></li>
+			<li class='oitem'><a href="doc14.htm">Israel-Jordan Treaty of Peace</a></li>
+			<li class='oitem'><a href="doc05.htm">Agreement on preparatory transfer of powers</a></li>
+			<li class='oitem'><a href="doc06.htm">Protocol Concerning the Redeployment in Hebron</a></li>
+			<li class='oitem'><a href="doc12.htm">The Wye Memorandum</a></li>
+			<li class='oitem'><a href="doc15.htm">The  Sharm  el-Sheikh  Memorandum</a></li>
+			<li class='oparent'>United Nations Resolutions
+				<ul>
+				<li class='oitem'><a href="doc07.htm">Index</a></li>
+				<li class='oitem'><a href="doc07.htm#UN181">UN Resolution 181</a></li>
+				<li class='oitem'><a href="doc07.htm#UN194">UN Resolution 194</a></li>
+				<li class='oitem'><a href="doc07.htm#UN242">UN Resolution 242</a></li>
+				<li class='oitem'><a href="doc07.htm#UN338">UN Resolution 338</a></li>
+				<li class='oitem'><a href="doc07.htm#UN465">UN Resolution 465</a></li>
+				<li class='oitem'><a href="doc07.htm#UN681">UN Resolution 681</a></li>
+				</ul>
+			</li>
+		</ul>
+		</li>
+		<li class='oparent'>Al-Aqsa Intifada
+			<ul>
+			<li class='oitem'><a href="intifada/index.html">Al-Aqsa Intifada</a></li>
+			<li class='oitem'><a href="intifada/martyrs.htm">List of martyrs</a></li>
+			<li class='oitem'><a href="intifada/mohd.htm">Mohammed al-Durah</a></li>
+			<li class='oitem'><a href="intifada/judah.htm">Isam Judah</a></li>
+			<li class='oitem'><a href="intifada/sami.htm">Sami Abu Jazar</a></li>
+			<li class='oitem'><a href="intifada/moayad.htm">Moayad Jawareesh</a></li>
+			<li class='oitem'><a href="intifada/wael.htm">Wael Imad</a></li>
+		</ul>
+		</li>	
+		<li class='oparent'>Photo Gallery
+			<ul>
+			<li class='oitem'><a href="galmans.htm">People</a></li>
+			<li class='oitem'><a href="galplace.htm">Places</a></li>
+			<li class='oitem'><a href="galmaps.htm">Maps</a></li>
+			<li class='oitem'><a href="galjers.htm">Jerusalem</a></li>
+			</ul>
+		</li>
+		<li class='oitem'><a href="tour.htm">Virtual Tours</a></li>
+		<li class='oitem'><a href="ss.htm">Sights and Sounds</a></li>
+		<li class='oitem'><a href="hsites.htm">Holy Sites in Palestine</a></li>
+		<li class='oitem'><a href="oldcity.htm">Jerusalem - Photo Tour</a></li>
+		<li class='oitem'><a href="flash.htm">Al-Qouds Flash program.. What is the truth ?</a></li>
+		<li class='oitem'><a href="http://pallinks.palestinehistory.com">Pal.Links</a></li>
+		<li class='oitem'><a href="aqsa/index.html">Al-Aqsa Mosque Tour</a></li>
+		<li class='oitem'><a href="bl.htm">Al-Aqsa Mosque Tour Slide Show 1</a></li>
+		<li class='oitem'><a href="bl.htm">Al-Aqsa Mosque Tour Slide Show 2</a></li>
+		<li class='oitem'><a href="palstate.htm">The state of Palestine</a></li>
+		<li class='oitem'><a href="anthem.htm">Palestine Flag and Anthem</a></li>
+		<li class='oitem'><a href="map.htm">Palestine Maps</a></li>
+		<li class='oparent'>Main cities in Palestine
+			<ul>
+			<li class='oitem'><a href="cities.htm">Cities</a></li>
+			<li class='oparent'>West Bank
+				<ul>
+				<li class='oitem'><a href="westbank.htm">West Bank</a></li>
+				<li class='oitem'><a href="jurslm.htm">Jerusalem</a></li>
+				<li class='oitem'><a href="hebron.htm">Hebron</a></li>
+				<li class='oitem'><a href="betlhm.htm">Bethlehem</a></li>
+				<li class='oitem'><a href="jerico.htm">Jericho</a></li>
+				<li class='oitem'><a href="nabulus.htm">Nabulus</a></li>
+				<li class='oitem'><a href="ramalh.htm">Ram Allah</a></li>
+				</ul>
+			</li>
+			<li class='oparent'>Gaza Strip
+				<ul>
+				<li class='oitem'><a href="gaza.htm">Gaza Strip</a></li>
+				<li class='oitem'><a href="gazacity.htm">Gaza City</a></li>
+				</ul>
+			</li>
+		</ul>
+		</li>
+		<li class='oparent'>Palestinian Biography
+			<ul>
+			<li class='oitem'><a href="palbio.htm">Index</a></li>
+				<li class='oitem'><a href="palbio01.htm">Palestinian Liberation Org.(PLO)</a></li>
+				<li class='oitem'><a href="palbio02.htm">Fatah</a></li>
+				<li class='oitem'><a href="palbio03.htm">Popular Front (PFLP)</a></li>
+				<li class='oitem'><a href="palbio04.htm">Democratic Front (DFLP)</a></li>
+				<li class='oitem'><a href="palbio05.htm">Hamas</a></li>
+				<li class='oitem'><a href="palbio06.htm">Palestine Authority (PNA)</a></li>
+				<li class='oitem'><a href="palbio07.htm">Intifada</a></li>
+				<li class='oitem'><a href="palbio08.htm">Deir Yasin</a></li>
+				<li class='oitem'><a href="palbio27.htm">Al-Qassam, Sheikh Izz Al-Din</a></li>
+				<li class='oitem'><a href="palbio09.htm">Al-Husayni, Amin</a></li>
+				<li class='oitem'><a href="palbio10.htm">Al-Husseini, Abd Al-Qader</a></li>
+				<li class='oitem'><a href="palbio11.htm">Al-Shukairy, Ahmad</a></li>
+				<li class='oitem'><a href="palbio12.htm">Arafat, Yasser</a></li>
+				<li class='oitem'><a href="palbio13.htm">Khalaf, Salah</a></li>
+				<li class='oitem'><a href="palbio14.htm">Al-Wazir, Khalil Ibrahim</a></li>
+				<li class='oitem'><a href="palbio15.htm">Yassin, Sheik Ahmad</a></li>
+				<li class='oitem'><a href="palbio16.htm">Habash, Georges</a></li>
+				<li class='oitem'><a href="palbio28.htm">Hawatmeh, Nayef</a></li>
+				<li class='oitem'><a href="palbio17.htm">Abdul Shafi, Haidar</a></li>
+				<li class='oitem'><a href="palbio18.htm">Erekat, Sa'eb</a></li>
+				<li class='oitem'><a href="palbio21.htm">Abbas, Mahmoud</a></li>
+				<li class='oitem'><a href="palbio29.htm">Qrei, Ahmad</a></li>
+				<li class='oitem'><a href="palbio22.htm">Abed Rabbo, Yasser</a></li>
+				<li class='oitem'><a href="palbio19.htm">Ashrawi, Hanan</a></li>
+				<li class='oitem'><a href="palbio20.htm">Husseini, Faisal</a></li>
+				<li class='oitem'><a href="palbio25.htm">Al-Ghussein, Ya'cob</a></li>
+				<li class='oitem'><a href="palbio23.htm">Al-Ali, Naji</a></li>
+				<li class='oitem'><a href="palbio24.htm">Darwish, Mahmoud</a></li>
+				<li class='oitem'><a href="palbio26.htm">Kanafani, Ghassan</a></li>
+			</ul>
+		</li>
+		<li class='oparent'>Israeli Biography
+			<ul>
+			<li class='oitem'><a href="isrbio.htm">Index</a></li>
+				<li class='oitem'><a href="isrbio01.htm">Zionism</a></li>
+				<li class='oitem'><a href="isrbio02.htm">Jewish Agency</a></li>
+				<li class='oitem'><a href="isrbio03.htm">Stern Gang</a></li>
+				<li class='oitem'><a href="isrbio04.htm">Haganah</a></li>
+				<li class='oitem'><a href="isrbio05.htm">Gush Emunim</a></li>
+				<li class='oitem'><a href="isrbio06.htm">TNT</a></li>
+				<li class='oitem'><a href="isrbio07.htm">Herzl, Theodor</a></li>
+				<li class='oitem'><a href="isrbio08.htm">Weizmann, Chaim</a></li>
+				<li class='oitem'><a href="isrbio09.htm">Ben-Gurion, David</a></li>
+				<li class='oitem'><a href="isrbio10.htm">Herzog, Chaim</a></li>
+				<li class='oitem'><a href="isrbio11.htm">Eshkol, Levi</a></li>
+				<li class='oitem'><a href="isrbio12.htm">Meir, Golda</a></li>
+				<li class='oitem'><a href="isrbio13.htm">Dayan, Moshe</a></li>
+				<li class='oitem'><a href="isrbio14.htm">Begin, Menachem</a></li>
+				<li class='oitem'><a href="isrbio15.htm">Rabin, Yitzhak</a></li>
+				<li class='oitem'><a href="isrbio16.htm">Peres, Shimon</a></li>
+				<li class='oitem'><a href="isrbio17.htm">Shamir, Yitzhak</a></li>
+				<li class='oitem'><a href="isrbio18.htm">Benjamin, Netanyahu</a></li>
+				<li class='oitem'><a href="isrbio19.htm">Barak, Ehud</a></li>
+				<li class='oitem'><a href="isrbio20.htm">Ariel Sharon</a></li>
+		</ul>
+		</li>
+		<li class='oparent'>International Biography
+			<ul>
+			<li class='oitem'><a href="intbio.htm">Index</a></li>
+				<li class='oitem'><a href="intbio01.htm">Balfour, Arthur James</a></li>
+				<li class='oitem'><a href="intbio15.htm">Herbert Samo'yel</a></li>
+				<li class='oitem'><a href="intbio03.htm">Abdel Nasser, Gamal</a></li>
+				<li class='oitem'><a href="intbio04.htm">Sadat, Anwar</a></li>
+				<li class='oitem'><a href="intbio06.htm">Mubarak, Hosni</a></li>
+				<li class='oitem'><a href="intbio16.htm">King Hussein I</a></li>
+				<li class='oitem'><a href="intbio17.htm">Hafez al-Assad</a></li>
+				<li class='oitem'><a href="intbio07.htm">Carter, Jimmy</a></li>
+				<li class='oitem'><a href="intbio08.htm">Clinton, Bill</a></li>
+				<li class='oitem'><a href="intbio09.htm">Kissinger, Henry</a></li>
+				<li class='oitem'><a href="intbio10.htm">Albright, Madeleine</a></li>
+				<li class='oitem'><a href="intbio02.htm">Balfour Declaration</a></li>
+				<li class='oitem'><a href="intbio05.htm">Camp David Agreements</a></li>
+				<li class='oitem'><a href="intbio11.htm">Arab League</a></li>
+				<li class='oitem'><a href="intbio12.htm">UNRWA</a></li>
+				<li class='oitem'><a href="intbio13.htm">Universal Declaration of Human Rights</a></li>
+				<li class='oitem'><a href="intbio14.htm">NOBEL Prize Winners</a></li>
+			</ul>
+		</li>
+		<li class='oparent'>Site Search and Index
+			<ul>
+			<li class='oitem'><a href="search.htm">Site Search</a></li>
+			<li class='oitem'><a href="sitemap.htm">Site Map</a></li>
+			<li class='oitem'><a href="simages.htm">Site Images Map</a></li>
+			</ul>
+		</li>
+		<li class='oparent'>Services
+			<ul>
+			<li class='oitem'><a href="links.htm">Hot links</a></li>
+			<li class='oitem'><a href="survey.htm">Survey</a></li>
+			<li class='oitem'><a href="petition.htm">Right of Return Petition</a></li>
+			<li class='oitem'><a href="404.htm">Chat Room</a></li>
+			<li class='oitem'><a href="update.htm">Mail List</a></li>
+			<li class='oitem'><a href="addguest.html">Sign the GuestBook</a></li>
+			<li class='oitem'><a href="update.htm">Recommend this site</a></li>
+			</ul>
+		</li>
+		<li class='oparent'>About..
+			<ul>
+			<li class='oitem'><a href="map.htm">Palestine</a></li>
+			<li class='oitem'><a href="about.htm">Palestine - Home of history</a></li>
+			<li class='oitem'><a href="sitehist.htm">Site History</a></li>
+			<li class='oitem'><a href="update.htm">Site Update</a></li>		
+			<li class='oitem'><a href="esam.htm">About the site editor</a></li>
+			</ul>
+		</li>			
+			<li class='oitem'><a href="contact.htm">Contact us..</a></li>
+		</ul>
+	</li>
+			<li class='oitem'><a href="wap/index.html">Palestine - Home of history WAP Version (English)</a></li>			
+			<li class='oitem'><a href="altindex.html">Palestine - Home of history Traditional Version (English)</a></li>			
+			<li class='oitem'><a href="text/index.html">Palestine - Home of history Text Version (English)</a></li>			
+			<li class='oitem'><a href="arabic/index.html">Palestine - Home of history (Arabic)</a></li>			
+			<li class='oitem'><a href="textarab/index.html">Palestine - Home of history Text Version (Arabic)</a></li>			
+</div><div></div><br><br>
+<center><img src="image/line1.gif" border=0 alt="Line"></center>
+<center><font size="-1">This site created by <a href="esam.htm">Esam Shashaa</a><br>
+<a href="contact.htm">Contact us..</a></font></center><br>
+<center><a href="index.html" target="_top"><img src="image/home.gif" border=1 alt="Home Page Index"></a></center>
+</body></html>

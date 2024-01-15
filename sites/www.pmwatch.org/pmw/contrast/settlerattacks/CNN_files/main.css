@@ -1,0 +1,238 @@
+P {
+	FONT-FAMILY: times new roman, minion web, times, serif
+}
+UL {
+	FONT-FAMILY: times new roman, minion web, times, serif
+}
+BLOCKQUOTE {
+	FONT-FAMILY: times new roman, minion web, times, serif
+}
+.VSfP {
+	FONT-FAMILY: times new roman, minion web, times, serif
+}
+.VSfB {
+	FONT-FAMILY: times new roman, minion web, times, serif
+}
+H1 {
+	FONT-FAMILY: arial, helvetica, sans-serif
+}
+H2 {
+	FONT-FAMILY: arial, helvetica, sans-serif
+}
+H3 {
+	FONT-FAMILY: arial, helvetica, sans-serif
+}
+.H3 {
+	FONT-FAMILY: arial, helvetica, sans-serif
+}
+H4 {
+	FONT-FAMILY: arial, helvetica, sans-serif
+}
+.VSnP {
+	FONT-FAMILY: arial, helvetica, sans-serif
+}
+.VSnPSm {
+	FONT-FAMILY: arial, helvetica, sans-serif
+}
+.VSnB {
+	FONT-FAMILY: arial, helvetica, sans-serif
+}
+.VSnBSm {
+	FONT-FAMILY: arial, helvetica, sans-serif
+}
+.FullStory {
+	FONT-FAMILY: arial, helvetica, sans-serif
+}
+.t1caption {
+	FONT-FAMILY: arial, helvetica, sans-serif
+}
+.t1caption {
+	FONT-FAMILY: verdana
+}
+P {
+	COLOR: #000000
+}
+UL {
+	COLOR: #000000
+}
+LI {
+	COLOR: #000000
+}
+H1 {
+	COLOR: #000000
+}
+H2 {
+	COLOR: #000000
+}
+H3 {
+	COLOR: #000000
+}
+.H3 {
+	COLOR: #000000
+}
+.H3:link {
+	COLOR: #000000
+}
+.H3:visited {
+	COLOR: #000000
+}
+H4 {
+	COLOR: #000000
+}
+BLOCKQUOTE {
+	COLOR: #000000
+}
+.VSfP {
+	COLOR: #000000
+}
+.VSfB {
+	COLOR: #000000
+}
+.VSnP {
+	COLOR: #000000
+}
+.VSnPSm {
+	COLOR: #000000
+}
+.VSnB {
+	COLOR: #000000
+}
+.VSnBSm {
+	COLOR: #000000
+}
+.FullStory {
+	COLOR: #000000
+}
+.t1caption {
+	COLOR: #000000
+}
+H1 {
+	FONT-WEIGHT: bold
+}
+H2 {
+	FONT-WEIGHT: bold
+}
+H3 {
+	FONT-WEIGHT: bold
+}
+.H3 {
+	FONT-WEIGHT: bold
+}
+H4 {
+	FONT-WEIGHT: bold
+}
+.VSnB {
+	FONT-WEIGHT: bold
+}
+.VSnBSm {
+	FONT-WEIGHT: bold
+}
+.VSfB {
+	FONT-WEIGHT: bold
+}
+.FullStory {
+	FONT-WEIGHT: bold
+}
+.t1caption {
+	FONT-WEIGHT: bold
+}
+H1 {
+	FONT-SIZE: 16pt
+}
+H2 {
+	FONT-SIZE: 14pt
+}
+H3 {
+	FONT-SIZE: 13pt
+}
+.H3 {
+	FONT-SIZE: 13pt
+}
+H3 {
+	TEXT-DECORATION: none
+}
+.H3 {
+	TEXT-DECORATION: none
+}
+H4 {
+	FONT-SIZE: 12pt
+}
+UL {
+	FONT-SIZE: 10pt
+}
+LI {
+	FONT-SIZE: 10pt
+}
+BLOCKQUOTE {
+	FONT-SIZE: 10pt
+}
+.VSfP {
+	FONT-SIZE: 10pt
+}
+.VSfB {
+	FONT-SIZE: 10pt
+}
+.VSnP {
+	FONT-SIZE: 10pt
+}
+.VSnB {
+	FONT-SIZE: 10pt
+}
+.t1caption {
+	FONT-SIZE: 10pt
+}
+P {
+	FONT-SIZE: 11pt
+}
+.FullStory {
+	FONT-SIZE: 9pt
+}
+.VSnPSm {
+	FONT-SIZE: 9pt
+}
+.VSnBSm {
+	FONT-SIZE: 9pt
+}
+UL {
+	LINE-HEIGHT: 1.4em
+}
+.pad {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+BODY {
+	MARGIN-TOP: 2px; MARGIN-LEFT: 2px
+}
+.FSnPSmLt {
+	COLOR: #ffffff
+}
+.FSnpSmLt:link {
+	COLOR: #ffffff
+}
+.FSnBSmLt {
+	COLOR: #ffffff
+}
+.FSnBSmLt:link {
+	COLOR: #ffffff
+}
+.FSnBMdLt {
+	COLOR: #ffffff
+}
+.FSnBMdLt:link {
+	COLOR: #ffffff
+}
+.FSnPSmDk {
+	COLOR: #000000
+}
+.FSnPMdDk {
+	COLOR: #000000
+}
+.FSnBSmDk {
+	COLOR: #000000
+}
+.FSnBMdDk {
+	COLOR: #000000
+}
+.FSnBLgDk {
+	COLOR: #000000
+}
+.M

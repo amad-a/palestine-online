@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+			"http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<card id="p1" title="Palestine History">
+<do type="prev" label="Back"><prev/></do>
+<p align="center">
+<big><b>Palestine<br/>
+Home of history<br/>
+<img src="Images/2.wbmp" alt="2"/><br/>
+M E N U<br/>
+</b></big><a href="history.wml">Palestine history</a><br/>
+<a href="maps.wml">Maps and Photos</a><br/>
+<a href="war.wml">War History</a><br/>
+<a href="bio.wml">Biography</a><br/>
+<a href="about.wml">About</a><br/>
+<a href="Editor.wml">Editor</a><br/>
+<a href="contact.wml">Contact us..</a><br/>
+<img src="Images/1.wbmp" alt="1"/><br/>
+All what you need to know about the current history of Palestine.<br/>
+The first WAP Site about Palestine.<br/>
+<br/>
+</p>
+</card></wml>

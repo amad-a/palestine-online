@@ -1,0 +1,108 @@
+<HTML>
+<HEAD>
+<TITLE>1998 Gaza Students Campaign - what's new on the website?</TITLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+browserName = navigator.appName;         
+browserVer = parseInt(navigator.appVersion); 
+        if (browserName == "Netscape" && browserVer >= 3) version = "n3";
+                else version = "n2";
+
+
+function img_act(imgName) {
+             if (version == "n3") {
+             imgOn = eval(imgName + "on.src");
+             document [imgName].src = imgOn;
+             }
+     }
+
+     function img_inact(imgName) {
+             if (version == "n3") {
+             imgOff = eval(imgName + "off.src");
+             document [imgName].src = imgOff;
+             }
+      }
+
+
+
+if (version == "n3") {                
+             icon1on = new Image(40, 107);          
+             icon1on.src = "images/issue2.gif";              
+             icon2on = new Image(40, 107); 
+             icon2on.src = "images/test2.gif";
+             icon3on = new Image(40, 107);
+             icon3on.src = "images/news2.gif";
+             icon4on = new Image(40, 107);
+             icon4on.src = "images/join2.gif";
+             icon5on = new Image(40, 107);
+             icon5on.src = "images/prot2.gif";
+             icon6on = new Image(40, 107);
+             icon6on.src = "images/new2.gif";
+
+
+             icon1off = new Image(40, 107);          
+             icon1off.src = "images/issue1.gif";
+             icon2off = new Image(40, 107); 
+             icon2off.src = "images/test1.gif";
+             icon3off = new Image(40, 107);
+             icon3off.src = "images/news1.gif";
+             icon4off = new Image(40, 107);
+             icon4off.src = "images/join1.gif";
+             icon5off = new Image(40, 107);
+             icon5off.src = "images/prot1.gif";
+             icon6off = new Image(40, 107);
+             icon6off.src = "images/new1.gif";
+             }
+
+
+
+function message (txt) {
+window.status = txt;
+setTimeout ("remove()",2500);
+}
+
+function remove() {
+window.status = "";
+}
+//
+</SCRIPT>
+</HEAD>
+
+<BODY BACKGROUND="images/gsc1.gif" TEXT="ACBCC4" LINK="A777B0" VLINK="8934FF" ALINK="A054E8">
+
+<TABLE  WIDTH=700 align=center><TR VALIGN=TOP><TD width=700>
+<A HREF="issue.html" onMouseover = "img_act('icon1')"  onMouseout = "img_inact('icon1')"><IMG ALT="understand the issue" SRC="images/issue1.gif" WIDTH=107 HEIGHT=40 BORDER=0 VSPACE=1  name="icon1"></A>
+
+<A HREF="portrait.html" onMouseover = "img_act('icon2')"  onMouseout = "img_inact('icon2')"><IMG ALT="gaza students portraits and testimonies" SRC="images/test1.gif" WIDTH=107 HEIGHT=40 BORDER=0 VSPACE=1  name="icon2"></A>
+
+<A HREF="news.html" onMouseover = "img_act('icon3')"  onMouseout = "img_inact('icon3')"><IMG ALT="campaign news from around the world" SRC="images/news1.gif" WIDTH=107 HEIGHT=40 BORDER=0 VSPACE=1  name="icon3"></A>
+
+<A HREF="join.html" onMouseover = "img_act('icon4')"  onMouseout = "img_inact('icon4')"><IMG ALT="join the campaign" SRC="images/join1.gif" WIDTH=107 HEIGHT=40 BORDER=0 VSPACE=1 name="icon4"></A>
+
+<A HREF="protest.html" onMouseover = "img_act('icon5')"  onMouseout = "img_inact('icon5')"><IMG ALT="send a letter of protest" SRC="images/prot1.gif" WIDTH=107 HEIGHT=40 BORDER=0 VSPACE=1 name="icon5"></A>
+
+<A HREF="new.html" onMouseover = "img_act('icon6')"  onMouseout = "img_inact('icon6')"><IMG ALT="what's new on the website" SRC="images/new1.gif" WIDTH=107 HEIGHT=40 BORDER=0 VSPACE=1 name="icon6"></A>
+</TD>
+
+</tr></table>
+
+
+<P><CENTER><FONT SIZE=6>new on the website</FONT></CENTER></P>
+
+<P><FONT SIZE=4><B>10 september 1998 - portrait and testimony</B></FONT><BR> The portrait and testimony section of the website has finally been added.  Visit this section for portraits by photographer Joni Lane of Gazan students and read about the lives of these students in their own voices. </P>
+
+<P><FONT SIZE=4><B>27 august 1998 - website launch</B></FONT><BR> The 1998 Gaza Students Campaign for Academic Freedom website has finally been launched.  Keep checking the website for regular updates on the campaign in Palestine and internationally.  The website will go through some minor changes throughout the week.  Hey, we can't always get it right the first time!</P>
+
+<HR WIDTH=60%>
+
+<CENTER><FONT SIZE=2><A HREF="aff.html">Gaza Students Campaign for Academic Freedom Homepage</A> - <A HREF="/hrap">Human Rights Action Project Homepage</A> <BR> <A HREF="http://www.cam.ac.uk/CambUniv/Societies/cupal">Cambridge University Palestinian Society Homepage</A> - <A HREF="/index.html">Birzeit University Homepage</A>.<BR>
+
+<A HREF="/hrarc">BZU Human Rights Archive</A> - <A HREF="/press">BZU Press Release Archive</A> - <A HREF="/links/hr.html">Human Rights Websites in Palestine</A>.<BR>
+
+<I>Page prepared for the Gaza Students Campaign for Academic Freedom by HRAP, Birzeit University (Palestine). <BR> Comments to <A HREF="mailto:gsc@admin.birzeit.edu">gsc@admin.birzeit.edu</A>.</I></FONT></CENTER>
+
+</BODY>
+</HTML>

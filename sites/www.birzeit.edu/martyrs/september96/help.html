@@ -1,0 +1,133 @@
+<HTML>
+<HEAD>
+<TITLE>How You Can Help - September 1996 Web Memorial</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+browserName = navigator.appName;         
+browserVer = parseInt(navigator.appVersion); 
+	if (browserName == "Netscape" && browserVer >= 3) version = "n3";
+		else version = "n2";
+
+
+function img_act(imgName) {
+             if (version == "n3") {
+             imgOn = eval(imgName + "on.src");
+             document [imgName].src = imgOn;
+             }
+     }
+
+     function img_inact(imgName) {
+             if (version == "n3") {
+             imgOff = eval(imgName + "off.src");
+             document [imgName].src = imgOff;
+             }
+      }
+
+
+
+if (version == "n3") {                
+             icon1on = new Image(42, 197);          
+             icon1on.src = "images/about2.gif";              
+             icon2on = new Image(42, 197); 
+             icon2on.src = "images/ground2.gif";
+             icon3on = new Image(42, 197);
+             icon3on.src = "images/society2.gif";
+             icon4on = new Image(42, 197);
+             icon4on.src = "images/stories2.gif";
+             icon5on = new Image(42, 197);
+             icon5on.src = "images/help2.gif";
+
+
+             icon1off = new Image(42, 197);          
+             icon1off.src = "images/about1.gif";
+             icon2off = new Image(42, 197); 
+             icon2off.src = "images/ground1.gif";
+             icon3off = new Image(42, 197);
+             icon3off.src = "images/society1.gif";
+             icon4off = new Image(42, 197);
+             icon4off.src = "images/stories1.gif";
+             icon5off = new Image(42, 197);
+             icon5off.src = "images/help1.gif";
+             }
+
+
+
+function message (txt) {
+window.status = txt;
+setTimeout ("remove()",2500);
+}
+
+function remove() {
+window.status = "";
+}
+//
+
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="black" BACKGROUND="images/back2.gif" TEXT="black" LINK="darkblue" VLINK="brown" ALINK="gray">
+<A NAME="top">
+
+<TABLE   WIDTH=600><TR VALIGN=TOP><TD WIDTH=150>
+<A HREF="./about.html" onMouseover = "img_act('icon1')"  onMouseout = "img_inact('icon1')"><IMG ALT="About this Website" SRC="images/about1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1  name="icon1"></A><BR>
+
+<A HREF="../../palnews/war/index.html" onMouseover = "img_act('icon2')"  onMouseout = "img_inact('icon2')"><IMG ALT="On the Ground in Ramallah" SRC="images/ground1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1  name="icon2"></A><BR>
+
+<A HREF="./society.html" onMouseover = "img_act('icon3')"  onMouseout = "img_inact('icon3')"><IMG ALT="The Martyr in Society" SRC="images/society1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1  name="icon3"></A><BR>
+
+<A HREF="stories/index.html" onMouseover = "img_act('icon4')"  onMouseout = "img_inact('icon4')"><IMG ALT="Personal Stories" SRC="images/stories1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1 name="icon4"></A><BR>
+
+<A HREF="./help.html" onMouseover = "img_act('icon5')"  onMouseout = "img_inact('icon5')"><IMG ALT="How You Can Help" SRC="images/help1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1 name="icon5"></A><BR>
+</TD>
+
+
+<TD WIDTH=400 CELLPADDING=0>
+<IMG BORDER=1 SRC="images/title.gif">
+
+<P ALIGN=CENTER><FONT SIZE=5 FACE="Lucida Handwrit" COLOR=DARKBLUE>HOW YOU CAN HELP</FONT></P>
+ 
+
+ <FONT FACE="Lucida Handwrit" SIZE=2> 
+<P> CONTENTS:<BR>
+
+
+<A HREF="#help">Help the Families of the Martyrs</A>  <B>&nbsp;-&nbsp;</B> <A HREF="#support">Support Future Projects</A> <B>&nbsp;-&nbsp;</B> <A HREF="#bzuweb">Support Birzeit's Work on the Web</A></P>
+
+<A NAME="help"><H3>Help the Families of the Martyrs</H3></A>
+<P>Martyrs come from all parts of Palestinian society, the wealthy and the poor. Not every martyr leaves behind a family in a difficult situation. However, for those that are, families of martyrs are entitled to situation/income-related assitance from the Palestinian Authority amounting to between 40 and 70 Jordanian dinars (around US $55-$100). Clearly, for a mother with three children who cannot work, as she needs to stay at home and care for them, this is insufficient.<P>
+
+<P>A coordinating committee of four members who were involved in this project has been established at Birzeit to look into ways of expanding this project and finding solutions to the problems faced by martyrs' families. The committee includes Hanan Elmasu, Adam Hanieh, 'Ala Jaradat, and Nigel Parry.</P> 
+
+<P>The committee is currently investigating which of the existing local charities can best be used as funding channels for those wishing to help martyrs' families.</P>
+
+<P>Help us help the families of the martyrs who need it the most. <A HREF="#top">Return to top</A>.</P>
+
+
+
+
+
+<A NAME="support"><H3>Support Future Projects</H3></A>
+<P>In the period that this project is being completed, with remaining families being visited, translations and editing of material undertaken, and a transference of the project into the Arabic language, there are other areas we would like to address.
+
+<OL>
+<LI><B>Print publication</B> - We wish to publish the material on the website in English and Arabic, as a memorial booklet. Any organisations that wish to underwrite the cost of this are invited to help.
+<LI><B>Other projects</B> - With the 50th anniversary of the establishment of the State of Israel in sight, it is hoped that an increase in educational and memorial projects communicating the cost for Palestinians of this decision will be seen. Sponsors and patrons are strongly urged to cover the cost of similar memorial projects to this, including the stories of all Palestinian martyrs since 1987, 1967 and 1948. It is disturbing to see how little work has been undertaken by Palestinians in the period while the older generation is still present to serve as a source of oral history. Details of projects by Birzeit and other organisations can be found in the section <A HREF="./about.html">About this Website</A>. Hope lives when people remember, a lesson that the Israelis have not been slow to learn. <A HREF="#top">Return to top</A>.
+</OL>
+
+</P>
+
+<A NAME="bzuweb"><H3>Support Birzeit's Work on the Web</H3></A>
+
+<P>
+<OL>
+<LI><B>Web Reporting Appeal</B> - In the period during the September clashes last year, Birzeit University launched <A HREF="../../palnews/war/appeal.html">an appeal for Web reporting equipment</A>. As regular visitors to Birzeit's website will be aware, this last year has seen the addition of more regular reports to the website, including audio. This next year we hope to see the introduction of video reports and educational multimedia presentations available to schools and organisations via video. Although we have seen over US $12,000 raised for equipment through generous donations of funds and equipment by friends around the world, it is estimated a further $3,000 is needed to finish the equipping of the Web Project office. It is hoped that the office will be fully operational by the end of 1997, at which point a full report on donations, procurement of equipment and its use will be released. Please assist us in completing this appeal to equip the office. The outcome will be an increase of high-quality, independent information, available internationally from "on the ground" in Palestine.
+
+<LI><B>Information Projects</B> - Despite having been searching for funds for the News Unit module of the <A HREF="../../palarc/arcfinal.html">Palestine Archive Project</A>, and the Palestine Archive project itself, since late 1995, no donors or sponsors have come forward to ensure a powerful,  independent, Palestinian presence on the Internet. It seems that Palestinians, both locally and in the Diaspora would prefer, during these critical "final status" days, to leave the fate of their nation in the hands of the Israelis, the partisan sponsors of the peace process, the Western media, and international apathy. We believe that the only hope for the Palestinian people to avoid becoming the "American Indians of the Middle East" is by getting a strong and credible voice into the midst of the voters of the countries who influence events in this region. We need dedicated personnel and equipment to fulfil this role. With between US$20-$100 billion of capital estimated to be in the hands of the Palestinian Diaspora, $250,000 seems a small committment to finally addressing the lack of a Palestinian voice in the media. In the meantime, Birzeit continues to offer only a tiny fraction of the information that needs to get out during what seems to be the last days of Palestine. As Roger Waters said, <I>"Is there anybody out there?"</I>. <A HREF="#top">Return to top</A>.
+
+<P ALIGN=CENTER><A HREF="./index.html">SEPTEMBER 1996 MARTYRS' MEMORIAL HOMEPAGE</A></P>
+
+</FONT>
+
+</TD></TR></TABLE>
+
+</BODY></HTML>

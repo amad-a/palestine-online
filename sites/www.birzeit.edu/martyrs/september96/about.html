@@ -1,0 +1,144 @@
+<HTML>
+<HEAD>
+<TITLE>About this Website - September 1996 Web Memorial</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+browserName = navigator.appName;         
+browserVer = parseInt(navigator.appVersion); 
+	if (browserName == "Netscape" && browserVer >= 3) version = "n3";
+		else version = "n2";
+
+
+function img_act(imgName) {
+             if (version == "n3") {
+             imgOn = eval(imgName + "on.src");
+             document [imgName].src = imgOn;
+             }
+     }
+
+     function img_inact(imgName) {
+             if (version == "n3") {
+             imgOff = eval(imgName + "off.src");
+             document [imgName].src = imgOff;
+             }
+      }
+
+
+
+if (version == "n3") {                
+             icon1on = new Image(42, 197);          
+             icon1on.src = "images/about2.gif";              
+             icon2on = new Image(42, 197); 
+             icon2on.src = "images/ground2.gif";
+             icon3on = new Image(42, 197);
+             icon3on.src = "images/society2.gif";
+             icon4on = new Image(42, 197);
+             icon4on.src = "images/stories2.gif";
+             icon5on = new Image(42, 197);
+             icon5on.src = "images/help2.gif";
+
+
+             icon1off = new Image(42, 197);          
+             icon1off.src = "images/about1.gif";
+             icon2off = new Image(42, 197); 
+             icon2off.src = "images/ground1.gif";
+             icon3off = new Image(42, 197);
+             icon3off.src = "images/society1.gif";
+             icon4off = new Image(42, 197);
+             icon4off.src = "images/stories1.gif";
+             icon5off = new Image(42, 197);
+             icon5off.src = "images/help1.gif";
+             }
+
+
+
+function message (txt) {
+window.status = txt;
+setTimeout ("remove()",2500);
+}
+
+function remove() {
+window.status = "";
+}
+//
+
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="black" BACKGROUND="images/back2.gif" TEXT="black" LINK="darkblue" VLINK="brown" ALINK="gray">
+<A NAME="top">
+
+<TABLE   WIDTH=600><TR VALIGN=TOP><TD WIDTH=150>
+<A HREF="./about.html" onMouseover = "img_act('icon1')"  onMouseout = "img_inact('icon1')"><IMG ALT="About this Website" SRC="images/about1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1  name="icon1"></A><BR>
+
+<A HREF="../../palnews/war/index.html" onMouseover = "img_act('icon2')"  onMouseout = "img_inact('icon2')"><IMG ALT="On the Ground in Ramallah" SRC="images/ground1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1  name="icon2"></A><BR>
+
+<A HREF="./society.html" onMouseover = "img_act('icon3')"  onMouseout = "img_inact('icon3')"><IMG ALT="The Martyr in Society" SRC="images/society1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1  name="icon3"></A><BR>
+
+<A HREF="stories/index.html" onMouseover = "img_act('icon4')"  onMouseout = "img_inact('icon4')"><IMG ALT="Personal Stories" SRC="images/stories1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1 name="icon4"></A><BR>
+
+<A HREF="./help.html" onMouseover = "img_act('icon5')"  onMouseout = "img_inact('icon5')"><IMG ALT="How You Can Help" SRC="images/help1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1 name="icon5"></A><BR>
+</TD>
+
+
+<TD WIDTH=400 CELLPADDING=0>
+<IMG BORDER=1 SRC="images/title.gif">
+
+<P ALIGN=CENTER><FONT SIZE=5 FACE="Lucida Handwrit" COLOR=DARKBLUE>ABOUT THIS WEBSITE</FONT></P>
+ 
+
+
+ <FONT FACE="Lucida Handwrit" SIZE=1>
+<B>CONTENTS:</B><BR>
+<A HREF="#concept">Concept of the Project</A> <B>&nbsp;-&nbsp;</B> <A HREF="#website">The Website Itself</A> <B>&nbsp;-&nbsp;</B> <A HREF="#org">Organisation of the Project</A> <B>&nbsp;-&nbsp;</B> <A HREF="#list">Full List of Those Who Worked on the Project</A> <B>&nbsp;-&nbsp;</B> <A HREF="#links">Related Websites</A> <B>&nbsp;-&nbsp;</B> <A HREF="#funding">Funding and Future Plans</A>
+<BR>
+ <FONT FACE="Lucida Handwrit" SIZE=2>
+
+<A NAME="concept"><H3>Concept of the Project</H3></A>
+<P>The idea to make this website came out of a dissatisfaction with traditional ways of memorialising Palestinians killed while demonstrating against the Israeli military occupation. In general, these "martyrs" become tools of the political faction they were associated with, however loosely, and are remembered in a religious context. The fact that someone once amongst us is no longer here, and that this person affected many other lives - in work, relationship and often in support of a family - has been lost. </P>
+
+<P>The main impetus for this project was 'Ala Jaradat, an observer of many of the shootings in Ramallah during the September clashes. 'Ala was arrested while walking along a road with two friends and imprisoned for four months in the later days of the clashes, for "throwing stones at settlers", despite not being in any area where settlers were present. During his time in prison, those who had only heard about the events on television repeatedly asked him to describe them. In his words when he was released in January, "For me, the clashes never stopped." Sometimes it takes unusual circumstances to produce unusual projects. Birzeit News hosted an interview with 'Ala on 19 September 1997, available in <A HREF="../../bzunews/1997/Sep/20.html"> text</A> or <A HREF="../../bzunews/1997/Sep/martyrs.ram">Real Audio</A> formats.</P>
+
+<P>It is hoped that the attention this website will bring to the martyrs will make people consider the dangers of dismissing 'developments' in the region as merely statistics. The TV is no friend to the dead. It is hoped that the attention that this website will bring to the families and friends of the martyrs will result help coming to the poorest left behind, both on an offical political level where recognition has not yet been awarded to the families and on an unofficial level, through the establishment of the fund described on the page <A HREF="./help.html">How You Can Help</A>. <A HREF="#top">Return to top</A>.</P> 
+
+<A NAME="website"><H3>The Website Itself</H3></A>
+<P>The website was designed with two aspects of the September clashes in mind. The dark cloud background evokes the mood of the period which underlined the message that there can be no peace while provokative acts continue. Gray, the background colour of the pages, is one traditional colour of mourning. The font face, Lucida Handwriting, was intended to give balance this with a more upbeat feel, as we are reminded of the ways in which each of these people did much good in their lives and positively affected the lives of many others. A Microsoft Windows version of the font can be downloaded from <A HREF="lucidatt.zip">here</A> for those who do not have it. Shift-click in Netscape to save it to your hard disk and install from the fonts folder in control panels (Win 95 users). Finally, the Java coding that makes the button bar come alive was taken from the <A HREF="http://www.pmo.gov.il/">website of the Israeli Prime Minister's Office</A>. It seemed appropriate that the one who started the clashes should begin to offer reparations to those who were killed and injured, however small and involuntary they may be. <A HREF="#top">Return to top</A>.</P>
+
+
+<A NAME="org"><H3>Organisation of the Project</H3></A>
+
+<P>The immense task of visiting the families and friends of each of the 80-plus martyrs, collecting photos from the family, translating interviews and preparing the material for the website necessitated a wide network of fieldworkers and is still incomplete. The project involved around 30 people in the Gaza Strip and West Bank including East Jerusalem, and was coordinated on a volunteer basis by staff and students at Birzeit University. Local coordinators in Gaza were recruited and special recognition must go to Ali, Mohammed, Maysa' Manal, Mohammed and Khaled for undertaking this task in just over a week. Full names are listed below.</P>
+
+<P>For those who participated from Birzeit University, this website representes the completion of a circle that began with the construction of the <A HREF="../../palnews/war/index.html">On the Ground in Ramallah: Reports from a Town become Battlefield</A> website, which offered daily reports during the September clashes. <A HREF="#top">Return to top</A>.</P>
+
+<A NAME="list"><H3>Full List of Those Who Worked on the Project</H3></A>
+
+<P><B>West Bank and East Jerusalem:</B> Safa' Abdul Rahman Al-Bur'ei, Hanan Elmasu, Adam Hanieh, 'Ala Jaradat, Rona Kilmer, and Nigel Parry. Additional thanks to Albert Aghazarian, Suha 'Alaiyan, Kifah Al-Fani, Riyad Mustafa, Maysoon Al-Rafidi, George Nimr Rishmawi, Jamal Saafi, Fida' Touma, and the Continuing Education Department at Birzeit for the use of their computer laboratory for the launch.</P>
+
+<P><B>Gaza Strip:</B> Khaled Abdul Rahman Al-Bur'ei, Mohammed Abdul Rahman Al-Bur'ei, Maysa' Abu Zeidan, Mohammed Al-Maggadma, Ali Al-Nabakeen and Manal Nawajha. Additional thanks to Khalid Abu Dayyeh, Jalal Al-Mizyen and Nafiz Shabar.
+<A HREF="#top">Return to top</A>.</P>
+
+<A NAME="links"><H3>Related Websites</H3></A> <P>In the wake of the 1948 War, which resulted in the creation of the state of Israel, approximately 750,000 Palestinians (some 60 percent of the population) were ousted from their villages and towns and scattered in refugee camps. The society they left behind had ancient historical roots, its own economic and social system, and a rich cultural heritage and customs . But their story was not recorded, their lives and traditions never documented. While this generation has become a living repository of national history, culture and social customs, age will soon claim them and this valuable and irretrievable information will die with them. Today, those who were adults when they left their homes in 1948 are age 65 and older. Time is running out. Many have already passed away, many more are likely to die within the next ten years. The race against time and against the loss of a nation's history and memory has begun... The website of <A HREF="../../crdps/index.html">Birzeit University's Centre for Research and Documentation of Palestinian Society (CRDPS)</A> offers details of the <A HREF="../../crdps/race1.html">Race Against Time project</A> and witness accounts from <A HREF="../../crdps/village.html">some of the 418 Palestinian villages destroyed in the wake of the 1948 war</A>. Outside Birzeit, you may like to visit the <A HREF="http://www.deiryassin.org/">Deir Yassin Remembered</A> website, a project to build a memorial for the 254 men, women and children killed in the massacre of 9 April 1948.  <A HREF="#top">Return to top</A>.</P> 
+
+
+
+
+<A NAME="funding"><H3>Funding and Future Plans</H3></A>
+<P>
+<LI>All time and expences were donated for free, with the exception of $250 from the budget of the World Wide Web Project at Birzeit University for travel to Gaza and some photo developing.  The Web reporting equipment fundraising appeal begun in September 1996 is still ongoing and funds are still needed to fully equip the office to continue this kind of work. Please visit the <A HREF="../../palnews/war/appeal.html">appeal site</A> and help Birzeit's Web project.<BR><BR>
+
+<LI>It is hoped that a publication will be printed from the information on this memorial website. Support for the printing costs of this would be greatly appreciated.<BR><BR>
+
+<LI>We wish to establish a similar, three-phase project, to include all of the Palestinian martyrs since 1987, 1967 and 1948. Almost no memorials exist for Palestinians who have died in the Israeli-Palestinian conflict. Simon Wiesenthal once commented that "Hope lives when people remember." Sponsors and patrons for this larger project are invited to contact the Birzeit Webmaster, <A HREF="MAILTO:webmaster@birzeit.edu">webmaster@birzeit.edu</A>.<BR><BR>
+
+<LI>Please visit the <A HREF="./help.html">How You Can Help</A> page for more details of the plans for the material on this website and for news of the establishment of a fund for Palestinian martyrs.<BR><BR>
+
+<P>Please contact Nigel Parry, <A HREF="MAILTO:webmaster@birzeit.edu">Birzeit Webmaster</A>, for any further information about the project or if you can assist with any of the above. </P>
+</FONT>
+
+<CENTER><FONT SIZE=1 FACE="Lucida Handwrit">Back to <A HREF="#top">TOP OF PAGE</A> </CENTER>
+
+<P ALIGN=CENTER><A HREF="./index.html">SEPTEMBER 1996 MARTYRS' MEMORIAL HOMEPAGE</A></P>
+</TD></TR></TABLE>
+</FONT>
+</BODY></HTML>

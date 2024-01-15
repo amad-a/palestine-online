@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Virtual Tour</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1256">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY background="image/bg3.gif" text=#000000 vLink=#990000 aLink=#990000 link=#990000 bgColor=#ffffff><!-- The page determines the next viewing page location --><!-- If A client referring page brought folks here, they return to that page --><!-- If folks get here otherwise they go to Abbey iPIX page -->
+<SCRIPT language=javascript>
+
+
+
+
+
+<!-- begin script 
+
+// This javascript gets the "LastIPIXPage" cookie and
+
+// then proceeds to go to that page Pronto.
+
+// Onde voce quer ir o dia?
+
+ 
+
+function GetCookie (name) { 
+
+  var arg = name + "="; 
+
+  var alen = arg.length; 
+
+  var clen = document.cookie.length; 
+
+  var i = 0; 
+
+  while (i < clen) { 
+
+    var j = i + alen; 
+
+    if (document.cookie.substring(i, j) == arg) 
+
+      return getCookieVal (j); 
+
+    i = document.cookie.indexOf(" ", i) + 1; 
+
+    if (i == 0) break;  
+
+  } 
+
+  return null; 
+
+} 
+
+ 
+
+function getCookieVal (offset) { 
+
+  var endstr = document.cookie.indexOf (";", offset); 
+
+  if (endstr == -1) 
+
+    endstr = document.cookie.length; 
+
+  return unescape(document.cookie.substring(offset, endstr)); 
+
+} 
+
+ 
+
+function removeHTTP (URL) {
+
+   var oldURL = new String();
+
+   var newURL = new String();
+
+   oldURL = URL.toString();
+
+   if(oldURL.indexOf("://") < 0)
+
+	     newURL = oldURL;   
+
+      else if (oldURL.substring(0, 7) == "file://")
+
+         newURL = oldURL.substring(7);
+
+      else if (oldURL.substring(0, 8) == "file:///")
+
+         newURL = oldURL.substring(8);
+
+      else if (oldURL.substring(0, 5) == "file:")
+
+         newURL = oldURL.substring(5);
+
+      else if (oldURL.substring(0, 4) == "ftp:") 
+
+         newURL = oldURL.substring(6);
+
+      else 
+
+         newURL = oldURL.substring(7);
+
+   return newURL;
+
+}
+
+
+
+var expdate = new Date (); 
+
+var parsedHTTP = removeHTTP(document.location);
+
+var lastPage = new String();
+
+var check = 0; 
+
+
+
+
+
+
+
+lastPage = GetCookie("referringsite");
+
+if ((lastPage != null) && (lastPage != ""))
+
+{
+
+   if (lastPage != "http://www.ipix.com/download.html")
+
+   {
+
+		if(lastPage.indexOf("://") < 0)
+
+		{
+
+			window.location.href = "http://" + lastPage;
+
+		}
+
+   } 
+
+   else
+
+   {
+
+		lastPage = "http://www.ipix.com/";
+
+   }
+
+}
+
+//window.location.href = "http://www.ipix.com";
+
+//window.location.href = "activexipixabbey.html";
+
+// end script -->
+</SCRIPT>
+<center><A href="tour.htm" target=_top><IMG height=100 alt ="Palestine - Home of History" src="image/palst.gif" width=520 border=0 ></A></center>
+<div align="center"><font size="+3" color="Blue"><b>Virtual Tour</b></font></div>
+<CENTER><BR>
+<TABLE cellSpacing=0 cellPadding=0 width=450 border=0>
+  <TBODY>
+  <TR>
+    <TD width=450>
+      <CENTER><FONT face='\"GillSans,' size='\"3\"' helvetica futura>
+      <font size="+1"><font color="Blue">View of the Mount of olive</font></font>
+      </FONT><BR></CENTER></TD></TR>
+  <TR>
+    <TD vAlign=center align=middle>
+      <TABLE height=200 cellSpacing=0 cellPadding=5 width=300 align=center 
+      bgColor=#000000 border=0 valign="MIDDLE">
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle width=290 bgColor=#000000>
+            <OBJECT id=IpixX1 
+            codeBase=http://www.ipix.com/download/ipixx.cab#version=6,2,0,5 
+            height=190 width=290 
+            classid=CLSID:11260943-421B-11D0-8EAC-0000C07D88CF><PARAM NAME="IPXFILENAME" VALUE="http://www.toptown.com/office/holyland/media/olives.ipx"></OBJECT></TD></TR></TBODY></TABLE></TD>
+</TR><TR><TD>
+	<P align=center><img src="image/key.jpg" width="319" height="31" border="0" alt="Navigation"><br><br>
+    <FONT face="Arial, Verdana, Futura Book, Helvetica" size=2>You need to download iPix plug-in in order to view this virtual tour.<br>
+	  Download iPix plug-in for IE 4.0 and above from the following site.
+	  <A href="http://www.ipix.com/cgi-bin/download.cgi" target=_top> http://www.ipix.com/cgi-bin/download.cgi </A><br><br>
+<div align="center"><a href="tour.htm">Back to the Tour Index</a></div>
+	  </P></FONT></TD></TR></TBODY></TABLE>
+
+<center><IMG height=2 alt=Line src="image/line1.gif" width=450 border=0></center><br>
+<center><font size="-1">This site created by <A href="esam.htm">Esam Shashaa</A><br>
+<A href="contact.htm">Contact us..</A></font></center>
+<center><A href="index.html#index" target=_top><IMG alt="HomePage Index" src="image/home.gif" border=1 ></A></center>
+
+	  </CENTER></BODY></HTML>

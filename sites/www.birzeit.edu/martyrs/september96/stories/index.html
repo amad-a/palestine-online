@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<TITLE>Personal Stories - September 1996 Web Memorial</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+browserName = navigator.appName;         
+browserVer = parseInt(navigator.appVersion); 
+	if (browserName == "Netscape" && browserVer >= 3) version = "n3";
+		else version = "n2";
+
+
+function img_act(imgName) {
+             if (version == "n3") {
+             imgOn = eval(imgName + "on.src");
+             document [imgName].src = imgOn;
+             }
+     }
+
+     function img_inact(imgName) {
+             if (version == "n3") {
+             imgOff = eval(imgName + "off.src");
+             document [imgName].src = imgOff;
+             }
+      }
+
+
+
+if (version == "n3") {                
+             icon1on = new Image(42, 197);          
+             icon1on.src = "../images/about2.gif";              
+             icon2on = new Image(42, 197); 
+             icon2on.src = "../images/ground2.gif";
+             icon3on = new Image(42, 197);
+             icon3on.src = "../images/society2.gif";
+             icon4on = new Image(42, 197);
+             icon4on.src = "../images/stories2.gif";
+             icon5on = new Image(42, 197);
+             icon5on.src = "../images/help2.gif";
+
+
+             icon1off = new Image(42, 197);          
+             icon1off.src = "../images/about1.gif";
+             icon2off = new Image(42, 197); 
+             icon2off.src = "../images/ground1.gif";
+             icon3off = new Image(42, 197);
+             icon3off.src = "../images/society1.gif";
+             icon4off = new Image(42, 197);
+             icon4off.src = "../images/stories1.gif";
+             icon5off = new Image(42, 197);
+             icon5off.src = "../images/help1.gif";
+             }
+
+
+
+function message (txt) {
+window.status = txt;
+setTimeout ("remove()",2500);
+}
+
+function remove() {
+window.status = "";
+}
+//
+
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="black" BACKGROUND="../images/back2.gif" TEXT="black" LINK="darkblue" VLINK="brown" ALINK="gray">
+
+<TABLE   WIDTH=600><TR VALIGN=TOP><TD WIDTH=150>
+<A HREF="../about.html" onMouseover = "img_act('icon1')"  onMouseout = "img_inact('icon1')"><IMG ALT="About this Website" SRC="../images/about1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1  name="icon1"></A><BR>
+
+<A HREF="../../../palnews/war/index.html" onMouseover = "img_act('icon2')"  onMouseout = "img_inact('icon2')"><IMG ALT="On the Ground in Ramallah" SRC="../images/ground1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1  name="icon2"></A><BR>
+
+<A HREF="../society.html" onMouseover = "img_act('icon3')"  onMouseout = "img_inact('icon3')"><IMG ALT="The Martyr in Society" SRC="../images/society1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1  name="icon3"></A><BR>
+
+<A HREF="./index.html" onMouseover = "img_act('icon4')"  onMouseout = "img_inact('icon4')"><IMG ALT="Personal Stories" SRC="../images/stories1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1 name="icon4"></A><BR>
+
+<A HREF="../help.html" onMouseover = "img_act('icon5')"  onMouseout = "img_inact('icon5')"><IMG ALT="How You Can Help" SRC="../images/help1.gif" WIDTH=85 HEIGHT=50 BORDER=0 VSPACE=1 name="icon5"></A><BR>
+</TD>
+
+<TD WIDTH=400 CELLPADDING=0>
+<IMG BORDER=1 SRC="../images/title.gif">
+
+<P ALIGN=CENTER><FONT SIZE=5 FACE="Lucida Handwrit" COLOR=darkblue>PERSONAL STORIES</FONT></P>
+ 
+ <FONT FACE="Lucida Handwrit" SIZE=1> 
+
+<P>The links below represent the stories of martyrs that have been completed, listed in alphabetical order according to family name. The stories of the remainder, all of which were not completed before the website launch on 25 September 1997, will be added in the coming weeks and months, with a note beside the title showing when they were added. </P>
+
+<UL><FONT SIZE=2>
+<LI><A HREF="./yasser.html">"Life is knowledge"</A>, Yasser Abdul Ghani, aged 21, Tulkarem.<BR><BR>
+
+<LI><A HREF="./ihab.html">"The Unfulfilled Dream"</A>, Ihab Jarir Abu Haddaf, aged 16, Beit Hanoun, Gaza Strip.<BR><BR>
+
+<LI><A HREF="./mousa.html">"What kind of peace is this?"</A>, Mousa Naser Abu Nseir, aged 20, Deir Al-Balah, Gaza Strip.<BR><BR>
+
+                           
+<LI><A HREF="./srour.html">"These days, we have nothing to give except our blood"</A>, Mohammed Abu Srour, aged 26, Bethlehem. [added: 14 Nov 97]<BR><BR>
+
+<LI><A HREF="./amin.html">"My homeland is Palestine"</A>, Amin Mohammed Jabr Barbakh, "Mandela", aged 17, Khan Younis Refugee Camp, Gaza Strip.<BR><BR>
+
+<LI><A HREF="./fayez.html">"To me he is not dead"</A>, Fayez Mashare Mohammed Farahan, "Abu Islam", aged 21, Al-Bireh. <BR><BR>
+<LI><A HREF="./rizeq.html">"To build a house for his children"</A>, Rizeq Zeidan Al-Hawajrah, aged 25, Deir Al-Balah, Gaza Strip.<BR><BR>
+<LI><A HREF="./ashraf.html">"The Lion"</A>, Ashraf Mohammad Najeeb Mohammad Mahdi, "Al-Ass'ad", aged 16, Beit Lahiya, Jabalya Refugee Camp, Gaza Strip.<BR><BR>
+<LI><A HREF="./basil.html">"Having Spent His Life for Others"</A>, Bassil Ibrahim Hussein Na'im, aged 27 years, Beit Hanoun, Gaza Strip.<BR><BR>
+<LI><A HREF="./tammam.html">"Love Story"</A>, Tammam Ahmad Hasan Nuwwareh, "Uncle Tammam", aged 33, Ramallah.<BR><BR>
+<LI><A HREF="./abdo.html">"He who helps others, wins"</A>, Ra'id Ibrahim Sharakeh, "'Abdo", aged 15, Jalazon Refugee Camp, Ramallah.<BR><BR>
+<LI><A HREF="./mansour.html">"The Street Party"</A>, Mansour Suleiman Shawamreh, "Abu Ismail", aged 22, Ramallah.<BR><BR>
+<LI><A HREF="./sami.html">"Do you think I can leave my father to beg?"</A>, Sami Abdel Azeez Ismail Tafish, aged 19, Gaza City, Gaza Strip.<BR><BR>
+<LI><A HREF="./moataz.html">"Before continuing on his way..."</A>, Moa'taz Musa Mohammad Taha, "Ghazouz", aged 21, Rafat, Ramallah.<BR><BR>
+<LI><A HREF="./iyad.html">"Poetry and Bodybuilding"</A>, Iyad Mahmoud Attalah Sa'id Al-Tarifi, "Abu Hadeed", aged 22, Al-Bireh.<BR><BR>
+<LI><A HREF="./qussai.html">"To defend the unarmed"</A>, Qussai Mohammed Abd Al-Karim 'Ukasha, aged 20, Rafah, Gaza Strip.<BR><BR>
+<LI><A HREF="./ramsey.html">"Hopefully we will meet again soon in Paradise..."</A>, Ramsey Mohammed Khalil Al-Ustaz, "Abu Khalid", aged 21, Sheikh Radwan, Gaza Strip.
+</UL>
+
+
+
+</P>
+
+
+<FONT SIZE=-1><P ALIGN=CENTER><A HREF="../index.html">SEPTEMBER 1996 MARTYRS' MEMORIAL HOMEPAGE</A> </FONT></P>
+</TD></TR></TABLE>
+
+</BODY></HTML>
