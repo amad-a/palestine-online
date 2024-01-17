@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>NOURSOFT</title>
+<meta name="description" content="Our team of dedicated experts is comprised of highly experienced software developers and programmers with extensive backgrounds in information technology. Our major software packages include Libsys (library information system), EIMS (Educational Institute management system), Docsys (Document management system & workflow)">
+<meta name="keywords" content="library information system, software packages, Apllication, Information Technology, Palestine, Document management system & workflow, SQL, Databases, Access">
+
+
+
+<STYLE TYPE="text/css">.antiLine {   text-decoration: none;}
+</STYLE>
+
+</head>
+
+
+<body marginwidth=0 marginheight=0 leftmargin=0 topmargin=0 links="#0C2878"  vlink="#0C2878">
+
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+<td valign=top><img src="images/logo.gif"></td><td valign=top><img src="images/pic.gif"></td><td valign=top><img src="images/pic1.gif"><br><a href="arabic/arabic.html"><img src="images/arabic.gif" border=0></a></td><td valign=top><img src="images/pic2.gif"></td><td valign=top width=60% background="images/back.gif"><img src="images/back.gif"></td>
+</tr></table>
+
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+<td valign=top background="images/botsback.gif" align=center width=10%><img src="images/pic3.gif"><br><a href="about/about.html"><img src="images/bot1.gif" border=0></a><br><a href="mission/mission.html"><img src="images/bot2.gif" border=0></a><br><a href="philosophy/philosophy.html"><img src="images/bot3.gif" border=0></a><br>
+      <a href="services/services.html"><img src="images/bot5.gif" border=0></a><br>
+      <img src="images/bot6.gif" border=0><br><a href="contact/contact.html"><img src="images/bot7.gif" border=0></a><br>
+    </td>
+    <td valign=top colspan=4 align=left><img src="images/products.gif"><br>
+      <table border=0 cellspacing=8 cellpadding=0 width=95%>
+        <tr>
+<td valign=top width=50%><table border=0 cellspacing=0 cellpadding=0 width=330>
+<tr>
+                <td valign=top><a href="libsys/libsys.html"><img src="images/libsysname.gif" vspace=5 border=0 width="88" height="23"></a><br>
+                  <img src="images/libsys.gif"></td><td valign=top rowspan=2 background="images/tableback.gif"><img src="images/tableback.gif"><br>
+                  <font color="#0C2878" size=-1 face="Arial"> <b><a href="libsys/libsys.html">Library 
+                  Managmenet System</a></b><br>
+                  Authority Fles, Cataloguing, Searials, Acquisitions, Circulation, 
+                  OPAC </font></td>
+</tr>
+<tr>
+<td valign=top width=20% height=1% background="images/tableback.gif"><img src="images/tableback.gif"></td>
+</tr></table>
+
+
+<table border=0 cellspacing=0 cellpadding=0 width=330>
+<tr>
+                <td valign=top><a href="emis/emis.html"><img src="images/emisname.gif" vspace=5 border=0></a><br>
+                  <img src="images/emis.gif"></td><td valign=top rowspan=2 background="images/tableback.gif"><img src="images/tableback.gif"><img src="images/tableback.gif"><br>
+                  <font color="#0C2878" size=-1 face="Arial"> <b><a href="emis/emis.html">Educational 
+                  Institutions Managment Systems</a></b><bR>
+                  Database structure, Human Resource, Management Supplies, Registration 
+                  and tuition </font></td>
+</tr>
+<tr>
+<td valign=top width=20% background="images/tableback.gif"><img src="images/tableback.gif"></td>
+</tr></table>
+
+
+
+<table border=0 cellspacing=0 cellpadding=0 width=330>
+<tr>
+<td valign=top align=center><a href="docsys/docsys.html"><img src="images/docsysname.gif" vspace=5 border=0></a><br><img src="images/docsys.gif"></td><td valign=top rowspan=2 background="images/tableback.gif"><img src="images/tableback.gif"><font color="#0C2878" size=-1 face="Arial"><br>
+                  <b><a href="docsys/docsys.html">Document Managment & Imaging 
+                  System</a></b><br>
+                  Docsys Scan DocSys Security Advanced Search mechanism </font></td>
+</tr>
+<tr>
+<td valign=top width=20% background="images/tableback.gif"><img src="images/tableback.gif"></td>
+</tr></table>
+
+
+</td>
+
+<td valign=top align=center width=40% background="images/nsback.gif">
+<table border=0 cellspacing=0 cellpadding=0 width=100% background="">
+<tr>
+                <td align=center height=30 bgcolor="#ffffff"> <img src="images/whatsnew.gif"></td>
+</tr>
+
+<tr>
+<td valign=button align=center>
+                  <p>
+                  <a href="gitex/gitex.html"><img src="images/gitex.gif" border=0></a>
+                  <p>&nbsp;</p>
+                  <table border=0>
+                    <tr>
+                      <td align=right>
+                        <div align="left"><font size="-3">Member of the Palestinian 
+                          Information<br>
+                          Technology Association of Companies (PITA) </font></div>
+                      </td>
+                      <td> <img src="images/pitalogo.gif"></td>
+                    </tr>
+                  </table>
+                </td>
+</tr>
+</table>
+
+
+</td></tr></table>
+
+</td></tr></table>
+
+
+</body>
+</html>

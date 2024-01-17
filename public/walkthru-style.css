@@ -1,0 +1,120 @@
+html {
+    overflow: hidden;
+    height:90%;
+}
+
+
+.divider {
+    margin: 0px 3px 1px 5px;
+    font-size: 15px;
+    color: #6f6f6f;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+iframe {
+    height: 72vh;
+}
+
+@media only screen and (max-width: 480px) {
+    .mobile-body {
+        zoom: 1;
+        display: grid;
+        grid-template-columns: 1;
+        align-items: center;
+        margin: 0px;
+        background-color: #b5b5b5;
+        height: 100%;
+    }
+
+    iframe {
+        height: 92.5vh;
+    }
+
+    /* … */
+}
+
+.walkthru-grid {
+    display: inline-grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    grid-gap: 0;
+}
+
+.walkthru-window {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    width: 800px;
+    height: 658px;
+}i
+
+.walkthru-title {
+    
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 0;
+    
+}
+
+.walkthru-title {
+    /* width: 50px; */
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+
+
+.walkthru-left-arrow {
+    justify-content: right;
+    text-align: right;
+    grid-column-start: 0;
+    grid-column-end: 0;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 25px;
+}
+
+.walkthru-right-arrow {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: left;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.walkthru-info {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3; 
+}
+
+iframe {
+    height: 595px;
+}
