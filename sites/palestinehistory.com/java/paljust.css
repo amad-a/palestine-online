@@ -1,0 +1,62 @@
+H1  {
+	font-size : 26pt;
+	font-family : Times New Roman;
+	font-weight : bold;
+	color : Navy;
+}
+
+H2  {
+	font-size : 22pt;
+	font-family : Times New Roman;
+	font-weight : bold;
+	color : Navy;
+}
+
+H3  {
+	font-size : 18pt;
+	font-family : Times New Roman;
+	font-weight : bold;
+	color : Navy;
+}
+
+A  {
+	color : Blue;
+	font-style : normal;
+	text-decoration : none;
+}
+
+A:Visited  {
+	color : Teal;
+	text-decoration : none;
+	font-style : normal;
+}
+
+A:Active  {
+	color : Navy;
+	text-decoration : none;
+	font-style : italic;
+}
+
+A:Hover  {
+	color : Red;
+	font-style : normal;
+	text-decoration : underline overline;
+}
+
+BODY  {
+	font-size : small;
+	color : Black;
+	font-family : Times New Roman;
+}
+
+P  {
+	font-size : small;
+	font-weight : normal;
+	font-style : normal;
+	text-decoration : none;
+	margin-bottom : 0%;
+	margin-left : 3%;
+	margin-right : 3%;
+	text-align : justify;
+}
+

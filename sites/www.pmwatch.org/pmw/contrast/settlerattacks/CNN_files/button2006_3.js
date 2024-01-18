@@ -1,0 +1,1 @@
+/*Copyright 2000-2001 Clickability Inc. *//*Init*/if (!custom) {	initBtn(1,1,1,1,0,'000099','000099');	initSponsor(0,'right',' ','000000',' ',' ',' ');	initAlt(1,1,1,1);	eval(sponFunc);	drawBtn('H',1);}

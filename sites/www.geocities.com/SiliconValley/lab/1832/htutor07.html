@@ -1,0 +1,683 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML DIR="RTL">
+<HEAD>
+	<TITLE>إتش.بي بالعربية - الدرس السابع</TITLE>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1256">
+	<META NAME="keywords" CONTENT="html,html,html,html,psp,psp,psp,psp,arabic,arabic,arabic,arabic,paint shop pro,paint shop pro,paint shop pro,paint shop pro,webpage design,webpage design,webpage design,webpage design ">
+	<META NAME="description" CONTENT="Html and Paint Shop Pro tutorials in Arabic,learning web page design in Arabic">
+	<META NAME="author" CONTENT="Yahya Al-Sharif">
+	<META NAME="copyright" CONTENT="Copyright 1998 Yahya Al-Sharif">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="images/bg.jpg">
+<BASEFONT SIZE="4" FACE="Arabic Transparent" COLOR="#000000">
+<CENTER>
+<IMG SRC="images/inbanner.gif" WIDTH=500 HEIGHT=80 BORDER=0 usemap="#map2" ALT="">
+</CENTER>
+<P ALIGN="CENTER" DIR="RTL">
+<FONT FACE="Arabic Transparent" SIZE="6" COLOR="#FF0000">
+<STRONG>
+الدرس السابع<BR>
+الجداول (1)<BR>
+</STRONG></FONT></P>
+
+
+&nbsp;<BR><CENTER>
+<P ALIGN="center" DIR="RTL"><FONT SIZE="2">
+<A HREF="htutor01.html">[الأساسيات]</A>
+<A HREF="htutor02.html">[الألوان]</A>
+<A HREF="htutor03.html">[الخطوط]</A>
+<A HREF="htutor04.html">[الفقرات والقوائم]</A>
+<A HREF="htutor05.html">[الصور والرسومات]</A>
+<A HREF="htutor06.html">[الوصلات التشعبية]</A><BR>
+<A HREF="htutor07.html">[الجداول1]</A>
+<A HREF="htutor08.html">[الجداول2]</A>
+<A HREF="htutor09.html">[الإطارات1]</A>
+<A HREF="htutor10.html">[الإطارات2]</A>
+<A HREF="htutor11.html">[الإطارات3]</A>
+<A HREF="htutor12.html">[وسوم من هنا وهناك]</A><BR>
+<A HREF="htutor13.html">[الخرائط الصورية]</A>
+<A HREF="htutor14.html">[النماذج1]</A>
+<A HREF="htutor15.html">[النماذج2]</A>
+<A HREF="htutor16.html">[الوسوم الخاصة]</A>
+<A HREF="htutor17.html">[الويب واللغة العربية]</A>
+<A HREF="htutor18.html">[وسوم Meta]</A>
+
+
+</FONT></P>
+</CENTER><BR>
+<CENTER><IMG SRC="images/top_bar.gif" WIDTH=600 HEIGHT=30 BORDER=0 ALT=""></CENTER>
+<BR>&nbsp;<BR>
+<BLOCKQUOTE>
+
+<P ALIGN="RIGHT" DIR="RTL">
+أهلاً وسهلاً بك إلى الدرس السابع من دروس
+<FONT FACE="Times New Roman" SIZE=4>HTML.</FONT>
+هذا الدرس سيكون الأول من درسين حول الجداول. وقد فضلت تجزئتها إلى قسمين وذلك لأهمية هذا الموضوع وتعدد خصائص الجداول واحتمالات استخدامها في صفحات الويب.</P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+تعد الجداول من أقوى الأدوات التي تتضمنها لغة
+<FONT FACE="Times New Roman" SIZE=4>HTML</FONT>
+وأكاد أجزم بأنه لا يوجد موقع في الإنترنت إلا ويستخدمها بصورة أو بأخرى. والحقيقة أن وضع الجداول في صفحات الويب لا يقتصر على تلك القوائم من البيانات التي نحتاج لترتيبها في صفوف وأعمدة، بل يتعدى ذلك إلى استخدامها في تصميم الصفحات نفسها وتنظيمها، والتحكم بمظهرها بصورة قوية وفعالة لا يمكن أداؤها مهما استخدمنا من وسوم خاصة بتنسيق الصفحات. 
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+إن التعامل مع الجداول وإدراجها في صفحات الويب سهل جداً مثله مثل أي أداة من أدوات 
+<FONT FACE="Times New Roman" SIZE=4>HTML</FONT>
+لكنه قد يبدو لك مربكاً بعض الشيء وخاصة في البداية، وذلك لتعدد الخصائص التي تستعمل معها وتعدد الأوجه التي نستطيع التصرف بها. لكن لا تقلق فكل شيء يبدو صعباً في بدايته ولكن سرعان ما يصبح سهلاً.<BR><BR>
+هل أنت مستعد؟ إذن هيّا بنا…
+</P><BR>
+<HR ALIGN="CENTER" WIDTH="60%" SIZE="4"><P>
+<P ALIGN="RIGHT" DIR="RTL">
+بداية، إليك هذا الوصف البسيط للوسوم الأساسية الخاصة بالجداول
+</P>
+<CENTER>
+<TABLE BORDER="1" WIDTH="80%" DIR="LTR" cellpadding="10">
+<TR>
+	<TD WIDTH="50%"><FONT FACE="Times New Roman" SIZE=4>
+<NOBR>	&lt;TABLE&gt;...&lt;‎/TABLE&gt;</NOBR></FONT></TD>
+	<TD ALIGN="RIGHT"><FONT SIZE="4">وسوم تعريف الجدول</FONT></TD>
+</TR>
+<TR>
+	<TD><FONT FACE="Times New Roman" SIZE=4>
+<NOBR>	&lt;TR&gt;...&lt;‎/TR&gt;
+
+</NOBR>	</FONT></TD>
+	<TD ALIGN="RIGHT"><FONT SIZE="4"><P ALIGN="RIGHT" DIR="RTL">Table Row وسوم تعريف الصف في الجدول</P></FONT></TD>
+</TR>
+<TR>
+	<TD><FONT FACE="Times New Roman" SIZE=4>
+	&lt;TD&gt; <I>Cell Data</I> &lt;‎/TD&gt;</FONT></TD>
+	<TD ALIGN="RIGHT"><FONT SIZE="4">
+<P ALIGN="RIGHT" DIR="RTL">
+	Table Data
+	وسوم تعريف الخلايا في الصف وتعريف محتويات كل خلية
+
+</P>	</FONT></TD>
+</TR>
+</TABLE>
+
+</CENTER><P>
+
+<P ALIGN="RIGHT" DIR="RTL">والآن لنتكلم بصورة أكثر دقة وتفصيلاً:<BR><BR>
+
+هذه هي الوسوم التي نبدأ بها لإدراج جدول مكون من خلية واحدة أو من مليون خلية… الأمر سيان
+</P>
+<CENTER><FONT FACE="Times New Roman" SIZE=4>&lt;TABLE&gt; ... &lt;‎/TABLE&gt;</FONT></CENTER><P>
+
+
+<P ALIGN="RIGHT" DIR="RTL">
+والآن بعد إدراج هذين الوسمين، هناك سؤالين ينبغي الإجابة عليهما. الأول: كم عدد الصفوف التي نريدها في الجدول؟ ثلاثة، أربعة، مائة؟  لا بأس، قم بإضافة الوسوم 
+</P>
+
+<CENTER><FONT FACE="Times New Roman" SIZE=4>&lt;TR&gt; ... &lt;‎/TR&gt;</FONT></CENTER><P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+بنفس عدد الصفوف التي تريدها. ولنفترض هنا أنها ثلاثة.
+</P>
+<FONT FACE="Arial" SIZE=2>
+<P ALIGN="LEFT" DIR="LTR">&lt;TABLE&gt;</P>
+
+<BLOCKQUOTE>
+<FONT COLOR="#FF0000">
+<P ALIGN="LEFT" DIR="LTR">
+&lt;TR&gt; <BR> &lt;‎/TR&gt;<BR><BR>
+&lt;TR&gt; <BR> &lt;‎/TR&gt;<BR><BR>
+&lt;TR&gt; <BR> &lt;‎/TR&gt;<BR><BR>
+</P>
+</FONT>
+</BLOCKQUOTE>
+
+<P ALIGN="LEFT" DIR="LTR">
+&lt;‎/TABLE&gt;
+</P></FONT>
+
+
+
+<P ALIGN="RIGHT" DIR="RTL">
+ والسؤال الثاني هو، كم عدد الخلايا (أو الأعمدة) التي نريدها في كل صف؟<BR>
+ وهنا نضيف الوسوم </P>
+
+<CENTER><FONT FACE="Times New Roman" SIZE=4>
+&lt;TD&gt; ... &lt;‎/TD&gt;</FONT></CENTER><P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+بنفس عدد الخلايا المطلوب. ومن البديهي أن نكتبها بين الوسوم 
+<FONT FACE="Times New Roman" SIZE=4>&lt;TR&gt; ... &lt;‎/TR&gt;</FONT>
+طالما أن الخلايا هي جزء من الصفوف. وهنا سأفترض أننا نريد خليتين في كل صف، وبذلك يجب  تكرار كتابتها مرتين لكل صف.<BR>
+وأذكرك أن النص الذي نريد إدراجه في الخلية يكتب ضمن هذين الوسمين.
+
+</P>
+<FONT FACE="Arial" SIZE=2>
+<P ALIGN="LEFT" DIR="LTR">&lt;TABLE&gt;</P>
+
+<BLOCKQUOTE>
+	<FONT COLOR="#FF0000">
+	<P ALIGN="LEFT" DIR="LTR">&lt;TR&gt;</P>
+	</FONT>
+
+		<BLOCKQUOTE>
+		<FONT COLOR="#008000">
+		<P ALIGN="LEFT" DIR="LTR">
+		&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+		&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;</P>
+		</FONT>
+		</BLOCKQUOTE>
+
+	<FONT COLOR="#FF0000">
+	<P ALIGN="LEFT" DIR="LTR">
+	&lt;‎/TR&gt;<BR><BR>
+	&lt;TR&gt;
+	</P>
+	</FONT>
+
+		<BLOCKQUOTE>
+		<FONT COLOR="#008000">
+		<P ALIGN="LEFT" DIR="LTR">
+		&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+		&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;
+		</P>
+		</FONT>
+		</BLOCKQUOTE>
+		
+	<FONT COLOR="#FF0000">
+	<P ALIGN="LEFT" DIR="LTR">
+	&lt;‎/TR&gt;<BR><BR>
+	&lt;TR&gt; 
+	</P>
+	</FONT>
+
+		<BLOCKQUOTE>
+		<FONT COLOR="#008000">
+		<P ALIGN="LEFT" DIR="LTR">
+		&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+		&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;
+		</P>
+		</FONT>
+		</BLOCKQUOTE>
+
+	<FONT COLOR="#FF0000">
+	<P ALIGN="LEFT" DIR="LTR">&lt;‎/TR&gt;</P>
+	</FONT>
+</BLOCKQUOTE>
+
+<P ALIGN="LEFT" DIR="LTR">&lt;‎/TABLE&gt;</P>
+</FONT>
+
+<P ALIGN="RIGHT" DIR="RTL">
+هل اتضحت لك الصورة الآن. أنظر إلى نتيجة العمل التي حصلنا عليها. </P>
+
+<TABLE>
+<TR>
+<TD> Data </TD>
+<TD> Data </TD>
+</TR>
+<TR> 
+<TD> Data </TD>
+<TD> Data </TD> 
+</TR>
+<TR> 
+<TD> Data </TD>
+<TD> Data </TD> 
+</TR>
+</TABLE>
+
+
+<P ALIGN="RIGHT" DIR="RTL">
+هناك شيء ما ينقص. بالطبع ... الحدود. انتظر قليلاً وستعرف الخاصية التي تقوم بإضافة الحدود للجدول وغيرها من الخصائص الأخرى. لأنني قبل أن أستمر أود أن ألفت نظرك لمسألة  معينة في الجداول. وهي أن طريقة التعامل معها تتم على ثلاثة مستويات:</p>
+
+<P ALIGN="right" DIR="RTL"><UL>
+<LI><P ALIGN="right" DIR="RTL"> مستوى الجدول ككل
+<LI><P ALIGN="right" DIR="RTL">مستوى الصفوف ككل أو كل واحد على حده
+<LI><P ALIGN="right" DIR="RTL">مستوى الخلايا ككل أو كل واحدة على حده.
+
+</UL>
+
+</P><P ALIGN="right" DIR="RTL">
+ولكل من هذه المستويات خصائصه التي ينفرد بها كما أن هناك خصائص مشتركة تستخدم مع كل الوسوم.</P>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+<P ALIGN="RIGHT" DIR="RTL">
+نبدأ بمناقشة الخصائص التي تستخدم مع الوسوم
+<FONT FACE="Times New Roman" SIZE=4>&lt;TABLE&gt; ... &lt;‎/TABLE&gt;
+</FONT>
+وسأقوم أولاً بسردها لك، ومن ثم إدراج بعض الأمثلة التي توضحها.
+</P>&nbsp;<BR>
+<CENTER>
+
+<TABLE CELLPADDING=10 CELLSPACING=1 WIDTH="80%" BORDER=1 ALIGN="center" BGCOLOR="#FFFFFF" VALIGN="TOP">
+<TR>
+	<TD><FONT FACE="Times New Roman" SIZE=4>BORDER</FONT></TD>
+	<TD>
+<P ALIGN="RIGHT" DIR="RTL">
+<FONT SIZE="4">	تقوم هذه الخاصية بإضافة حدود للجدول وتحديد سماكتها، والقيمة الإفتراضية لها هي صفر أي لا حدود
+</FONT></P>
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE BORDER=&quot;5&quot;&gt;‎<BR>
+‎&lt;TABLE BORDER=&quot;0&quot;&gt;‎
+</FONT></P></TD>
+</TR>
+<TR>
+	<TD><FONT FACE="Times New Roman" SIZE=4>WIDTH</FONT></TD>
+	<TD>
+<P ALIGN="RIGHT" DIR="RTL"><FONT SIZE="4">	نستخدم هذه الخاصية لتحديد عرض الجدول ككل. وهناك أسلوبين لتحديد العرض: المطلق أي بكتابة الرقم الذي يمثل العرض بصورة مباشرة. والنسبي أي كتابة رقم نسبي مئوي يحدد عرض الجدول حسب عرض نافذة المتصفح.
+(أي أن عرض الجدول سيختلف باختلاف عرض نافذة المتصفح).
+</FONT></P>
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE WIDTH=&quot;600&quot;&gt;‎<BR>
+‎&lt;TABLE WIDTH=&quot;80%&quot;&gt;‎
+</FONT></P>
+
+</TD>
+</TR>
+<TR>
+	<TD><FONT FACE="Times New Roman" SIZE=4>HEIGHT</FONT></TD>
+	<TD>
+<P ALIGN="RIGHT" DIR="RTL"><FONT SIZE="4">	لتحديد ارتفاع الجدول، ويكون تحديد هذا الإرتفاع من خلال قيمة مطلقة تحدد الإرتفاع بالبيكسل. أو قيمة نسبية تحدد ارتفاع الجدول بالنسبة لإرتفاع صفحة المتصفح
+</FONT></P>
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE HEIGHT=&quot;500&quot;&gt;‎<BR>
+‎&lt;TABLE HEIGHT=&quot;100%&quot;&gt;‎
+</FONT></P>
+	</TD>
+</TR>
+<TR>
+	<TD><FONT FACE="Times New Roman" SIZE=4>CELLSPACING</FONT></TD>
+	<TD><P ALIGN="RIGHT" DIR="RTL"><FONT SIZE="4">
+لتحديد المسافة بين كل خلية من خلايا الجدول
+	</FONT></P>
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE CELLSPACING=&quot;10&quot;&gt;‎
+</FONT></P>
+	</TD>
+</TR>
+<TR>
+	<TD><FONT FACE="Times New Roman" SIZE=4>CELLPADDING</FONT></TD>
+	<TD>
+<P ALIGN="RIGHT" DIR="RTL"><FONT SIZE="4">	لتحديد المسافة الفاصلة بين الحدود وبداية النص في كل خلية. أو لنقل: تحديد حجم الهوامش لخلايا الجدول.
+</FONT></P>
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE CELLPADDING=&quot;10&quot;&gt;‎<BR>
+</FONT></P>
+</TD>
+</TR>
+
+<TR>
+	<TD><FONT FACE="Times New Roman" SIZE=4>ALIGN</FONT></TD>
+	<TD>
+<P ALIGN="RIGHT" DIR="RTL"><FONT SIZE="4">
+لتحديد محاذاة الجدول أفقياً على الصفحة يميناً أو يساراً. وهو يأخذ القيم 
+<FONT FACE="Times New Roman" SIZE=4>right, left</FONT>
+</FONT></P>
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE ALIGN=&quot;Left&quot;&gt;‎<BR>
+‎&lt;TABLE ALIGN=&quot;Right&quot;&gt;‎
+</FONT></P>
+	</TD>
+</TR>
+<TR>
+	<TD><FONT FACE="Times New Roman" SIZE=4>BGCOLOR</FONT></TD>
+	<TD>
+<P ALIGN="RIGHT" DIR="RTL"><FONT SIZE="4">
+ويستخدم لتحديد لون الخلفية للجدول
+</FONT></P>
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE BGCOLOR=&quot;#00FFFF&quot;&gt;‎
+</FONT></P>
+	</TD>
+</TR></TABLE></CENTER>
+&nbsp;<BR>
+
+<P ALIGN="RIGHT" DIR="RTL">
+هذه هي الخصائص المستعملة مع الجدول. وسأقوم الآن بتطبيقها على المثال الوارد في بداية هذا الدرس وسأكتفي بكتابة وسم البداية أما باقي الوسوم فهي نفسها:
+</P>
+
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE BORDER=&quot;5&quot;&gt;‎<BR>
+</FONT></P>
+
+<TABLE BORDER="5">
+<TR><TD> Data </TD><TD> Data </TD></TR>
+<TR><TD> Data </TD><TD> Data </TD></TR>
+<TR><TD> Data </TD><TD> Data </TD></TR>
+</TABLE>
+<BR CLEAR=ALL>
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE BORDER=&quot;5&quot; CELLPADDING=&quot;5&quot;&gt;‎
+</FONT></P>
+<TABLE BORDER="5" CELLPADDING="5">
+<TR><TD> Data </TD><TD> Data </TD></TR>
+<TR><TD> Data </TD><TD> Data </TD></TR>
+<TR><TD> Data </TD><TD> Data </TD></TR>
+</TABLE>
+<BR CLEAR=ALL>
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE BORDER=&quot;5&quot; CELLPADDING=&quot;5&quot; CELLSPACING=&quot;10&quot;&gt;‎
+</FONT></P>
+
+<TABLE BORDER="5" CELLPADDING="5" CELLSPACING="10">
+<TR><TD> Data </TD><TD> Data </TD></TR>
+<TR><TD> Data </TD><TD> Data </TD></TR>
+<TR><TD> Data </TD><TD> Data </TD></TR>
+</TABLE><BR CLEAR=ALL>
+
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE BORDER=&quot;5&quot; CELLPADDING=&quot;5&quot; CELLSPACING=&quot;10&quot;‎<BR>
+BGCOLOR=&quot;#FFFF00&quot;&gt;‎
+</FONT></P>
+
+<TABLE BORDER="5" CELLPADDING="5" CELLSPACING="10" BGCOLOR="#FFFF00">
+<TR><TD> Data </TD><TD> Data </TD></TR>
+<TR><TD> Data </TD><TD> Data </TD></TR>
+<TR><TD> Data </TD><TD> Data </TD></TR>
+</TABLE><BR CLEAR=ALL>
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE BORDER=&quot;5&quot; CELLPADDING=&quot;5&quot; CELLSPACING=&quot;10&quot;‎<BR>
+BGCOLOR=&quot;#FFFF00&quot; HEIGHT=&quot;300&quot;&gt;‎
+</FONT></P>
+
+<TABLE BORDER="5" CELLPADDING="5" CELLSPACING="10" BGCOLOR="#FFFF00" HEIGHT="300">
+<TR><TD> Data </TD><TD> Data </TD></TR>
+<TR><TD> Data </TD><TD> Data </TD></TR>
+<TR><TD> Data </TD><TD> Data </TD></TR>
+</TABLE><BR CLEAR=ALL>
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE BORDER=&quot;5&quot; CELLPADDING=&quot;5&quot; CELLSPACING=&quot;10&quot;‎<BR> BGCOLOR=&quot;#FFFF00&quot;
+HEIGHT=&quot;300&quot; WIDTH=&quot;75%&quot;&gt;‎
+</FONT></P>
+<TABLE BORDER="5" CELLPADDING="5" CELLSPACING="10" BGCOLOR="#FFFF00" HEIGHT="300" WIDTH="75%">
+<TR><TD> Data </TD><TD> Data </TD></TR>
+<TR><TD> Data </TD><TD> Data </TD></TR>
+<TR><TD> Data </TD><TD> Data </TD></TR>
+</TABLE>
+<BR CLEAR=ALL>
+<P><HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+&nbsp;<BR>
+<P ALIGN="RIGHT" DIR="RTL">
+ونتكلم الآن عن الخصائص المستخدمة مع وسوم الصف
+<FONT FACE="Times New Roman" SIZE=4>&lt;TR&gt; ... &lt;‎/TR&gt;</FONT>
+ولا بأس من تذكيرك أن عدد الصفوف في الجدول يتحدد بعدد هذه الوسوم. أما أهم الخصائص التي تضاف لهذا الوسم فهي:
+</P>
+<CENTER><TABLE CELLPADDING=10 CELLSPACING=1 WIDTH="80%" BORDER=1 ALIGN="center" BGCOLOR="#FFFFFF" VALIGN="TOP">
+<TR>
+<TD><FONT FACE="Times New Roman" SIZE=4>ALIGN</FONT></TD>
+<TD>
+<P ALIGN="RIGHT" DIR="RTL">
+<FONT SIZE="4">لتحديد محاذاة النص أفقياً داخل الخلايا التي يتكون منها الصف، والقيم المحتملة لها هي
+<FONT FACE="Times New Roman" SIZE=4>Right, Left, Center</FONT>
+والقيمة الإفتراضية هي
+<FONT FACE="Times New Roman" SIZE=4>Center</FONT>
+</FONT>
+</P></TD>
+</TR>
+<TR>
+<TD><FONT FACE="Times New Roman" SIZE=4>VALIGN</FONT></TD>
+<TD>
+<P ALIGN="RIGHT" DIR="RTL"><FONT SIZE="4">لتحديد المحاذاة العمودية للنص داخل خلايا الصف، وذلك إما للأعلى أو للأسفل أو في المنتصف أو على امتداد الخط الأساسي للخلية. وقيمها على التوالي هي:
+<FONT FACE="Times New Roman" SIZE=4>Top, Bottom, Middle, Baseline</FONT>
+</FONT></P> 
+</TD>
+</TR>
+<TR>
+<TD><FONT FACE="Times New Roman" SIZE=4>BGCOLOR</FONT></TD>
+<TD>
+<P ALIGN="RIGHT" DIR="RTL"><FONT SIZE="4">
+لتحديد لون الخلفية للخلايا التي يتكون منها الصف. وهنا يتم تجاهل لون الخلفية المحدد ضمن وسم
+<FONT FACE="Times New Roman" SIZE=4>&lt;TABLE&gt;</FONT>
+ويتم  تطبيق اللون المحدد هنا.</FONT></P></TD>
+</TR></TABLE>
+
+</CENTER>
+
+<P ALIGN="RIGHT" DIR="RTL">ونعود الآن إلى جدولنا السابق لنطبق عليه هذه الخصائص من خلال الأمثلة التالية:
+</P>
+
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE BORDER=&quot;5&quot; HEIGHT=&quot;300&quot;&gt;‎<BR>
+<FONT COLOR="#FF0000">‎&lt;TR ALIGN=&quot;Left&quot;&gt;‎	</FONT><BR>
+<FONT COLOR="#008000">
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+</FONT>
+<FONT COLOR="#FF0000">
+&lt;‎/TR&gt;<BR><BR>
+‎&lt;TR ALIGN=&quot;Right&quot;&gt;‎<BR>
+</FONT>
+<FONT COLOR="#008000">
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+</FONT>
+<FONT COLOR="#FF0000">
+&lt;‎/TR&gt;<BR><BR>
+‎&lt;TR ALIGN=&quot;Center&quot;&gt;‎ <BR>
+</FONT>
+<FONT COLOR="#008000">
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+</FONT>
+<FONT COLOR="#FF0000">
+&lt;‎/TR&gt;<BR>
+</FONT>
+&lt;‎/TABLE&gt;
+</FONT>
+</P>
+<TABLE BORDER="5" WIDTH="70%" HEIGHT="300">
+<TR ALIGN="Left">
+<TD> Data </TD>
+<TD> Data </TD>
+</TR>
+<TR ALIGN="Right"> 
+<TD> Data </TD>
+<TD> Data </TD> 
+</TR>
+<TR ALIGN="Center"> 
+<TD> Data </TD>
+<TD> Data </TD> 
+</TR>
+</TABLE>
+
+<BR CLEAR=ALL>
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE BORDER=&quot;5&quot; HEIGHT=&quot;300&quot;&gt;‎<BR>
+<FONT COLOR="#FF0000">‎&lt;TR VALIGN=&quot;Top&quot;&gt;‎	</FONT><BR>
+<FONT COLOR="#008000">
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+</FONT>
+<FONT COLOR="#FF0000">&lt;‎/TR&gt;<BR><BR>
+‎&lt;TR VALIGN=&quot;Bottom&quot;&gt;‎<BR>
+</FONT>
+<FONT COLOR="#008000">
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+</FONT>
+<FONT COLOR="#FF0000">
+&lt;‎/TR&gt;<BR><BR>
+‎&lt;TR VALIGN=&quot;Baseline&quot;&gt;‎ <BR>
+</FONT>
+<FONT COLOR="#008000">
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+</FONT>
+<FONT COLOR="#FF0000">&lt;‎/TR&gt;	</FONT><BR>
+&lt;‎/TABLE&gt;
+</FONT>
+
+</P>
+<TABLE BORDER="5" WIDTH="70%" HEIGHT="300">
+<TR VALIGN="Top">
+<TD> Data </TD>
+<TD> Data </TD>
+</TR>
+<TR VALIGN="Bottom"> 
+<TD> Data </TD>
+<TD> Data </TD> 
+</TR>
+<TR VALIGN="Baseline"> 
+<TD> Data </TD>
+<TD> Data </TD> 
+</TR>
+</TABLE>
+<BR CLEAR=ALL>
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+
+
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE BORDER=&quot;5&quot; HEIGHT=&quot;300&quot; BGCOLOR=&quot;#FFFFFF&quot;&gt;‎<BR>
+<FONT COLOR="#FF0000">‎&lt;TR BGCOLOR=&quot;#808080&quot;&gt;‎	</FONT><BR>
+<FONT COLOR="#008000">
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+</FONT>
+<FONT COLOR="#FF0000">&lt;‎/TR&gt;<BR><BR>
+‎&lt;TR BGCOLOR=&quot;#C0C0C0&quot;&gt;‎<BR>
+</FONT>
+<FONT COLOR="#008000">
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+</FONT>
+<FONT COLOR="#FF0000">
+&lt;‎/TR&gt;<BR><BR>
+‎&lt;TR&gt;‎ <BR>
+</FONT>
+<FONT COLOR="#008000">
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+</FONT>
+<FONT COLOR="#FF0000">&lt;‎/TR&gt;	</FONT><BR>
+&lt;‎/TABLE&gt;
+</FONT>
+</P>
+<TABLE BORDER="5" WIDTH="300">
+<TR BGCOLOR="#808080">
+<TD> Data </TD>
+<TD> Data </TD>
+</TR>
+<TR BGCOLOR="#C0C0C0"> 
+<TD> Data </TD>
+<TD> Data </TD> 
+</TR>
+<TR BGCOLOR="#FFFFFF"> 
+<TD> Data </TD>
+<TD> Data </TD> 
+</TR>
+</TABLE>
+<BR CLEAR=ALL>
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+‎&lt;TABLE BORDER=&quot;0&quot; HEIGHT=&quot;100%&quot; WIDTH=&quot;100%&quot;&gt;‎<BR>
+<FONT COLOR="#FF0000">‎&lt;TR BGCOLOR=&quot;#808080&quot;&gt;‎	</FONT><BR>
+<FONT COLOR="#008000">
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+</FONT>
+<FONT COLOR="#FF0000">&lt;‎/TR&gt;<BR><BR>
+‎&lt;TR BGCOLOR=&quot;#C0C0C0&quot;&gt;‎<BR>
+</FONT>
+<FONT COLOR="#008000">
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+</FONT>
+<FONT COLOR="#FF0000">
+&lt;‎/TR&gt;<BR><BR>
+‎&lt;TR BGCOLOR=&quot;#FFFFFF&quot;&gt;‎ <BR>
+</FONT>
+<FONT COLOR="#008000">
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+&lt;TD&gt; <I>Data</I> &lt;‎/TD&gt;<BR>
+</FONT>
+<FONT COLOR="#FF0000">&lt;‎/TR&gt;	</FONT><BR>
+&lt;‎/TABLE&gt;
+</FONT>
+</P>
+</BLOCKQUOTE>
+<TABLE BORDER="0" WIDTH="100%" HEIGHT="100%">
+<TR BGCOLOR="#808080">
+<TD> Data </TD>
+<TD> Data </TD>
+</TR>
+<TR BGCOLOR="#C0C0C0"> 
+<TD> Data </TD>
+<TD> Data </TD> 
+</TR>
+<TR BGCOLOR="#FFFFFF"> 
+<TD> Data </TD>
+<TD> Data </TD> 
+</TR>
+</TABLE>
+<BR CLEAR=ALL>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+&nbsp;<P>
+<BLOCKQUOTE>
+<P ALIGN="RIGHT" DIR="RTL">والآن ماذا بقي لدينا؟ بالطبع بقيت الوسوم الخاصة بالخلايا. وسوف أتابع الحديث عنها في الدرس القادم إن شاء الله. أراك في <A HREF="htutor08.html">الدرس التالي</A> لنتابع الحديث عن موضوع الجداول.
+</P>
+
+</BLOCKQUOTE>
+
+
+
+
+
+<P>
+&nbsp;<BR>
+<CENTER>
+<A HREF="htutor08.html"><IMG SRC="images/next.gif" WIDTH=90 HEIGHT=50 BORDER=0 ALT="Next Lesson"></A>
+<BR>
+&nbsp;<BR>&nbsp;<BR>
+<IMG SRC="images/divbar.gif" WIDTH=600 HEIGHT=24 BORDER=0 ALT=" "><BR>
+
+<TABLE BORDER="0" ALIGN="CENTER" WIDTH="80%">
+<TR>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">إتش.بي بالعربية<BR>
+&copy; 1998-1999
+	<br><A HREF="mailto:yahya@palnet.com"> يحيى الشريف</A>
+	</font></TD>
+<TD><CENTER><IMG SRC="images/hpbutton.gif" WIDTH=128 HEIGHT=47 BORDER=0 ALT="H.P in Arabic Button"></CENTER></TD>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">H.P in arabic<BR>
+	&copy; 1998-1999 <br><A HREF="mailto:yahya@palnet.com">Yahya Al-Sharif</A>
+	</font></TD>
+</TR>
+</TABLE>
+
+<MAP NAME="map2">
+<AREA SHAPE=RECT COORDS="120,5,180,25" HREF="sitemap.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,5,245,25" HREF="whatsnew.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,5,310,25" HREF="thissite.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,5,375,25" HREF="index.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,30,245,50" HREF="pspintro.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,30,375,50" HREF="htmintro.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,55,180,75" HREF="http://www.khayma.com/hpinarabic/search.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,55,245,75" HREF="mailto:yahya@palnet.com" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,55,310,75" HREF="links.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,55,375,75" HREF="http://www.khayma.com/hpinarabic/gbook.html" ALT=" ">
+</MAP>
+
+</CENTER>
+</BODY>
+</HTML>
+<!-- text below generated by server. PLEASE REMOVE --></object></layer></div></span></style></noscript></table></script></applet><script language="JavaScript" src="http://www.geocities.com/js_source/geov2.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.geocities.com/visit.gif" border=0 width=1 height=1></noscript>
+<IMG SRC="http://geo.yahoo.com/serv?s=76001067&t=997914798" ALT=1 WIDTH=1 HEIGHT=1>

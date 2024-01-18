@@ -1,0 +1,293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML DIR="RTL">
+<HEAD>
+	<TITLE>إتش.بي بالعربية - الدرس العاشر</TITLE>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1256">
+	<META NAME="keywords" CONTENT="html,html,html,html,psp,psp,psp,psp,arabic,arabic,arabic,arabic,paint shop pro,paint shop pro,paint shop pro,paint shop pro,webpage design,webpage design,webpage design,webpage design ">
+	<META NAME="description" CONTENT="Html and Paint Shop Pro tutorials in Arabic,learning web page design in Arabic">
+	<META NAME="author" CONTENT="Yahya Al-Sharif">
+	<META NAME="copyright" CONTENT="Copyright 1998 Yahya Al-Sharif">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="images/bg.jpg">
+<BASEFONT SIZE="4" FACE="Arabic Transparent" COLOR="#000000">
+<CENTER>
+<IMG SRC="images/inbanner.gif" WIDTH=500 HEIGHT=80 BORDER=0 usemap="#map2" ALT="">
+</CENTER>
+<P ALIGN="CENTER" DIR="RTL">
+<FONT FACE="Arabic Transparent" SIZE="6" COLOR="#FF0000">
+<STRONG>
+الدرس العاشر<BR>
+الإطارات (2)<BR>
+</STRONG></FONT></P>
+
+
+&nbsp;<BR><CENTER>
+<P ALIGN="center" DIR="RTL"><FONT SIZE="2">
+<A HREF="htutor01.html">[الأساسيات]</A>
+<A HREF="htutor02.html">[الألوان]</A>
+<A HREF="htutor03.html">[الخطوط]</A>
+<A HREF="htutor04.html">[الفقرات والقوائم]</A>
+<A HREF="htutor05.html">[الصور والرسومات]</A>
+<A HREF="htutor06.html">[الوصلات التشعبية]</A><BR>
+<A HREF="htutor07.html">[الجداول1]</A>
+<A HREF="htutor08.html">[الجداول2]</A>
+<A HREF="htutor09.html">[الإطارات1]</A>
+<A HREF="htutor10.html">[الإطارات2]</A>
+<A HREF="htutor11.html">[الإطارات3]</A>
+<A HREF="htutor12.html">[وسوم من هنا وهناك]</A><BR>
+<A HREF="htutor13.html">[الخرائط الصورية]</A>
+<A HREF="htutor14.html">[النماذج1]</A>
+<A HREF="htutor15.html">[النماذج2]</A>
+<A HREF="htutor16.html">[الوسوم الخاصة]</A>
+<A HREF="htutor17.html">[الويب واللغة العربية]</A>
+<A HREF="htutor18.html">[وسوم Meta]</A>
+
+
+</FONT></P>
+</CENTER><BR>
+<CENTER><IMG SRC="images/top_bar.gif" WIDTH=600 HEIGHT=30 BORDER=0 ALT=""></CENTER>
+<BR>&nbsp;<BR>
+<BLOCKQUOTE>
+
+<P ALIGN="RIGHT" DIR="RTL">
+أهلاً وسهلاً بك إلى الدرس العاشر من دروس
+<FONT FACE="Times New Roman" SIZE=4>HTML.</FONT>
+والذي لا زلنا نناقش موضوع الإطارات فيه. لقد تعرفت في الدرس السابق على الأساسيات في هذا الموضوع، وتعلمت كيفية إنشاء صفحة ويب باستخدام مبدأ الإطارات. ونتابع معاً التعرف على باقي الخصائص والتحديدات المتعلقة بها.</P>
+<P ALIGN="RIGHT" DIR="RTL">بداية، أجد من الضروري أن أذكرك بالوسمين الأساسيين للإطارات واللذين ندرجهما في الملف الأساسي، وهما
+<FONT FACE="Times New Roman" SIZE=4>&lt;FRAMESET&gt;</FONT>
+والذي يوضع بدلاً من 
+<FONT FACE="Times New Roman" SIZE=4>&lt;BODY&gt;</FONT>
+ويشكّل الوسم الأساسي لتحديد مجموعة الإطارات في الصفحة وخصائص هذه المجموعة ككل. و
+<FONT FACE="Times New Roman" SIZE=4>&lt;FRAME&gt;</FONT>
+الذي يوضع داخل نطاق الوسم السابق ويعرّف الملف المصدر لكل إطار ويحدد خصائصه.
+ومن المهم جداُ أن نميز بين الخصائص المتعلقة بكل وسم وأن لا نخلط بينهما.
+</P>
+<P ALIGN="RIGHT" DIR="RTL">
+وعند الحديث عن الإطارات سوف نواجه تلك المشكلة العتيدة التي تؤرق دائماً مصممي صفحات الويب، ألا وهي مسألة توافق الوسوم والخصائص مع المتصفحات المختلفة (والتي قمت بتوضيحها 
+<A HREF="htutor16.html">هنا</A>). فمثلاً لدينا أربع خصائص للوسم 
+<FONT FACE="Times New Roman" SIZE=4>&lt;FRAMESET&gt;</FONT>
+، لكن واحدة منها فقط تعمل مع كلا المتصفحين الرئيسيين
+<FONT FACE="Times New Roman" SIZE=4>Netscape, MS Explorer.</FONT>
+وكما إعتدنا سوف لن أركز على هذه الخصائص ، لكن على الأقل سأكتفي بذكرها وذكر عملها وأترك لك حرية تجربتها إن أردت.
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+أولى هذه الخصائص هي 
+<FONT FACE="Times New Roman" SIZE=4>FRAMEBORDER</FONT>
+وهي تقوم بتحديد ظهور أو عدم ظهور الحدود حول الإطارات وتأخذ القيم 1 للظهور، و0 لعدم الظهور. وهذا مثال عليها:
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;FRAMESET ROWS=&quot;50,*,15%,20%&quot; FRAMEBORDER=&quot;0&quot;&gt;‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;FRAME SRC=&quot;frame1.html&quot;&gt;‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;FRAME SRC=&quot;frame2.html&quot;&gt;‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;FRAME SRC=&quot;frame3.html&quot;&gt;‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;FRAME SRC=&quot;frame4.html&quot;&gt;‎<BR>
+&lt;‎/FRAMESET&gt;<BR>
+<A HREF="examples/masterfb.html" target="_blank">&nbsp;&nbsp;*&nbsp;&nbsp;</A>
+</FONT></P>
+<P ALIGN="RIGHT" DIR="RTL">أما الخصائص الثلاث الأخرى فهي:
+<UL>
+<LI><P ALIGN="right" DIR="RTL"><FONT FACE="Times New Roman" SIZE=4>BORDER: </FONT>
+تحدد سمك الحدود الظاهرة  حول الإطارات وهي تأخذ قيماً بالبيكسل.
+<FONT FACE="Arial" SIZE=2>(‎BORDER=&quot;n&quot;‎)</FONT>
+ وتعمل فقط مع
+<FONT FACE="Times New Roman" SIZE=4>Netscape</FONT>
+ <BR>
+<LI><P ALIGN="right" DIR="RTL"><FONT FACE="Times New Roman" SIZE=4>BORDERCOLOR: </FONT>
+لإضافة لون للحدود
+<FONT FACE="Arial" SIZE=2>(‎BORDERCOLOR=&quot;rrggbb&quot;‎)</FONT>
+وتعمل مع
+<FONT FACE="Times New Roman" SIZE=4>Netscape</FONT>
+أيضاً.
+ <BR>
+<LI><P ALIGN="right" DIR="RTL"><FONT FACE="Times New Roman" SIZE=4>FRAMESPACING: </FONT>
+لتحديد مسافات فارغة إضافية حول الإطارات وتأخذ قيماً بالبيكسل
+<FONT FACE="Arial" SIZE=2>(FRAMESPACING=&quot;n&quot;‎)</FONT>
+وهي تعمل مع 
+<FONT FACE="Times New Roman" SIZE=4>MS Explorer.</FONT>
+</UL>
+</P>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+<P ALIGN="RIGHT" DIR="RTL">أما الخصائص المستخدمة مع الوسم 
+<FONT FACE="Times New Roman" SIZE=4>&lt;FRAME&gt;</FONT>
+فهي كالتالي:
+</P>
+<P ALIGN="RIGHT" DIR="RTL">
+<UL>
+<LI><P ALIGN="right" DIR="RTL"><FONT FACE="Times New Roman" SIZE=4>MARGINHEIGHT: </FONT>
+تحدد مقدار المسافة الفارغة المتروكة للهوامش العلوية والسفلية للإطار (بالبيكسل).
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>‎MARGINHEIGHT=&quot;n&quot;‎</FONT></P>
+
+<LI><P ALIGN="right" DIR="RTL"><FONT FACE="Times New Roman" SIZE=4>MARGINWIDTH: </FONT>
+تحدد مقدار المسافة الفارغة المتروكة للهوامش اليمنى واليسرى للإطار (بالبيكسل). 
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>‎MARGINWIDTH=&quot;n&quot;‎</FONT></P>
+
+
+<LI><P ALIGN="right" DIR="RTL"><FONT FACE="Times New Roman" SIZE=4>SCROLLING: </FONT>
+تحدد إمكانية ظهور أو عدم ظهور أشرطة التصفح الأفقية والعمودية على جوانب أو أسفل الإطار. وتأخذ القيم 
+<FONT FACE="Times New Roman" SIZE=4>yes</FONT>
+للظهور.
+<FONT FACE="Times New Roman" SIZE=4>no</FONT>
+لعدم الظهور. و
+<FONT FACE="Times New Roman" SIZE=4>auto</FONT> 
+التي تحدد ظهور الأشرطة أو عدمه تلقائياً بحسب الحاجة إليها. تماماً كما يحدث في معظم تطبيقات
+<FONT FACE="Times New Roman" SIZE=4>Windows</FONT> 
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+SCROLLING=&quot;yes&quot;‎<BR>
+SCROLLING=&quot;no&quot;‎<BR>
+SCROLLING=&quot;auto&quot;‎<BR>
+</FONT></P>
+
+<LI><P ALIGN="right" DIR="RTL"><FONT FACE="Times New Roman" SIZE=4>NORESIZE</FONT>
+عند إضافة هذه الخاصية يتم منع عملية التحكم بحجم الإطار بالتصغير أو التكبير من خلال السحب والإفلات. وهي لا تأخذ أي قيم. 
+</UL>
+</P>
+<P ALIGN="RIGHT" DIR="RTL"> ولتوضيح مبدأ عمل هذه الخصائص إليك هذه الأمثلة،
+(سأقوم باستخدام الملف الرئيسي الذي أدرجت فيه الصورة في الدرس السابق، فهو أفضل مثال لتوضيحها). ولكي أذكرك به رجاءً أنقر 
+<A HREF="examples/mastimag.html" target="_blank">هنا.</A> 
+وقم بتفحصه والتدقيق في تفاصيله لكي تقارنها بما سينتج عن الأمثلة التالية، كذلك حاول القيام بتكبير الإطار أو تصغيره بوضع المؤشر على الحد ثم استخدام السحب والإفلات بالإتجاه المطلوب. وذلك لكي تستطيع تمييز عمل الخاصية 
+<FONT FACE="Times New Roman" SIZE=4>NORESIZE</FONT>
+</P>
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;FRAMESET COLS=&quot;50%,50%&quot;&gt;‎<BR>
+‎&lt;FRAME SRC=&quot;thedome.jpg&quot; MARGINHEIGHT=&quot;40&quot;&gt;‎<BR>
+‎&lt;FRAME SRC=&quot;frame2.html&quot;&gt;‎<BR>
+‎&lt;/FRAMESET&gt;‎<BR>
+<A HREF="examples/msmarghg.html" target="_blank">&nbsp;&nbsp;*&nbsp;&nbsp;</A>
+</FONT></P>
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;FRAMESET COLS=&quot;50%,50%&quot;&gt;‎<BR>
+‎&lt;FRAME SRC=&quot;thedome.jpg&quot; MARGINHEIGHT=&quot;40&quot; MARGINWIDTH=&quot;30&quot;&gt;‎<BR>
+‎&lt;FRAME SRC=&quot;frame2.html&quot;&gt;‎<BR>
+‎&lt;/FRAMESET&gt;‎<BR>
+<A HREF="examples/msmargwd.html" target="_blank">&nbsp;&nbsp;*&nbsp;&nbsp;</A>
+</FONT></P>
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;FRAMESET COLS=&quot;50%,50%&quot;&gt;‎<BR>
+‎&lt;FRAME SRC=&quot;thedome.jpg&quot; MARGINHEIGHT=&quot;40&quot; MARGINWIDTH=&quot;30&quot; SCROLLING=&quot;yes&quot;&gt;‎<BR>
+‎&lt;FRAME SRC=&quot;frame2.html&quot;&gt;‎<BR>
+‎&lt;/FRAMESET&gt;‎<BR>
+<A HREF="examples/msscroll.html" target="_blank">&nbsp;&nbsp;*&nbsp;&nbsp;</A>
+</FONT></P>
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;FRAMESET COLS=&quot;50%,50%&quot;&gt;‎<BR>
+‎&lt;FRAME SRC=&quot;thedome.jpg&quot; MARGINHEIGHT=&quot;40&quot; MARGINWIDTH=&quot;30&quot; SCROLLING=&quot;yes&quot; NORESIZE&gt;‎<BR>
+‎&lt;FRAME SRC=&quot;frame2.html&quot;&gt;‎<BR>
+‎&lt;/FRAMESET&gt;‎<BR>
+<A HREF="examples/msnorsiz.html" target="_blank">&nbsp;&nbsp;*&nbsp;&nbsp;</A>
+</FONT></P>
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+&nbsp;<BR>
+<P ALIGN="RIGHT" DIR="RTL">
+كذلك هناك الخصائص 
+<FONT FACE="Times New Roman" SIZE=4>FRAMEBORDER, FRAMESPACING, BORDER, BORDERCOLOR</FONT>
+التي تستخدم مع هذا الوسم وبنفس التفاصيل التي ذكرت مع 
+<FONT FACE="Times New Roman" SIZE=4>&lt;FRAMESET&gt;.</FONT>
+لكنها بالطبع تحدد خصائص الإطار وحده وليس مجموعة الإطارات ككل في الصفحة.
+وهي تعمل على متصفحات معينة دون غيرها.
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+بقي لدينا الخاصية
+<FONT FACE="Times New Roman" SIZE=4>NAME</FONT>
+والتي تعتبر أهم خاصية لهذا الوسم، فهي التي تحدد طريقة تنسيق العمل بين الإطارات والصفحات وأسلوب عرضها لذلك فقد فضلت أن أفرد لها موضوعاً خاصاً وبصورة مستقلة عن باقي الخصائص، وذلك في الدرس التالي إن شاء الله.</P>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4">
+
+<P ALIGN="RIGHT" DIR="RTL">هناك وسم ثالث يتعلق بالإطارات، ويتم إدراجه داخل الملف الرئيسي وعادة في النهاية وهو:
+</P>
+<P ALIGN="CENTER" DIR="LTR"><FONT FACE="Times New Roman" SIZE=4>&lt;NOFRAMES&gt; ... &lt;‎/NOFRAMES&gt;
+</FONT></P>
+<P ALIGN="RIGHT" DIR="RTL">يستخدم هذا الوسم لتوفير بديل معين عن صفحة الإطارات في حالة قيام أحد الزوار بدخول الموقع مستخدماً متصفحاً لا يدعم الإطارات. (بالمناسبة فإن هناك متصفحات لا يمكن لها أن تعرض الإطارات مثل الإصدارات القديمة لـِ
+<FONT FACE="Times New Roman" SIZE=4>Netscape, MS Explorer)</FONT>
+لكنك حتماً تستطيع مشاهدتها وذلك لأن الإصدارات  المعربة من هذه المتصفحات هي إصدارات حديثة نسبياً وتدعم الإطارات.
+</P>
+<P ALIGN="RIGHT" DIR="RTL">فإذا أردت أن تمنح زوار موقعك الذين لا يستخدمون متصفحاً حديثاً فرصة مشاهدة موقعك، فكل ما عليك فعله هو إدراج هذا الوسم في نهاية الملف الرئيسي للإطارات والبدء بكتابة صفحتك كما لو كانت صفحة ويب عادية.
+
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+&lt;HTML&gt;<BR>
+&lt;HEAD&gt;<BR>
+	&lt;TITLE&gt;Main File&lt;‎/TITLE&gt;<BR>
+&lt;‎/HEAD&gt;<BR>
+‎&lt;FRAMESET ROWS=&quot;50,*,15%,20%&quot; FRAMEBORDER=&quot;0&quot;&gt;‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;FRAME SRC=&quot;frame1.html&quot;&gt;‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;FRAME SRC=&quot;frame2.html&quot;&gt;‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;FRAME SRC=&quot;frame3.html&quot;&gt;‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;FRAME SRC=&quot;frame4.html&quot;&gt;‎<BR>
+&lt;‎/FRAMESET&gt;<BR>&nbsp;<BR>
+&lt;NOFRAMES&gt;<BR>
+&lt;BODY&gt;<BR>
+</FONT></P>
+<P ALIGN="CENTER" DIR="RTL"><FONT SIZE="-1">
+أكتب صفحتك<BR>
+ بالصورة<BR>
+ الإعتيادية هنا
+</FONT></P>
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+&lt;‎/BODY&gt;<BR>
+&lt;‎/NOFRAMES&gt;<BR>&nbsp;<BR>
+&lt;‎/HTML&gt;<BR>
+</FONT></P>
+
+<P ALIGN="RIGHT" DIR="RTL">أما إذا كنت مصراً على إطاراتك ولا تريد إنشاء نسخة أخرى للموقع  بدونها، فلم لا تكتب ملاحظة بسيطة ضمن هذا الوسم تخبر فيها زائرك بأن الموقع يحتوي على هذه الإطارات وأنه يحتاج إلى متصفح مناسب (على الأقل لكي تخفف عنه الصدمة)!!
+
+</P>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4">
+<P ALIGN="RIGHT" DIR="RTL">وماذا بعد...؟ لم يبق أي شيء ليذكر في هذا الدرس فقد قمنا بمناقشة جميع خصائص الإطارات عدا الخاصية 
+<FONT FACE="Times New Roman" SIZE=4>NAME.</FONT>
+ ما رأيك لو قمنا بالتدرب  على إنشاء نسخة من هذا الموقع باستخدام الإطارات في الدرس التالي؟ فكر في هذا الموضوع وتخيّل تصميماً معيناً تحب أن تراه في هذا الموقع (أو بالأحرى تحب أن ترى الموقع فيه). وقم بتجهيز الملفات الخاصة بذلك لتقارنها مع الملفات والأمثلة التي سأوردها. أراك على خير في
+<A HREF="htutor11.html">الدرس التالي</A>
+</P>
+</BLOCKQUOTE>
+<P>
+&nbsp;<BR>
+<CENTER>
+<A HREF="htutor11.html"><IMG SRC="images/next.gif" WIDTH=90 HEIGHT=50 BORDER=0 ALT="Next Lesson"></A>
+<BR>
+&nbsp;<BR>&nbsp;<BR>
+<IMG SRC="images/divbar.gif" WIDTH=600 HEIGHT=24 BORDER=0 ALT=" "><BR>
+
+<TABLE BORDER="0" ALIGN="CENTER" WIDTH="80%">
+<TR>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">إتش.بي بالعربية<BR>
+&copy; 1998-1999
+	<br><A HREF="mailto:yahya@palnet.com"> يحيى الشريف</A>
+	</font></TD>
+<TD><CENTER><IMG SRC="images/hpbutton.gif" WIDTH=128 HEIGHT=47 BORDER=0 ALT="H.P in Arabic Button"></CENTER></TD>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">H.P in arabic<BR>
+	&copy; 1998-1999 <br><A HREF="mailto:yahya@palnet.com">Yahya Al-Sharif</A>
+	</font></TD>
+</TR>
+</TABLE>
+
+<MAP NAME="map2">
+<AREA SHAPE=RECT COORDS="120,5,180,25" HREF="sitemap.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,5,245,25" HREF="whatsnew.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,5,310,25" HREF="thissite.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,5,375,25" HREF="index.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,30,245,50" HREF="pspintro.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,30,375,50" HREF="htmintro.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,55,180,75" HREF="http://www.khayma.com/hpinarabic/search.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,55,245,75" HREF="mailto:yahya@palnet.com" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,55,310,75" HREF="links.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,55,375,75" HREF="http://www.khayma.com/hpinarabic/gbook.html" ALT=" ">
+</MAP>
+
+</CENTER>
+</BODY>
+</HTML>
+<!-- text below generated by server. PLEASE REMOVE --></object></layer></div></span></style></noscript></table></script></applet><script language="JavaScript" src="http://www.geocities.com/js_source/geov2.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.geocities.com/visit.gif" border=0 width=1 height=1></noscript>
+<IMG SRC="http://geo.yahoo.com/serv?s=76001067&t=996743077" ALT=1 WIDTH=1 HEIGHT=1>
