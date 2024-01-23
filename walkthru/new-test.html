@@ -12,7 +12,66 @@
     <link rel="stylesheet" href="../public/walkthru-style.css" />
   </head>
 
-  <body>
+  <body onload="fetchPages()">
+    <script>
+      async function fetchPages() {
+        const response = await fetch(
+          './pages.json'
+        );
+        const movies = await response.json();
+        console.log('JSONNN', movies);
+      }
+
+      function createLink(url) {
+        // Sanitize the URL to prevent potential security issues
+        const sanitizedUrl = encodeURI(url);
+
+        // Create an HTML string for the link
+        const linkHTML = `<a href="${sanitizedUrl}" target="_blank">Link</a>`;
+
+        return linkHTML;
+      }
+
+      // Function to fetch and process JSON data
+      async function processJsonData() {
+        console.log('DATA', pagesData);
+        try {
+          // Fetch the JSON file
+          const response = await fetch('pages.json');
+          const jsonData = await response.json();
+
+          console.log('json data', jsonData);
+
+          // // Extract the URL from the JSON and create the link
+          // const linkUrl = jsonData.link.url;
+          // const linkHTML = createLink(linkUrl);
+
+          // // Output the generated HTML to the document body
+          // document.body.innerHTML = linkHTML;
+        } catch (error) {
+          console.error('Error processing JSON:', error);
+        }
+      }
+
+      // Call the function to fetch and process JSON data
+      processJsonData();
+
+      function toggleInfo() {
+        console.log('test');
+        var x = document.getElementById('info-panel');
+        console.log('X', x);
+        if (x.style.visibility === 'hidden') {
+          console.log('vis');
+          x.style.display = 'visible';
+        } else {
+          console.log('ehh');
+          x.style.display = 'hidden';
+        }
+      }
+    </script>
+    <div class="tooltip">
+      <span class="infopanel" id="info-panel">lorem ipsum</span>
+    </div>
     <div class="walkthru-grid">
       <div class="walkthru-title">
         <span>
@@ -33,9 +92,7 @@
       <div class="walkthru-info">walkthru-info</div>
       <div class="window walkthru-window">
         <div class="title-bar">
-          <div class="title-bar-text">
-            HTML Tutorial in Arabic
-          </div>
+          <div class="title-bar-text">HTML Tutorial in Arabic</div>
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>
@@ -52,14 +109,14 @@
               onclick="window.history.back()"
               src="../public/back.svg"
               height="23px"
-              style="margin-bottom: 4px;"
+              style="margin-bottom: 4px"
             />
             <input
               type="image"
               onclick="window.history.forward()"
               src="../public/front.svg"
               height="23px"
-              style="margin-bottom: 4px;"
+              style="margin-bottom: 4px"
             />
             <div class="divider">|</div>
             <a class="tooltip" href="../index.html">
@@ -69,13 +126,16 @@
                 height="25px"
               /><span class="tooltiptext">Go to Main Page</span>
             </a>
-            <a class="tooltip" href="../index.html">
+            <a class="tooltip">
               <input
                 type="image"
                 src="../public/icons/info.svg"
                 height="25px"
+                onClick="toggleInfo()"
               />
-              <span class="tooltiptext">View page information and notes</span>
+              <span class="tooltiptext"
+                >View page information and notes</span
+              >
             </a>
             <a class="tooltip" href="../index.html">
               <input
@@ -91,7 +151,9 @@
                 src="../public/icons/search_web-1.svg"
                 height="25x"
               />
-              <span class="tooltiptext">Open page on Wayback Machine</span>
+              <span class="tooltiptext"
+                >Open page on Wayback Machine</span
+              >
             </a>
           </section>
         </div>
@@ -99,7 +161,7 @@
           id="frame"
           title=""
           width="99.5%"
-          src="../sites/www.geocities.com/SiliconValley/Lab/1832/htutor05.html"
+          src="../sites/personal-pages/zuhairhm/zuhairhm.html"
         >
         </iframe>
       </div>
