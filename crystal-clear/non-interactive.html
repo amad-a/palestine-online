@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="../public/crystal-clear.css" />
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="../public/walkthru-style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      :root {
+        background-image: none;
+        background-repeat: repeat;
+      }
+    </style>
+    <script>
+      function run(interval, frames) {
+        var int = 1;
+
+        function func() {
+          document.body.id = 'b' + int;
+          int++;
+          if (int === frames) {
+            int = 1;
+          }
+        }
+
+        var swap = window.setInterval(func, interval);
+      }
+
+      run(10000, 16); //milliseconds, frames
+    </script>
+
+    <div class="noninteractive-grid">
+      <!-- <div class="walkthru-title">
+        <span>
+          <h1></h1>
+        </span>
+      </div> -->
+
+      <div class="noninteractive-grid-1">
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-bar-text">Zuhair's Page</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body" style="height: 768px; margin: 0px">
+            <iframe
+              style="height: 764px"
+              src="../crystal-clear/zuhairhm/zuhairhm.html"
+              width="800px"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="noninteractive-grid-2">
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-bar-text">Reality of Palestine</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body" style="height: 768px; margin: 0px">
+            <iframe
+              style="height: 764px"
+              src="../crystal-clear/realityofpalestine/p.html"
+              width="800px"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
