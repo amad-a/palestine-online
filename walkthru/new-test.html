@@ -31,7 +31,14 @@
           </div>
         </div>
         <div class="info-panel-body">
-          The webpage of Nidal Jayyousi, a man from Tulkarm, West Bank, Palestine, featuring beautiful photos of himself and his children. But wait! There’s also a special secret second page! This Angelfire page used to belong to Nidal’s brother Waled, who had since moved on to the far superior Geocities. You can visit Waleed’s new page by clicking "Here”. Waleed is an engineer living in Chicago, who also maintains a website on the brothers’ home city of Tulkarm (coming soon!)
+          The webpage of Nidal Jayyousi, a man from Tulkarm, West
+          Bank, Palestine, featuring beautiful photos of himself and
+          his children. But wait! There’s also a special secret second
+          page! This Angelfire page used to belong to Nidal’s brother
+          Waled, who had since moved on to the far superior Geocities.
+          You can visit Waleed’s new page by clicking "Here”. Waleed
+          is an engineer living in Chicago, who also maintains a
+          website on the brothers’ home city of Tulkarm (coming soon!)
         </div>
       </div>
 
@@ -84,7 +91,7 @@
                 type="image"
                 src="../public/home.svg"
                 height="25px"
-              /><span class="tooltiptext">Go to Main Page</span>
+              /><span class="tooltiptext">Go to main page & contents</span>
             </a>
             <a
               class="tooltip"
@@ -94,7 +101,7 @@
                 type="image"
                 src="../public/netmeeting-1.svg"
                 height="25px"
-              /><span class="tooltiptext">Reload Current Page</span>
+              /><span class="tooltiptext">Reload current page</span>
             </a>
             <a class="tooltip">
               <input
@@ -104,16 +111,8 @@
                 onClick="toggleInfo()"
               />
               <span class="tooltiptext"
-                >View page information and notes</span
+                >View page information</span
               >
-            </a>
-            <a class="tooltip" href="../index.html">
-              <input
-                type="image"
-                src="../public/icons/help_book_small-5.svg"
-                height="25px"
-              />
-              <span class="tooltiptext">Go to random page</span>
             </a>
             <a class="tooltip" href="../index.html">
               <input
@@ -128,11 +127,20 @@
             <a class="tooltip">
               <input
                 type="image"
+                src="../public/icons/help_book_small-5.svg"
+                height="25px"
+                onClick="goToRandomPage()"
+              />
+              <span class="tooltiptext">Go to random page</span>
+            </a>
+            <a class="tooltip">
+              <input
+                type="image"
                 onclick="setWallpaper()"
                 src="../public/frame_web-1.svg"
                 height="25px"
               />
-              <span class="tooltiptext">Change Wallpaper</span>
+              <span class="tooltiptext">Change wallpaper</span>
             </a>
           </section>
           <iframe
