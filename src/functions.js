@@ -2,8 +2,9 @@
 let randomWallpaper = Math.floor(Math.random() * 12);
 
 if (sessionStorage.getItem('wallpaper') === null) {
-  document.documentElement.id = 'b' + randomWallpaper.toString();
-  sessionStorage.setItem('wallpaper', randomWallpaper.toString());
+  let wallpaperString = randomWallpaper.toString();
+  document.documentElement.id = 'b' + wallpaperString;
+  sessionStorage.setItem('wallpaper', wallpaperString);
 } else {
   document.documentElement.id =
     'b' + sessionStorage.getItem('wallpaper');

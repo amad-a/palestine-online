@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Palestine Online</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="../public/walkthru-style.css" />
+    <script src="../src/functions.js"></script>
+  </head>
+  <script></script>
+  <body>
+    <div class="walkthru-grid">
+      <div
+        class="info-panel-container"
+        id="info-panel-container"
+        style="visibility: hidden"
+      >
+        <div class="notes-header">Page Information</div>
+        <div class="close-info-panel-button">
+          <div class="title-bar-controls">
+            <button
+              class="notes-close-button"
+              style="zoom: 1.4"
+              aria-label="Close"
+              onclick="toggleInfo()"
+            ></button>
+          </div>
+        </div>
+        <div class="info-panel-body">
+          The personal/portfolio website of Omayyah Joha, a Palestinian political cartoonist and caricaturist for Al Quds Newspaper. Included on this site are her cartoons on various subjects including Palestine, Israel, the United States, and the greater Arab World.
+        </div>
+      </div>
+
+      <div class="walkthru-left-arrow">
+        <a href="ramallah-1996.html">
+          <input type="image" src="../public/icons/l.png" />
+        </a>
+      </div>
+      <div class="walkthru-right-arrow">
+        <a href="samia-halaby.html">
+          <input type="image" src="../public/icons/r.gif" />
+        </a>
+      </div>
+      <div class="walkthru-info">walkthru-info</div>
+      <div class="window walkthru-window">
+        <div class="title-bar">
+          <div class="title-bar-text">Omayya Joha&#39;s Site, 2001</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body" style="margin: 0px">
+          <section
+            style="margin: 8px 8px 6px 8px"
+            class="field-row"
+            style="justify-content: flex-start"
+          >
+            <input
+              type="image"
+              onclick="window.history.back()"
+              src="../public/back.svg"
+              height="24px"
+              style="margin-bottom: 4px"
+            />
+            <input
+              type="image"
+              onclick="window.history.forward()"
+              src="../public/front.svg"
+              height="24px"
+              style="margin-bottom: 4px"
+            />
+            <div class="divider">|</div>
+            <a
+              class="tooltip"
+              onclick="changeIframe('../index.html')"
+            >
+              <input
+                type="image"
+                src="../public/home.svg"
+                height="25px"
+              /><span class="tooltiptext">Go to main page & contents</span>
+            </a>
+            <a
+              class="tooltip"
+              onclick="changeIframe('../sites/art-culture-history/omayya/index.html')"
+            >
+              <input
+                type="image"
+                src="../public/netmeeting-1.svg"
+                height="25px"
+              /><span class="tooltiptext">Reload current page</span>
+            </a>
+            <a class="tooltip">
+              <input
+                type="image"
+                src="../public/icons/info.svg"
+                height="25px"
+                onClick="toggleInfo()"
+              />
+              <span class="tooltiptext"
+                >View page information</span
+              >
+            </a>
+            <a class="tooltip" href="https://web.archive.org/web/20011130122507/http://omayya.com/" target="_blank">
+              <input
+                type="image"
+                src="../public/icons/search_web-1.svg"
+                height="25x"
+              />
+              <span class="tooltiptext"
+                >Open page on Wayback Machine</span
+              >
+            </a>
+            <a class="tooltip">
+              <input
+                type="image"
+                src="../public/icons/help_book_small-5.svg"
+                height="25px"
+                onClick="goToRandomPage()"
+              />
+              <span class="tooltiptext">Go to random page</span>
+            </a>
+            <a class="tooltip">
+              <input
+                type="image"
+                onclick="setWallpaper()"
+                src="../public/frame_web-1.svg"
+                height="25px"
+              />
+              <span class="tooltiptext">Change wallpaper</span>
+            </a>
+          </section>
+          <iframe
+            id="frame"
+            title="Omayya Joha&#39;s Site"
+            width="99.5%"
+            src="../sites/art-culture-history/omayya/index.html"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
