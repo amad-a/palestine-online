@@ -90,6 +90,7 @@ iframe {
   position: absolute;
   top: 10px;
   left: 10px;
+  padding-left: 10px;
   font-size: 24px;
   font-family: serif;
   font-weight: bold;
@@ -103,9 +104,9 @@ iframe {
 
 .info-panel-body {
   text-align: left;
-  padding: 10px;
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 20px 10px 20px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
   padding-top: 50px;
 }
 
