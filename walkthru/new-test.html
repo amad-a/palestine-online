@@ -10,73 +10,30 @@
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
     <!-- <link rel="stylesheet" href="../public/window-style.css" /> -->
     <link rel="stylesheet" href="../public/walkthru-style.css" />
+    <script src="../src/functions.js"></script>
   </head>
 
-  <body onload="fetchPages()">
-    <script>
-      async function fetchPages() {
-        const response = await fetch(
-          './pages.json'
-        );
-        const movies = await response.json();
-        console.log('JSONNN', movies);
-      }
-
-      function createLink(url) {
-        // Sanitize the URL to prevent potential security issues
-        const sanitizedUrl = encodeURI(url);
-
-        // Create an HTML string for the link
-        const linkHTML = `<a href="${sanitizedUrl}" target="_blank">Link</a>`;
-
-        return linkHTML;
-      }
-
-      // Function to fetch and process JSON data
-      async function processJsonData() {
-        console.log('DATA', pagesData);
-        try {
-          // Fetch the JSON file
-          const response = await fetch('pages.json');
-          const jsonData = await response.json();
-
-          console.log('json data', jsonData);
-
-          // // Extract the URL from the JSON and create the link
-          // const linkUrl = jsonData.link.url;
-          // const linkHTML = createLink(linkUrl);
-
-          // // Output the generated HTML to the document body
-          // document.body.innerHTML = linkHTML;
-        } catch (error) {
-          console.error('Error processing JSON:', error);
-        }
-      }
-
-      // Call the function to fetch and process JSON data
-      processJsonData();
-
-      function toggleInfo() {
-        console.log('test');
-        var x = document.getElementById('info-panel');
-        console.log('X', x);
-        if (x.style.visibility === 'hidden') {
-          console.log('vis');
-          x.style.display = 'visible';
-        } else {
-          console.log('ehh');
-          x.style.display = 'hidden';
-        }
-      }
-    </script>
-    <div class="tooltip">
-      <span class="infopanel" id="info-panel">lorem ipsum</span>
-    </div>
+  <body onload="setInitWallpaper()">
     <div class="walkthru-grid">
-      <div class="walkthru-title">
-        <span>
-          <h1></h1>
-        </span>
+      <div
+        class="info-panel-container"
+        id="info-panel-container"
+        style="visibility: hidden"
+      >
+        <div class="notes-header">Page Information</div>
+        <div class="close-info-panel-button">
+          <div class="title-bar-controls">
+            <button
+              class="notes-close-button"
+              style="zoom: 1.4"
+              aria-label="Close"
+              onclick="toggleInfo()"
+            ></button>
+          </div>
+        </div>
+        <div class="info-panel-body">
+          Lorem ipsum dolor sit amet consec
+        </div>
       </div>
 
       <div class="walkthru-left-arrow">
@@ -92,15 +49,16 @@
       <div class="walkthru-info">walkthru-info</div>
       <div class="window walkthru-window">
         <div class="title-bar">
-          <div class="title-bar-text">HTML Tutorial in Arabic</div>
+          <div class="title-bar-text">Zuhair's Homepage</div>
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>
             <button aria-label="Close"></button>
           </div>
         </div>
-        <div class="window-body">
+        <div class="window-body" style="margin: 0px">
           <section
+            style="margin: 8px 8px 6px 8px"
             class="field-row"
             style="justify-content: flex-start"
           >
@@ -108,23 +66,37 @@
               type="image"
               onclick="window.history.back()"
               src="../public/back.svg"
-              height="23px"
+              height="24px"
               style="margin-bottom: 4px"
             />
             <input
               type="image"
               onclick="window.history.forward()"
               src="../public/front.svg"
-              height="23px"
+              height="24px"
               style="margin-bottom: 4px"
             />
             <div class="divider">|</div>
-            <a class="tooltip" href="../index.html">
+
+            <a
+              class="tooltip"
+              onclick="changeIframe('../sites/personal-pages/zuhairhm.html')"
+            >
               <input
                 type="image"
                 src="../public/home.svg"
                 height="25px"
               /><span class="tooltiptext">Go to Main Page</span>
+            </a>
+            <a
+              class="tooltip"
+              onclick="changeIframe('../sites/personal-pages/zuhairhm/zuhairhm.html')"
+            >
+              <input
+                type="image"
+                src="../public/netmeeting-1.svg"
+                height="25px"
+              /><span class="tooltiptext">Reload Current Page</span>
             </a>
             <a class="tooltip">
               <input
@@ -155,15 +127,26 @@
                 >Open page on Wayback Machine</span
               >
             </a>
+            <a class="tooltip">
+              <input
+                type="image"
+                onclick="setWallpaper()"
+                src="../public/frame_web-1.svg"
+                height="25px"
+              />
+              <span class="tooltiptext"
+                >Change Wallpaper</span
+              >
+            </a>
           </section>
+          <iframe
+            id="frame"
+            title=""
+            width="99.5%"
+            src="../sites/personal-pages/zuhairhm/zuhairhm.html"
+          >
+          </iframe>
         </div>
-        <iframe
-          id="frame"
-          title=""
-          width="99.5%"
-          src="../sites/personal-pages/zuhairhm/zuhairhm.html"
-        >
-        </iframe>
       </div>
     </div>
   </body>

@@ -4,10 +4,6 @@ html {
   zoom: 1.05;
 }
 
-:root {
-  background-image: url('../sites/personal-pages/amnah_samara/lets-learn/02.GIF');
-  background-repeat: repeat;
-}
 
 @font-face {
   font-family: 'Dom';
@@ -68,6 +64,51 @@ iframe {
   grid-gap: 0;
 }
 
+#info-panel-container {
+  width: 760px;
+  height: 580px;
+  margin: 75px;
+  outline: solid 1px black;
+  display: flex;
+  position: absolute;
+  border: 2px solid black;
+  background-color: rgb(255, 245, 129);
+  opacity: 0.97;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0);
+  height: max-content;
+  padding-bottom: 10px;
+
+ }
+
+.close-info-panel-button {
+  position: absolute;
+  top: 7.5px;
+  right: 7.5px;
+}
+
+.notes-header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  font-family: serif;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+}
+
+.notes-close-button:hover {
+  cursor: pointer;
+}
+
+.info-panel-body {
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 50px;
+}
+
 .walkthru-window {
   grid-row-start: 2;
   grid-row-end: 2;
@@ -78,9 +119,12 @@ iframe {
 }
 
 .walkthru-title {
-  grid-row-start: 1;
-  grid-row-end: 1;
-  grid-column-start: 0;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  position: absolute;
+  align-items: center;
 }
 
 .title-bar-text {
@@ -102,14 +146,14 @@ iframe {
   padding-bottom: 0px;
 }
 
-h1 {
+/* h1 {
   background: -webkit-linear-gradient(90deg, #a50000, #ff5353);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 5px;
   letter-spacing: 2px;
   font-size: 48px;
-}
+} */
 
 .walkthru-left-arrow {
   justify-content: right;
@@ -145,7 +189,7 @@ h1 {
 }
 
 iframe {
-  height: 595px;
+  height: 597px;
 }
 
 .tooltip {
@@ -218,51 +262,69 @@ button {
 }
 
 .noninteractive-grid-1 {
-grid-column-start: 1;
-grid-column-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
 }
 .noninteractive-grid-2 {
   grid-column-start: 2;
   grid-column-end: 2;
 }
 
-::-webkit-scrollbar:horizontal {
-  height: 17px;
+#b0 {
+  background-image: url('tiles/keffiyeh-dithered.gif');
+  background-repeat: repeat;
 }
 
-::-webkit-scrollbar-corner {
-  background: var(--button-face);
+#b1 {
+  background-image: url('tiles/aqwa-man-tile-bg.jpg');
+  background-repeat: repeat;
+}
+#b2 {
+  background-image: url('tiles/arabic-html-tutorial-tile-bg.jpg');
+  background-repeat: repeat;
+}
+#b3 {
+  background-image: url('tiles/hadisoft-tile-bg.jpeg');
+  background-repeat: repeat;
+}
+#b4 {
+  background-image: url('tiles/jukebox-arabia-tile-bg.gif');
+  background-repeat: repeat;
+}
+#b5 {
+  background-image: url('tiles/lina-online-tile-bg.GIF');
+  background-repeat: repeat;
+}
+#b6 {
+  background-image: url('tiles/nidal-jayyousi-tile-bg.jpg');
+  background-repeat: repeat;
+}
+#b7 {
+  background-image: url('tiles/palestine-youth-union-tile-bg.jpg');
+  background-repeat: repeat;
+}
+#b8 {
+  background-image: url('tiles/people-of-palestine-tile-bg.gif');
+  background-repeat: repeat;
+}
+#b19 {
+  background-image: url('tiles/zuhair-tile-bg.gif');
+  background-repeat: repeat;
+}
+#b10 {
+  background-image: url('tiles/rani-tile-bg.jpg');
+  background-repeat: repeat;
+}
+#b11 {
+  background-image: url('tiles/samia-halaby-1-tile-bg.gif');
+  background-repeat: repeat;
+}
+#b12 {
+  background-image: url('tiles/sharabati-tile-bg.JPG');
+  background-repeat: repeat;
 }
 
-::-webkit-scrollbar-track {
-  background-image: svg-load('./icon/scrollbar-background.svg');
-}
 
-::-webkit-scrollbar-thumb {
-  background-color: var(--button-face);
-  box-shadow: var(--border-raised-outer), var(--border-raised-inner);
-}
-
-::-webkit-scrollbar-button:horizontal:start:decrement,
-::-webkit-scrollbar-button:horizontal:end:increment,
-::-webkit-scrollbar-button:vertical:start:decrement,
-::-webkit-scrollbar-button:vertical:end:increment {
-  display: block;
-}
-
-::-webkit-scrollbar-button:vertical:start {
-  height: 17px;
-  background-image: svg-load('./icon/button-up.svg');
-}
-::-webkit-scrollbar-button:vertical:end {
-  height: 17px;
-  background-image: svg-load('./icon/button-down.svg');
-}
-::-webkit-scrollbar-button:horizontal:start {
-  width: 16px;
-  background-image: svg-load('./icon/button-left.svg');
-}
-::-webkit-scrollbar-button:horizontal:end {
-  width: 16px;
-  background-image: svg-load('./icon/button-right.svg');
+body {
+  background-repeat: repeat;
 }
