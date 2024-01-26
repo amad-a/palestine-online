@@ -1,4 +1,4 @@
-//set saved wallpaper on load
+//set saved wallpaper on load or set random wallpaper on first load
 let randomWallpaper = Math.floor(Math.random() * 12);
 
 if (sessionStorage.getItem('wallpaper') === null) {
@@ -11,16 +11,6 @@ if (sessionStorage.getItem('wallpaper') === null) {
 }
 
 let pages = [
-  {
-    id: 'main',
-    title: 'Welcome to Palestine Online!',
-    year: '2024',
-    label: '',
-    'header-text': '',
-    'wayback-url': '',
-    url: '',
-    description: '',
-  },
   {
     id: 'parry-open-letter',
     title: "Nigel Parry's Appeal to Palestinian Diaspora",
