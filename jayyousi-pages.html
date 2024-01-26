@@ -31,24 +31,24 @@
           </div>
         </div>
         <div class="info-panel-body">
-          <%= description %>
+          The webpage of Nidal Jayyousi, a man from Tulkarm, West Bank, Palestine, featuring beautiful photos of himself and his children. But wait! There’s also a special secret second page! This Angelfire page used to belong to Nidal’s brother Waled, who had since moved on to the far superior Geocities. You can visit Waleed’s new page by clicking &#39;Here&#39;. Waleed is an engineer living in Chicago, who also maintains a website on the brothers’ home city of Tulkarm (coming soon!)
         </div>
       </div>
 
       <div class="walkthru-left-arrow">
-        <a href="<%= prevId %>.html">
+        <a href="aqwa-man.html">
           <input type="image" src="public/icons/l.png" />
         </a>
       </div>
       <div class="walkthru-right-arrow">
-        <a href="<%= nextId %>.html">
+        <a href="amnah-site.html">
           <input type="image" src="public/icons/r.gif" />
         </a>
       </div>
       <div class="walkthru-info">walkthru-info</div>
       <div class="window walkthru-window">
         <div class="title-bar">
-          <div class="title-bar-text"><%= title %>, <%= year %></div>
+          <div class="title-bar-text">Jayyousi&#39;s Pages, 2001</div>
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>
@@ -88,7 +88,7 @@
             </a>
             <a
               class="tooltip"
-              onclick="changeIframe('<%= url %>')"
+              onclick="changeIframe('sites/nidal-jayyousi/nidal-jayyousi.html')"
             >
               <input
                 type="image"
@@ -107,7 +107,7 @@
                 >View page information</span
               >
             </a>
-            <a class="tooltip" href="<%= waybackUrl %>" target="_blank">
+            <a class="tooltip" href="https://web.archive.org/web/20011129082723/http://www.angelfire.com/il/Waleed/" target="_blank">
               <input
                 type="image"
                 src="public/icons/search_web-1.svg"
@@ -138,9 +138,9 @@
           </section>
           <iframe
             id="frame"
-            title="<%= title %>"
+            title="Jayyousi&#39;s Pages"
             width="99.5%"
-            src="<%= url %>"
+            src="sites/nidal-jayyousi/nidal-jayyousi.html"
           >
           </iframe>
 

@@ -8,8 +8,8 @@
       content="width=device-width, initial-scale=1"
     />
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
-    <link rel="stylesheet" href="../public/walkthru-style.css" />
-    <script src="../src/functions.js"></script>
+    <link rel="stylesheet" href="public/walkthru-style.css" />
+    <script src="src/functions.js"></script>
   </head>
   <script></script>
   <body>
@@ -44,12 +44,12 @@
 
       <div class="walkthru-left-arrow">
         <a href="1.html">
-          <input type="image" src="../public/icons/l.png" />
+          <input type="image" src="public/icons/l.png" />
         </a>
       </div>
       <div class="walkthru-right-arrow">
         <a href="6.html">
-          <input type="image" src="../public/icons/r.gif" />
+          <input type="image" src="public/icons/r.gif" />
         </a>
       </div>
       <div class="walkthru-info">walkthru-info</div>
@@ -71,42 +71,42 @@
             <input
               type="image"
               onclick="window.history.back()"
-              src="../public/back.svg"
+              src="public/back.svg"
               height="24px"
               style="margin-bottom: 4px"
             />
             <input
               type="image"
               onclick="window.history.forward()"
-              src="../public/front.svg"
+              src="public/front.svg"
               height="24px"
               style="margin-bottom: 4px"
             />
             <div class="divider">|</div>
             <a
               class="tooltip"
-              onclick="changeIframe('../index.html')"
+              onclick="changeIframe('index.html')"
             >
               <input
                 type="image"
-                src="../public/home.svg"
+                src="public/home.svg"
                 height="25px"
               /><span class="tooltiptext">Go to main page & contents</span>
             </a>
             <a
               class="tooltip"
-              onclick="changeIframe('../sites/personal-pages/zuhairhm/zuhairhm.html')"
+              onclick="changeIframe('sites/personal-pages/zuhairhm/zuhairhm.html')"
             >
               <input
                 type="image"
-                src="../public/netmeeting-1.svg"
+                src="public/netmeeting-1.svg"
                 height="25px"
               /><span class="tooltiptext">Reload current page</span>
             </a>
             <a class="tooltip">
               <input
                 type="image"
-                src="../public/icons/info.svg"
+                src="public/icons/info.svg"
                 height="25px"
                 onClick="toggleInfo()"
               />
@@ -114,10 +114,10 @@
                 >View page information</span
               >
             </a>
-            <a class="tooltip" href="../index.html">
+            <a class="tooltip" href="index.html">
               <input
                 type="image"
-                src="../public/icons/search_web-1.svg"
+                src="public/icons/search_web-1.svg"
                 height="25x"
               />
               <span class="tooltiptext"
@@ -127,7 +127,7 @@
             <a class="tooltip">
               <input
                 type="image"
-                src="../public/icons/help_book_small-5.svg"
+                src="public/icons/help_book_small-5.svg"
                 height="25px"
                 onClick="goToRandomPage()"
               />
@@ -137,19 +137,23 @@
               <input
                 type="image"
                 onclick="setWallpaper()"
-                src="../public/frame_web-1.svg"
+                src="public/frame_web-1.svg"
                 height="25px"
               />
               <span class="tooltiptext">Change wallpaper</span>
             </a>
+            
           </section>
-          <iframe
+          
+          <iframe class="frame"
             id="frame"
             title=""
             width="99.5%"
-            src="../sites/personal-pages/zuhairhm/zuhairhm.html"
+            src="https://web.archive.org/web/20011129082723/http://maxpages.com/abdo/Home"
           >
           </iframe>
+
+          <img class="loading" src="public/loading.gif"></img>
         </div>
       </div>
     </div>

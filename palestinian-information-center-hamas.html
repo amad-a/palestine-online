@@ -31,24 +31,24 @@
           </div>
         </div>
         <div class="info-panel-body">
-          <%= description %>
+          Section of Palestine Information Center Website compiling official statements from and information about the Hamas Islamic Resistance Movement, its goals and positions, and its leadership. Unsure how officially affiliated with Hamas this website is - Hamas has their own official website during this time (in Arabic) that contains similar information, it will probably also be added here soon.
         </div>
       </div>
 
       <div class="walkthru-left-arrow">
-        <a href="<%= prevId %>.html">
+        <a href="palestinian-information-center.html">
           <input type="image" src="public/icons/l.png" />
         </a>
       </div>
       <div class="walkthru-right-arrow">
-        <a href="<%= nextId %>.html">
+        <a href="falasteen-magazine.html">
           <input type="image" src="public/icons/r.gif" />
         </a>
       </div>
       <div class="walkthru-info">walkthru-info</div>
       <div class="window walkthru-window">
         <div class="title-bar">
-          <div class="title-bar-text"><%= title %>, <%= year %></div>
+          <div class="title-bar-text">Hamas Information Site, 2001</div>
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>
@@ -88,7 +88,7 @@
             </a>
             <a
               class="tooltip"
-              onclick="changeIframe('<%= url %>')"
+              onclick="changeIframe('sites/NEWS/hamas/hamas/index.html')"
             >
               <input
                 type="image"
@@ -107,7 +107,7 @@
                 >View page information</span
               >
             </a>
-            <a class="tooltip" href="<%= waybackUrl %>" target="_blank">
+            <a class="tooltip" href="https://web.archive.org/web/20011110015607/http://www.palestine-info.com/hamas/index.htm" target="_blank">
               <input
                 type="image"
                 src="public/icons/search_web-1.svg"
@@ -138,9 +138,9 @@
           </section>
           <iframe
             id="frame"
-            title="<%= title %>"
+            title="Hamas Information Site"
             width="99.5%"
-            src="<%= url %>"
+            src="sites/NEWS/hamas/hamas/index.html"
           >
           </iframe>
 

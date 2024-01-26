@@ -31,24 +31,24 @@
           </div>
         </div>
         <div class="info-panel-body">
-          <%= description %>
+          A website built by Nigel Parry reporting the events of the September 1996 clashes, primarily in Ramallah where Parry was based in at the time. Also included here are quotes from Birzeit University students and staff on the events, and a photo diary documenting demonstrations and attacks in Ramallah. This website offers alternative “on the ground” coverage as a more accurate counter-perspective to the biased and misconstrued Israeli and Western coverage on Palestine that Parry noticed.
         </div>
       </div>
 
       <div class="walkthru-left-arrow">
-        <a href="<%= prevId %>.html">
+        <a href="september-2000-info.html">
           <input type="image" src="public/icons/l.png" />
         </a>
       </div>
       <div class="walkthru-right-arrow">
-        <a href="<%= nextId %>.html">
+        <a href="omayya-joha.html">
           <input type="image" src="public/icons/r.gif" />
         </a>
       </div>
       <div class="walkthru-info">walkthru-info</div>
       <div class="window walkthru-window">
         <div class="title-bar">
-          <div class="title-bar-text"><%= title %>, <%= year %></div>
+          <div class="title-bar-text">On the Ground in Ramallah, 1997</div>
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>
@@ -88,7 +88,7 @@
             </a>
             <a
               class="tooltip"
-              onclick="changeIframe('<%= url %>')"
+              onclick="changeIframe('sites/www.birzeit.edu/palnews/war/index.html')"
             >
               <input
                 type="image"
@@ -107,7 +107,7 @@
                 >View page information</span
               >
             </a>
-            <a class="tooltip" href="<%= waybackUrl %>" target="_blank">
+            <a class="tooltip" href="https://web.archive.org/web/19970614161613/http://www.birzeit.edu/palnews/war/index2.html" target="_blank">
               <input
                 type="image"
                 src="public/icons/search_web-1.svg"
@@ -138,9 +138,9 @@
           </section>
           <iframe
             id="frame"
-            title="<%= title %>"
+            title="On the Ground in Ramallah"
             width="99.5%"
-            src="<%= url %>"
+            src="sites/www.birzeit.edu/palnews/war/index.html"
           >
           </iframe>
 

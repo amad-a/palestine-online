@@ -462,7 +462,7 @@ let pages = [
 let randomPage = pages[Math.floor(Math.random() * pages.length)];
 
 function goToRandomPage() {
-  open('../' + randomPage.id + '.html', '_self');
+  open(randomPage.id + '.html', '_self');
 }
 
 function toggleInfo() {

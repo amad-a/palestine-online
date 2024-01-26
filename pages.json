@@ -86,7 +86,7 @@
     "label": "Information Technology Companies",
     "headerText": "Information Technology",
     "waybackUrl": "https://web.archive.org/web/20010331104253/http://www.pal-soft.com/",
-    "url": "/sites/palsoft/palsoft.html",
+    "url": "sites/palsoft/palsoft.html",
     "description": "Website for an Internet Cafe in Ramallah, which also sells PCs, Digital Media, VHS Digitization, Print Services, among other goods and services."
   },
   {
@@ -136,7 +136,7 @@
     "label": "Palestinian News Online",
     "headerText": "Arabic Text as Image",
     "waybackUrl": "https://web.archive.org/web/20040930222249/http://www.falasteen.com/",
-    "url": "sites/NEWS/falasteen-2004.html",
+    "url": "sites/NEWS/falasteen/falasteen-2004.html",
     "description": "Front page of a primarily educational and literary Arabic language magazine."
   },
   {
@@ -156,7 +156,7 @@
     "label": "Palestinian News Online",
     "headerText": "Arabic Text as Image",
     "waybackUrl": "https://web.archive.org/web/20011125020216/http://www.ptimes.com/issue105/index0.htm",
-    "url": "sites/MAGS/palestine-times-uk/index0.htm",
+    "url": "sites/MAGS/palestine-times-uk/index.html",
     "description": "Front page of a primarily educational and literary Arabic language magazine."
   },
   {

@@ -4,7 +4,6 @@ html {
   zoom: 1.05;
 }
 
-
 @font-face {
   font-family: 'Dom';
   src: url('fonts/dom/DomDiagonalBT.woff') format('woff');
@@ -64,6 +63,12 @@ iframe {
   grid-gap: 0;
 }
 
+.loading { 
+  margin: 225px 500px 225px 350px;
+  z-index: 1;
+
+}
+
 #info-panel-container {
   width: 760px;
   height: 580px;
@@ -77,8 +82,7 @@ iframe {
   box-shadow: 3px 3px 3px rgb(0, 0, 0);
   height: max-content;
   padding-bottom: 10px;
-
- }
+}
 
 .close-info-panel-button {
   position: absolute;
@@ -191,6 +195,11 @@ iframe {
 
 iframe {
   height: 597px;
+}
+
+
+.frame {
+  z-index: 999999;
 }
 
 .tooltip {
@@ -324,7 +333,6 @@ button {
   background-image: url('tiles/sharabati-tile-bg.JPG');
   background-repeat: repeat;
 }
-
 
 body {
   background-repeat: repeat;

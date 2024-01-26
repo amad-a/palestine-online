@@ -62,7 +62,7 @@ async function readAndParseJSON() {
         console.log('filename', htmlContent);
 
         // Generate a unique filename for each HTML file
-        const filename = `${outputDir}${id}.html`;
+        const filename = `${id}.html`;
 
         // Write the HTML content to the file
         fs.writeFileSync(filename, htmlContent, 'utf8');
