@@ -1,13 +1,13 @@
 //set saved wallpaper on load or set random wallpaper on first load
 let randomWallpaper = Math.floor(Math.random() * 12);
 
-if (sessionStorage.getItem('wallpaper') === null) {
+if (localStorage.getItem('wallpaper') === null) {
   let wallpaperString = randomWallpaper.toString();
   document.documentElement.id = 'b' + wallpaperString;
-  sessionStorage.setItem('wallpaper', wallpaperString);
+  localStorage.setItem('wallpaper', wallpaperString);
 } else {
   document.documentElement.id =
-    'b' + sessionStorage.getItem('wallpaper');
+    'b' + localStorage.getItem('wallpaper');
 }
 
 let pages = [
@@ -469,10 +469,10 @@ function changeIframe(src) {
 }
 
 function setWallpaper() {
-  const currentWallpaper = sessionStorage.getItem('wallpaper');
+  const currentWallpaper = localStorage.getItem('wallpaper');
   let num = parseInt(currentWallpaper) || 0;
   num += 1;
   if (num > 12) num = 0;
   document.documentElement.id = 'b' + num.toString();
-  sessionStorage.setItem('wallpaper', num.toString());
+  localStorage.setItem('wallpaper', num.toString());
 }
