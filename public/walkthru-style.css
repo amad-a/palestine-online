@@ -1,7 +1,7 @@
 html {
   overflow: hidden;
-  height: 90%;
-  zoom: 1.05;
+  height: 100%;
+  zoom: 1;
 }
 
 @font-face {
@@ -38,6 +38,12 @@ iframe {
   height: 72vh;
 }
 
+/* @media only screen and (min-height  : 1100px) {
+  html {
+    zoom: 1.25;
+  }
+} */
+
 @media only screen and (max-width: 480px) {
   .mobile-body {
     zoom: 1;
@@ -63,10 +69,9 @@ iframe {
   grid-gap: 0;
 }
 
-.loading { 
+.loading {
   margin: 225px 500px 225px 350px;
   z-index: 1;
-
 }
 
 #info-panel-container {
@@ -196,7 +201,6 @@ iframe {
 iframe {
   height: 597px;
 }
-
 
 .frame {
   z-index: 999999;
@@ -336,5 +340,4 @@ button {
 
 body {
   background-repeat: repeat;
-  margin-top: 40px;
 }

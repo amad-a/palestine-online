@@ -4,8 +4,12 @@ const ejs = require('ejs');
 
 // Read the EJS template file
 const templatePath = 'new-test.ejs';
+const mainPageTemplatePath = 'main.ejs';
 const template = fs.readFileSync(templatePath, 'utf8');
-
+const mainPageTemplate = fs.readFileSync(
+  mainPageTemplatePath,
+  'utf8'
+);
 // Output directory for HTML files
 const outputDir = 'output/';
 
@@ -18,22 +22,15 @@ async function readAndParseJSON() {
   try {
     const data = await readFile('pages.json', 'utf8');
     const jsonObject = JSON.parse(data);
+
+    const mainContent = ejs.render(mainPageTemplate, {
+      data: jsonObject,
+    });
+
+    fs.writeFileSync('main.html', mainContent, 'utf8');
+
     for (let idx = 1; idx < jsonObject.length - 1; idx++) {
-      console.log('UNDEFINED???', jsonObject[idx]);
       if (idx > 0 && idx < jsonObject.length - 1) {
-        console.log('ID', jsonObject[idx].id);
-        console.log(
-          'next ID',
-          jsonObject[parseInt(idx) + 1].id,
-          'num',
-          parseInt(idx) + 1
-        );
-        console.log(
-          'prev ID',
-          jsonObject[parseInt(idx) - 1].id,
-          'num',
-          parseInt(idx) - 1
-        );
         let id = jsonObject[idx].id;
         let title = jsonObject[idx].title;
         let label = jsonObject[idx].label;

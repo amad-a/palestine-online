@@ -62,3 +62,21 @@ h2 {
   padding-top: 10px;
 
 }
+
+.content-link {
+font-size: 18px;
+margin-bottom  : 10px;
+
+}
+
+.content-link:hover {
+  font-style: italic;
+}
+
+.table-of-contents {
+  padding-bottom: 15px;
+}
+
+.content-link:visited {
+  color: blue;
+}
