@@ -118,7 +118,7 @@
     <div class="table-of-contents" id="contents">
       <h2>Table of Contents</h2>
       <% for(var i=1; i < data.length - 1; i++) { %> ⟡
-      <a class="content-link" href="<%= data[i].url %>"
+      <a class="content-link" href="<%= data[i].id %>.html" target="_parent"
         ><%= data[i].title %></a
       >, <%= data[i].year %>
       <br />
