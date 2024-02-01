@@ -54,3 +54,16 @@
 body {
   background-repeat: repeat;
 }
+
+.frame {
+
+	background-color: black;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}   
+
+:root {
+  zoom: .80;
+}

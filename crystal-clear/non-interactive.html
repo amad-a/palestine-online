@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
     <link rel="stylesheet" href="../public/walkthru-style.css" />
     <title>Document</title>
+    <script>
+      
+    </script>
   </head>
   <body>
     <style>
@@ -19,6 +22,27 @@
       }
     </style>
     <script>
+      let count = 1;
+      window.onmessage = (event) => {
+        console.log(`Received message: ${event.data}`);
+
+        count += 1;
+        console.log('count', count);
+
+        document.getElementById('frame-2').src =
+          '../crystal-clear/amnah_samara/index.htm';
+      };
+
+      window.addEventListener('message', function (e) {
+        // Get the sent data
+        const data = e.data;
+        console.log('DATA', data);
+
+        // If you encode the message in JSON before sending them,
+        // then decode here
+        // const decoded = JSON.parse(data);
+      });
+
       function run(interval, frames) {
         var int = 1;
 
@@ -55,6 +79,7 @@
           </div>
           <div class="window-body" style="height: 768px; margin: 0px">
             <iframe
+              id="frame-1"
               style="height: 764px"
               src="../crystal-clear/zuhairhm/zuhairhm.html"
               width="800px"
@@ -75,10 +100,14 @@
           </div>
           <div class="window-body" style="height: 768px; margin: 0px">
             <iframe
-              style="height: 764px"
+              class="frame"
+              id="frame-2"
+              style="height: 764px; opacity: 0;"
+              onload="this.style.opacity = 1;"
               src="../crystal-clear/realityofpalestine/p.html"
               width="800px"
             ></iframe>
+            
           </div>
         </div>
       </div>

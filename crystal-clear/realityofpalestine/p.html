@@ -1,198 +1,244 @@
 <html>
 
 <head>
-<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
-<style>
-BODY {     scrollbar-3d-light-color:#999999;
-           scrollbar-arrow-color:#FFFF33;
-           scrollbar-base-color:black;
-           scrollbar-dark-shadow-color:#333333;
-           scrollbar-face-color:#666666;
-           scrollbar-highlight-color:#999999;
-           scrollbar-shadow-color:black}
-</style>
-<meta http-equiv="Content-Language" content="en-us">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<title>WELCOME TO REALITY</title>
-
-<script>
-    function autoScroll() {
-        document.scrollingElement.scrollTop += 1; // Scroll down by 1 pixel
-        // You can adjust the scrolling speed by changing the value above
-
-        // Stop autoscroll when reaching the bottom of the page
-        if (document.documentElement.scrollTop < document.documentElement.scrollHeight - window.innerHeight) {
-            setTimeout(autoScroll, 20); // Adjust the timeout for smoother scrolling
+    <style>
+        BODY {
+            scrollbar-3d-light-color: #999999;
+            scrollbar-arrow-color: #FFFF33;
+            scrollbar-base-color: black;
+            scrollbar-dark-shadow-color: #333333;
+            scrollbar-face-color: #666666;
+            scrollbar-highlight-color: #999999;
+            scrollbar-shadow-color: black
         }
-    }
+    </style>
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    <title>WELCOME TO REALITY</title>
 
-    // Start autoscroll after a delay (e.g., 3 seconds)
-    setTimeout(autoScroll, 3000);
-</script>
-<script language="JavaScript" fptype="dynamicanimation">
-<!--
-function dynAnimation() {}
-function clickSwapImg() {}
-//-->
-</script>
-<script language="JavaScript1.2" fptype="dynamicanimation" src="animate.js">
-</script>
-<meta http-equiv="Page-Enter" content="blendTrans(Duration=5.0)">
-<meta http-equiv="Page-Exit" content="blendTrans(Duration=5.0)">
-<bgsound src="music.wav" loop="-1">
+    <script>
+        function autoScroll() {
+
+            document.scrollingElement.scrollTop += 1; // Scroll down by 1 pixel
+            // You can adjust the scrolling speed by changing the value above
+
+            // Stop autoscroll when reaching the bottom of the page
+            if (document.documentElement.scrollTop < document.documentElement.scrollHeight - window.innerHeight) {
+                setTimeout(autoScroll, 20); // Adjust the timeout for smoother scrolling
+            }
+
+            if (window.scrollY === document.documentElement.scrollHeight - window.innerHeight) {
+                console.log('reached end of page');
+                const message = JSON.stringify({
+                    message: 'Hello from iframe',
+                    date: Date.now(),
+                });
+                window.parent.postMessage(message, '*');
+            }
+
+
+        }
+
+        // Start autoscroll after a delay (e.g., 3 seconds)
+        setTimeout(autoScroll, 3000);
+    </script>
+    <script language="JavaScript" fptype="dynamicanimation">
+        <!--
+        function dynAnimation() {}
+        function clickSwapImg() {}
+        //-->
+    </script>
+    <script language="JavaScript1.2" fptype="dynamicanimation" src="animate.js">
+    </script>
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=5.0)">
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=5.0)">
+    <bgsound src="music.wav" loop="-1">
 </head>
 
 <body text="#FFFFFF" bgcolor="#000000" onload="dynAnimation()">
-<!-- following code added by server. PLEASE REMOVE -->
-<!-- preceding code added by server. PLEASE REMOVE -->
+    <!-- following code added by server. PLEASE REMOVE -->
+    <!-- preceding code added by server. PLEASE REMOVE -->
 
-<p align="left"><img border="0" src="banner.gif" width="672" height="96"></p>
-<p align="center"><img border="0" src="welcometoreality.gif" width="480" height="96"></p>
-<p align="left" dynamicanimation="fpAnimformatRolloverFP1" fprolloverstyle="font-family: Arial; font-style: italic; font-weight: bold" onmouseover="rollIn(this)" onmouseout="rollOut(this)" language="Javascript1.2">INTRODUCTION:-</p>
-<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<font face="Arial"><i><b>&nbsp; </b> The basic idea of this website is to make
-the world realize what is going on in Palestine. The media has been hiding all
-this, specially from the US residents. But what is right cannot be hidden. My
-objective is to bring this truth to the world. let us all see what is going on
-in Palestine. Let us all view the&nbsp; steps taken against the Muslim world.
-Why I ask? why are Muslims being oppressed today? Aren't they humans too? well we
-have been quiet for a long time and its time all this ends. I will collect all
-the information I get in this website. To bring forward the truth and to show
-what has been hidden. But please keep in mind all the pictures I present may be
-brutal, but they are nothing compared to what is happening in Palestine. what
-goes through your mind once you visit this web site, please remember, can be
-nothing compared to what goes in the minds of the Palestini people. May Allah
-Subhanahowatallah grant me success.</i></font></p>
+    <p align="left"><img border="0" src="banner.gif" width="672" height="96"></p>
+    <p align="center"><img border="0" src="welcometoreality.gif" width="480" height="96"></p>
+    <p align="left" dynamicanimation="fpAnimformatRolloverFP1"
+        fprolloverstyle="font-family: Arial; font-style: italic; font-weight: bold" onmouseover="rollIn(this)"
+        onmouseout="rollOut(this)" language="Javascript1.2">INTRODUCTION:-</p>
+    <p align="left">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font face="Arial"><i><b>&nbsp; </b> The basic idea of this website is to make
+                the world realize what is going on in Palestine. The media has been hiding all
+                this, specially from the US residents. But what is right cannot be hidden. My
+                objective is to bring this truth to the world. let us all see what is going on
+                in Palestine. Let us all view the&nbsp; steps taken against the Muslim world.
+                Why I ask? why are Muslims being oppressed today? Aren't they humans too? well we
+                have been quiet for a long time and its time all this ends. I will collect all
+                the information I get in this website. To bring forward the truth and to show
+                what has been hidden. But please keep in mind all the pictures I present may be
+                brutal, but they are nothing compared to what is happening in Palestine. what
+                goes through your mind once you visit this web site, please remember, can be
+                nothing compared to what goes in the minds of the Palestini people. May Allah
+                Subhanahowatallah grant me success.</i></font>
+    </p>
 
-<p align="left" dynamicanimation="fpAnimformatRolloverFP1" fprolloverstyle="border-style: solid; border-color: #FFFFFF" onmouseover="rollIn(this)" onmouseout="rollOut(this)" language="Javascript1.2"><font face="Arial"><i>CONTENTS:-</i></font></p>
+    <p align="left" dynamicanimation="fpAnimformatRolloverFP1"
+        fprolloverstyle="border-style: solid; border-color: #FFFFFF" onmouseover="rollIn(this)"
+        onmouseout="rollOut(this)" language="Javascript1.2">
+        <font face="Arial"><i>CONTENTS:-</i></font>
+    </p>
 
-<p align="left">
-<a style="pointer-events:none;cursor:default;" href="pic.html">
-<img border="0" src="pictures.gif" width="90" height="30"></a><a style="pointer-events:none;cursor:default;" onmouseover="document['fpAnimswapImgFP1'].imgRolln=document['fpAnimswapImgFP1'].src;document['fpAnimswapImgFP1'].src=document['fpAnimswapImgFP1'].lowsrc;" onmouseout="document['fpAnimswapImgFP1'].src=document['fpAnimswapImgFP1'].imgRolln" href="javascript:void(0)"><img border="0" src="plane.jpg" width="492" height="421" align="right" id="fpAnimswapImgFP1" name="fpAnimswapImgFP1" dynamicanimation="fpAnimswapImgFP1" lowsrc="icon.jpg"></a>
-</p>
+    <p align="left">
+        <a style="pointer-events:none;cursor:default;" href="pic.html">
+            <img border="0" src="pictures.gif" width="90" height="30"></a><a style="pointer-events:none;cursor:default;"
+            onmouseover="document['fpAnimswapImgFP1'].imgRolln=document['fpAnimswapImgFP1'].src;document['fpAnimswapImgFP1'].src=document['fpAnimswapImgFP1'].lowsrc;"
+            onmouseout="document['fpAnimswapImgFP1'].src=document['fpAnimswapImgFP1'].imgRolln"
+            href="javascript:void(0)"><img border="0" src="plane.jpg" width="492" height="421" align="right"
+                id="fpAnimswapImgFP1" name="fpAnimswapImgFP1" dynamicanimation="fpAnimswapImgFP1" lowsrc="icon.jpg"></a>
+    </p>
 
-<p align="left">
-<a style="pointer-events:none;cursor:default;" href="anti.html"><img border="0" src="antiislam.gif" width="90" height="30"></a>
-</p>
+    <p align="left">
+        <a style="pointer-events:none;cursor:default;" href="anti.html"><img border="0" src="antiislam.gif" width="90"
+                height="30"></a>
+    </p>
 
-<p align="left">
-<a style="pointer-events:none;cursor:default;" href="history.html"><img border="0" src="history.gif" width="90" height="30"></a>
-</p>
-<p align="left">
-<a style="pointer-events:none;cursor:default;" href="art.html"><img border="0" src="ARTICLES.gif" width="100" height="30"></a>
-</p>
-<p align="left">
-<a style="pointer-events:none;cursor:default;" href="DEC.HTML"><img border="0" src="DECLARATIONS.gif" width="100" height="30"></a>
-</p>
-<p align="left">
-<a style="pointer-events:none;cursor:default;" href="pro.html"><img border="0" src="PROTEST.gif" width="90" height="30"></a>
-</p>
-<p align="left">
-<a style="pointer-events:none;cursor:default;" href="mp.html"><img border="0" src="mypoint.gif" width="90" height="30"></a>
-</p>
-<p align="left">
-<a style="pointer-events:none;cursor:default;" href="OURJOB.htm"><img border="0" src="OURJOB.gif" width="90" height="30"></a>
-</p>
-<p align="left">
-<a style="pointer-events:none;cursor:default;" href="suicidetheory.htm"><img border="0" src="SUICIDEATTACKS.gif" width="100" height="30"></a>
-</p>
-<p align="left">
-<a style="pointer-events:none;cursor:default;" href="spinchat.html"><img border="0" src="CHAT.gif" width="90" height="31"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</p>
-<p align="left">
-&nbsp;
-</p>
-<p align="left"><a style="pointer-events:none;cursor:default;" onmouseover="document['fpAnimswapImgFP2'].imgRolln=document['fpAnimswapImgFP2'].src;document['fpAnimswapImgFP2'].src=document['fpAnimswapImgFP2'].lowsrc;" onmouseout="document['fpAnimswapImgFP2'].src=document['fpAnimswapImgFP2'].imgRolln" href="javascript:void(0)"><img border="0" src="Thanks.gif" id="fpAnimswapImgFP2" name="fpAnimswapImgFP2" dynamicanimation="fpAnimswapImgFP2" lowsrc="bless.gif" width="672" height="96"></a></p>
-<p align="left">&nbsp;</p>
-<SCRIPT language=JavaScript1.2>
-<!--
+    <p align="left">
+        <a style="pointer-events:none;cursor:default;" href="history.html"><img border="0" src="history.gif" width="90"
+                height="30"></a>
+    </p>
+    <p align="left">
+        <a style="pointer-events:none;cursor:default;" href="art.html"><img border="0" src="ARTICLES.gif" width="100"
+                height="30"></a>
+    </p>
+    <p align="left">
+        <a style="pointer-events:none;cursor:default;" href="DEC.HTML"><img border="0" src="DECLARATIONS.gif"
+                width="100" height="30"></a>
+    </p>
+    <p align="left">
+        <a style="pointer-events:none;cursor:default;" href="pro.html"><img border="0" src="PROTEST.gif" width="90"
+                height="30"></a>
+    </p>
+    <p align="left">
+        <a style="pointer-events:none;cursor:default;" href="mp.html"><img border="0" src="mypoint.gif" width="90"
+                height="30"></a>
+    </p>
+    <p align="left">
+        <a style="pointer-events:none;cursor:default;" href="OURJOB.htm"><img border="0" src="OURJOB.gif" width="90"
+                height="30"></a>
+    </p>
+    <p align="left">
+        <a style="pointer-events:none;cursor:default;" href="suicidetheory.htm"><img border="0" src="SUICIDEATTACKS.gif"
+                width="100" height="30"></a>
+    </p>
+    <p align="left">
+        <a style="pointer-events:none;cursor:default;" href="spinchat.html"><img border="0" src="CHAT.gif" width="90"
+                height="31"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p align="left">
+        &nbsp;
+    </p>
+    <p align="left"><a style="pointer-events:none;cursor:default;"
+            onmouseover="document['fpAnimswapImgFP2'].imgRolln=document['fpAnimswapImgFP2'].src;document['fpAnimswapImgFP2'].src=document['fpAnimswapImgFP2'].lowsrc;"
+            onmouseout="document['fpAnimswapImgFP2'].src=document['fpAnimswapImgFP2'].imgRolln"
+            href="javascript:void(0)"><img border="0" src="Thanks.gif" id="fpAnimswapImgFP2" name="fpAnimswapImgFP2"
+                dynamicanimation="fpAnimswapImgFP2" lowsrc="bless.gif" width="672" height="96"></a></p>
+    <p align="left">&nbsp;</p>
+    <SCRIPT language=JavaScript1.2>
+        <!--
+        
+        /*
+        Cursor Trailer II (By Kurt at kurt.grigg@virgin.net)
+        Modified and featured on Dynamicdrive.com
+        For full source, usage terms, and 100's more DHTML scripts, visit http://dynamicdrive.com
+        */
 
-/*
-Cursor Trailer II (By Kurt at kurt.grigg@virgin.net)
-Modified and featured on Dynamicdrive.com
-For full source, usage terms, and 100's more DHTML scripts, visit http://dynamicdrive.com
-*/
+        var message = 'welcome to reality';
+        var messagecolor = 'purple'
 
-var message='welcome to reality';
-var messagecolor='purple'
+        //Enter number of seconds for message to display  (0=perpetual)
+        var dismissafter = 0
 
-//Enter number of seconds for message to display  (0=perpetual)
-var dismissafter=0
+        ///no need to edit below/////////
+        var amount = 5, ypos = 0, xpos = 0, Ay = 0, Ax = 0, By = 0, Bx = 0, Cy = 0, Cx = 0, Dy = 0, Dx = 0, Ey = 0, Ex = 0;
+        if (document.layers) {
+            for (i = 0; i < amount; i++) { document.write('<layer name=ns' + i + ' top=0 left=0><font face="Courier New" size=3 color=' + messagecolor + '>' + message + '</font></layer>') }
+            window.captureEvents(Event.MOUSEMOVE);
+            function nsmouse(evnt) { xpos = evnt.pageX; ypos = evnt.pageY; makefollow() }
+        }
+        else if (document.all) {
+            document.write("<div id='outer' style='position:absolute;top:0px;left:0px'>");
+            document.write("<div id='inner' style='position:relative'>");
+            for (i = 0; i < amount; i++) { document.write('<div id="text"' + i + ' style="position:absolute;top:0px;left:0px;font-family:Courier New;font-size:16px;color:' + messagecolor + '">' + message + '</div>') }
+            document.write("</div>");
+            document.write("</div>");
+            function iemouse() { ypos = document.body.scrollTop + event.y; xpos = document.body.scrollLeft + event.x; makefollow() }
+        }
+        function makefollow() {
+            if (document.layers) {
+                document.layers["ns0"].top = ay; document.layers["ns0"].left = ax;
+                document.layers["ns1"].top = by; document.layers["ns1"].left = bx;
+                document.layers["ns2"].top = cy; document.layers["ns2"].left = cx;
+                document.layers["ns3"].top = Dy; document.layers["ns3"].left = Dx;
+                document.layers["ns4"].top = Ey; document.layers["ns4"].left = Ex;
+            }
+            else if (document.all) {
+                outer.all.inner.all[0].style.pixelTop = ay; outer.all.inner.all[0].style.pixelLeft = ax;
+                outer.all.inner.all[1].style.pixelTop = by; outer.all.inner.all[1].style.pixelLeft = bx;
+                outer.all.inner.all[2].style.pixelTop = cy; outer.all.inner.all[2].style.pixelLeft = cx;
+                outer.all.inner.all[3].style.pixelTop = Dy; outer.all.inner.all[3].style.pixelLeft = Dx;
+                outer.all.inner.all[4].style.pixelTop = Ey; outer.all.inner.all[4].style.pixelLeft = Ex;
+            }
+        }
+        function move() {
+            if (dismissafter != 0)
+                setTimeout("hidetrail()", dismissafter * 1000)
 
-///no need to edit below/////////
-var amount=5,ypos=0,xpos=0,Ay=0,Ax=0,By=0,Bx=0,Cy=0,Cx=0,Dy=0,Dx=0,Ey=0,Ex=0;
-if (document.layers){
-for (i = 0; i < amount; i++)
-{document.write('<layer name=ns'+i+' top=0 left=0><font face="Courier New" size=3 color='+messagecolor+'>'+message+'</font></layer>')}
-window.captureEvents(Event.MOUSEMOVE);
-function nsmouse(evnt){xpos = evnt.pageX;ypos = evnt.pageY;makefollow()}
-}
-else if (document.all){
-document.write("<div id='outer' style='position:absolute;top:0px;left:0px'>");
-document.write("<div id='inner' style='position:relative'>");
-for (i = 0; i < amount; i++) 
-{document.write('<div id="text"'+i+' style="position:absolute;top:0px;left:0px;font-family:Courier New;font-size:16px;color:'+messagecolor+'">'+message+'</div>')}
-document.write("</div>");
-document.write("</div>");
-function iemouse(){ypos = document.body.scrollTop + event.y;xpos = document.body.scrollLeft + event.x;makefollow()}
-}
-function makefollow(){
-if (document.layers){
-document.layers["ns0"].top=ay;document.layers["ns0"].left=ax;
-document.layers["ns1"].top=by;document.layers["ns1"].left=bx;
-document.layers["ns2"].top=cy;document.layers["ns2"].left=cx;
-document.layers["ns3"].top=Dy;document.layers["ns3"].left=Dx;
-document.layers["ns4"].top=Ey;document.layers["ns4"].left=Ex;
-}
-else if (document.all){
-outer.all.inner.all[0].style.pixelTop=ay;outer.all.inner.all[0].style.pixelLeft=ax;
-outer.all.inner.all[1].style.pixelTop=by;outer.all.inner.all[1].style.pixelLeft=bx;
-outer.all.inner.all[2].style.pixelTop=cy;outer.all.inner.all[2].style.pixelLeft=cx;
-outer.all.inner.all[3].style.pixelTop=Dy;outer.all.inner.all[3].style.pixelLeft=Dx;
-outer.all.inner.all[4].style.pixelTop=Ey;outer.all.inner.all[4].style.pixelLeft=Ex;
-}
-}
-function move(){
-if (dismissafter!=0)
-setTimeout("hidetrail()",dismissafter*1000)
+            if (document.layers) { window.onMouseMove = nsmouse }
+            else if (document.all) { window.document.onmousemove = iemouse }
+            ey = Math.round(Ey += ((ypos + 20) - Ey) * 2 / 2); ex = Math.round(Ex += ((xpos + 20) - Ex) * 2 / 2);
+            dy = Math.round(Dy += (ey - Dy) * 2 / 4); dx = Math.round(Dx += (ex - Dx) * 2 / 4);
+            cy = Math.round(Cy += (dy - Cy) * 2 / 6); cx = Math.round(Cx += (dx - Cx) * 2 / 6);
+            by = Math.round(By += (cy - By) * 2 / 8); bx = Math.round(Bx += (cx - Bx) * 2 / 8);
+            ay = Math.round(Ay += (by - Ay) * 2 / 10); ax = Math.round(Ax += (bx - Ax) * 2 / 10);
+            makefollow();
+            jumpstart = setTimeout('move()', 10);
+        }
 
-if (document.layers){window.onMouseMove = nsmouse}
-else if (document.all){window.document.onmousemove = iemouse}
-ey = Math.round(Ey+=((ypos+20)-Ey)*2/2);ex = Math.round(Ex+=((xpos+20)-Ex)*2/2);
-dy = Math.round(Dy+=(ey - Dy)*2/4);dx = Math.round(Dx+=(ex - Dx)*2/4);
-cy = Math.round(Cy+=(dy - Cy)*2/6);cx = Math.round(Cx+=(dx - Cx)*2/6);
-by = Math.round(By+=(cy - By)*2/8);bx = Math.round(Bx+=(cx - Bx)*2/8);
-ay = Math.round(Ay+= (by - Ay)*2/10);ax = Math.round(Ax+= (bx - Ax)*2/10);
-makefollow();
-jumpstart=setTimeout('move()',10);
-}
+        function hidetrail() {
+            if (document.all) {
+                for (i2 = 0; i2 < a style = "pointer-events:none;cursor:default;"mount; i2++) {
+                    outer.all.inner.all[i2].style.visibility = "hidden"
+                    clearTimeout(jumpstart)
+                }
+            }
+            else if (document.layers) {
+                for (i2 = 0; i2 < a style = "pointer-events:none;cursor:default;"mount; i2++) {
+                    temp = "ns" + i2
+                    document.layers[temp].visibility = "hide"
+                    clearTimeout(jumpstart)
+                }
+            }
+        }
 
-function hidetrail(){
-if (document.all){
-for (i2=0;i2<a style="pointer-events:none;cursor:default;"mount;i2++){
-outer.all.inner.all[i2].style.visibility="hidden"
-clearTimeout(jumpstart)
-}
-}
-else if (document.layers){
-for (i2=0;i2<a style="pointer-events:none;cursor:default;"mount;i2++){
-temp="ns"+i2
-document.layers[temp].visibility="hide"
-clearTimeout(jumpstart)
-}
-}
-}
-
-window.onload=move;
-//-->
-</SCRIPT>
+        window.onload = move;
+        //-->
+    </SCRIPT>
 </body>
 
 </html>
-<!-- text below generated by server. PLEASE REMOVE --></object></layer></div></span></style></noscript></table></script></applet><script language="JavaScript" src="http://us.i1.yimg.com/us.yimg.com/i/mc/mc.js"></script><script language="JavaScript" src="http://us.js2.yimg.com/us.js.yimg.com/lib/smb/js/hosting/cp/js_source/geov2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.geocities.yahoo.com/visit.gif?us1256662257" alt="setstats" border="0" width="1" height="1"></noscript>
+<!-- text below generated by server. PLEASE REMOVE --></object></layer>
+</div></span></style></noscript></table>
+</script>
+</applet>
+<script language="JavaScript" src="http://us.i1.yimg.com/us.yimg.com/i/mc/mc.js"></script>
+<script language="JavaScript"
+    src="http://us.js2.yimg.com/us.js.yimg.com/lib/smb/js/hosting/cp/js_source/geov2_001.js"></script>
+<script language="javascript">geovisit();</script><noscript><img
+        src="http://visit.geocities.yahoo.com/visit.gif?us1256662257" alt="setstats" border="0" width="1"
+        height="1"></noscript>
 <IMG SRC="http://geo.yahoo.com/serv?s=76001081&t=1256662257&f=us-w5" ALT=1 WIDTH=1 HEIGHT=1>
