@@ -1,0 +1,65 @@
+:root {
+    background-image: url('samia-halaby-1-tile-bg.gif');
+    background-repeat: repeat;
+}
+
+@font-face {
+    font-family: 'Dom';
+    src: url('../../public/fonts/dom/DomDiagonalBT.woff') format('woff');
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: -8px;
+}
+
+.grid-item {
+    padding: 30px;
+
+}
+
+.title-bar {
+    zoom: 1.4 ;
+}
+
+.window-container {
+    width: 450px;
+}
+
+a .window-link {
+  color: black
+}
+a {
+    color: black
+}
+
+.header-text {
+    align-items: center;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Dom';
+    letter-spacing: 3px;
+}
+
+.flag {
+    height: 40px;
+}
+
+.nav {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.nav-button {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.section-title {
+    margin: 10px 10px 10px 25px;
+    font-size: 30px;
+    font-style: oblique;
+}
