@@ -1,0 +1,338 @@
+/* GoDaddy Small Banner */
+.hdrbnr .godaddysmall .domain {
+color:#FFFFFF;
+position:absolute;
+right:10px;
+top:27px;
+} 
+
+.hdrbnr .godaddysmall .price {
+font-size:11px;
+font-weight:bold;
+position:absolute;
+right:10px;
+top:42px;
+}
+
+.hdrbnr .godaddysmall a {
+color:#E4E100;
+text-decoration:none;
+}
+
+
+/* GoDaddy Medium Banner */
+.hdrbnr .godaddymedium .domain {
+color:#FFFFFF;
+position:absolute;
+right:100px;
+top:30px;
+} 
+
+.hdrbnr .godaddymedium .price {
+font-size:11px;
+font-weight:bold;
+position:absolute;
+right:100px;
+top:45px;
+}
+
+.hdrbnr .godaddymedium a {
+color:#E4E100;
+text-decoration:none;
+}
+
+/* GoDaddy Large Banner */
+.hdrbnr .godaddylarge .domain {
+color:#FFFFFF;
+position:absolute;
+right:150px;
+top:15px;
+} 
+
+.hdrbnr .godaddylarge .price {
+font-size:11px;
+font-weight:bold;
+position:absolute;
+right:150px;
+top:30px;
+}
+
+.hdrbnr .godaddylarge a {
+color:#E4E100;
+text-decoration:none;
+}
+
+
+/* FabulousDomains Small Banner */
+.hdrbnr .fabdomsmall .domain {
+color:#000;
+position:absolute;
+right:10px;
+top:27px;
+} 
+
+.hdrbnr .fabdomsmall .price {
+font-size:11px;
+font-weight:bold;
+position:absolute;
+right:10px;
+top:42px;
+}
+
+.hdrbnr .fabdomsmall a {
+color:#93070a;
+text-decoration:none;
+}
+
+/* FabulousDomains Medium Banner */
+.hdrbnr .fabdommedium .domain {
+color:#000;
+position:absolute;
+right:100px;
+top:30px;
+} 
+
+.hdrbnr .fabdommedium .price {
+font-size:11px;
+font-weight:bold;
+position:absolute;
+right:100px;
+top:45px;
+}
+
+.hdrbnr .fabdommedium a {
+color:#93070a;
+text-decoration:none;
+}
+
+/* FabulousDomains Large Banner */
+.hdrbnr .fabdomlarge .domain {
+color:#000;
+position:absolute;
+right:150px;
+top:15px;
+} 
+
+.hdrbnr .fabdomlarge .price {
+font-size:11px;
+font-weight:bold;
+position:absolute;
+right:150px;
+top:30px;
+}
+
+.hdrbnr .fabdomlarge a {
+color:#93070a;
+text-decoration:none;
+}
+
+/* Register Small Banner */
+.hdrbnr .registersmall .domain {
+color:#FFFFFF;
+position:absolute;
+right:6px;
+top:40px;
+} 
+
+.hdrbnr .registersmall .price {
+font-size:11px;
+font-weight:bold;
+position:absolute;
+right:6px;
+top:55px;
+}
+
+.hdrbnr .registersmall a {
+color:#e6ecf3;
+text-decoration:none;
+}
+
+/* Register Medium Banner */
+.hdrbnr .registermedium .domain {
+color:#ffffff;
+position:absolute;
+right:100px;
+top:32px;
+} 
+
+.hdrbnr .registermedium .price {
+font-size:11px;
+font-weight:bold;
+position:absolute;
+right:100px;
+top:47px;
+}
+
+.hdrbnr .registermedium a {
+color:#e6ecf3;
+text-decoration:none;
+}
+
+/* Register Large Banner */
+.hdrbnr .registerlarge .domain {
+color:#FFFFFF;
+position:absolute;
+right:205px;
+top:17px;
+} 
+
+.hdrbnr .registerlarge .price {
+font-size:12px;
+font-weight:bold;
+position:absolute;
+right:210px;
+top:32px;
+}
+
+.hdrbnr .registerlarge a {
+color:#e6ecf3;
+text-decoration:none;
+}
+
+
+/* MelbIT  Small Banner */
+.hdrbnr .melbitsmall .domain {
+color:#FFFFFF;
+position:absolute;
+right:6px;
+top:26px;
+} 
+
+.hdrbnr .melbitsmall .price {
+font-size:11px;
+font-weight:bold;
+position:absolute;
+right:6px;
+top:41px;
+}
+
+.hdrbnr .melbitsmall a {
+color:#e6ecf3;
+text-decoration:none;
+}
+
+/* MelbIT  Medium Banner */
+.hdrbnr .melbitmedium .domain {
+color:#ffffff;
+position:absolute;
+right:100px;
+top:32px;
+} 
+
+.hdrbnr .melbitmedium .price {
+font-size:11px;
+font-weight:bold;
+position:absolute;
+right:100px;
+top:47px;
+}
+
+.hdrbnr .melbitmedium a {
+color:#e6ecf3;
+text-decoration:none;
+}
+
+/* MelbIT Large Banner */
+.hdrbnr .melbitlarge .domain {
+color:#FFFFFF;
+position:absolute;
+right:130px;
+top:17px;
+} 
+
+.hdrbnr .melbitlarge .price {
+font-size:12px;
+font-weight:bold;
+position:absolute;
+right:130px;
+top:32px;
+}
+
+.hdrbnr .melbitlarge a {
+color:#e5e5e5;
+text-decoration:none;
+}
+
+
+/* Network Small Banner */
+.hdrbnr .networksmall .domain {
+color:#FFFFFF;
+position:absolute;
+right:6px;
+top:26px;
+} 
+
+.hdrbnr .networksmall .price {
+font-size:11px;
+font-weight:bold;
+position:absolute;
+right:6px;
+top:41px;
+}
+
+.hdrbnr .networksmall a {
+color:#003c59;
+text-decoration:none;
+}
+
+/* Network Medium Banner */
+.hdrbnr .networkmedium .domain {
+color:#558791;
+position:absolute;
+left:70px;
+top:30px;
+} 
+
+.hdrbnr .networkmedium .price {
+font-size:11px;
+font-weight:bold;
+position:absolute;
+color:#558791;
+left:70px;
+top:45px;
+}
+
+.hdrbnr .networkmedium a {
+color:#003c59;
+text-decoration:none;
+}
+
+/* Network Large Banner */
+.hdrbnr .networklarge .domain {
+color:#FFFFFF;
+position:absolute;
+right:155px;
+top:17px;
+} 
+
+.hdrbnr .networklarge .price {
+font-size:12px;
+font-weight:bold;
+position:absolute;
+right:155px;
+top:32px;
+}
+
+.hdrbnr .networklarge a {
+color:#003c59;
+text-decoration:none;
+}
+
+
+/* FabulousDomains Text */
+
+.hdrbnr .fabuloustext {
+position:absolute;
+right:0px;
+top:5px;
+width:190px;
+}
+
+.hdrbnr .fabuloustext .domain a {
+color:#FFFFFF;
+font-size:12px;
+font-weight:bold;
+text-align:right;
+text-decoration:underline;
+line-height:1.3em;
+}
