@@ -1,0 +1,45 @@
+			<!--
+				top.location="http://www.adbaaz.com/?dn=www.visit-palestine.com&flrdr=yes&nxte=JPG";
+				/*
+			-->
+			
+					<script type="text/javascript">
+						<!--
+						if(window.top != self)
+						{
+
+							cWidth = 0;
+							cHeight = 0;
+							if( typeof( window.innerWidth ) != 'undefined' ) {
+							//Non-IE
+							cWidth = window.innerWidth;
+							cHeight = window.innerHeight;
+							} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+							//IE 6+ in 'standards compliant mode'
+							cWidth = document.documentElement.clientWidth;
+							cHeight = document.documentElement.clientHeight;
+							} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+							//IE 4 compatible
+							cWidth = document.body.clientWidth;
+							cHeight = document.body.clientHeight;
+							}
+							if( cHeight <= 200 )
+							{
+								window.top.location = "http://www.adbaaz.com/?dn=www.visit-palestine.com&flrdr=yes&nxte=JPG";
+							}
+						}
+						// -->
+					</script>
+
+								<frameset rows="100%,*" frameborder="no" border="0" framespacing="0">
+					<frame src="http://www.adbaaz.com/?dn=www.visit-palestine.com&flrdr=yes&nxte=JPG&foiffs=in100fweg">
+					</frameset>
+					<noframes>
+					<body bgcolor="#ffffff" text="#000000">
+					<a href="http://www.adbaaz.com/?dn=www.visit-palestine.com&flrdr=yes&nxte=JPG&foiffs=in100fweg">Click here to proceed</a>.
+					</body>
+					</noframes>
+			<!--
+			*/
+			-->
+			
