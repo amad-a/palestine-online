@@ -31,15 +31,18 @@ a .window-link {
   color: black
 }
 a {
-    color: black
+    color: black;
+    text-decoration-color: white;
 }
 
 .header-text {
+    padding-top: 10px;
     align-items: center;
     text-align: center;
     font-size: 60px;
-    font-family: 'Dom';
-    letter-spacing: 3px;
+    font-family: serif;
+    letter-spacing: 2px;
+    font-style: italic;
 }
 
 .flag {
@@ -56,7 +59,7 @@ a {
 
 .nav2 {
     padding: 0px;
-    padding: 0px 200px 40px 200px;
+    padding: 0px 200px 4% 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
@@ -70,6 +73,11 @@ a {
 .section-title {
     margin: 0px 10px 0px 25px;
     padding-top: 15px;
-    font-size: 30px;
+    font-size: 40px;
     font-style: oblique;
+    text-decoration: underline;
+    color: rgb(175, 0, 0);
+    font-family: serif;
+    
 }
+

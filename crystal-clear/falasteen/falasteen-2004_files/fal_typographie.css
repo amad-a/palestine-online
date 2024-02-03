@@ -1,0 +1,140 @@
+
+/*
+ * Correction des styles HTML par defaut
+ */
+
+.structure {
+	display: none;
+}
+h1,h2,h3,h4 {
+	margin-top: 0em;
+	margin-bottom: 0em;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+/*
+ * Styles generaux
+ */
+
+/* bien regler la marge (bugs IE) */
+body { background: #F3ECDC; margin: 10px; }
+a { text-decoration: none; color: #2020a0; }
+a:hover { text-decoration: none; }
+a.spip_out { text-decoration: none; color: #a02020; }
+a.spip_in, a.spip_url { text-decoration: none; color: #2020a0; }
+/* from original */
+a.spip_glossaire { text-decoration: none; color: #20a020; }
+
+.chapo {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: justify;
+	font-size: 105%;
+}
+.texte, .texte p.spip {
+	font-family: Tahoma, Georgia, Garamond, Times, serif;
+	text-align: justify;
+}
+.ps {
+	font-family: Tahoma, Georgia, Garamond, Times, serif;
+	text-align: justify;
+	font-size: 75%;
+}
+.notes {
+	font-family: Tahoma, Georgia, Garamond, Times, serif;
+	font-size: 75%;
+}
+
+
+/*
+ * Ici les styles pour le contenu
+ */
+.FontDate {
+	Font-Family:Tahoma;
+	Font-Weight : bold;
+	Font-Size : 11px;
+}
+.FontDateRedac {
+	Font-Family:Tahoma;
+	Font-Size : x-small;
+	font-weight: normal;
+}
+.RightMenuTitle
+{
+    BORDER: #000000 1px solid ;
+    width : 100%;
+    BackGround-Color : #E0C79B;
+}
+.contenu h1,h2 {
+	font-size: 120%;
+	font-weight: bold;
+}
+.contenu h1,h2.titre-extrait {
+	Font-Family:Tahoma;
+	font-size: 100%;
+	font-weight: bold;
+}
+.titre-texte {
+	Font-Family:Tahoma;
+	font-size: 120%;
+	font-weight: bold;
+	color : Maroon;
+}
+ .surtitre {
+	Font-Family:Tahoma;
+	font-size: 90%;
+	font-weight: bold;
+}
+.contenu .detail {
+	font-size: 80%;
+	color: #303030;
+}
+.extrait {
+	border: groove 2px #a0a0a0;
+	padding: 1em;
+	font-size: 75%;
+}
+
+
+/*
+ * Disposition a l'ecran
+ */
+
+#principal {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+#plan {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+#navigation {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.encart {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/*
+     FILE ARCHIVED ON 18:40:59 Oct 15, 2004 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:28:41 Nov 17, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 356.547
+  exclusion.robots: 0.096
+  exclusion.robots.policy: 0.084
+  cdx.remote: 0.072
+  esindex: 0.01
+  LoadShardBlock: 237.207 (3)
+  PetaboxLoader3.resolve: 205.715 (4)
+  PetaboxLoader3.datanode: 95.876 (4)
+  load_resource: 103.77
+*/
