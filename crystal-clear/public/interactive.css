@@ -48,8 +48,17 @@ a {
 
 .nav {
     padding: 30px;
+    padding-bottom: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.nav2 {
+    padding: 0px;
+    padding: 0px 200px 40px 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
 }
 
