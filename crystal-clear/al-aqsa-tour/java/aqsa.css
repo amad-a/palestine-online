@@ -1,0 +1,51 @@
+P  {
+	background-color : Silver;
+}
+
+H1  {}
+
+H2  {}
+
+H3  {}
+
+A  {}
+
+A:Visited  {}
+
+A:Active  {}
+
+A:Hover  {}
+
+BODY  {
+	background-color : Silver;
+	color : Navy;
+}
+
+A:ACTIVE {
+	background-color : Silver;
+	color : White;
+}
+
+A:HOVER {
+	background-color : Silver;
+	color : Red;
+	font-style : italic;
+	text-decoration : overline;
+	underline;
+}
+
+A:LINK {
+	background-color : Silver;
+	color : Black;
+}
+
+A:VISITED {
+	background-color : Silver;
+	color : Teal;
+	font-style : italic;
+}
+
+
+
+
+

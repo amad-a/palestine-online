@@ -1,0 +1,12 @@
+# /robots.txt 
+# Don't let the search engines reference cgi programs
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /etc/
+Disallow: /shlib/
+Disallow: /bin/
+Disallow: /logs/
+
+
+

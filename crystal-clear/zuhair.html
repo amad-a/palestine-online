@@ -8,44 +8,92 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
   </head>
-  <button onclick="location.href='reality.html';"
+  <button
+    onclick="window.history.back()"
     style="
       zoom: 1.2;
       position: fixed;
-      top: 85%;
+      top: 90%;
       left: 2.5%;
       bottom: 0;
       right: 0;
-      width: 10%;
-      height: 10%;
+      width: 2%;
+      height: 8%;
       border: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
       z-index: 999999;
+      opacity: 80%;
     "
   >
-    <div style="padding: 15px; font-size: 12px; font-style: oblique;">Previous Page</div>
+    <img
+      src="../public/back.svg"
+      height="30px"
+      style="padding-right: 0px; margin-bottom: 0px"
+    />
   </button>
 
-  <button onclick="location.href='amnah.html';"
+  <button
+    onclick="window.history.forward();"
     style="
       zoom: 1.2;
       position: fixed;
-      top: 85%;
-      left: 86.5%;
+      top: 90%;
+      left: 12.5%;
       bottom: 0;
       right: 0;
-      width: 10%;
-      height: 10%;
+      width: 2%;
+      height: 8%;
       border: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
       z-index: 999999;
+      opacity: 80%;
     "
   >
-  <div style="padding: 15px; font-size: 12px; font-style: oblique;">Next Page</div>
+    <img
+      src="../public/front.svg"
+      height="30px"
+      style="padding-right: 0px; margin-bottom: 0px"
+    />
+  </button>
+
+  <button
+    onclick="location.href='index.html';"
+    style="
+      zoom: 1.2;
+      position: fixed;
+      top: 90%;
+      left: 85%;
+      bottom: 0;
+      right: 0;
+      width: 12%;
+      height: 8%;
+      border: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 999999;
+      opacity: 80%;
+    "
+  >
+    <div
+      style="
+        padding: 15px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      "
+    >
+      <img
+        src="../public/home.svg"
+        height="25px"
+        style="padding-left: 4px; margin-bottom: -6.5px"
+      />
+      Home
+    </div>
   </button>
 
   <iframe

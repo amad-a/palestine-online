@@ -1,0 +1,176 @@
+<html>
+
+<head>
+<title>Internet Search</title>
+<script LANGUAGE="JavaScript">
+<!--
+//Script Author: James Gabel(james.gabel@usa.net).
+//Date: 01-27-98
+//Use all you want provided you leave in the comments.
+
+function netsearch(formname) 
+
+{
+   var a1
+   var a2
+   var b1
+   var b2
+   var c1
+   var c2
+   var d1
+   var d2
+   var e1
+   var e2
+   var f1
+   var f2
+   var g1
+   var g2
+   var TEXT
+   var noENGINE
+   var haveTEXT
+
+   TEXT=formname.TEXT.value;
+   noEngine=true;
+   haveTEXT=true;
+
+   if (TEXT==" ")
+     {
+     alert("Please type in some text!")
+     haveTEXT=false
+     }
+
+   //ALTAVISTA
+   a1=formname.altavista.checked;
+  
+a2="http://www.altavista.digital.com/cgi-bin/query?pg=q&what=web&fmt=.&q="+TEXT; 
+     if (a1)
+       {
+       noEngine=false
+       if (haveTEXT)
+         {
+         newWindow=window.open(a2, "av","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }
+   
+   //EXCITE
+   b1=formname.excite.checked;
+   b2="http://www.excite.com/search.gw?trace=a&search="+TEXT;  
+     if (b1)
+       {
+       noEngine=false
+       if (haveTEXT)
+         {
+         newWindow=window.open(b2, "e","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }  
+
+   //HOTBOT
+   c1=formname.hotbot.checked;
+  
+c2="http://www.search.hotbot.com/hResult.html?SM=MC&MT="+TEXT+"&DV=7&RG=.com&DC=10&DE=2&OPs=MDRTP&_v=2&DU=days&SW=web&search.x=23&search.y=8";
+     if (c1)
+       {
+       noEngine=false
+       if (haveTEXT)
+         {
+         newWindow=window.open(c2, "h","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }  
+    
+   //INFOSEEK
+   d1=formname.infoseek.checked;
+  
+d2="http://www.infoseek.com/Titles?qt="+TEXT+"&col=WW&sv=IS&lk=noframes&nh=10";
+     if (d1)
+       {
+       noEngine=false
+       if (haveTEXT)
+         {
+         newWindow=window.open(d2, "i", "toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }  
+    
+   //LYCOS
+   e1=formname.lycos.checked;
+  
+e2="http://www.lycos.com/cgi-bin/pursuit?query="+TEXT+"&matchmode=and&cat=lycos&x=33&y=10";
+     if (e1)
+       {
+       noEngine=false
+       if (haveTEXT)
+         {
+         newWindow=window.open(e2, "l","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }  
+
+   //WEBCRAWLER
+   f1=formname.webcrawler.checked;
+   f2="http://www.webcrawler.com/cgi-bin/WebQuery?searchText="+TEXT;
+     if (f1)
+       {
+       noEngine=false
+       if (haveTEXT)
+         {
+         newWindow=window.open(f2, "w","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }       
+
+   //YAHOO
+   g1=formname.yahoo.checked;
+   g2="http://search.yahoo.com/bin/search?p="+TEXT;
+     if (g1)
+       {
+       noEngine=false
+       if (haveTEXT)
+         {
+         newWindow=window.open(g2, "y","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }  
+
+   //noENGINE
+     if (noEngine)
+       {
+       alert("Please select a search engine!")
+       }  
+
+// END SCRIPT
+ 
+}
+
+//Done Hiding-->
+</script>
+</head>
+
+<body BGCOLOR="#FFFFFF" background="images/bakgrnd.gif">
+
+<table BORDER="0" WIDTH="100%">
+  <tr>
+    <td VALIGN="BOTTOM" ROWSPAN="2"><p ALIGN="LEFT"><img SRC="images/logo-s.gif" ALIGN="BOTTOM" BORDER="0" ALT="[Logo] " WIDTH="85" HEIGHT="70"></td>
+    <td VALIGN="BOTTOM"><p ALIGN="LEFT"><a HREF="index.htm"><img SRC="images/home.gif" BORDER="0" ALT="[Home] " WIDTH="70" HEIGHT="40"></a><a HREF="map.htm"><img SRC="images/map.gif" BORDER="0" ALT="[Map] " WIDTH="70" HEIGHT="40"></a><a HREF="events.htm"><img SRC="images/events.gif" BORDER="0" ALT="[Events] " WIDTH="70" HEIGHT="40"></a><a HREF="travel.htm"><img SRC="images/travel.gif" BORDER="0" ALT="[Travel] " WIDTH="70" HEIGHT="40"></a><a HREF="form.html"><img SRC="images/contact.gif" BORDER="0" ALT="[Contact us] " WIDTH="70" HEIGHT="40"></a></td>
+    <td VALIGN="BOTTOM"><p ALIGN="RIGHT"><img SRC="images/header.gif" ALIGN="BOTTOM" BORDER="0" ALT="[Header] " WIDTH="169" HEIGHT="40"></td>
+  </tr>
+</table>
+
+<p align="center"><font color="#000000" face="Arial"><strong><font size="5">NetSearch Page</font>
+</strong></font></p>
+
+<hr>
+<font FACE="ARIAL" SIZE="1">
+
+<p>(Note: This page opens a new window for each engine's results.) </font></p>
+
+<form NAME="engines">
+  <font SIZE="4"><p>Select Search Engines:</font><br>
+  <input TYPE="Checkbox" NAME="altavista" VALUE>Alta Vista<br>
+  <input TYPE="Checkbox" NAME="excite" VALUE>Excite<br>
+  <input TYPE="Checkbox" NAME="hotbot" VALUE>HotBot<br>
+  <input TYPE="Checkbox" NAME="infoseek" VALUE>Infoseek<br>
+  <input TYPE="Checkbox" NAME="lycos" VALUE>Lycos<br>
+  <input TYPE="Checkbox" NAME="webcrawler" VALUE>Webcrawler<br>
+  <input TYPE="Checkbox" NAME="yahoo" VALUE>Yahoo </p>
+  <p><input NAME="TEXT" size="15" maxlength="200" VALUE=" "> <input TYPE="BUTTON" VALUE="Go!" onClick="netsearch(engines)"> <input TYPE="RESET" VALUE="Clear"> </p>
+</form>
+
+<hr>
+</body>
+</html>
