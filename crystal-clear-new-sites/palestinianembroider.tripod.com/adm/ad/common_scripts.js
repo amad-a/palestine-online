@@ -39,7 +39,7 @@ function setKeywordCookie(keyword) {
     var reg = new RegExp("http://([\\w\\.\\-]*\\.)?(tripod|angelfire|lycos).com/");
 
     if (! reg.test( document.referrer)) {
-        SetCookie("Keyword", keyword, '', "/", ".tripod.com");
+        SetCookie("Keyword", keyword, '', "", ".tripod.com");
     }
 }
 
@@ -62,7 +62,7 @@ function exitPage(a) {
         return true;
     }
 
-    var windowLocation = "/bin/exit/exit_page";
+    var windowLocation = "bin/exit/exit_page";
 
     var expdate = new Date ();
     expdate.setTime (expdate.getTime() + (24 * 60 * 60 * 1000));
@@ -79,7 +79,7 @@ function exitPage(a) {
 	if (w) {
 	    w.location = windowLocation + "?q=" + keyword;
 	}
-        SetCookie ("ExitPage", "viewed", expdate, "/", ".tripod.com");
+        SetCookie ("ExitPage", "viewed", expdate, "", ".tripod.com");
     }
 }
 
@@ -132,25 +132,25 @@ function launchSidebar(sbserver, kw) {
     document.cookie = "sidebarurl=" + window.location + "; path=/; domain=.tripod.com";
     if(GetCookie("sbo") == 1)
     {
-       var adImg=d.createElement('IMG'); adImg.src="/adm/img/common/ot_existingpane.gif?rand=" + random_num;
+       var adImg=d.createElement('IMG'); adImg.src="adm/img/common/ot_existingpane.gif?rand=" + random_num;
        return;
     } 
 
     if(GetCookie("nosidebar") == 1)
     {
-	var adImg=d.createElement('IMG'); adImg.src="/adm/img/common/ot_brokenpane.gif?rand=" + random_num;
+	var adImg=d.createElement('IMG'); adImg.src="adm/img/common/ot_brokenpane.gif?rand=" + random_num;
 	return;
     }		
 
 
     if (window.name == 'comments') {
-       var adImg=d.createElement('IMG'); adImg.src="/adm/img/common/ot_blogcomments.gif?rand=" + random_num;
+       var adImg=d.createElement('IMG'); adImg.src="adm/img/common/ot_blogcomments.gif?rand=" + random_num;
        return;
     }
 
     if(adChannel == "ch2")
     {
-	var adImg=d.createElement('IMG'); adImg.src="/adm/img/common/ot_testgroup.gif?rand=" + random_num; 
+	var adImg=d.createElement('IMG'); adImg.src="adm/img/common/ot_testgroup.gif?rand=" + random_num; 
 	return;
     }	
 
@@ -160,12 +160,12 @@ function launchSidebar(sbserver, kw) {
         if((navigator.userAgent.indexOf("MSIE") != -1) && (navigator.userAgent.indexOf("MSN") == -1) && (navigator.userAgent.indexOf("AOL") == -1) && (navigator.userAgent.indexOf("Mac") == -1) && (navigator.userAgent.indexOf("Opera") == -1) && (navigator.userAgent.indexOf("NetCaptor") == -1) && (!window.sidebar))
         {
            open('http://' + sbserver + '/bin/sidebar.cgi?site=' + window.location + "&kwcookie=" + kw, '_search');
-	   var adImg=d.createElement('IMG'); adImg.src="/adm/img/common/ot_opensidepane.gif?rand=" + random_num;
+	   var adImg=d.createElement('IMG'); adImg.src="adm/img/common/ot_opensidepane.gif?rand=" + random_num;
 	   return;
         }
     }
 
-    var adImg=d.createElement('IMG'); adImg.src="/adm/img/common/ot_nosidepane.gif?rand=" + random_num;
+    var adImg=d.createElement('IMG'); adImg.src="adm/img/common/ot_nosidepane.gif?rand=" + random_num;
     return;
 }
 
