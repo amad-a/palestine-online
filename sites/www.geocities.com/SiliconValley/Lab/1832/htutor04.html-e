@@ -1,0 +1,550 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML DIR="RTL">
+<HEAD>
+	<TITLE>إتش.بي بالعربية- الدرس الرابع</TITLE>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1256">
+	<META NAME="keywords" CONTENT="html,html,html,html,psp,psp,psp,psp,arabic,arabic,arabic,arabic,paint shop pro,paint shop pro,paint shop pro,paint shop pro,webpage design,webpage design,webpage design,webpage design ">
+	<META NAME="description" CONTENT="Html and Paint Shop Pro tutorials in Arabic,learning web page design in Arabic">
+	<META NAME="author" CONTENT="Yahya Al-Sharif">
+	<META NAME="copyright" CONTENT="Copyright 1998 Yahya Al-Sharif">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="images/bg.jpg">
+<BASEFONT SIZE="4" FACE="Arabic Transparent" COLOR="#000000">
+<CENTER>
+<IMG SRC="images/inbanner.gif" WIDTH=500 HEIGHT=80 BORDER=0 usemap="#map2" ALT="">
+</CENTER>
+
+<P ALIGN="CENTER" DIR="RTL">
+<FONT FACE="Arabic Transparent" SIZE="6" COLOR="#FF0000">
+<STRONG>
+الدرس الرابع<BR>
+الفقرات والقوائم<BR>
+</STRONG></FONT></P>
+
+&nbsp;<BR><CENTER>
+<P ALIGN="center" DIR="RTL"><FONT SIZE="2">
+<A HREF="htutor01.html">[الأساسيات]</A>
+<A HREF="htutor02.html">[الألوان]</A>
+<A HREF="htutor03.html">[الخطوط]</A>
+<A HREF="htutor04.html">[الفقرات والقوائم]</A>
+<A HREF="htutor05.html">[الصور والرسومات]</A>
+<A HREF="htutor06.html">[الوصلات التشعبية]</A><BR>
+<A HREF="htutor07.html">[الجداول1]</A>
+<A HREF="htutor08.html">[الجداول2]</A>
+<A HREF="htutor09.html">[الإطارات1]</A>
+<A HREF="htutor10.html">[الإطارات2]</A>
+<A HREF="htutor11.html">[الإطارات3]</A>
+<A HREF="htutor12.html">[وسوم من هنا وهناك]</A><BR>
+<A HREF="htutor13.html">[الخرائط الصورية]</A>
+<A HREF="htutor14.html">[النماذج1]</A>
+<A HREF="htutor15.html">[النماذج2]</A>
+<A HREF="htutor16.html">[الوسوم الخاصة]</A>
+<A HREF="htutor17.html">[الويب واللغة العربية]</A>
+<A HREF="htutor18.html">[وسوم Meta]</A>
+
+
+</FONT></P>
+</CENTER><BR>
+
+
+<CENTER><IMG SRC="images/top_bar.gif" WIDTH=600 HEIGHT=30 BORDER=0 ALT=""></CENTER>
+<BR>&nbsp;<BR>
+
+<BLOCKQUOTE>
+
+<P ALIGN="RIGHT" DIR="RTL">
+ أهلاً وسهلاً بك إلى الدرس الرابع من دروس
+<FONT FACE="Times New Roman" SIZE=4>HTML.</FONT>
+في هذا الدرس سوف نناقش الوسوم الخاصة بالفقرات بشكل خاص وترتيب الصفحات وتنسيقها بشكل عام.<BR>
+صحيح أن استخدامك للألوان والرسومات في الصفحة يضفي عليها نوعاً من الحيوية، وأن الخطوط تعطي صفحتك رونقاً وجمالاً. لكنك إن لم تهتم بترتيب صفحتك أو تقضي بعض الوقت في تنسيق هيكلها العام وتنظيم فقراتها وقوائمها، فإنه من الصعب عليك الحصول على صفحة ويب ناجحة. فالترتيب هو الخطوة الأولى لجذب اهتمام الزائر أو القارئ  لصفحتك وتسهل عليه فهم  الخطوط العريضة للصفحة.
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+لقد قمت في
+<A HREF="htutor01.html">الدرس الأول</A>
+ بإيضاح بعض الوسوم الخاصة بالفقرات. ولا بأس من تذكيرك بها. فالوسم 
+<FONT FACE="Times New Roman" SIZE=4>&lt;P&gt; </FONT>
+يقوم بإنهاء الفقرة. والوسم
+<FONT FACE="Times New Roman" SIZE=4>&lt;BR&gt;</FONT>
+ ينهي السطر الحالي وينقل النص إلى سطر جديد.
+ والوسم
+<FONT FACE="Times New Roman" SIZE=4> ‎&amp;nbsp;‎</FONT>
+ يقوم بإضافة الفراغات، ويجب تكرار كتابته بنفس عدد الفراغات المطلوب.<BR>
+ ونتابع في هذا الدرس مع هذه الوسوم وغيرها.
+ </P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+ لقد قلت إن الوسم 
+<FONT FACE="Times New Roman" SIZE=4> &lt;P&gt;</FONT>
+ هو وسم مفرد لكنه يستخدم أيضاً كوسم مزدوج
+<FONT FACE="Times New Roman" SIZE=4>
+&lt;P&gt; ... &lt;‎/P&gt;</FONT>
+ وفي هذه الحالة يمكّننا من تحديد إتجاه الفقرة وإتجاه النص فيها حيث يستخدم معه الخصائص 
+<FONT FACE="Times New Roman" SIZE=4>ALIGN, DIR.</FONT>
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">فالخاصية 
+<FONT FACE="Times New Roman" SIZE=4>ALIGN</FONT>
+تحدد محاذاة الفقرة وهي تأخذ القيم 
+<FONT FACE="Times New Roman" SIZE=4>Left, Center, Right</FONT>
+وأوضحها بالأمثلة التالية:</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+&lt;P Align=&quot;left&quot;&gt;
+This is a left-aligned paragraph
+&lt;‎/P&gt;
+</FONT></P>
+
+<P ALIGN="LEFT"><FONT COLOR="#FF0000"> This is left-aligned paragraph</FONT></P>
+<HR ALIGN="CENTER" WIDTH="50%">
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+&lt;P Align=&quot;right&quot;&gt; This is right-aligned paragraph&lt;/P&gt;
+</FONT>
+</P>
+
+<P ALIGN="RIGHT">
+<FONT COLOR="#FF0000">
+This is a right-aligned paragraph</FONT></P>
+<HR ALIGN="CENTER" WIDTH="50%">
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+ &lt;P Align=&quot;center&quot;&gt; This is a centered paragraph&lt;/P&gt;</FONT></P>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"> This is a centered paragraph</FONT></P>
+<HR ALIGN="CENTER" WIDTH="50%">
+
+
+<P ALIGN="RIGHT" DIR="RTL">
+كذلك لتوسيط الفقرات أو الكائنات بشكل عام في الصفحة نستطيع استخدام الوسوم 
+<FONT FACE="Times New Roman" SIZE=4>
+&lt;CENTER&gt; ... &lt;/CENTER&gt;
+</FONT></P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+&lt;CENTER&gt;
+This is a centered text
+&lt;/CENTER&gt;
+</FONT></P>
+
+<CENTER>
+<FONT COLOR="#FF0000">This is a centered text</FONT>
+</CENTER> 
+<BR>
+&nbsp;<BR>
+
+<P ALIGN="RIGHT" DIR="RTL">
+أما الخاصية 
+<FONT FACE="Times New Roman" SIZE=4>DIR</FONT>
+والتي نستخدمها أيضاً مع
+<FONT FACE="Times New Roman" SIZE=4>&lt;P&gt;</FONT>
+فتقوم بتحديد إتجاه قراءة النص وتأخذ القيم
+</P>
+<CENTER>
+<TABLE ALIGN="CENTER" BORDER="1" WIDTH="70%" cellpadding="5">
+<TR>
+	<TD WIDTH="10%"><FONT FACE="Times New Roman" SIZE=4>LTR</FONT> </TD>
+	<TD>
+	<FONT FACE="Arabic Transparent" SIZE=4>
+	إتجاه النص من اليسار إلى اليمين
+<FONT FACE="Times New Roman" SIZE=4>	(Left To Right)</FONT>
+	</FONT>
+	</TD>
+</TR>
+<TR>
+	<TD><FONT FACE="Times New Roman" SIZE=4>RTL</FONT> </TD>
+	<TD>
+	<FONT FACE="Arabic Transparent" SIZE=4>
+	إتجاه النص من اليمين إلى اليسار
+<FONT FACE="Times New Roman" SIZE=4>	(Right To Left)</FONT>
+	</FONT>
+	</TD>
+</TR>
+</TABLE>
+
+</CENTER>
+<P ALIGN="RIGHT" DIR="RTL">
+(تذكر هذه الخاصية جيداً فهي مهمة عند كتابة صفحات باللغة العربية)
+</P>
+<HR ALIGN="CENTER" WIDTH="80%"><P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+ولتنسيق الفقرات أيضاً يوجد الوسوم<BR>
+<FONT FACE="Times New Roman" SIZE=4>
+&lt;BLOCKQUOTE&gt; ... &lt;‎/BLOCKQUOTE&gt;</FONT>
+أي وسوم الفقرات المقتبسة. ووظيفتها تمييز الفقرة من خلال إدراج مسافة إضافية على الهامشين الأيمن والأيسر لها. أنظر إلى الفقرة التالية التي قمت (باقتباسها) من إحدى صفحات هذا الموقع. ومن ثم وضعتها ضمن 
+<FONT FACE="Times New Roman" SIZE=4>
+&lt;BLOCKQUOTE&gt; ... &lt;‎/BLOCKQUOTE&gt;</FONT>
+</P>
+
+<BLOCKQUOTE>
+<P ALIGN="RIGHT" DIR="RTL">
+<FONT SIZE="-1">وفكرة هذه الدروس جاءت نتيجة لما لمسته خلال استخدامي لشبكة الإنترنت بشكل عام، والبحث عن المواقع العربية فيها بشكل خاص. فعندما بدأت بتعلم تصميم صفحات الإنترنت، لم يكن هناك مشكلة في الحصول على المصادر أو المواقع التعليمية التي أحتاجها ومن خلال الإنترنت نفسها. لكن المشكلة هي دائماً في الحصول على تلك المصادر بالصورة التي تتناسب واحتياجاتنا كمستخدمين عرب ....
+</FONT></P>
+</BLOCKQUOTE>
+
+<P ALIGN="RIGHT" DIR="RTL">
+ والحقيقة أنك تستطيع وضع عدة وسوم معاً إذا أردت إدراج هوامش أكبر. كما في المثال التالي:
+</P>
+
+<FONT FACE="Arial" SIZE=2>
+<P ALIGN="LEFT" DIR="LTR">
+&lt;BLOCKQUOTE&gt;<BR>
+&lt;BLOCKQUOTE&gt;<BR>
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+وفكرة هذه الدروس جاءت نتيجة لما لمسته خلال استخدامي لشبكة الإنترنت بشكل عام، والبحث عن المواقع العربية فيها بشكل خاص. فعندما بدأت بتعلم تصميم صفحات الإنترنت، لم يكن هناك مشكلة في الحصول على المصادر أو المواقع التعليمية التي أحتاجها ومن خلال الإنترنت نفسها. لكن المشكلة هي دائماً في الحصول على تلك المصادر بالصورة التي تتناسب واحتياجاتنا كمستخدمين عرب ....
+</P>
+
+<P ALIGN="LEFT" DIR="LTR">
+&lt;‎/BLOCKQUOTE&gt;<BR>
+&lt;‎/BLOCKQUOTE&gt;<BR>
+</P></FONT>
+
+<P ALIGN="RIGHT" DIR="RTL">وتكون النتيجة:</P>
+
+<BLOCKQUOTE><BLOCKQUOTE>
+<P ALIGN="RIGHT" DIR="RTL">
+<FONT SIZE="-1">وفكرة هذه الدروس جاءت نتيجة لما لمسته خلال استخدامي لشبكة الإنترنت بشكل عام، والبحث عن المواقع العربية فيها بشكل خاص. فعندما بدأت بتعلم تصميم صفحات الإنترنت، لم يكن هناك مشكلة في الحصول على المصادر أو المواقع التعليمية التي أحتاجها ومن خلال الإنترنت نفسها. لكن المشكلة هي دائماً في الحصول على تلك المصادر بالصورة التي تتناسب واحتياجاتنا كمستخدمين عرب ....
+
+</FONT></P></BLOCKQUOTE></BLOCKQUOTE>
+
+<P ALIGN="RIGHT" DIR="RTL">
+وبالطبع ليس شرطاً أن تستخدم هذا الوسوم مع الفقرات المقتبسة فقط. فأنا مثلاً أضعها في بداية ونهاية كل صفحة من صفحات هذا الموقع. وبالتالي يظهر النص بعيداً قليلاً عن حاشية الصفحة فهذا أفضل من أن يكون ملاصقاً لها وأجمل. (مجرد وجهة نظر)
+</P>
+<HR ALIGN="CENTER" WIDTH="80%"><P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+والآن تأمل هذا الشكل وحاول أن تستنتج كيف قمت بإعداده...!؟
+</P>
+	
+<PRE>
+A		B		C		D
+E		F		G		H
+I		J		K		L
+M		N		O		P
+Q		R		S		T
+</PRE>
+
+<P ALIGN="RIGHT" DIR="RTL">
+ ربما توصلت إلى أني استخدمت عدداً كبيراً من وسوم الفراغات
+<FONT FACE="Times New Roman" SIZE=4>‎&amp;nbsp;‎</FONT>
+ونهاية السطر
+<FONT FACE="Times New Roman" SIZE=4> &lt;BR&gt;.</FONT>
+حسناً، إستنتاجك لا بأس به ولكنه ليس دقيقاً فأنا لم أستخدم أياً من هذه الوسوم هنا. بل كل ما فعلته بعد إعداد هذا الشكل هو وضعه ضمن:
+</P>
+<P ALIGN="CENTER" DIR="LTR"><FONT FACE="Times New Roman" SIZE=4>
+&lt;PRE&gt; ... &lt;/PRE&gt;
+</FONT></P>
+<P ALIGN="RIGHT" DIR="RTL">
+وهما اختصار لكلمة 
+<FONT FACE="Times New Roman" SIZE=4>Preformated</FONT>
+أي المنسق مسبقاً. وبالفعل فقد احتفظ هذا الشكل بالتنسيق المسبق الذي تم إعداده به. لكن تم تحويل الخط إلى خط موحد المسافات  (راجع 
+<A HREF="htutor03.html#monospace">الدرس السابق</A>)
+ولو لم أقم بوضعه ضمن هذه الوسوم لكانت النتيجة كالتالي:<BR>&nbsp;<BR>
+A		B		C		D
+E		F		G		H
+I		J		K		L
+M		N		O		P
+Q		R		S		T
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+لاحظ أن هذا الوسم يستخدم مع الفقرات التي لا نحتاج فيها إلى تنسيقات متعددة للخطوط  أو الألوان. بل فقط مع الفقرات العادية موحدة الخط والتنسيقات.</P>
+
+
+
+<HR ALIGN="CENTER" WIDTH="80%"><P>
+
+<P ALIGN="RIGHT" DIR="RTL"><FONT SIZE="6">
+
+<STRONG>القوائم</STRONG></FONT></p>
+<P ALIGN="RIGHT" DIR="RTL">
+تحتوي لغة 
+<FONT FACE="Times New Roman" SIZE=4>HTML</FONT>
+على مجموعة من الوسوم  الخاصة بتنظيم البيانات في قوائم وباستخدام عدة خيارات.
+وهناك نوعين من القوائم:<BR>
+أولهما المتسلسلة 
+<FONT FACE="Times New Roman" SIZE=4>Ordered Lists.</FONT>
+ واليك المثال التالي عليها
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL"><I>أسماء بعض المدن الفلسطينية</I></P>
+<p dir="rtl" align="right">
+<OL>
+<LI><P ALIGN="right" DIR="RTL">القدس
+<LI><P ALIGN="right" DIR="RTL">نابلس
+<LI><P ALIGN="right" DIR="RTL">رام الله
+<LI><P ALIGN="right" DIR="RTL">الخليل
+<LI><P ALIGN="right" DIR="RTL">جنين
+<LI><P ALIGN="right" DIR="RTL">طولكرم
+</OL>
+</p>
+
+
+<P ALIGN="RIGHT" DIR="RTL">وثانيهما القوائم غير المتسلسلة 
+<FONT FACE="Times New Roman" SIZE=4>Unordered Lists</FONT> وهذا مثال عليها
+</P>
+<P ALIGN="RIGHT" DIR="RTL"><I>أسماء بعض الجامعات الفلسطينية</I>
+
+</P>
+<P ALIGN="right" DIR="RTL">
+<UL>
+	<LI><P ALIGN="right" DIR="RTL">جامعة النجاح
+	<LI><P ALIGN="right" DIR="RTL">جامعة القدس المفتوحة
+	<LI><P ALIGN="right" DIR="RTL">جامعة بيرزيت
+	<LI><P ALIGN="right" DIR="RTL">جامعة الخليل
+</UL>
+
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+عند التعامل مع القوائم بنوعيهما نحتاج إلى وسوم خاصة بتحديد بداية ونهاية القائمة ووسوم تحدد بنود هذه القائمة.<BR>
+بالنسبة للقوائم المتسلسلة نستخدم الوسوم </p>
+
+<CENTER>
+<FONT FACE="Times New Roman" SIZE=4>
+&lt;OL&gt; ... &lt;‎/OL&gt;
+</FONT></CENTER><BR>
+
+<P ALIGN="RIGHT" DIR="RTL">أما بالنسبة للقوائم غير المتسلسلة فنستخدم
+</P>
+
+<CENTER><FONT FACE="Times New Roman" SIZE=4>
+&lt;UL&gt; ... &lt;‎/UL&gt;
+</FONT></CENTER><BR>
+<P ALIGN="RIGHT" DIR="RTL">
+ولتعيين كل بند من بنود القائمة نستخدم الوسم
+<FONT FACE="Times New Roman" SIZE=4>&lt;LI&gt;</FONT>
+وهو وسم مفرد يكتب في بداية السطر الخاص بكل بند
+<FONT FACE="Times New Roman" SIZE=4>List Item.</FONT>
+</p>
+<P ALIGN="RIGHT" DIR="RTL">
+إذن عندما قمت بإنشاء القوائم السابقة استخدمت الشيفرة التالية:
+</P>
+
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+&lt;OL&gt;<BR>
+&lt;LI&gt;القدس<BR>
+&lt;LI&gt;نابلس<BR>
+&lt;LI&gt;رام الله<BR>
+&lt;LI&gt;الخليل<BR>
+&lt;LI&gt;جنين<BR>
+&lt;LI&gt;طولكرم<BR>
+&lt;‎/OL&gt;<BR>
+</FONT>
+</P>
+&nbsp;<BR>
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+&lt;UL&gt;<BR>
+&lt;LI&gt;جامعة النجاح<BR>
+&lt;LI&gt;جامعة القدس المفتوحة<BR>
+&lt;LI&gt;جامعة بيرزيت<BR>
+&lt;LI&gt;جامعة الخليل<BR>
+&lt;‎/UL&gt;<BR>
+</FONT>
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+والخاصية الوحيدة التي تستخدم مع هذه الوسوم هي 
+<FONT FACE="Times New Roman" SIZE=4>TYPE</FONT>
+ووظيفتها تحديد شكل الرمز الظاهر مع بنود القائمة، وعادة تستخدم مع وسوم بداية القوائم
+<FONT FACE="Times New Roman" SIZE=4>&lt;UL&gt;</FONT>
+أو
+<FONT FACE="Times New Roman" SIZE=4>&lt;OL&gt;</FONT>
+وبذلك نحدد رمزاً واحداً لكل القائمة.
+ولكن نستطيع استخدامها أيضاً مع وسم البنود
+<FONT FACE="Times New Roman" SIZE=4>&lt;LI&gt;</FONT>
+لإعطاء تحكم أكبر في مظهر القائمة من خلال تحديد رمز مختلف لكل بند.
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+فعند وضعها ضمن تعريف القوائم المتسلسلة تأخذ القيم:
+<FONT FACE="Times New Roman" SIZE=4>A, a, I, i</FONT>
+التي تغير رموز الترقيم من الأرقام العادية الإفتراضية (والتي رمزها 1) إلى ترقيم باستخدام الأحرف اللاتينية الكبيرة أو الصغيرة، أو باستخدام الأرقام الرومانية كما ترى في الجدول التالي:</P>
+<CENTER>
+<TABLE BORDER="1" ALIGN="CENTER">
+<TR ALIGN="CENTER">
+	<TD height="50"><FONT FACE="Arial" SIZE=2>
+	‎&lt;OL TYPE=&quot;A&quot;&gt;‎
+	</FONT></TD>
+	<TD><FONT FACE="Arial" SIZE=2>
+	‎&lt;OL TYPE=&quot;a&quot;&gt;‎
+	</FONT></TD>
+	<TD><FONT FACE="Arial" SIZE=2>
+	‎&lt;OL TYPE=&quot;I&quot;&gt;‎
+	</FONT></TD>
+	<TD><FONT FACE="Arial" SIZE=2>
+	‎&lt;OL TYPE=&quot;i&quot;&gt;‎
+	</FONT></TD>
+</TR>
+<TR ALIGN="CENTER">
+	<TD>
+<OL TYPE="A">
+<LI>&nbsp;
+<LI>&nbsp;
+<LI>&nbsp;
+<LI>&nbsp;
+<LI>&nbsp;
+</OL>
+	</TD>
+	<TD><OL TYPE="a">
+<LI>&nbsp;
+<LI>&nbsp;
+<LI>&nbsp;
+<LI>&nbsp;
+<LI>&nbsp;
+</OL>
+</TD>
+	<TD><OL TYPE="I">
+<LI>&nbsp;
+<LI>&nbsp;
+<LI>&nbsp;
+<LI>&nbsp;
+<LI>&nbsp;
+</OL>
+</TD>
+	<TD><OL TYPE="i">
+<LI>&nbsp;
+<LI>&nbsp;
+<LI>&nbsp;
+<LI>&nbsp;
+<LI>&nbsp;
+</OL>
+</TD>
+</TR>
+</TABLE>
+
+</CENTER>
+<P ALIGN="RIGHT" DIR="RTL">
+والحديث عن هذه الخاصية يقودني إلى الحديث عن مسألة مهمة في لغة 
+<FONT FACE="Times New Roman" SIZE=4>HTML</FONT>
+وهي مسألة الوسوم والخصائص المحددة بمتصفح معين دون غيره أي التي تعمل مع أحد المتصفحات ولا تعمل مع غيره. (للمزيد عن هذا الموضوع رجاءً انقر <A HREF="htutor16.html">هنا</A>)</P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+والسبب في ذلك أن هذه الخاصية  تستخدم أيضاً مع القوائم غير المتسلسلة، لكن ليس بصورة مطلقة...كيف؟
+ أنت ترى أن الرمز الموجود عند كل بند في القائمة هو عبارة عن نقطة سوداء يطلق عليها اسم
+<FONT FACE="Times New Roman" SIZE=4>Disc</FONT>
+وهي المعرفة ضمناً في خاصية
+<FONT FACE="Times New Roman" SIZE=4>TYPE.</FONT> 
+لكن هناك رموز أخرى يمكن إظهارها وهي المربع 
+<FONT FACE="Times New Roman" SIZE=4>square,</FONT>
+والدائرة المفرغة
+<FONT FACE="Times New Roman" SIZE=4>circle</FONT>
+وتعرف بالشكل التالي:
+ </P>
+ 
+<P ALIGN="center" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+‎&lt;UL TYPE=&quot;square&quot;&gt;‎<BR>
+‎&lt;UL TYPE=&quot;circle&quot;&gt;‎
+</FONT></P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+ولكن للأسف هذه الخاصية لا تعمل ولا يظهر تأثيرها إلا مع متصفح نيتسكيب وليس مع مايكروسوفت إكسبلورر الذي يتعامل فقط مع القيمة الإفتراضية للخاصية. (رجاءً لا يغضب مستخدمو إكسبلورر فهناك الكثير من الوسوم والخصائص التي لا يستطيع نيتسكيب عرضها أيضاً).<BR>
+ولإتمام الحديث عن القوائم، أذكر لك أن هناك وسوماً أخرى تستخدم لإنشاء القوائم غير المتسلسلة، وبنفس الطريقة المستخدمة مع 
+<FONT FACE="Times New Roman" SIZE=4>
+&lt;UL&gt;...&lt;‎/UL&gt;</FONT>
+وهذه الوسوم هي:
+ </P>
+<P ALIGN="CENTER" DIR="LTR"><FONT FACE="Times New Roman" SIZE=4>
+&lt;DIR&gt; ... &lt;‎/DIR&gt;<BR>
+&lt;MENU&gt; ... &lt;‎/MENU&gt;<BR>
+</FONT></P>
+
+<HR ALIGN="CENTER" WIDTH="80%">&nbsp;<BR>
+
+<P ALIGN="RIGHT" DIR="RTL">
+هناك نوع خاص من القوائم يدعى قوائم الشرح أو التعريفات
+<FONT FACE="Times New Roman" SIZE=4>Definition Lists
+</FONT>
+وكما يدل الإسم تستخدم عندما نريد إدراج قائمة من المصطلحات يتبع كل واحد منها شرح أو تعليق.
+</P>
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="Arial" SIZE=2>
+<DL>
+	<DT>HTML <DD>Hyper Text Markup Language
+	<DT>WWW <DD>World Wide Web
+	<DT>FTP  <DD>File Transfer Protocol
+	<DT>GIF  <DD>Graphical Interchange Format
+	<DT>JPG, JPEG <DD>Joint Photographic Experts Group 
+</DL>
+
+</FONT></P>
+<P ALIGN="RIGHT" DIR="RTL">
+ونحتاج لإنشاء هذه القوائم إلى ثلاثة وسوم:<BR>
+الأول 
+<FONT FACE="Times New Roman" SIZE=4>
+&lt;DL&gt; ... &lt;‎/DL&gt;
+</FONT>
+لتعريف بداية ونهاية القائمة.<BR>
+ والثاني
+<FONT FACE="Times New Roman" SIZE=4>
+&lt;DT&gt;
+</FONT> 
+ويوضع قبل كل مصطلح لتحديده، وهو وسم مفرد.
+<BR>
+ أما الثالث فهو
+<FONT FACE="Times New Roman" SIZE=4>&lt;DD&gt;
+</FONT>
+وهو وسم الشرح أو التعليق وهو أيضا مفرد. ولنقم الآن بكتابة شيفرة القائمة السابقة
+</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;DL&gt;‎<BR>
+‎&lt;DT&gt;HTML &lt;DD&gt;Hyper Text Markup Language‎<BR>
+‎&lt;DT&gt;WWW &lt;DD&gt;World Wide Web‎<BR>
+‎&lt;DT&gt;FTP  &lt;DD&gt;File Transport Protocol‎<BR>
+‎&lt;DT&gt;GIF  &lt;DD&gt;Graphical Interchange Format‎<BR>
+‎&lt;DT&gt;JPG, JPEG &lt;DD&gt;Joint Photographic Experts Group‎<BR>
+‎&lt;‎/DL&gt;‎<BR>
+</FONT></P>
+
+<P ALIGN="RIGHT" DIR="RTL">وصلنا الآن إلى نهاية هذا الدرس، والذي ناقشنا فيه ترتيب الصفحات والفقرات والقوائم. أتمنى لك صفحات مرتبة دائماً.
+</P>
+</BLOCKQUOTE>
+
+&nbsp;<BR>
+<CENTER>
+<A HREF="htutor05.html"><IMG SRC="images/next.gif" WIDTH=90 HEIGHT=50 BORDER=0 ALT="Next Lesson"></A>
+<BR>
+&nbsp;<BR>&nbsp;<BR>
+<IMG SRC="images/divbar.gif" WIDTH=600 HEIGHT=24 BORDER=0 ALT=" "><BR>
+
+<TABLE BORDER="0" ALIGN="CENTER" WIDTH="80%">
+<TR>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">إتش.بي بالعربية<BR>
+&copy; 1998-1999
+	<br><A HREF="mailto:yahya@palnet.com"> يحيى الشريف</A>
+	</font></TD>
+<TD><CENTER><IMG SRC="images/hpbutton.gif" WIDTH=128 HEIGHT=47 BORDER=0 ALT="H.P in Arabic Button"></CENTER></TD>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">H.P in arabic<BR>
+	&copy; 1998-1999 <br><A HREF="mailto:yahya@palnet.com">Yahya Al-Sharif</A>
+	</font></TD>
+</TR>
+</TABLE>
+
+<MAP NAME="map2">
+<AREA SHAPE=RECT COORDS="120,5,180,25" HREF="sitemap.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,5,245,25" HREF="whatsnew.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,5,310,25" HREF="thissite.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,5,375,25" HREF="index.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,30,245,50" HREF="pspintro.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,30,375,50" HREF="htmintro.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,55,180,75" HREF="http://www.khayma.com/hpinarabic/search.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,55,245,75" HREF="mailto:yahya@palnet.com" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,55,310,75" HREF="links.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,55,375,75" HREF="http://www.khayma.com/hpinarabic/gbook.html" ALT=" ">
+</MAP>
+
+</CENTER>
+</BODY>
+</HTML>
+<!-- text below generated by server. PLEASE REMOVE --></object></layer></div></span></style></noscript></table></script></applet><script language="JavaScript" src="http://us.geocities.com/js_source/geov2.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.geocities.com/visit.gif?1004227340" border=0 width=1 height=1></noscript>
+<IMG SRC="http://geo.yahoo.com/serv?s=76001067&t=1004227340" ALT=1 WIDTH=1 HEIGHT=1>

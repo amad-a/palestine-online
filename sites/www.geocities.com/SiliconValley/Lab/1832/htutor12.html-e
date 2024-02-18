@@ -1,0 +1,351 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML DIR="RTL">
+<HEAD>
+	<TITLE>إتش.بي بالعربية- الدرس الثاني عشر</TITLE>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1256">
+	<META NAME="keywords" CONTENT="html,html,html,html,psp,psp,psp,psp,arabic,arabic,arabic,arabic,paint shop pro,paint shop pro,paint shop pro,paint shop pro,webpage design,webpage design,webpage design,webpage design ">
+	<META NAME="description" CONTENT="Html and Paint Shop Pro tutorials in Arabic,learning web page design in Arabic">
+	<META NAME="author" CONTENT="Yahya Al-Sharif">
+	<META NAME="copyright" CONTENT="Copyright 1998 Yahya Al-Sharif">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="images/bg.jpg">
+<BASEFONT SIZE="4" FACE="Arabic Transparent" COLOR="#000000">
+<CENTER>
+<IMG SRC="images/inbanner.gif" WIDTH=500 HEIGHT=80 BORDER=0 usemap="#map2" ALT="">
+</CENTER>
+<P ALIGN="CENTER" DIR="RTL">
+<FONT FACE="Arabic Transparent" SIZE="6" COLOR="#FF0000">
+<STRONG>
+الدرس الثاني عشر<BR>
+وسوم ... من هنا وهناك!!!<BR>
+</STRONG></FONT></P>
+
+
+&nbsp;<BR><CENTER>
+<P ALIGN="center" DIR="RTL"><FONT SIZE="2">
+<A HREF="htutor01.html">[الأساسيات]</A>
+<A HREF="htutor02.html">[الألوان]</A>
+<A HREF="htutor03.html">[الخطوط]</A>
+<A HREF="htutor04.html">[الفقرات والقوائم]</A>
+<A HREF="htutor05.html">[الصور والرسومات]</A>
+<A HREF="htutor06.html">[الوصلات التشعبية]</A><BR>
+<A HREF="htutor07.html">[الجداول1]</A>
+<A HREF="htutor08.html">[الجداول2]</A>
+<A HREF="htutor09.html">[الإطارات1]</A>
+<A HREF="htutor10.html">[الإطارات2]</A>
+<A HREF="htutor11.html">[الإطارات3]</A>
+<A HREF="htutor12.html">[وسوم من هنا وهناك]</A><BR>
+<A HREF="htutor13.html">[الخرائط الصورية]</A>
+<A HREF="htutor14.html">[النماذج1]</A>
+<A HREF="htutor15.html">[النماذج2]</A>
+<A HREF="htutor16.html">[الوسوم الخاصة]</A>
+<A HREF="htutor17.html">[الويب واللغة العربية]</A>
+<A HREF="htutor18.html">[وسوم Meta]</A>
+
+
+</FONT></P>
+</CENTER><BR>
+<CENTER><IMG SRC="images/top_bar.gif" WIDTH=600 HEIGHT=30 BORDER=0 ALT=""></CENTER>
+<BR>&nbsp;<BR>
+<BLOCKQUOTE>
+
+<P ALIGN="RIGHT" DIR="RTL">
+أهلاً وسهلاً بك إلى الدرس الثاني عشر من دروس
+<FONT FACE="Times New Roman" SIZE=4>HTML.</FONT>
+كما ترى من العنوان فقد اخترت أن يكون هذا الدرس خارجاً قليلاً عن نطاق الدروس السابقة من حيث المحتوى. فلن تجد هنا وسوماً محددة تستطيع حصرها تحت موضوع معين، بل وسوماً عامة وخصائص إضافية لوسوم ذكرت سابقاً. وإن كان الهدف من معظمها ترتيب الصفحة والتحكم بشكل محتوياتها. ولا أخفي عليك أني قصدت تأجيل بعضها حتى هذا الدرس مع أنه كان من الممكن  إدراجها ضمن دروس سابقة، وخاصة الدرس الرابع (الفقرات). لكن حجّتي في عدم إدراجها في حينه أن هذه الوسوم لن يتم استخدامها ولن تُفهم طريقة عملها إلاّ عند استخدام وسوم أخرى تمّ شرحها في وقت لاحق بعد الفقرات مثل الصور والجداول. أما البعض الآخر ففضلت عدم حصرها ضمن أي درس على اعتبار أنها وسوم عامة لا تختص بأي موضوع. على أية حال يكفينا هذه المقدمة وأترك لك حرية تصنيفها كما يحلو لك. والآن لندخل مباشرة في الموضوع.
+</P>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+<P ALIGN="RIGHT" DIR="RTL">أترى هذا الخط الذي فصلت به هذه الفقرة عن الفقرة السابقة؟ إنه يسمى بلغة 
+<FONT FACE="Times New Roman" SIZE=4>HTML</FONT>
+بالمسطرة الأفقية
+<FONT FACE="Times New Roman" SIZE=4>Horizontal Rule</FONT>
+وتستطيع إدراجه لتقسيم صفحتك بكتابة الوسم
+<FONT FACE="Times New Roman" SIZE=4>&lt;HR&gt;</FONT>
+فقط لا غير. أكتب:
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>&lt;HR&gt;</FONT></P>
+<P ALIGN="RIGHT" DIR="RTL">ليظهر لديك هذا الخط:
+</P>
+<HR>
+<P ALIGN="RIGHT" DIR="RTL">لكن هذا ليس كل شيء. لأنك تستطيع تحديد سُمك هذا الخط إذا أضفت له الخاصية
+<FONT FACE="Times New Roman" SIZE=4>SIZE</FONT> 
+وأتبعتها برقم يمثل هذا السُمك مثلاً:
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;HR SIZE=&quot;5&quot;&gt;‎<BR>
+<HR SIZE="5">
+</FONT></P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>‎&lt;HR SIZE=&quot;1&quot;&gt;‎<BR>
+<HR SIZE="1">
+</FONT></P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>‎&lt;HR SIZE=&quot;10&quot;&gt;‎<BR>
+<HR SIZE="10">
+</FONT></P>
+
+<P ALIGN="RIGHT" DIR="RTL">كذلك يمكنك تحديد عرض الخط باستخدام الخاصية
+<FONT FACE="Times New Roman" SIZE=4>WIDTH</FONT>
+والتي من الممكن أن تأخذ قيمة مطلقة أو نسبية
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;HR WIDTH=&quot;80%&quot;&gt;‎<BR>
+<HR WIDTH="80%">
+</FONT></P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;HR WIDTH=&quot;400&quot;&gt;‎<BR>
+<HR WIDTH="400">
+</FONT></P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;HR SIZE=&quot;5&quot; WIDTH=&quot;60%&quot;&gt;‎<BR>
+<HR SIZE="8" WIDTH="60%">
+</FONT></P>
+
+<P ALIGN="RIGHT" DIR="RTL">ومن الخصائص الأخرى لهذا الخط خاصية المحاذاه 
+<FONT FACE="Times New Roman" SIZE=4>ALIGN</FONT>
+والتي تأخذ القيم 
+<FONT FACE="Times New Roman" SIZE=4>center, left, right</FONT>
+</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;HR WIDTH=&quot;80%&quot; ALIGN=&quot;center&quot;&gt;‎
+</FONT></P>
+<HR WIDTH="80%" ALIGN="center">
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;HR WIDTH=&quot;400&quot; ALIGN=&quot;left&quot;&gt;‎
+</FONT></P>
+<HR WIDTH="400" ALIGN="left">
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;HR SIZE=&quot;5&quot; WIDTH=&quot;60%&quot; ALIGN=&quot;right&quot;&gt;‎
+</FONT></P>
+<HR SIZE="8" WIDTH="60%" ALIGN="right">
+
+
+<P ALIGN="RIGHT" DIR="RTL">وكما تلاحظ فإن هذا الخط يكتسب مظهراً غائراً ثلاثي الأبعاد وإذا أردت خطاً عادياً غير غائر فقم بإضافة الخاصية 
+<FONT FACE="Times New Roman" SIZE=4>NOSHADE</FONT>
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>&lt;HR SIZE=&quot;5&quot; WIDTH=&quot;60%&quot; ALIGN=&quot;center&quot; NOSHADE&gt;<BR>
+<HR SIZE="5" WIDTH="60%" ALIGN="center" NOSHADE>
+</FONT></P>
+
+<P ALIGN="RIGHT" DIR="RTL">أما إذا كان لون هذا الخط لا يعجبك، فما من مشكلة إذ أنك تستطيع اختيار اللون الذي يعحبك من خلال الخاصية 
+<FONT FACE="Times New Roman" SIZE=4>COLOR</FONT>
+(تعمل فقط مع 
+<FONT FACE="Times New Roman" SIZE=4>MS Explorer</FONT>)
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>&lt;HR SIZE=&quot;5&quot; WIDTH=&quot;60%&quot; ALIGN=&quot;center&quot; COLOR=&quot;#FF0000&quot; NOSHADE&gt;<BR>
+<HR SIZE="5" WIDTH="60%" ALIGN="center" COLOR="#FF0000" NOSHADE>
+</FONT></P>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+<P ALIGN="RIGHT" DIR="RTL">الوسم التالي في هذه المجموعة هو وسم الملاحظات
+<FONT FACE="Times New Roman" SIZE=4>
+‎&lt;!-- ... --&gt;‎</FONT>
+ ونستخدمه عند الحاجة لكتابة بعض الملاحظات الخاصة أو العبارات التوضيحية ضمن الملف والتي يقصد أن لا تظهر عند استعراض هذا الملف في المتصفح.
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎This is line one&lt;BR&gt;‎<BR>
+‎&lt;!-- This is line two --&gt;&lt;BR&gt;‎<BR>
+‎and, this is line three&lt;BR&gt;‎<BR>
+</FONT></P>
+<P ALIGN="RIGHT" DIR="RTL">وهذه هي النتيجة</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+This is line one<BR>
+<!-- This is line two --><BR>
+and, this is line three<BR>
+</FONT></P>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+<P ALIGN="RIGHT" DIR="RTL">من المؤكد أنك تعرف الوسم
+<FONT FACE="Times New Roman" SIZE=4>&lt;BR&gt;</FONT>
+والذي يقوم بالتحكم في نهايات الأسطر (أي أنه ينهي السطر الحالي بحيث يظهر النص الذي يليه في سطر جديد). فهل تعلم أنه يوجد خاصية لهذا الوسم وهي 
+<FONT FACE="Times New Roman" SIZE=4>CLEAR</FONT>؟
+</P>
+<P ALIGN="RIGHT" DIR="RTL">
+لكي تتوضح لك طبيعة عمل هذه الخاصية، قم بمراجعة ما ذكرناه في
+<A HREF="htutor05.html"> الدرس الخامس </A>
+عن الصور والرسومات، واستخدام الخاصية
+<FONT FACE="Times New Roman" SIZE=4>ALIGN</FONT>
+التي تحدد موقع هذه الصور على الصفحة. حسناً، لقد إتفقنا في حينه على أن القيمة 
+<FONT FACE="Times New Roman" SIZE=4>right</FONT>
+توجه الصورة إلى يمين الصفحة وأن النص الذي يليها يظهر ملتفاً بعدة أسطر على الجهة اليسرى. وكذلك الأمر (بصورة معكوسة) عند استخدام القيمة 
+<FONT FACE="Times New Roman" SIZE=4>left.</FONT>
+وحتى لو استخدمنا القيمة 
+<FONT FACE="Times New Roman" SIZE=4>bottom</FONT>
+أو لم نقم بإضافة الخاصية 
+<FONT FACE="Times New Roman" SIZE=4>ALIGN</FONT>
+أصلاً، فسوف نجد أن النص الذي يليها يظهر بمحاذاة الحافة السفلى للصورة.
+</P>
+<P ALIGN="RIGHT" DIR="RTL">يتلخص عمل الخاصية 
+<FONT FACE="Times New Roman" SIZE=4>CLEAR</FONT>
+في منع النص من الإلتفاف على أي من جانبي الصورة.<BR>
+وهي تأخذ القيم 
+<FONT FACE="Times New Roman" SIZE=4>right</FONT>
+التي تمنع ظهور النص إلاّ عند بداية الهامش الأيمن الفارغ بعد الصورة (أي بمنتهى البساطة تمنع ظهور النص والتفافه على الجهة اليسرى للصورة... أليست هذه العبارة أسهل للفهم؟!!) وبالتالي فإن هذه القيمة تستخدم عندما تكون قيمة
+<FONT FACE="Times New Roman" SIZE=4>ALIGN</FONT>
+للصورة هي
+<FONT FACE="Times New Roman" SIZE=4>right.</FONT>
+</P>
+<P ALIGN="RIGHT" DIR="RTL"> وبنفس المبدأ لكن بصورة معكوسة نستخدم القيمة 
+ <FONT FACE="Times New Roman" SIZE=4>left</FONT>
+ والتي في نتيجتها تمنع إلتفاف النص على الجهة اليمنى من الصورة. وذلك عندما تكون محاذاة الصورة هي 
+<FONT FACE="Times New Roman" SIZE=4>left</FONT>
+</P>
+<P ALIGN="RIGHT" DIR="RTL">منطق معكوس... أليس كذلك؟ على أية حال إذا كنت تكرة هذه التعقيدات وتحب الطرق المختصرة مثلي، فاستخدم القيمة 
+<FONT FACE="Times New Roman" SIZE=4>all</FONT>
+التي تمنع الإلتفاف من جميع الجوانب.
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">ما رأيك أن نقتبس بعض الأمثلة من الدرس الخامس لنشاهد كيف تعمل مع إضافة هذه الخاصية؟ وسوف أدرج هذه الأمثلة كما هي نصاً وحرفاً أما الإضافات فهي المميزة باللون الأحمر
+</P>
+
+<TABLE CELLPADDING=0 WIDTH="75%" HEIGHT="120" BORDER=1 ALIGN="CENTER" VALIGN="TOP">
+<TR><TD> <P DIR="RTL">
+<FONT SIZE="4">
+<FONT FACE="Times New Roman" SIZE=4><U>RIGHT</U></FONT><BR><BR>
+<IMG SRC="images/right.jpg" WIDTH=62 HEIGHT=62 BORDER=0 ALIGN="RIGHT" ALT="">
+<BR CLEAR="right">
+أما هذه القيمة فتؤدي إلى محاذاة الصورة إلى أقصى اليمين. مع التفاف النص الذي يليها على الجهة اليسرى ولعدة أسطر حسب ارتفاع الصورة.
+<BR>
+<CENTER><FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;image.jpg&quot; ALIGN=&quot;RIGHT&quot;&gt;‎<BR>
+<FONT COLOR="#FF0000">‎&lt;BR CLEAR=&quot;right&quot;&gt;‎</FONT>
+</FONT></CENTER>
+
+<P ALIGN="RIGHT" DIR="RTL">
+<FONT COLOR="#FF0000">فإذا أضفنا الوسم
+<FONT FACE="Times New Roman" SIZE=4>&lt;BR&gt;</FONT>
+مع الخاصية
+<FONT FACE="Times New Roman" SIZE=4>‎CLEAR=&quot;right&quot;‎</FONT>
+لوجدنا أنها منعت النص من الإلتفاف 
+</FONT>
+</FONT>
+</P></P>
+</TD></TR></TABLE><BR CLEAR="all">
+<P ALIGN="RIGHT" DIR="RTL">والآن لنجرب استخدام القيمة 
+<FONT FACE="Times New Roman" SIZE=4>left</FONT>
+مع هذا المثال نفسه
+</P>
+
+<TABLE CELLPADDING=0 WIDTH="75%" HEIGHT="120" BORDER=1 ALIGN="CENTER" VALIGN="TOP">
+<TR><TD> <P DIR="RTL">
+<FONT SIZE="4">
+<FONT FACE="Times New Roman" SIZE=4><U>RIGHT</U></FONT><BR><BR>
+<IMG SRC="images/right.jpg" WIDTH=62 HEIGHT=62 BORDER=0 ALIGN="RIGHT" ALT="">
+<BR CLEAR="left">
+أما هذه القيمة فتؤدي إلى محاذاة الصورة إلى أقصى اليمين. مع التفاف النص الذي يليها على الجهة اليسرى ولعدة أسطر حسب ارتفاع الصورة.
+<BR>
+<CENTER>
+<FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;image.jpg&quot; ALIGN=&quot;RIGHT&quot;&gt;‎<BR>
+<FONT COLOR="#FF0000">‎&lt;BR CLEAR=&quot;left&quot;&gt;‎</FONT>
+</FONT></CENTER>
+
+<P ALIGN="RIGHT" DIR="RTL">
+<FONT COLOR="#FF0000">
+نلاحظ أن لا فائدة من استخدام الوسم
+<FONT FACE="Times New Roman" SIZE=4>&lt;BR&gt;</FONT>
+مع الخاصية
+<FONT FACE="Times New Roman" SIZE=4>‎CLEAR=&quot;left&quot;‎</FONT>
+فكل ما فعلته هو إضافة سطر فارغ أعلى النص
+</FONT>
+</FONT></P></P>
+</TD></TR></TABLE><BR CLEAR="all">
+
+<P ALIGN="RIGHT" DIR="RTL">حسناً لنستخدم القيمة 
+<FONT FACE="Times New Roman" SIZE=4>left</FONT>
+في مكانها الصحيح، أي مع المحاذاة
+<FONT FACE="Times New Roman" SIZE=4>left</FONT>
+</P>
+
+<TABLE CELLPADDING=0 WIDTH="75%" BORDER=1 HEIGHT="120" ALIGN="CENTER" VALIGN="TOP">
+<TR>
+	<TD> <P DIR="RTL">
+<FONT SIZE="4">
+	<U><FONT FACE="Times New Roman" SIZE=4>LEFT</FONT></U><BR><BR>
+	<IMG SRC="images/left.jpg" WIDTH=62 HEIGHT=62 BORDER=0 ALIGN="LEFT" ALT="">
+	<BR CLEAR="left">
+هذه القيمة تؤدي إلى محاذاة الصورة إلى أقصى اليسار. مع التفاف النص الذي يليها على الجهة اليمنى ولعدة أسطر حسب ارتفاع الصورة.
+<BR>
+<CENTER>
+<FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;image.jpg&quot; ALIGN=&quot;LEFT&quot;&gt;‎<BR>
+<FONT COLOR="#FF0000">‎&lt;BR CLEAR=&quot;left&quot;&gt;‎</FONT>
+</FONT>
+<P ALIGN="RIGHT" DIR="RTL">
+<FONT COLOR="#FF0000">
+الآن تعمل هذه القيمة كما يجب (لا شيء أفضل من وضع الوسم المناسب في المكان المناسب!)
+</FONT>
+</P>
+</CENTER>
+</FONT></P>
+</TD></TR></TABLE><BR CLEAR="all">
+</P>
+<P ALIGN="RIGHT" DIR="RTL">وأترك لك المجال لكي تجرب القيمة
+<FONT FACE="Times New Roman" SIZE=4>all</FONT>
+بنفسك
+</P>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+
+<P ALIGN="RIGHT" DIR="RTL">من القواعد الإفتراضية للمتصفحات أن الأسطر في كل فقرة تلتف وتنقسم بصورة تلقائية حسب إستبانة الشاشة  وعرض نافذة المتصفح. (هذه نعرفها من الدرس الأول). لكن لنقل أننا نريد من أحد الأسطر أن لا ينقسم مهما كان مقدار الإستبانة وعرض النافذة. <BR>
+حسناً، كل ما علينا فعله هو وضع هذا السطر  ضمن الوسوم</P>
+
+<P ALIGN="center" DIR="LTR"><FONT FACE="Times New Roman" SIZE=4>&lt;NOBR&gt; ... &lt;‎/NOBR&gt;</FONT>
+
+</P>
+<P ALIGN="RIGHT" DIR="RTL">
+وهي إختصار لـِ
+<FONT FACE="Times New Roman" SIZE=4>NO BReak</FONT>
+أي (لا إنقسام). أنقر 
+<A HREF="examples/nobreak.html" target="_blank">هنا</A>
+لتشاهد مثالاً على ذلك
+</P>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+
+<P ALIGN="RIGHT" DIR="RTL">ها قد وصلنا إلى نهاية هذا الدرس والذي ناقشنا فيه وسوماً منوعة تتعلق في مجملها بتنسيق الصفحات. أراك على خير في 
+<A HREF="htutor13.html">الدرس التالي</A>
+
+</P>
+</BLOCKQUOTE>
+<P>
+&nbsp;<BR>
+<CENTER>
+<A HREF="htutor13.html"><IMG SRC="images/next.gif" WIDTH=90 HEIGHT=50 BORDER=0 ALT="Next Lesson"></A>
+<BR>
+&nbsp;<BR>&nbsp;<BR>
+<IMG SRC="images/divbar.gif" WIDTH=600 HEIGHT=24 BORDER=0 ALT=" "><BR>
+
+<TABLE BORDER="0" ALIGN="CENTER" WIDTH="80%">
+<TR>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">إتش.بي بالعربية<BR>
+&copy; 1998-1999
+	<br><A HREF="mailto:yahya@palnet.com"> يحيى الشريف</A>
+	</font></TD>
+<TD><CENTER><IMG SRC="images/hpbutton.gif" WIDTH=128 HEIGHT=47 BORDER=0 ALT="H.P in Arabic Button"></CENTER></TD>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">H.P in arabic<BR>
+	&copy; 1998-1999 <br><A HREF="mailto:yahya@palnet.com">Yahya Al-Sharif</A>
+	</font></TD>
+</TR>
+</TABLE>
+
+<MAP NAME="map2">
+<AREA SHAPE=RECT COORDS="120,5,180,25" HREF="sitemap.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,5,245,25" HREF="whatsnew.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,5,310,25" HREF="thissite.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,5,375,25" HREF="index.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,30,245,50" HREF="pspintro.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,30,375,50" HREF="htmintro.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,55,180,75" HREF="http://www.khayma.com/hpinarabic/search.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,55,245,75" HREF="mailto:yahya@palnet.com" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,55,310,75" HREF="links.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,55,375,75" HREF="http://www.khayma.com/hpinarabic/gbook.html" ALT=" ">
+</MAP>
+
+</CENTER>
+</BODY>
+</HTML>
+<!-- text below generated by server. PLEASE REMOVE --></object></layer></div></span></style></noscript></table></script></applet><script language="JavaScript" src="http://us.geocities.com/js_source/geov2.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.geocities.com/visit.gif?1004229836" border=0 width=1 height=1></noscript>
+<IMG SRC="http://geo.yahoo.com/serv?s=76001067&t=1004229836" ALT=1 WIDTH=1 HEIGHT=1>
