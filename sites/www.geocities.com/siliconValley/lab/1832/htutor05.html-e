@@ -1,0 +1,408 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML DIR="RTL">
+<HEAD>
+	<TITLE>إتش.بي بالعربية - الدرس الخامس</TITLE>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1256">
+	<META NAME="keywords" CONTENT="html,html,html,html,psp,psp,psp,psp,arabic,arabic,arabic,arabic,paint shop pro,paint shop pro,paint shop pro,paint shop pro,webpage design,webpage design,webpage design,webpage design ">
+	<META NAME="description" CONTENT="Html and Paint Shop Pro tutorials in Arabic,learning web page design in Arabic">
+	<META NAME="author" CONTENT="Yahya Al-Sharif">
+	<META NAME="copyright" CONTENT="Copyright 1998 Yahya Al-Sharif">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="images/bg.jpg">
+<BASEFONT SIZE="4" FACE="Arabic Transparent" COLOR="#000000">
+<CENTER>
+<IMG SRC="images/inbanner.gif" WIDTH=500 HEIGHT=80 BORDER=0 usemap="#map2" ALT="">
+</CENTER>
+
+<P ALIGN="CENTER" DIR="RTL">
+<FONT FACE="Arabic Transparent" SIZE="6" COLOR="#FF0000">
+<STRONG>
+الدرس الخامس<BR>
+الصور والرسومات<BR>
+</STRONG></FONT></P>
+
+&nbsp;<BR><CENTER>
+<P ALIGN="center" DIR="RTL"><FONT SIZE="2">
+<A HREF="htutor01.html">[الأساسيات]</A>
+<A HREF="htutor02.html">[الألوان]</A>
+<A HREF="htutor03.html">[الخطوط]</A>
+<A HREF="htutor04.html">[الفقرات والقوائم]</A>
+<A HREF="htutor05.html">[الصور والرسومات]</A>
+<A HREF="htutor06.html">[الوصلات التشعبية]</A><BR>
+<A HREF="htutor07.html">[الجداول1]</A>
+<A HREF="htutor08.html">[الجداول2]</A>
+<A HREF="htutor09.html">[الإطارات1]</A>
+<A HREF="htutor10.html">[الإطارات2]</A>
+<A HREF="htutor11.html">[الإطارات3]</A>
+<A HREF="htutor12.html">[وسوم من هنا وهناك]</A><BR>
+<A HREF="htutor13.html">[الخرائط الصورية]</A>
+<A HREF="htutor14.html">[النماذج1]</A>
+<A HREF="htutor15.html">[النماذج2]</A>
+<A HREF="htutor16.html">[الوسوم الخاصة]</A>
+<A HREF="htutor17.html">[الويب واللغة العربية]</A>
+<A HREF="htutor18.html">[وسوم Meta]</A>
+
+
+</FONT></P>
+</CENTER><BR>
+<CENTER><IMG SRC="images/top_bar.gif" WIDTH=600 HEIGHT=30 BORDER=0 ALT=""></CENTER>
+<BR>&nbsp;<BR>
+
+<BLOCKQUOTE>
+
+<P ALIGN="RIGHT" DIR="RTL">
+أهلاً وسهلاً بك في الدرس الخامس من دروس 
+<FONT FACE="Times New Roman" SIZE=4>HTML.</FONT>
+في هذا الدرس سوف أقوم بالحديث عن الصور والرسومات وما يتعلق بالتعامل معها، بالإضافة إلى التعريف بأنواع الملفات الرسومية الدارجة في الإنترنت.
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">لقد اقتصر حديثنا عن الصور حتى الآن على إضافة خلفيات للصفحات، وكان ذلك في
+<A HREF="htutor02.html">الدرس الثاني </A>
+أما إدراج الصور ضمن الصفحات نفسها فله حكاية أخرى، أبدأ بروايتها لك الآن.
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+إن الوسم الرئيسي المستخدم لتعريف صورة ما داخل الصفحة هو
+<FONT FACE="Times New Roman" SIZE=4>&lt;IMG&gt;</FONT>
+وهو وسم مفرد. لكن هل يكفي هذا لإدراج صورة؟ كلا، بالطبع يجب أن نحدد الصورة التي نريدها. لذلك نضيف الخاصية له
+<FONT FACE="Times New Roman" SIZE=4>SRC</FONT>
+لتحديد موقع واسم الصورة.<BR>
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">الصورة التالية إسمها
+<FONT FACE="Times New Roman" SIZE=4>thedome.jpg</FONT>
+وعندما قمت بإدراجها. كانت الشيفرة الخاصة بذلك هي
+</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;thedome.jpg&quot;&gt;‎
+</FONT></P>
+
+<CENTER><IMG SRC="images/thedome.jpg" WIDTH=200 HEIGHT=145 BORDER=0 ALT="The Dome Of The Rock"></CENTER>
+<P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+والصيغة هذه تفترض أن الصورة موجودة في
+<I><STRONG>نفس الدليل الفرعي أو المجلد</STRONG></I>
+حيث يتواجد ملف
+<FONT FACE="Times New Roman" SIZE=4>HTML</FONT>
+الذي أعمل عليه، وقمت باستدعاء الصورة من خلاله. لكن ماذا لو كانت الصورة في مجلد فرعي آخر؟ حسنا سوف اناقش معك حالتين  لهذه المسألة.
+</P>
+<P ALIGN="RIGHT" DIR="RTL">
+<I>الحالة الأولى</I>
+ أن تكون الصورة موجودة في مجلد متفرع عن المجلد الموجود به ملف
+<FONT FACE="Times New Roman" SIZE=4>HTML</FONT>
+حسب الشكل التالي:
+</P>
+<CENTER><IMG SRC="images/src1.gif" WIDTH=302 HEIGHT=121 BORDER=0 ALT="Locating Images 1"></CENTER><BR>
+
+<P ALIGN="RIGHT" DIR="RTL">
+نقوم في هذه الحالة بكتابة إسم هذا المجلد تتبعه إشارة / ثم اسم الصورة.
+</P>
+&nbsp;<P>
+<P ALIGN="RIGHT" DIR="RTL">
+<I>الحالة الثانية:</I>
+ أن يكون ملف 
+<FONT FACE="Times New Roman" SIZE=4>HTML</FONT>
+موجوداً في مجلد ما وتكون الصورة موجودة في مجلد آخر بنفس المستوى. أي أنهما  مجلدين متجاورين وليسا متفرعين أحدهما عن الآخر.
+</P>
+<CENTER><IMG SRC="images/src2.gif" WIDTH=303 HEIGHT=132 BORDER=0 ALT="Locating Images 2"></CENTER><BR>
+<P ALIGN="RIGHT" DIR="RTL">
+وفي هذه الحالة نكتب .. (نقطتين) لتوجيه المتصفح للخروج من المجلد الفرعي الحالي (حيث يوجد ملف
+<FONT FACE="Times New Roman" SIZE=4>HT‎ML)</FONT>
+ومن ثم الدخول إلى المجلد 
+<FONT FACE="Times New Roman" SIZE=4>images</FONT>
+حيث توجد الصورة.
+</P><BR>
+
+<P ALIGN="RIGHT" DIR="RTL">
+وبشكل عام، مهما كانت مواقع تواجد الملفات فإن عملية تحديد مواقعها والوصول إليها لا تخرج عن نطاق هذا النمط من الشيفرة. أي كتابة النقطتين للخروج من مجلد فرعي، وكتابة اسم المجلد الذي يجب الدخول إليه.
+</P>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+<P ALIGN="RIGHT" DIR="RTL">
+إن الأبعاد الأساسية لهذه الصورة هي 200×145 بيكسل
+<FONT FACE="Times New Roman" SIZE=4>Pixel</FONT>
+ (تابع القراءة حتى نهاية هذا الدرس وأعدك أن أوضح لك ما هي وحدة البيكسل إذا كانت هذه أول مرة تتعرف فيها على هذه الوحدة) وكما تلاحظ تم إدراج الصورة مع المحافظة على هذه الأبعاد. ومع ذلك فنحن نستطيع التحكم أيضاً بها وإظهار الصورة بالحجم الذي نريده من خلال هذا الوسم. كيف؟ بإضافة الخصائص 
+<FONT FACE="Times New Roman" SIZE=4>HEIGHT, WIDTH</FONT>
+متبوعة بأرقام تمثل الإرتفاع والعرض المطلوبين.
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;thedome.jpg&quot; HEIGHT=&quot;70&quot; WIDTH=&quot;120&quot;&gt;‎
+</FONT></P>
+<CENTER><IMG SRC="images/thedome.jpg" HEIGHT="70" WIDTH="120" ALT="The Dome- 70*120"> </CENTER>
+<HR ALIGN="CENTER" WIDTH="40%" SIZE="4"><P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;thedome.jpg&quot; HEIGHT=&quot;300&quot; WIDTH=&quot;500&quot;&gt;‎
+</FONT></P>
+<CENTER><IMG SRC="images/thedome.jpg" HEIGHT="300" WIDTH="500" ALT="The Dome- 300*500"> </CENTER>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+
+
+<P ALIGN="RIGHT" DIR="RTL">
+الخاصية التالية التي تستخدم مع
+<FONT FACE="Times New Roman" SIZE=4>&lt;IMG&gt;</FONT>
+هي
+<FONT FACE="Times New Roman" SIZE=4>ALT</FONT>
+وفيها نحدد نصاً بديلاً يظهر مكان الصورة. وهذا النص يلاحظ خصوصاً عندما يكون خيار &quot;إظهار الصور تلقائياً&quot;
+ غير فعال في المتصفح. كما تستطيع ملاحظته في الفترة التي تسبق تحميل الصور وخاصة في المواقع بطيئة التحميل.
+</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;thedome.jpg&quot; ALT=&quot;The Dome Of The Rock&quot;&gt;‎ 
+</FONT></P>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+عندما نقوم بإدراج صورة ضمن فقرة فإن موقع ظهورها يتحدد بالطبع حسب ترتيب ورودها في الفقرة، مثلها مثل أي كلمة أو عبارة أخرى. ونستخدم الخاصية
+<FONT FACE="Times New Roman" SIZE=4>ALIGN</FONT>
+لتحديد محاذاة الصورة مع النص المرافق لها أو لنقل بعبارة أخرى:
+<I><B> تحديد موقع النص الذي يليها بالنسبة لها</B></I> وهي تأخذ القيم:
+<FONT FACE="Times New Roman" SIZE=4>BOTTOM, TOP, MIDDLE, LEFT, RIGHT</FONT>
+وأوضح لك تأثير كل قيمة كما يلي:
+</P>
+
+<CENTER><TABLE CELLPADDING=5 CELLSPACING=1 WIDTH="75%" BORDER=1 ALIGN="CENTER" VALIGN="TOP">
+<TR>
+	<TD>
+	<P DIR="RTL">
+<FONT SIZE="4">
+في الحالة العادية
+<IMG SRC="images/down.jpg" WIDTH=62 HEIGHT=62 BORDER=0 ALT="">
+ (مثل هذه) وعندما لا نقوم بتحديد أي محاذاة فإن النص الذي يلي الصورة يظهر بمحاذاة الحافة السفلى لها. وهذه هي الحالة الإفتراضية لظهور الصور والتي تمثلها القيمة 
+<FONT FACE="Times New Roman" SIZE=4>BOTTOM</FONT>
+</FONT>
+<CENTER><FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;image.jpg&quot; ALIGN=&quot;BOTTOM&quot;&gt;‎</FONT>
+
+</CENTER></P>
+ </TD></TR></TABLE>
+
+ 
+ 
+<TABLE CELLPADDING=5 WIDTH="75%" BORDER=1 ALIGN="CENTER" VALIGN="TOP">
+<TR><TD>
+	 <P DIR="RTL">
+<FONT FACE="Times New Roman" SIZE=4><U>TOP</U></FONT><BR><BR>
+	 <FONT SIZE="4">
+	<IMG SRC="images/up.jpg" WIDTH=62 HEIGHT=62 BORDER=0 ALIGN="TOP" ALT="">
+	 وعند تحديد هذه القيمة فإن السطر الأول من النص الذي يلي الصورة يقع بمحاذاة الحافة العليا لها. أما باقي النص فيمتد أسفلها.
+	</FONT>
+<CENTER><FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;image.jpg&quot; ALIGN=&quot;TOP&quot;&gt;‎</FONT>
+
+</CENTER>
+
+	</P>
+	</TD></TR></TABLE>
+	
+<TABLE CELLPADDING=5 WIDTH="75%" BORDER=1 ALIGN="CENTER" VALIGN="TOP">
+<TR><TD>
+	 <P DIR="RTL">
+<FONT FACE="Times New Roman" SIZE=4><U>MIDDLE</U></FONT><BR><BR>
+	 <FONT SIZE="4">
+	<IMG SRC="images/stop.jpg" WIDTH=62 HEIGHT=62 BORDER=0 ALIGN="MIDDLE" ALT="">
+أما عند تحديد هذه القيمة فإن السطر الأول من النص يقع بمحاذاة منتصف الصورة. كذلك فإن باقي النص يمتد أسفلها.
+	</FONT><BR>
+<CENTER><FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;image.jpg&quot; ALIGN=&quot;MIDDLE&quot;&gt;‎</FONT>
+
+</CENTER>	</P>
+	</TD></TR></TABLE>
+
+<TABLE CELLPADDING=5 WIDTH="75%" BORDER=1 HEIGHT="120" ALIGN="CENTER" VALIGN="TOP">
+<TR>
+	<TD> <P DIR="RTL">
+<FONT SIZE="4">
+	<U><FONT FACE="Times New Roman" SIZE=4>LEFT</FONT></U><BR><BR>
+	<IMG SRC="images/left.jpg" WIDTH=62 HEIGHT=62 BORDER=0 ALIGN="LEFT" ALT="">
+هذه القيمة تؤدي إلى محاذاة الصورة إلى أقصى اليسار. مع التفاف النص الذي يليها على الجهة اليمنى ولعدة أسطر حسب ارتفاع الصورة.
+</FONT><BR>
+<CENTER><FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;image.jpg&quot; ALIGN=&quot;LEFT&quot;&gt;‎</FONT></CENTER>
+</P></TD></TR></TABLE>
+
+<TABLE CELLPADDING=5 WIDTH="75%" HEIGHT="120" BORDER=1 ALIGN="CENTER" VALIGN="TOP">
+<TR><TD> <P DIR="RTL">
+<FONT SIZE="4">	<FONT FACE="Times New Roman" SIZE=4><U>RIGHT</U></FONT><BR><BR>
+<IMG SRC="images/right.jpg" WIDTH=62 HEIGHT=62 BORDER=0 ALIGN="RIGHT" ALT="">
+أما هذه القيمة فتؤدي إلى محاذاة الصورة إلى أقصى اليمين. مع التفاف النص الذي يليها على الجهة اليسرى ولعدة أسطر حسب ارتفاع الصورة.
+</FONT><BR>
+<CENTER><FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;image.jpg&quot; ALIGN=&quot;RIGHT&quot;&gt;‎</FONT></CENTER>
+</P></TD></TR></TABLE>
+</CENTER>
+<P>
+
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+والآن بعد أن قمنا بتحديد محاذاة الصورة نحتاج إلى تحديد المسافة الفاصلة بينها وبين  النص الذي يجاورها. ونستخدم لذلك الخصائص التالية:<BR>
+<FONT FACE="Times New Roman" SIZE=4>VSPACE:</FONT>
+لتحديد المسافة العمودية الفاصلة بين النص والحافتين العليا والسفلى للصورة.<BR>
+<FONT FACE="Times New Roman" SIZE=4>HSPACE:</FONT>
+لتحديد المسافة الأفقية الفاصلة بين النص والحافتين اليمنى واليسرى للصورة.<BR>&nbsp;<BR>
+مثال:<BR>
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;image.jpg&quot; ALIGN=&quot;RIGHT&quot; VSPACE=&quot;20&quot; HSPACE=&quot;20&quot;&gt;‎</FONT></P>
+
+<CENTER><TABLE CELLPADDING=5 WIDTH="50%" BORDER=1 ALIGN="CENTER" VALIGN="TOP">
+<TR><TD> <P DIR="RTL">
+<IMG SRC="images/right.jpg" ALIGN="RIGHT" VSPACE="20" HSPACE="20">
+<FONT SIZE="4">
+النتيجة: هذه الشيفرة ستدرج الصورة المسماه
+<FONT FACE="Times New Roman" SIZE=4>image.jpg</FONT>
+مع محاذاتها ليمين الصفحة وإضافة مسافة فارغة مقدارها 20 بيكسل على الجهات الأربعة. (قارن بين هذا الإطار والإطار السابق الذي وضحت فيه خاصية 
+<FONT FACE="Times New Roman" SIZE=4>ALIGN</FONT>
+مع القيمة 
+<FONT FACE="Times New Roman" SIZE=4>RIGHT.</FONT>
+ولاحظ المسافة بين الصورة والنص المرافق لها.)
+</FONT></P>
+</TD></TR></TABLE>
+</CENTER><P>
+
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+الخاصية الأخيرة والتي تستخدم مع الوسم 
+<FONT FACE="Times New Roman" SIZE=4>&lt;IMG&gt;</FONT>
+هي 
+<FONT FACE="Times New Roman" SIZE=4>BORDER</FONT>
+ووظيفتها إضافة إطار حول الصور والتحكم بسُمكِه. وهذه الخاصية تستخدم بشكل خاص عند تعيين صورة ما كوصلة تشعبية. (أنظر<A HREF="htutor06.html">الدرس السادس</A>)
+ ويتم التحكم بالسُمك من خلال إسناد رقم يمثل السُمك بالبيكسل. والقيمة الإفتراضية له هي 0 أي لا يوجد إطار حول الصورة.<BR>
+ مثلاٌ لإضافة إطار سُمكه 5 بيكسل نكتب الشيفرة التالية:
+</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="Arial" SIZE=2>
+‎&lt;IMG SRC=&quot;image.jpg&quot; BORDER=&quot;5&quot;&gt;‎</FONT></P>
+
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="8"><P>
+<P ALIGN="RIGHT" DIR="RTL">
+والآن حان الوقت لكي نناقش معاً بعض الأمور التي تتعلق بالصور والرسومات بشكل عام. <BR>&nbsp;<BR>
+* هل حاولت أن تتعرف على أنواع الملفات الرسومية التي تقوم بتحميلها خلال تصفحك لمواقع الإنترنت؟<BR>
+ يزخر عالم الكمبيوتر بالعشرات من أنواع الملفات الرسومية وتنسيقات الصور. وكل منها يختلف عن غيره من عدة نواح، أذكر لك منها: الدقة، وعدد الألوان التي يستوعبها، والحجم التخزيني للملف. لكن هناك نوعين فقط من هذه الملفات يتم تداولهما حالياً في الإنترنت وهما:<BR>
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+
+<FONT FACE="Times New Roman" SIZE=4>JPG, JPEG</FONT><BR>
+إختصار لـِ
+<FONT FACE="Times New Roman" SIZE=4>
+<U>J</U>oint <U>P</U>hotographic <U>E</U>xperts <U>G</U>roup.</FONT>	
+ويدعم هذا التنسيق صوراً بعيار 24 بت (أي 16.7 مليون لون). وميزة هذا التنسيق تتمثل في إمكانية ضغط الصور بنسب مختلفة عند تخزينها وبالتالي الحصول على صور صغيرة الحجم نسبياً.(أعني هنا حجم التخزين بالكيلوبايتات وليس أبعاد الصورة). لكن بالمقابل كلما إزدادت نسبة الضغط وصغر حجم الملف كان ذلك على حساب الجودة والوضوح.
+</p>
+<P ALIGN="right" DIR="RTL">
+<FONT FACE="Times New Roman" SIZE=4>GIF</FONT><BR>
+إختصار لـِ
+	<FONT FACE="Times New Roman" SIZE=4><U>G</U>raphical <U>I</U>nterchange <U>F</U>ormat</FONT>
+وأقصى عدد للألوان في هذا التنسيق هو 265 لون. ومع ذلك فإن أحجام الصور المخزنة به كبير نسبياً مقارنة بتنسيق
+<FONT FACE="Times New Roman" SIZE=4>JPG.</FONT>
+لكن هناك مزايا رائعة ينفرد بها تنسيق
+<FONT FACE="Times New Roman" SIZE=4>GIF</FONT>
+مما يستدعي استخدامه في صفحات الويب، أولها القدرة على تخزين صور بخلفيات شفافة
+<FONT FACE="Times New Roman" SIZE=4>Transparent Images</FONT>
+وثانيها الصور المتحركة
+<FONT FACE="Times New Roman" SIZE=4>Animated Gifs</FONT><BR>
+وتجد معلومات وافية ودروساً مفصلة حول هذه المواضيع ضمن دروس 
+<FONT FACE="Times New Roman" SIZE=4>Paint Shop Pro.</FONT>
+
+</P>
+<P ALIGN="RIGHT" DIR="RTL">والآن قد تسأل، أي من هذين التنسيقين أستخدم في صفحاتي؟!  لا يوجد جواب قطعي لهذا السؤال لكن إليك هاتين المعادلتين:
+</P>
+<P ALIGN="RIGHT" DIR="RTL">
+<FONT FACE="Times New Roman" SIZE=4>JPG=</FONT>
+الصور الحقيقية ذات العدد الكبير من الألوان، وذات الأبعاد الكبيرة
+<BR>
+<FONT FACE="Times New Roman" SIZE=4>GIF=</FONT>
+الصور قليلة الألوان وصغيرة الأبعاد مثل الأزرار.
+</P>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+<P ALIGN="RIGHT" DIR="RTL">
+* ما هي درجة إستبانة شاشتك
+<FONT FACE="Times New Roman" SIZE=4>Resolution?</FONT>
+  إذا كنت لا تعرف الجواب قم بفتح تطبيق لوحة التحكم في ويندوز 95 وإختر أيقونة(العرض) ثم اختر التبويب (إعدادات) وهناك سوف تشاهد  
+&quot;مساحة سطح المكتب&quot; الذي يدل على درجة إستبانة الشاشة،   وعلى الأغلب ستكون 640×480 أو 800×600، وهناك درجات أعلى تعتمد على قدرة محول العرض. كذلك سوف تشاهد &quot;لوح الألوان&quot; الذي يدل على عدد الألوان التي يمكن عرضها بالإعدادات الحالية للشاشة.<BR>
+أما في ويندوز 3.11 أو 3.1 فاختر أيقونة برنامج إعداد
+<FONT FACE="Times New Roman" SIZE=4>Windows</FONT>
+من لوحة التحكم فتظهر لك قائمة تجد بضمنها نوع وإستبانة الشاشة.
+<BR>&nbsp;<BR>
+هذا الحديث يقودني إلى وحدة البيكسل 
+<FONT FACE="Times New Roman" SIZE=4>Pixel </FONT>
+(ألم أعدك مسبقاً بتوضيحها). وهي اختصار لـِ 
+<FONT FACE="Times New Roman" SIZE=4>Picture Element.</FONT>
+ إذا كانت شاشتك بإستبانة 640×480 فهذا يعني  أنها مقسمة(نظرياً) إلى شبكة من 640 عمود و480 سطر. 
+<I>وبمنتهى البساطة، إن كل خلية من هذه الشبكة تمثل بيكسل</I>
+وبالطبع كلما زادت الإستبانة كلما صغر حجم وحدة البيكسل.
+</P>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+<P ALIGN="RIGHT" DIR="RTL">
+* هل سبق لك وأن سمعت بمصطلح 
+<FONT FACE="Times New Roman" SIZE=4>Thumbnail</FONT>
+ضمن مصطلحات الإنترنت؟ حسناً، لا تلتفت إلى الترجمة الحرفية لهذه الكلمة، والتي تعني  &quot;ظفر الإبهام&quot;.
+فالمقصود حقيقةً بها هي تلك الصورة الصغيرة جداً التي تقوم بالنقر عليها فتؤدي إلى عرض صورة بحجم أكبر. لذلك قد يكون المصطلح الأنسب لوصفها هو &quot;العيّنة&quot;.<BR>
+(وإذا كنت قد زرت أحد المواقع الإخبارية لرأيت كيف يتم عرض عينات وصور مصغرة للقطات الأحداث وعند النقر على العينة تظهر الصورة الأصلية. إذن أنت لست مجبراً على الإنتظار لوقت طويل لحين ظهور صورة ذات حجم كبير للقطة لست معنياً بها).
+<BR>&nbsp;<BR>
+ومن الواضح أن استخدام العينات مفيد وعملي جداً وأن وضعها في المواقع التي تحتوي على العديد من الصور يؤدي إلى تقليل الزمن اللازم لتحميل الصفحات وتجنب ضياع الوقت بانتظار ظهور الصور الأصلية كبيرة الحجم.  لأنها تعطي الزائر الحرية في النقر عليها إذا رغب في رؤية الأصل أو تجاهلها.
+أما كيف يتم عمل هذه العينات؟ فذلك باستخدام أحد برامج معالجة الرسوم كبرنامج 
+<FONT FACE="Times New Roman" SIZE=4>Paint Shop Pro.</FONT>
+من خلال تصغير أبعاد الصور الأصلية إلى النسبة المطلوبة.
+<BR>&nbsp;<BR>
+أعرف ماذا ستسأل الآن، ستقول ألم نتعلم قبل قليل كيفية عرض الصور مع التحكم بأبعادها؟ ألا يؤدي استخدام الخصائص 
+<FONT FACE="Times New Roman" SIZE=4>WIDTH, HEIGHT</FONT>
+إلى التحكم بحجم الصور وعرضها بنسب مصغرة حسب ما هو مطلوب؟<BR>
+إن استخدامك لهذه الخصائص يؤدي إلى إظهار الصورة بحيث
+<U><B>تبدو</B></U>
+مصغرة، لكنك فعلياً قمت بإجبار متصفح الزائر على تحميل الصورة بالحجم والأبعاد الأصلية ثم عرضها بالحجم المصغر أي أنك في النهاية لم تحقق الغاية من وجود هذه العينات.
+</P>
+<P ALIGN="RIGHT" DIR="RTL">
+وصلنا إلى نهاية هذا الدرس. هل أصبحت الآن تعرف كيف تدرج الصور في صفحتك؟ رائع، إذن إليك هذه المكافأة. أنقر على الصور المصغرة لتشاهد مدينتي... نابلس.<BR>&nbsp;<BR>
+<CENTER><A HREF="images/nablus1.jpg"><IMG SRC="images/nablus_1.jpg" WIDTH=100 HEIGHT=71 BORDER=0 ALT="Nablus 1"></A>&nbsp;&nbsp;
+<A HREF="images/nablus2.jpg"><IMG SRC="images/nablus_2.jpg" WIDTH=100 HEIGHT=71 BORDER=0 ALT="Nablus 2"></A>&nbsp;&nbsp;
+<A HREF="images/nablus3.jpg"><IMG SRC="images/nablus_3.jpg" WIDTH=100 HEIGHT=69 BORDER=0 ALT="Nablus 3"></A>&nbsp;&nbsp;
+<A HREF="images/nablus4.jpg"><IMG SRC="images/nablus_4.jpg" WIDTH=80 HEIGHT=114 BORDER=0 ALT="Nablus 4"></A>
+
+</CENTER></P></BLOCKQUOTE>
+<HR ALIGN="CENTER" WIDTH="80%" SIZE="4"><P>
+&nbsp;<BR>
+<CENTER>
+<A HREF="htutor06.html"><IMG SRC="images/next.gif" WIDTH=90 HEIGHT=50 BORDER=0 ALT="Next Lesson"></A>
+<BR>
+&nbsp;<BR>&nbsp;<BR>
+<IMG SRC="images/divbar.gif" WIDTH=600 HEIGHT=24 BORDER=0 ALT=" "><BR>
+
+<TABLE BORDER="0" ALIGN="CENTER" WIDTH="80%">
+<TR>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">إتش.بي بالعربية<BR>
+&copy; 1998-1999
+	<br><A HREF="mailto:yahya@palnet.com"> يحيى الشريف</A>
+	</font></TD>
+<TD><CENTER><IMG SRC="images/hpbutton.gif" WIDTH=128 HEIGHT=47 BORDER=0 ALT="H.P in Arabic Button"></CENTER></TD>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">H.P in arabic<BR>
+	&copy; 1998-1999 <br><A HREF="mailto:yahya@palnet.com">Yahya Al-Sharif</A>
+	</font></TD>
+</TR>
+</TABLE>
+
+<MAP NAME="map2">
+<AREA SHAPE=RECT COORDS="120,5,180,25" HREF="sitemap.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,5,245,25" HREF="whatsnew.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,5,310,25" HREF="thissite.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,5,375,25" HREF="index.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,30,245,50" HREF="pspintro.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,30,375,50" HREF="htmintro.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,55,180,75" HREF="http://www.khayma.com/hpinarabic/search.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,55,245,75" HREF="mailto:yahya@palnet.com" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,55,310,75" HREF="links.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,55,375,75" HREF="http://www.khayma.com/hpinarabic/gbook.html" ALT=" ">
+</MAP>
+
+</CENTER>
+</BODY>
+</HTML>
+<!-- text below generated by server. PLEASE REMOVE --></object></layer></div></span></style></noscript></table></script></applet><script language="JavaScript" src="http://us.geocities.com/js_source/geov2.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.geocities.com/visit.gif?1007728709" border=0 width=1 height=1></noscript>
+<IMG SRC="http://geo.yahoo.com/serv?s=76001067&t=1007728709" ALT=1 WIDTH=1 HEIGHT=1>

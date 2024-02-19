@@ -1,0 +1,647 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML DIR="RTL">
+<HEAD>
+	<TITLE>إتش.بي بالعربية - الدرس الخامس عشر</TITLE>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1256">
+	<META NAME="keywords" CONTENT="html,html,html,html,psp,psp,psp,psp,arabic,arabic,arabic,arabic,paint shop pro,paint shop pro,paint shop pro,paint shop pro,webpage design,webpage design,webpage design,webpage design ">
+	<META NAME="description" CONTENT="Html and Paint Shop Pro tutorials in Arabic,learning web page design in Arabic">
+	<META NAME="author" CONTENT="Yahya Al-Sharif">
+	<META NAME="copyright" CONTENT="Copyright 1998 Yahya Al-Sharif">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="images/bg.jpg">
+<BASEFONT SIZE="4" FACE="Arabic Transparent" COLOR="#000000">
+<CENTER>
+<IMG SRC="images/inbanner.gif" WIDTH=500 HEIGHT=80 BORDER=0 usemap="#map2" ALT="">
+</CENTER>
+<P ALIGN="CENTER" DIR="RTL">
+<FONT FACE="Arabic Transparent" SIZE="6" COLOR="#FF0000">
+<STRONG>
+الدرس الخامس عشر<BR>
+النماذج (2)<BR>
+</STRONG></FONT></P>
+
+
+&nbsp;<BR><CENTER>
+<P ALIGN="center" DIR="RTL"><FONT SIZE="2">
+<A HREF="htutor01.html">[الأساسيات]</A>
+<A HREF="htutor02.html">[الألوان]</A>
+<A HREF="htutor03.html">[الخطوط]</A>
+<A HREF="htutor04.html">[الفقرات والقوائم]</A>
+<A HREF="htutor05.html">[الصور والرسومات]</A>
+<A HREF="htutor06.html">[الوصلات التشعبية]</A><BR>
+<A HREF="htutor07.html">[الجداول1]</A>
+<A HREF="htutor08.html">[الجداول2]</A>
+<A HREF="htutor09.html">[الإطارات1]</A>
+<A HREF="htutor10.html">[الإطارات2]</A>
+<A HREF="htutor11.html">[الإطارات3]</A>
+<A HREF="htutor12.html">[وسوم من هنا وهناك]</A><BR>
+<A HREF="htutor13.html">[الخرائط الصورية]</A>
+<A HREF="htutor14.html">[النماذج1]</A>
+<A HREF="htutor15.html">[النماذج2]</A>
+<A HREF="htutor16.html">[الوسوم الخاصة]</A>
+<A HREF="htutor17.html">[الويب واللغة العربية]</A>
+<A HREF="htutor18.html">[وسوم Meta]</A>
+
+
+</FONT></P>
+</CENTER><BR>
+<CENTER><IMG SRC="images/top_bar.gif" WIDTH=600 HEIGHT=30 BORDER=0 ALT=""></CENTER>
+<BR>&nbsp;<BR>
+<BLOCKQUOTE>
+
+<P ALIGN="RIGHT" DIR="RTL">
+أهلاً وسهلاً بك إلى الدرس الخامس عشر من دروس
+<FONT FACE="Times New Roman" SIZE=4>HTML.</FONT>
+وهو الثاني من درسين حول النماذج.  لقد قمنا في الدرس السابق بمناقشة الوسوم الأساسية للنماذج وتعلمنا كيفية إدراج النماذج في صفحات الويب. كما قمنا بمناقشة بعض أشكال إدخال البيانات في النموذج وهي
+<FONT FACE="Times New Roman" SIZE=4>Text, Password, Hidden</FONT>
+هل تذكر كيف نقوم بتعريفها؟ راجع 
+<A HREF="htutor14.html">الدرس السابق</A>
+إن أردت المزيد من التوضيح، وإلا هيا بنا نكمل ولندخل في الموضوع مباشرة.
+</P>
+<P ALIGN="RIGHT" DIR="RTL">
+سوف نتابع الآن مع مجموعة من الأشكال الخاصة بالاختيار من متعدد وهي بالمناسبة ثلاثة أنواع:
+<FONT FACE="Times New Roman" SIZE=4>Radio, Checkbox</FONT>
+وقائمة الإختيار</P>
+<P ALIGN="RIGHT" DIR="RTL">
+نبدأ مع الشكل المسمى 
+<FONT FACE="Times New Roman" SIZE=4>RADIO.</FONT>
+ومن مسوغات استخدام هذا الشكل أن السؤال المطروح ينبغى أن  يكون له
+<U>إجابة واحدة </U>
+فقط، أو بعبارة أخرى على الزائر أن يختار إجابة واحدة  فقط.
+</P>
+<P ALIGN="RIGHT" DIR="RTL">
+وكمثال، لنفرض أنني أريد أن أسأل الزائر عن المتصفح الذي يستخدمه (كما هو موجود في
+ دفتر الزوار على شكل قائمة إختيار) لكن بدلا من أن يكون على شكل قائمة إختيار أريده أن يكون على شكل 
+<FONT FACE="Times New Roman" SIZE=4>RADIO</FONT>
+وذلك بالشكل التالي:(أود أن أذكرك أن عناصر النموذج تظهر بشكل معكوس إذا كنت تستخدم 
+<FONT FACE="Times New Roman" SIZE=4>Sindbad 3.0)</FONT>
+</P>
+<P ALIGN="left" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+<FORM>
+<INPUT TYPE="RADIO" NAME="BROWSER" VALUE="Sindbad 3.0"> Sindbad 3.0<BR>
+<INPUT TYPE="RADIO" NAME="BROWSER" VALUE="Sindbad 4.0"> Sindbad 4.0<BR>
+<INPUT TYPE="RADIO" NAME="BROWSER" VALUE="MS Explorer 3.0"> Ms Explorer 3.0<BR>
+<INPUT TYPE="RADIO" NAME="BROWSER" VALUE="MS Explorer 4.0"> Ms Explorer 4.0<BR>
+</FORM>
+</FONT></P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+فكيف ننشيء مثل هذه القائمة؟ ... حسناً، لنبدأ من الصفر ونعرّف نموذجاً
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;FORM&gt;<BR>
+&nbsp;<BR>
+&lt;‎/FORM&gt;<BR>
+</FONT></P>
+<P ALIGN="RIGHT" DIR="RTL">ثم لنقم بتعريف هذا الشكل، هل تذكر الوسم الخاص بذلك؟ إنه 
+<FONT FACE="Times New Roman" SIZE=4>&lt;INPUT&gt;</FONT>
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;FORM&gt;<BR>
+‎&lt;INPUT TYPE=&quot;radio&quot;&gt;‎<BR>
+&lt;‎/FORM&gt;<BR>
+</FONT><BR>
+<FORM><INPUT TYPE="radio"></FORM>
+</P>
+<P ALIGN="RIGHT" DIR="RTL">لكن بما أن هناك أربعة مدخلات، إذن نحتاج إلى أربعة وسوم
+</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;FORM&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot;&gt; &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot;&gt; &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot;&gt; &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot;&gt; &lt;BR&gt;<BR>
+&lt;‎/FORM&gt;<BR>
+</FONT><BR>
+</P>
+<FORM>
+<INPUT TYPE="radio"> <BR>
+<INPUT TYPE="radio"> <BR>
+<INPUT TYPE="radio"> <BR>
+<INPUT TYPE="radio"> <BR>
+</FORM>
+<P ALIGN="RIGHT" DIR="RTL">
+نحتاج الآن إلى تسمية هذه المدخلات، أي أننا سنستخدم الخاصية
+<FONT FACE="Times New Roman" SIZE=4>NAME</FONT>
+معها. أما الاسم المعطى بحد ذاته فمن الأفضل أن يكون مرتبطاً نوعاً ما بموضوع السؤال، ليس لأن هذا ضروري للنموذج بل هو ضروري لك كشخص سيقوم باستقبال البيانات المرسلة من خلال النموذج، وبالتالي من الأفضل أن يوجد عنوان معبّر للبيانات بغرض التمييز.
+وبما أننا هنا نتحدث عن المتصفحات فليكن هذا الاسم هو
+<FONT FACE="Times New Roman" SIZE=4>browser</FONT>
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;FORM&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot;&gt; &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot;&gt; &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot;&gt; &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot;&gt; &lt;BR&gt;<BR>
+&lt;‎/FORM&gt;<BR>
+</FONT><BR>
+</P>
+<FORM>
+<INPUT TYPE="radio" NAME="browser"> <BR>
+<INPUT TYPE="radio" NAME="browser"> <BR>
+<INPUT TYPE="radio" NAME="browser"> <BR>
+<INPUT TYPE="radio" NAME="browser"> <BR>
+</FORM>
+<P ALIGN="RIGHT" DIR="RTL">
+وكما تلاحظ من النتيجة أن هذه التسمية هي ضمنية فقط ولا تؤثر على شكل النموذج (راجع <A HREF="htutor14.html">الدرس السابق</A>)
+لكن أي إختيار سيقوم به الزائر من هذه الأربعة خيارات سوف يصلك تحت الاسم
+<FONT FACE="Times New Roman" SIZE=4>browser.</FONT>
+</P>
+<P ALIGN="RIGHT" DIR="RTL">
+الخطوة التالية هي إعطاء قيمة لكل مدخلة في هذه القائمة وذلك حسب ما نراه مناسباً، إذن حان الوقت لاستخدام الخاصية 
+<FONT FACE="Times New Roman" SIZE=4>VALUE</FONT>:
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;FORM&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot; VALUE=&quot;Sind3&quot;&gt; &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot; VALUE=&quot;Sind4&quot;&gt; &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot; VALUE=&quot;Msie3&quot;&gt; &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot; VALUE=&quot;Msie4&quot;&gt; &lt;BR&gt;<BR>
+&lt;‎/FORM&gt;<BR>
+</FONT><BR>
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FORM>
+<INPUT TYPE="radio" NAME="browser" VALUE="Sind3"> <BR>
+<INPUT TYPE="radio" NAME="browser" VALUE="Sind4"> <BR>
+<INPUT TYPE="radio" NAME="browser" VALUE="Msie3"> <BR>
+<INPUT TYPE="radio" NAME="browser" VALUE="Msie4"> <BR>
+</FORM>
+</P>
+<P ALIGN="RIGHT" DIR="RTL">وهنا أيضا نلاحظ أن لا تغيّر في شكل النموذج ظاهرياً مع إضافة هذه الخاصية. لكن مع ذلك فقد قمنا حتى الآن بتسمية الحقول وإعطاء كل حقل قيمة محددة. وفعلياً لقد إنتهينا من هذا النموذج. لكن بالطبع نحن لا نتوقع أن يكون الزائر عالماً بالغيب لكي يخمن أي من هذه الحقول تختص بكل قيمة. لذلك بقى علينا تعريف كل حقل باسم صريح يوضح محتواه.
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;FORM&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot; VALUE=&quot;Sind3&quot;&gt; <FONT COLOR="#FF0000">Sindbad 3.0</FONT> &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot; VALUE=&quot;Sind4&quot;&gt; <FONT COLOR="#FF0000">Sindbad 4.0</FONT>&lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot; VALUE=&quot;Msie3&quot;&gt; <FONT COLOR="#FF0000">MS Explorer 3.0</FONT>&lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot; VALUE=&quot;Msie4&quot;&gt; <FONT COLOR="#FF0000">MS Explorer 4.0</FONT>&lt;BR&gt;<BR>
+&lt;‎/FORM&gt;<BR>
+</FONT><BR>
+</P>
+<P ALIGN="LEFT" DIR="LTR">
+<FONT FACE="ARIAL" SIZE=2>
+<FORM>
+<INPUT TYPE="radio" NAME="browser" VALUE="Sind3"> Sindbad 3.0 <BR>
+<INPUT TYPE="radio" NAME="browser" VALUE="Sind4"> Sindbad 4.0<BR>
+<INPUT TYPE="radio" NAME="browser" VALUE="Msie3"> MS Explorer 3.0<BR>
+<INPUT TYPE="radio" NAME="browser" VALUE="Msie4"> MS Explorer 4.0<BR>
+</FORM>
+</FONT>
+</P>
+<P ALIGN="RIGHT" DIR="RTL">
+وهناك خاصية تتعلق  بهذا النوع من الحقول، وهي أنك إذا أردت أن يظهر أحدها وقد تم اختياره بشكل تلقائي فعليك بإضافة الخاصية
+<FONT FACE="Times New Roman" SIZE=4>CHECKED</FONT>
+إليه، مع ترك كل الحرية للزائر في اختيار ما يريده فيما بعد.
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;FORM&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot; VALUE=&quot;Sind3&quot;&gt; <FONT COLOR="#FF0000">Sindbad 3.0</FONT> &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot; VALUE=&quot;Sind4&quot; CHECKED&gt; <BR><FONT COLOR="#FF0000">Sindbad 4.0</FONT>‎&lt;BR&gt;‎<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot; VALUE=&quot;Msie3&quot;&gt; <FONT COLOR="#FF0000">MS Explorer 3.0</FONT>&lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;browser&quot; VALUE=&quot;Msie4&quot;&gt; <FONT COLOR="#FF0000">MS Explorer 4.0</FONT>&lt;BR&gt;<BR>
+&lt;‎/FORM&gt;<BR>
+</FONT><BR>
+</P>
+<FONT FACE="ARIAL" SIZE=2><P ALIGN="LEFT" DIR="LTR"><FORM>
+<INPUT TYPE="radio" NAME="browser" VALUE="Sind3"> Sindbad 3.0 <BR>
+<INPUT TYPE="radio" NAME="browser" VALUE="Sind4" CHECKED> Sindbad 4.0<BR>
+<INPUT TYPE="radio" NAME="browser" VALUE="Msie3"> MS Explorer 3.0<BR>
+<INPUT TYPE="radio" NAME="browser" VALUE="Msie4"> MS Explorer 4.0<BR>
+</FORM>
+</P></FONT>
+<P ALIGN="RIGHT" DIR="RTL">
+وأخيراً...  أود أن أوضح لك الصورة التي يصلك بها النموذج عند اختيار أحد حقوله (ولنفترض أنه الخيار الثالث). وهي بالشكل التالي:
+</P>
+<P ALIGN="center" DIR="LTR"><FONT FACE="ARIAL" SIZE=4>browser=Msie3</FONT></P>
+
+<HR ALIGN="CENTER" WIDTH="60%" SIZE="4"><P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+نأتي الآن إلى الشكل الثاني من أشكال الإختيار من متعدد والذي يدعى
+<FONT FACE="Times New Roman" SIZE=4>CHECKBOX.</FONT>
+ظاهرياً لا يختلف هذا الشكل عن الشكل الذي سبقه، لكن عملياً هناك اختلافات جذرية من حيث المفهوم والتعريف. وأنا أفضّل أن نبقى على استخدامنا للمثال السابق حتى يسهل علينا تمييز الفروق.
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2><FORM>
+<INPUT TYPE="CHECKBOX" NAME="Sindbad3" VALUE="yes">Sindbad 3.0<BR>
+<INPUT TYPE="CHECKBOX" NAME="Sindbad4" VALUE="yes">Sindbad 4.0<BR>
+<INPUT TYPE="CHECKBOX" NAME="Msie3" VALUE="yes">MS Explorer 3.0<BR>
+<INPUT TYPE="CHECKBOX" NAME="Msie4" VALUE="yes">MS Explorer 4.0
+<BR>
+</FORM>
+
+</FONT></P><P ALIGN="RIGHT" DIR="RTL">
+قبل أن نستمر قم بالنقر على أكثر من حقل في القائمة السابقة وأنظر ماذا سيحدث؟ إن باستطاعتك اختيار أكثر من حقل في نفس الوقت! وهذا هو الفرق الأول بين 
+<FONT FACE="Times New Roman" SIZE=4>CHECKBOX</FONT>
+و
+<FONT FACE="Times New Roman" SIZE=4>RADIO</FONT>
+ففي
+<FONT FACE="Times New Roman" SIZE=4>RADIO</FONT>
+يمكن اختيار حقل واحد فقط ليس أكثر.
+<BR>
+لنقم الآن بتعريف هذه الحقول، وتسميتها بشكل مباشر ومن ثم سنعلّق عليها:
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;FORM&gt;<BR>
+&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;Sind3&quot; VALUE=&quot;Yes&quot;&gt; Sindbad 3.0 &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;Sind4&quot; VALUE=&quot;Yes&quot;&gt; Sindbad 4.0 &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;Msie3&quot; VALUE=&quot;Yes&quot;&gt; MS Explorer 3.0 &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;Msie4&quot; VALUE=&quot;Yes&quot;&gt; MS Explorer 4.0 &lt;BR&gt;<BR>
+&lt;‎/FORM&gt;<BR>
+</FONT><BR>
+</P>
+<P ALIGN="RIGHT" DIR="RTL">
+ماذا تلاحظ؟ أولاً لقد أسندنا القيمة 
+<FONT FACE="Times New Roman" SIZE=4>checkbox</FONT>
+للخاصية
+<FONT FACE="Times New Roman" SIZE=4>TYPE.</FONT>
+ثم أعطينا لكل حقل في القائمة إسماً مميزاً في الخاصية
+<FONT FACE="Times New Roman" SIZE=4>NAME</FONT>
+ يختلف عن باقي الحقول. أما الخاصية 
+<FONT FACE="Times New Roman" SIZE=4>VALUE</FONT>
+فأعطيناها قيمة موحدة لجميع الحقول. وبالطبع قمنا في النهاية بكتابة الأسماء التعريفية لكل حقل.
+</P>
+<CENTER><TABLE CELLPADDING=5 BORDER=5 ALIGN="CENTER" BGCOLOR="#FFFFFF" WIDTH="70%">
+<TR><TD>
+<FONT SIZE="+1">
+<P ALIGN="RIGHT" DIR="RTL">
+في 
+<FONT FACE="Times New Roman" SIZE=4>RADIO</FONT>
+نستطيع اختيار حقل واحد فقط أما في 
+<FONT FACE="Times New Roman" SIZE=4>CHECKBOX</FONT>
+فنختار أكثر من حقل، لذلك يستخدم عادة في الحالات التي يحتمل أن نحصل فيها على عدة أجوبة لنفس السؤال.
+</P>
+<P ALIGN="RIGHT" DIR="RTL">
+في 
+<FONT FACE="Times New Roman" SIZE=4>RADIO</FONT>
+تكون أسماء الحقول موحدة والقيم مختلفة، أما في
+<FONT FACE="Times New Roman" SIZE=4>CHECKBOX</FONT>
+فتكون الأسماء مختلفة والقيم موحدة
+</P>
+</FONT>
+</TD></TR>
+</TABLE>
+
+</CENTER>
+<P ALIGN="RIGHT" DIR="RTL">
+كيف ستصل البيانات؟ حسناً لنفرض أنه تم اختيار الحقلين الثاني والرابع فسوف تصلك النتيجة بالشكل التالي:
+</P>
+<P ALIGN="center" DIR="LTR"><FONT FACE="ARIAL" SIZE=4>
+Sind4=Yes<BR>
+Msie4=Yes
+</FONT></P>
+<P ALIGN="RIGHT" DIR="RTL">كما نستطيع أيضاً تعليم بعض الحقول بصورة تلقائية كما فعلنا مع 
+<FONT FACE="Times New Roman" SIZE=4>RADIO</FONT>
+باستخدام نفس الخاصية
+<FONT FACE="Times New Roman" SIZE=4>CHECKED</FONT>
+</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;FORM&gt;<BR>
+&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;Sind3&quot; VALUE=&quot;Yes&quot; CHECKED&gt;<BR> Sindbad 3.0 ‎&lt;BR&gt;‎<BR>
+&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;Sind4&quot; VALUE=&quot;Yes&quot;&gt; Sindbad 4.0 &lt;BR&gt;<BR>
+&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;Msie3&quot; VALUE=&quot;Yes&quot; CHECKED&gt;<BR> MS Explorer 3.0 ‎&lt;BR&gt;‎<BR>
+&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;Msie4&quot; VALUE=&quot;Yes&quot;&gt; MS Explorer 4.0 &lt;BR&gt;<BR>
+&lt;‎/FORM&gt;<BR>
+</FONT><BR>
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2><FORM>
+<INPUT TYPE="checkbox" NAME="Sind3" VALUE="Yes" CHECKED> Sindbad 3.0 <BR>
+<INPUT TYPE="checkbox" NAME="Sind4" VALUE="Yes"> Sindbad 4.0 <BR>
+<INPUT TYPE="checkbox" NAME="Msie3" VALUE="Yes" CHECKED> MS Explorer 3.0 <BR>
+<INPUT TYPE="checkbox" NAME="Msie4" VALUE="Yes"> MS Explorer 4.0 <BR>
+</FORM></FONT></P>
+<HR ALIGN="CENTER" WIDTH="60%" SIZE="4"><P>
+
+<P ALIGN="RIGHT" DIR="RTL">
+ النوع الثالث من أشكال الإختيار من متعدد هو قوائم الاختيار، وهذا النوع سوف يقودنا إلى وسوم جديدة من وسوم التعريف والتي ستستخدم بدلاً من
+<FONT FACE="Times New Roman" SIZE=4>&lt;INPUT&gt;</FONT>
+وهي
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;SELECT&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;OPTION&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;OPTION&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;OPTION&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;.....<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;.....<BR>
+&lt;‎/SELECT&gt;</FONT>
+</P>
+
+<P ALIGN="RIGHT" DIR="RTL">بحيث أن
+<FONT FACE="Times New Roman" SIZE=4>&lt;SELECT&gt; ... &lt;/‎SELECT&gt;</FONT>
+تحددان بداية ونهاية القائمة، والوسم
+<FONT FACE="Times New Roman" SIZE=4>&lt;OPTION&gt;</FONT>
+الذي يوضع دائما بينهما يستخدم لتحديد كل عنصر من عناصر القائمة. لنعد إلى مثالنا السابق لنرى كيف يمكن وضع الخيارات في قائمة
+</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;FORM&gt;<BR>
+&lt;SELECT&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION&gt; Sindbad 3.0‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION&gt; Sindbad 4.0‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION&gt; MS Explorer 3.0‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION&gt; MS Explorer 4.0‎<BR>
+&lt;‎/SELECT&gt;<BR>
+&lt;‎/FORM&gt;<BR>
+</FONT>
+</P>
+<P ALIGN="RIGHT" DIR="RTL">وبذلك تكون النتيجة هي:
+</P>
+<FORM>
+<SELECT NAME="example">
+    <OPTION> Sindbad 3.0
+    <OPTION> Sindbad 4.0
+    <OPTION> MS Explorer 3.0
+    <OPTION> MS Explorer 4.0
+</SELECT> 
+</FORM>
+
+<P ALIGN="RIGHT" DIR="RTL">
+وكالمعتاد لا يخلو الأمر من وجود خصائص تحدد طريقة عمل هذه الوسوم. وهناك خصائص مشتركة عرفناها في الأشكال السابقة سيتم استخدامها هنا أيضاً كما يوجد خصائص جديدة تتعلق فقط بهذا الشكل من حقول البيانات. فبالنسبة لـِ
+<FONT FACE="Times New Roman" SIZE=4>&lt;SELECT&gt;</FONT>
+يوجد الخاصية
+<FONT FACE="Times New Roman" SIZE=4>NAME</FONT>
+وهي كما تعلم تحدد اسم القائمة. كما توجد الخاصية 
+<FONT FACE="Times New Roman" SIZE=4>SIZE</FONT>
+التي تحدد حجم (أو بالأحرى) ارتفاع القائمة، وبالتالي عدد البيانات الظاهرة فيها. وهي تأخذ أي قيمة عددية صحيحة.
+</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;FORM&gt;<BR>
+‎&lt;SELECT NAME=&quot;browser&quot; SIZE=&quot;2&quot;&gt;‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION&gt; Sindbad 3.0‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION&gt; Sindbad 4.0‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION&gt; MS Explorer 3.0‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION&gt; MS Explorer 4.0‎<BR>
+&lt;‎/SELECT&gt;<BR>
+&lt;‎/FORM&gt;<BR>
+</FONT>
+</P>
+<FORM>
+<SELECT NAME="browser" SIZE="2">
+    <OPTION> Sindbad 3.0
+    <OPTION> Sindbad 4.0
+    <OPTION> MS Explorer 3.0
+    <OPTION> MS Explorer 4.0
+</SELECT>
+</FORM>
+
+<P ALIGN="RIGHT" DIR="RTL">وطالما بالإمكان عرض القائمة بأي ارتفاع نريد، وقد يصل إلى حد عرض جميع بيانات القائمة معاً، فإن هناك إمكانية أيضاً  لجعل اختيار البيانات من هذه القائمة متعدداً وليس فقط قيمة واحدة، كيف؟؟ بإضافة الخاصية 
+<FONT FACE="Times New Roman" SIZE=4>MULTIPLE.</FONT>
+لنقم الآن بعرض جميع القيم (لدينا أربعة قيم، إذن القيمة المكتوبة مع
+<FONT FACE="Times New Roman" SIZE=4>SIZE</FONT>
+يجب أن تكون 4)، ومن ثم لنتح المجال أمام الزائر لاختيار أكثر من قيمة واحدة في القائمة.
+
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;FORM&gt;<BR>
+&lt;SELECT NAME=&quot;browser&quot; SIZE=&quot;4&quot; MULTIPLE&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION&gt; Sindbad 3.0‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION&gt; Sindbad 4.0‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION&gt; MS Explorer 3.0‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION&gt; MS Explorer 4.0‎<BR>
+&lt;‎/SELECT&gt;<BR>
+&lt;‎/FORM&gt;<BR>
+</FONT>
+</P>
+
+<FORM>
+<SELECT NAME="browser" SIZE="4" MULTIPLE>
+    <OPTION> Sindbad 3.0
+    <OPTION> Sindbad 4.0
+    <OPTION> MS Explorer 3.0
+    <OPTION> MS Explorer 4.0
+</SELECT>
+</FORM>
+
+<P ALIGN="RIGHT" DIR="RTL">لاحظ أنه لأداء عدة اختيارات يجب أن تقوم بالضغط على المفتاح 
+<FONT FACE="Times New Roman" SIZE=4>ctrl</FONT>
+بصورة متواصلة أثناء عملية الإختيار.
+<BR>&nbsp;<BR>
+أما الخصائص المستخدمة مع الوسم 
+<FONT FACE="Times New Roman" SIZE=4>&lt;OPTION&gt;</FONT>
+فهي 
+<FONT FACE="Times New Roman" SIZE=4>VALUE</FONT>
+والتي استخدمناها من قبل وسنستخدمها الآن لإعطاء قيمة لكل حقل بيانات في القائمة. وكذلك الخاصية
+<FONT FACE="Times New Roman" SIZE=4>SELECTED</FONT>
+والتي نكتبها مع أي 
+<FONT FACE="Times New Roman" SIZE=4>&lt;OPTION&gt;</FONT>
+نريد أن يظهر وقد تم اختياره بصورة تلقائية.
+</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+&lt;FORM&gt;<BR>
+&lt;SELECT NAME=&quot;browser&quot; SIZE=&quot;4&quot; MULTIPLE&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION VALUE=&quot;Sindbad 3.0&quot;&gt; Sindbad 3.0‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION VALUE=&quot;Sindbad 4.0&quot; SELECTED&gt; Sindbad 4.0‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION VALUE=&quot;MS Explorer 3.0&quot;&gt; MS Explorer 3.0‎<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;‎&lt;OPTION VALUE=&quot;MS Explorer 4.0&quot;&gt; MS Explorer 4.0‎<BR>
+&lt;‎/SELECT&gt;<BR>
+&lt;‎/FORM&gt;<BR>
+</FONT>
+</P>
+<FORM>
+<SELECT NAME="browser" SIZE="4" MULTIPLE>
+    <OPTION VALUE="Sindbad 3.0"> Sindbad 3.0
+    <OPTION VALUE="Sindbad 4.0" SELECTED> Sindbad 4.0
+    <OPTION VALUE="MS Explorer 3.0"> MS Explorer 3.0
+    <OPTION VALUE="MS Explorer 4.0"> MS Explorer 4.0
+</SELECT>
+</FORM>
+<HR ALIGN="CENTER" WIDTH="60%" SIZE="4"><P>
+<P ALIGN="RIGHT" DIR="RTL">الشكل التالي من أشكال حقول البيانات يدعى
+<FONT FACE="Times New Roman" SIZE=4>TEXTAREA</FONT>
+</P><CENTER>
+
+<FORM><TEXTAREA>
+</TEXTAREA></FORM>
+
+</CENTER>
+<P ALIGN="RIGHT" DIR="RTL">وهو المستخدم عادة لكتابة التعليقات الحرة في النموذج ويتم إدراجه بكتابة الوسوم 
+</P>
+<P ALIGN="CENTER" DIR="LTR"><FONT FACE="Times New Roman" SIZE=4>
+&lt;TEXTAREA&gt; ... &lt;‎/TEXTAREA&gt;
+</FONT></P>
+<P ALIGN="RIGHT" DIR="RTL">
+هل تستطيع تخمين الخصائص المستخدمة معه؟ بالطبع لا بد من وجود الخاصية
+<FONT FACE="Times New Roman" SIZE=4>NAME</FONT>
+لإعطاءه اسم التعريف. لكن لا وجود للخاصية 
+<FONT FACE="Times New Roman" SIZE=4>VALUE</FONT>
+، وبالمقابل فإن أي نص يكتب بين الوسمين سيتم عرضه داخل الحقل بصورة تلقائية
+</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+‎&lt;TEXTAREA NAME=&quot;comments&quot;&gt;‎<BR>
+‎Hello, please write your comments here :-)‎<BR>
+&lt;‎/TEXTAREA&gt;
+</FONT></P>
+<FORM>
+<TEXTAREA NAME="comments">
+Hello, please write your comments here :-)
+</TEXTAREA> 
+</FORM>
+<P ALIGN="RIGHT" DIR="RTL">
+كما توجد خصائص لتحديد مساحة هذا الحقل عرضاً وارتفاعاً، وهي
+<FONT FACE="Times New Roman" SIZE=4>COLS</FONT>
+التي تحدد العرض و
+<FONT FACE="Times New Roman" SIZE=4>ROWS</FONT>
+التي تحدد الإرتفاع
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+‎&lt;TEXTAREA NAME=&quot;comments&quot; COLS=&quot;30&quot; ROWS=&quot;6&quot;&gt;‎<BR>
+&lt;‎/TEXTAREA&gt;
+</FONT></P>
+<FORM>
+<TEXTAREA NAME="comments" COLS="30" ROWS="6">
+</TEXTAREA> 
+</FORM>
+
+<P ALIGN="RIGHT" DIR="RTL">أما الخاصية الأخيرة هنا فهي 
+<FONT FACE="Times New Roman" SIZE=4>WRAP</FONT>
+التي تحدد طريقة إلتفاف النص المكتوب داخل الحقل (لا تعمل هذه الخاصية مع
+<FONT FACE="Times New Roman" SIZE=4>MS Explorer 3.0)</FONT>
+ وهناك ثلاثة قيم تأخذها وهي على النحو التالي:
+</P>
+<P ALIGN="RIGHT" DIR="RTL"><FONT FACE="Times New Roman" SIZE=4>virtual</FONT>
+: التي تعني أن النص سيلتف على عدة أسطر عند كتابته ولكنه سيصلك عند إرساله على شكل سطر واحد متتابع (حاول الكتابة داخل الحقول وأنظر كيفية تأثير هذه الخاصية على كل منها)
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+‎&lt;TEXTAREA NAME=&quot;comments&quot; COLS=&quot;30&quot; ROWS=&quot;6&quot; WRAP=&quot;virtual&quot;&gt;‎<BR>
+&lt;‎/TEXTAREA&gt;
+</FONT></P>
+<FORM>
+<TEXTAREA NAME="comments" COLS="30" ROWS="6" WRAP="virtual">
+</TEXTAREA> </FORM>
+<P ALIGN="RIGHT" DIR="RTL"><FONT FACE="Times New Roman" SIZE=4>physical</FONT>
+: تعني أن النص سيلتف على عدة أسطر وسيصلك أيضاً على هذا النحو عند إرساله
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+‎&lt;TEXTAREA NAME=&quot;comments&quot; COLS=&quot;30&quot; ROWS=&quot;6&quot; WRAP=&quot;physical&quot;&gt;‎<BR>
+&lt;‎/TEXTAREA&gt;
+</FONT></P>
+<FORM>
+<TEXTAREA NAME="comments" COLS="30" ROWS="6" WRAP="physical">
+</TEXTAREA> </FORM>
+
+<P ALIGN="RIGHT" DIR="RTL"><FONT FACE="Times New Roman" SIZE=4>off</FONT>
+: تعني أن النص لن يلتف بصورة تلقائية على عدة أسطر لكنه على أية حال سيصلك بنفس الشكل الذي تم إدخاله به
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+‎&lt;TEXTAREA NAME=&quot;comments&quot; COLS=&quot;30&quot; ROWS=&quot;6&quot; WRAP=&quot;off&quot;&gt;‎<BR>
+&lt;‎/TEXTAREA&gt;
+</FONT></P>
+<FORM>
+<TEXTAREA NAME="comments" COLS="30" ROWS="6" WRAP="off">
+</TEXTAREA> </FORM>
+<HR ALIGN="CENTER" WIDTH="60%" SIZE="4"><P>
+<P ALIGN="RIGHT" DIR="RTL">
+حسناً، بافتراض أننا إنتهينا من كتابة الشيفرة الخاصة بالنموذج وننتظر من أي زائر للموقع أن يملأه، والسؤال هو كيف يمكن له أن يرسله فعلياً؟ نعود الآن إلى الوسم
+<FONT FACE="Times New Roman" SIZE=4>&lt;INPUT&gt;</FONT>
+وهذه المرة مع النوع
+<FONT FACE="Times New Roman" SIZE=4>submit</FONT>
+والتي ستقوم تلقائياً بإنشاء زر سيقوم عند النقر عليه بإرسال البيانات التي تم ملؤها في النموذج.
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+‎&lt;INPUT TYPE=&quot;submit&quot;&gt;‎
+</FONT></P>
+<FORM><INPUT TYPE="submit"> </FORM>
+<P ALIGN="RIGHT" DIR="RTL">لاحظ أن 
+<FONT FACE="Times New Roman" SIZE=4>Submit</FONT>
+أو (
+<FONT FACE="Times New Roman" SIZE=4>Submit Query</FONT>
+في 
+<FONT FACE="Times New Roman" SIZE=4>Netscape)</FONT>
+ظاهرة على الزر وهي العبارة الإفتراضية، فإذا أردت تغييرها فعليك باستخدام الخاصية 
+<FONT FACE="Times New Roman" SIZE=4>VALUE</FONT>
+لهذا الغرض
+</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+‎&lt;INPUT TYPE=&quot;submit&quot; VALUE=&quot;Press here to send the form&quot;&gt;‎
+</FONT></P>
+
+<FORM><INPUT TYPE="submit" VALUE="Press here to send the form"></FORM>
+<HR ALIGN="CENTER" WIDTH="60%" SIZE="4"><P>
+<P ALIGN="RIGHT" DIR="RTL">في حالة كان زوار موقعك من النوعية المترددة من الناس والذين قد يغيرون آرائهم في آخر لحظة،  يمكنك أن تتيح لهم إمكانية مسح ما كتبوه في النموذج وإلغاء الأمر، وذلك باستخدام 
+<FONT FACE="Times New Roman" SIZE=4>reset</FONT>
+كنوع
+<FONT FACE="Times New Roman" SIZE=4>TYPE</FONT>
+ للوسم 
+<FONT FACE="Times New Roman" SIZE=4>&lt;INPUT&gt;</FONT>
+بنفس طريقة التعريف والخصائص المستخدمة مع
+<FONT FACE="Times New Roman" SIZE=4>submit.</FONT>
+</P>
+
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+‎&lt;INPUT TYPE=&quot;reset&quot; VALUE=&quot;Forget about it&quot;&gt;‎
+</FONT></P>
+
+<FORM><INPUT TYPE="reset" VALUE="Forget about it"></FORM>
+<HR ALIGN="CENTER" WIDTH="60%" SIZE="4"><P>
+<P ALIGN="RIGHT" DIR="RTL">الشكل الأخير من أشكال البيانات في النماذج والمدرج مع الوسم
+<FONT FACE="Times New Roman" SIZE=4>&lt;INPUT&gt;</FONT>
+هو
+<FONT FACE="Times New Roman" SIZE=4>button</FONT>
+والذي يقوم بإنشاء زر ضمن النموذج، وهو مرتبط بالنماذج التي تحتوي على نصوص برمجية (أو برامج مكتملة) من لغات متقدمة مثل 
+<FONT FACE="Times New Roman" SIZE=4>JavaScript</FONT>
+كونه يستخدم لتشغيل هذه البرامج وإطلاقها. وطبعاً هناك طرق معينة لربطها مع البرامج وليس هنا المجال لطرحها. لكن مبدئياً أقول إن طريقة الإدراج والتعريف هي ذاتها المستخدمة مع 
+<FONT FACE="Times New Roman" SIZE=4>reset, submit.</FONT>
+
+</P>
+<P ALIGN="LEFT" DIR="LTR"><FONT FACE="ARIAL" SIZE=2>
+‎&lt;INPUT TYPE=&quot;button&quot; VALUE=&quot;This is a sample button&quot;&gt;‎
+</FONT></P>
+
+<FORM><INPUT TYPE="button" VALUE="This is a sample button"></FORM>
+<HR ALIGN="CENTER" WIDTH="60%" SIZE="4">
+<HR ALIGN="CENTER" WIDTH="60%" SIZE="4"><P>
+
+<P ALIGN="RIGHT" DIR="RTL">وأخيراً ... وصلنا الآن إلى نهاية حديثنا عن النماذج. فما رأيك؟ هل هو من المواضيع السهلة أم الصعبة؟ لا شيء سهل في بدايته. لذلك من الأفضل لك أن تحاول دائماً التدرب أولاً بأول على الوسوم المشروحة، بل والعودة إلى الدروس السابقة إذا اقتضى الأمر وخاصة إذا تداخلت بعضها مع الدروس الأحدث.<BR>
+ إلى اللقاء ... ومع تمنياتي لك بنماذج موفقة تخلو من التعقيد.
+
+</P>
+</BLOCKQUOTE>
+<P>
+&nbsp;<BR>
+<CENTER>
+<A HREF="htutor16.html"><IMG SRC="images/next.gif" WIDTH=90 HEIGHT=50 BORDER=0 ALT="Next Lesson"></A>
+<BR>
+&nbsp;<BR>&nbsp;<BR>
+<IMG SRC="images/divbar.gif" WIDTH=600 HEIGHT=24 BORDER=0 ALT=" "><BR>
+
+<TABLE BORDER="0" ALIGN="CENTER" WIDTH="80%">
+<TR>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">إتش.بي بالعربية<BR>
+&copy; 1998-1999
+	<br><A HREF="mailto:yahya@palnet.com"> يحيى الشريف</A>
+	</font></TD>
+<TD><CENTER><IMG SRC="images/hpbutton.gif" WIDTH=128 HEIGHT=47 BORDER=0 ALT="H.P in Arabic Button"></CENTER></TD>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">H.P in arabic<BR>
+	&copy; 1998-1999 <br><A HREF="mailto:yahya@palnet.com">Yahya Al-Sharif</A>
+	</font></TD>
+</TR>
+</TABLE>
+
+<MAP NAME="map2">
+<AREA SHAPE=RECT COORDS="120,5,180,25" HREF="sitemap.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,5,245,25" HREF="whatsnew.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,5,310,25" HREF="thissite.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,5,375,25" HREF="index.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,30,245,50" HREF="pspintro.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,30,375,50" HREF="htmintro.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,55,180,75" HREF="http://www.khayma.com/hpinarabic/search.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,55,245,75" HREF="mailto:yahya@palnet.com" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,55,310,75" HREF="links.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,55,375,75" HREF="http://www.khayma.com/hpinarabic/gbook.html" ALT=" ">
+</MAP>
+
+</CENTER>
+</BODY>
+</HTML>
+<!-- text below generated by server. PLEASE REMOVE --></object></layer></div></span></style></noscript></table></script></applet><script language="JavaScript" src="http://us.i1.yimg.com/us.yimg.com/i/mc/mc.js"></script><script language="JavaScript" src="http://us.geocities.com/js_source/geov2.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.geocities.com/visit.gif?1011191901" border=0 width=1 height=1></noscript>
+<IMG SRC="http://geo.yahoo.com/serv?s=76001067&t=1011191901" ALT=1 WIDTH=1 HEIGHT=1>
