@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML DIR="RTL">
+<HEAD>
+	<TITLE>إتش.بي بالعربية - الألوان في PSP</TITLE>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+	<META NAME="keywords" CONTENT="html,html,html,html,psp,psp,psp,psp,arabic,arabic,arabic,arabic,paint shop pro,paint shop pro,paint shop pro,paint shop pro,webpage design,webpage design,webpage design,webpage design ">
+	<META NAME="description" CONTENT="Html and Paint Shop Pro tutorials in Arabic,learning web page design in Arabic">
+	<META NAME="author" CONTENT="Yahya Al-Sharif">
+	<META NAME="copyright" CONTENT="Copyright 1998 Yahya Al-Sharif">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="images/bg.jpg">
+<BASEFONT SIZE="4" FACE="Arabic Transparent" COLOR="#000000">
+<CENTER>
+<IMG SRC="images/inbanner.gif" WIDTH=500 HEIGHT=80 BORDER=0 usemap="#map2" ALT="">
+</CENTER>
+<P ALIGN="CENTER" DIR="RTL">
+<FONT FACE="Arabic Transparent" SIZE="6" COLOR="#FF0000">
+<STRONG>
+الألوان في <BR>
+<FONT FACE="Times New Roman" SIZE=6>Paint Shop Pro</FONT><BR>
+</STRONG></FONT></P>
+
+&nbsp;<BR><CENTER>
+<P ALIGN="center" DIR="RTL"><FONT SIZE="2">
+<A HREF="pspintro.html">[المقدمة]</A>
+<A HREF="ptutor01.html">[لنتعرف...]</A>
+<A HREF="ptutor02.html">[الأدوات]</A>
+<A HREF="ptutor03.html">[الألوان]</A>
+<A HREF="ptutor04.html">[التحديد]</A>
+<A HREF="ptutor05.html">[إلغاء التدرج]</A>
+<A HREF="ptutor06.html">[New Image]</A><BR>
+<A HREF="ptutor07.html">[فرشاة الرسم]</A>
+<A HREF="ptutor08.html">[التجانب]</A>
+<A HREF="ptutor09.html">[خلفيات الصفحات]</A>
+
+</FONT></P>
+</CENTER><BR>
+<CENTER><IMG SRC="images/top_bar.gif" WIDTH=600 HEIGHT=30 BORDER=0 ALT=""></CENTER>
+<BR>&nbsp;<BR>
+<BLOCKQUOTE>
+<P ALIGN="right" DIR="rtl">
+قبل أن نبدأ بالحديث عن أدوات البرنامج بصورة مفصلة أجد من الضروري أن نتحدث قليلاً عن الألوان بشكل عام وطريقة التعامل معها في برنامج
+<FONT FACE="Times New Roman" SIZE=4>PSP</FONT> 
+بشكل خاص.
+</P>
+
+<P ALIGN="right" DIR="rtl">
+في الحقيقة أننا قد تطرقنا مسبقاً إلى هذه المسألة، وكان ذلك في الدرس الثاني من دروس إتش.تي.أم.أل والذي يتحدث عن طرق التعامل مع الألوان في صفحات الويب. وما يهمنا فيه حالياً هو 
+هذه المعلومات التالية التي نسختها من الدرس المذكور:
+</P>
+
+<CENTER>
+<TABLE border="5" width="80%" align="center"><TR><td>
+<P ALIGN="right" DIR="rtl">
+<FONT FACE="Arabic Transparent" SIZE=6>
+<STRONG>القليل عن الألوان...</STRONG> 
+</FONT>
+</P>
+<STRONG>
+
+
+<P ALIGN="right" DIR="rtl">
+هناك ثلاثة ألوان أساسية هي الأحمر والأخضر والأزرق، ولكل منها يوجد 256 درجة لونية ويعبر عن هذه الدرجات بالأرقام من 000 وحتى 255. ومن خلال مزج هذه الألوان بدرجاتها اللونية المختلفة نحصل على الألوان الأخرى.
+</P>
+
+<CENTER>
+<TABLE ALIGN="center" BGCOLOR="#ffffff" BORDER="4" DIR="rtl">
+<TR>
+	<TD DIR="rtl">
+	<FONT FACE="Arabic Transparent" SIZE=4>
+ * إن أي لون هو مزيج -وبنسبة معينة من الدرجات- من هذه الألوان الثلاثة *
+ </FONT>
+	</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<P ALIGN="right" DIR="rtl">
+   فمثلا اللون الأسود مكون من الدرجة 000 من كل من اللون الأحمر والأخضر والأزرق. واللون الأبيض  مكون من الدرجة 255 من هذه الألوان. أما اللون الأصفر فهو مكون من الدرجة 255 للون الأحمر، والدرجة 255 للون الأخضر، والدرجة 000 من اللون الأزرق... وهكذا بنفس الطريقة يتم تكوين باقي الألوان.
+</P>
+
+<P ALIGN="right" DIR="rtl">
+وبعملية حسابية بسيطة 256&times;256&times;256 ينتج لدينا أن عدد الألوان التي يمكن الحصول عليها بمزج الألوان الثلاثة السابقة هو  16777216 بالضبط.
+</P>
+
+<P ALIGN="right" DIR="rtl">
+حسنا، لكن من أين جاءت الرموز
+<FONT FACE="Times New Roman" SIZE=4>FFFFFF</FONT> والتي عبرت عن اللون الأبيض بها. إنها ببساطة أرقام&hellip; مكتوبة بالنظام السداس عشري (نظام عددي أساسه الرقم 16 ويعبر عنه باستخدام الأرقام العادية من 0 إلى 9 والرموز 
+<FONT FACE="Times New Roman" SIZE=4>A,B,C,D,E,F</FONT>
+). فالرقم 255 بالنظام العشري العادي يكافئه الرقم 
+<FONT FACE="Times New Roman" SIZE=4>FF</FONT>
+ بالنظام السداس عشري.<BR>
+
+إذن فالرقم السداس عشري
+<FONT FACE="Times New Roman" SIZE=4>FF</FONT>
+ على اليسار يمثل الدرجة 255 للون الأحمر. والرقم 
+<FONT FACE="Times New Roman" SIZE=4>FF </FONT>
+ في الوسط يمثل الدرجة 255 من اللون الأخضر. والرقم
+<FONT FACE="Times New Roman" SIZE=4>FF</FONT>
+على اليمين يمثل الدرجة 255 من اللون الأزرق. <BR>
+
+وعلى هذا المنوال يعبر عن اللون الأزرق الفاتح بالرقم السداس عشري:
+<FONT FACE="Times New Roman" SIZE=4>6699CC</FONT>
+ أما اللون الأسود فرقمه هو 
+<FONT FACE="Times New Roman" SIZE=4>000000.</FONT>
+
+</STRONG><BR><BR></TD></TR></P></TABLE>
+</CENTER>
+<br clear="all">
+<P ALIGN="right" DIR="rtl">
+<IMG align=right alt="Color Palette" border=0 height=306 hspace=15 src ="images/colorpal.jpg" width=77>
+والآن أنظر إلى لوحة الألوان هذه والمأخوذة من برنامج 
+<FONT FACE="Times New Roman" SIZE=4>PSP</FONT>
+وحاول التوفيق بينها وبين ما ذكرناه...<BR>
+في القسم العلوي منها تجد لوحة مزج الألوان، ونستخدمها لانتقاء الألوان المطلوبة. وعندما تمرر مؤشر الفأرة عليها نلاحظ أن المستطيل الموجود في الأسفل يتغير لونه بحيث يعكس اللون الذي يقع عليه المؤشر في تلك اللحظة.<BR>
+أما الأرقام الموجودة أعلى هذا المستطيل فهي التي تعبر عن نسب الألوان الثلاثة التي تكون اللون المختار وهي تتغير أيضاً بحيث تلائم هذا اللون. وكما تشاهد فإن اللون الأخضر الفاتح الذي يقع عليه المؤشر يتكون من 76 درجة من اللون الأحمر و 255 درجة من اللون الأخضر و 5 درجات من اللون الأزرق.
+</P>
+<P ALIGN="right" DIR="rtl">
+أما المستطيلين الموجودين في منتصف هذه اللوحة فهما يميزان الألوان الفعالة حالياً للرسم. (وهنا هما اللونين الأحمر والأبيض). وبعبارة أخرى فإن أي عملية تحرير أو رسم نجريها على الصور فسوف تتم باستخدام هذه الألوان المحددة. والمستطيل العلوي يحمل ما يسمى باللون الأمامي
+<FONT FACE="Times New Roman" SIZE=4>Foreground Color</FONT>
+أما المستطيل السفلي فيحمل اللون الخلفي
+<FONT FACE="Times New Roman" SIZE=4>Background Color</FONT> 
+وعادة فإن استخدام اللون الأمامي يتم باستخدام الزر الأيسر للفأرة، أما اللون الخلفي فنستخدم لتطبيقه الزر الأيمن. أما السهم الموجود بجانب المستطيلين فإن النقر عليه بالفأرة يؤدي إلى تبديل موقع اللونين، فيصبح الأمامي خلفياً والخلفي أمامياً.
+</P>
+<P ALIGN="right" DIR="rtl">أحيانا قد تجد صعوبة في إنتقاء اللون الذي تريده من لوحة الألوان هذه نظراً لدقة الألوان وتداخلها وفي هذه الحالة ما عليك إلاّ أن تنقر نقراً مزدوجاً على أحد المستطيلين فيظهر صندوق الحوار التالي:
+</P>
+<CENTER><IMG border=0 height=431 src="images/colordlg.jpg" width=369 alt="PSP Color Dialog Box"> 
+
+</CENTER>
+<P ALIGN="right" DIR="rtl">
+ وإليك شرح لأقسامه حسب الترقيم المبين: 
+</P>
+
+<OL>
+<LI>
+<P ALIGN="right" DIR="rtl">
+في هذا القسم تجد 48 مربعاً صغيراً تضم الألوان الأساسية المحددة مسبقاً
+<FONT FACE="Times New Roman" SIZE=4>Basic Colors.</FONT>
+والتي تستطيع انتقاء اللون المطلوب منها مباشرة. 
+</P>
+
+<LI>
+<P ALIGN="right" DIR="rtl">
+مربعات الألوان المخصصة
+<FONT FACE="Times New Roman" SIZE=4>Custom Colors</FONT>
+وهي مربعات عددها 16 وتكون أصلاً خالية من أي ألوان محددة مسبقة لذلك تجدها بيضاء اللون. فهي مكرسة لحاجة المستخدم لإضافة أي ألوان مخصصة يحتاجها هو ويستخدمها بشكل متكرر. (فعند تحديدك لأحد الألوان تستطيع ضغط زر
+<FONT FACE="Times New Roman" SIZE=4>Add Custom</FONT>
+لإضافته إلى أحد هذه المربعات  حيث يبقى ثابتاً فيه، وفي المرات اللاحقة يمكنك الرجوع إلى هذه اللوحة واختيار هذا اللون المخصص تماماً كما تختار الألوان الأساسية... ولاحظ أن هناك 5 ألوان مخصصة قمت بتحديدها في هذه المربعات).
+</P>
+
+<LI>
+<P ALIGN="right" DIR="rtl">
+هذا القسم هو جزء من منطقة تسمى
+<FONT FACE="Times New Roman" SIZE=4>Current Color</FONT>
+أي اللون الحالي. وفيه نشاهد نسب الألوان الثلاثة الأساسية سالفة الذكر والتي تشكل اللون الحالي الذي تم اختياره (وهو اللون البنفسجي) وبالطبع فإن هذه النسب تتغير وتتبدل تلقائياً بحسب اللون المختار. كما أنك تستطيع العمل بشكل عكسي أي كتابة النسب المكونة للون المطلوب مباشرة في هذه المربعات (إذا كنت تعرفها مسبقاً) ليظهر هذا اللون في المربع المخصص.
+</P>
+
+<LI>
+<P ALIGN="right" DIR="rtl">
+في هذا القسم نشاهد طريقة أخرى لتمثيل واختيار الألوان وهي تسمى
+<FONT FACE="Times New Roman" SIZE=4>HSL</FONT>
+، فبدلاً من التعامل مع النسب اللونية واختيار الألوان الأساسية تعتمد هذه الطريقة على إختيار:</p>
+
+<BLOCKQUOTE><UL>
+<LI><P ALIGN="right" DIR="RTL">
+درجة التدرج في الألوان <FONT FACE="Times New Roman" SIZE=4>Hue</FONT><BR>
+<LI><P ALIGN="right" DIR="RTL">
+درجة السطوع <FONT FACE="Times New Roman" SIZE=4>Saturation</FONT><BR>
+<LI><P ALIGN="right" DIR="RTL">
+ودرجة الإضاءة <FONT FACE="Times New Roman" SIZE=4>Light</FONT><BR>
+
+</UL>
+
+</BLOCKQUOTE>
+<P ALIGN="right" DIR="RTL">
+وسوف أوضح لك ماهية هذه الطريقة من خلال شرحي للقسمين التاليين من اللوحة.
+</P>
+
+<LI>
+<P ALIGN="right" DIR="RTL">يتمثل هذا القسم في حلقة من الألوان المتداخلة، والتي عددها 256 لوناً (إذا كنت لا تصدق حاول عدّها) وإذا دققت النظر تلاحظ وجود دائرة صغيرة داخل هذه الحلقة... ضع المؤشر على هذه الدائرة واسحبها على مسار الحلقة وذلك لتحديد اللون الذي تريده.<BR>
+إن هذه الحركة هي التي تحدد قيمة ما يسمى التدرج اللوني
+<FONT FACE="Times New Roman" SIZE=4>Hue.</FONT>
+(دعنا من المصطلحات والمعاني الحرفية ولنقل أن المقصود بـ 
+<FONT FACE="Times New Roman" SIZE=4>Hue</FONT>
+هو اختيار اللون الأساسي من بين 256 لوناً أساسياً)
+وأثناء عملية السحب إذا نظرت إلى القيمة الموجودة في مربع 
+<FONT FACE="Times New Roman" SIZE=4>Hue</FONT> 
+(من القسم السابق) سوف تلاحظ أنها تختلف باختلاف موقع المؤشر وأنها تأخذ القيم ما بين 0 و 255 ولا تتعداها أبداً. (مع الأخذ بعين الإعتبار ملاحظة مهمة سأذكرها في النقطة اللاحقة)
+</P>		
+
+<LI>
+<P ALIGN="right" DIR="RTL">
+في هذا المربع نقوم بتحديد درجتي السطوع والإضاءة. وذلك كخطوات مكملة لما قمنا به عند اختيار اللون الأساسي من الحلقة. وبالفعل سوف تلاحظ أن اللون الغالب في هذا المربع أصبح هو نفسه اللون الأساسي المحدد في الحلقة.<BR>
+بالطبع نستخدم الدائرة الصغيرة الموجودة داخله لتحديد الدرجات. فتحريكها بشكل عمودي يؤدي إلى تغيير درجة الإضاءة (تزداد كلما تحركنا إلى الأسفل) وتحريكها أفقياً يؤدي إلى تغيير درجة السطوع (تزداد  كلما تحركنا إلى اليمين). <BR>&nbsp;<BR>
+ملاحظة مهمة: عندما تكون درجة الإضاءة متطرفة (أي قريبة من الصفر أو 255) نلاحظ أن تحريك الدائرة على حلقة الألوان لا يؤدي إلى تغيير قيمة
+<FONT FACE="Times New Roman" SIZE=4>Hue.</FONT>
+لأن تأثير الإضاءة على الألوان أقوى من تأثير الألوان على الإضاءة، وبالتالي فإن اللون المختار يبقى قريباً من الأبيض عندما تكون الإضاءة عالية، أو الأسود عندما تكون الإضاءة منخفضة مهما كانت درجة التدرج اللوني.
+</P>
+
+<LI>
+<P ALIGN="right" DIR="RTL">أخيراً، نشاهد في هذا القسم الشيفرة التي تمثل اللون المختار بالنظام الرقمي السداس عشري وهذه تفيد في حالة أردنا تطبيق هذا اللون في صفحات 
+<FONT FACE="Times New Roman" SIZE=4>HTML</FONT>
+</P>
+</OL>
+
+<HR ALIGN="CENTER" SIZE="4" WIDTH="80%">
+
+<P ALIGN="right" DIR="RTL">وماذا بعد في هذا الموضوع...؟ أعتقد أن ما بقي عليك هو محاولة دراسة هذه اللوحة مرة بعد أخرى لأن إتقانك للتعامل مع الألوان في البرنامج سوف يسهل عليك العمل فيه بشكل كبير... أليست الألوان هي الأساس في برامج الرسم!؟
+</P>
+
+</BLOCKQUOTE>
+<P>
+&nbsp;<BR>
+<CENTER>
+<A HREF="ptutor04.html"><IMG SRC="images/next.gif" WIDTH=90 HEIGHT=50 BORDER=0 ALT="Next Lesson"></A>
+<BR>
+&nbsp;<BR>&nbsp;<BR>
+<IMG SRC="images/divbar.gif" WIDTH=600 HEIGHT=24 BORDER=0 ALT=" "><BR>
+
+<TABLE BORDER="0" ALIGN="CENTER" WIDTH="80%">
+<TR>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">إتش.بي بالعربية<BR>
+&copy; 1998-1999
+	<br><A HREF="mailto:yahya@palnet.com"> يحيى الشريف</A>
+	</font></TD>
+<TD><CENTER><IMG SRC="images/hpbutton.gif" WIDTH=128 HEIGHT=47 BORDER=0 ALT="H.P in Arabic Button"></CENTER></TD>
+	<TD ALIGN="CENTER" WIDTH="25%"><font size="-1">H.P in arabic<BR>
+	&copy; 1998-1999 <br><A HREF="mailto:yahya@palnet.com">Yahya Al-Sharif</A>
+	</font></TD>
+</TR>
+</TABLE>
+
+<MAP NAME="map2">
+<AREA SHAPE=RECT COORDS="120,5,180,25" HREF="sitemap.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,5,245,25" HREF="whatsnew.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,5,310,25" HREF="thissite.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,5,375,25" HREF="index.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,30,245,50" HREF="pspintro.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,30,375,50" HREF="htmintro.html" ALT=" ">
+
+<AREA SHAPE=RECT COORDS="120,55,180,75" HREF="http://www.khayma.com/hpinarabic/search.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="185,55,245,75" HREF="mailto:yahya@palnet.com" ALT=" ">
+<AREA SHAPE=RECT COORDS="250,55,310,75" HREF="links.html" ALT=" ">
+<AREA SHAPE=RECT COORDS="315,55,375,75" HREF="http://www.khayma.com/hpinarabic/gbook.html" ALT=" ">
+</MAP>
+
+</CENTER>
+</BODY>
+</HTML>
+<!-- text below generated by server. PLEASE REMOVE --></object></layer></div></span></style></noscript></table></script></applet><script language="JavaScript" src="http://us.i1.yimg.com/us.yimg.com/i/mc/mc.js"></script><script language="JavaScript" src="http://us.geocities.com/js_source/geov2.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.geocities.com/visit.gif?1013171866" border=0 width=1 height=1></noscript>
+<IMG SRC="http://geo.yahoo.com/serv?s=76001067&t=1013171866" ALT=1 WIDTH=1 HEIGHT=1>
