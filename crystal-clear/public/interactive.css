@@ -25,7 +25,7 @@
 
 .window-container {
     width: 450px;
-}
+ }
 
 a .window-link {
   color: black
@@ -37,6 +37,7 @@ a {
 
 .header-text {
     padding-top: 10px;
+    padding-bottom: 10px;
     align-items: center;
     text-align: center;
     font-size: 60px;
@@ -52,6 +53,7 @@ a {
 .nav {
     padding: 30px;
     padding-bottom: 10px;
+    padding-top: 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -70,6 +72,10 @@ a {
     padding: 15px;
 }
 
+.nav-button:hover {
+    cursor: pointer;
+}
+
 .section-title {
     margin: 0px 10px 0px 25px;
     padding-top: 15px;
@@ -81,3 +87,6 @@ a {
     
 }
 
+.window {
+    height: 360px;
+}
