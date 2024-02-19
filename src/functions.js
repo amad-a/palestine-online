@@ -1,5 +1,5 @@
 //set saved wallpaper on load or set random wallpaper on first load
-let randomWallpaper = Math.floor(Math.random() * 12);
+let randomWallpaper = Math.floor(Math.random() * 14);
 
 if (localStorage.getItem('wallpaper') === null) {
   let wallpaperString = randomWallpaper.toString();
@@ -472,7 +472,7 @@ function setWallpaper() {
   const currentWallpaper = localStorage.getItem('wallpaper');
   let num = parseInt(currentWallpaper) || 0;
   num += 1;
-  if (num > 12) num = 0;
+  if (num > 14) num = 0;
   document.documentElement.id = 'b' + num.toString();
   localStorage.setItem('wallpaper', num.toString());
 }
