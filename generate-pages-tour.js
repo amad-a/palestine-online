@@ -3,7 +3,7 @@ const fs = require('fs');
 const ejs = require('ejs');
 
 // Read the EJS template file
-const templatePath = 'new-test.ejs';
+const templatePath = 'tour.ejs';
 const mainPageTemplatePath = 'main.ejs';
 const template = fs.readFileSync(templatePath, 'utf8');
 const mainPageTemplate = fs.readFileSync(
@@ -14,20 +14,19 @@ const mainPageTemplate = fs.readFileSync(
 const outputDir = 'output/';
 
 // Create the output directory if it doesn't exist
-if (!fs.existsSync(outputDir)) {
-  fs.mkdirSync(outputDir);
-}
+// if (!fs.existsSync(outputDir)) {
+//   fs.mkdirSync(outputDir);
+// }
 
 async function readAndParseJSON() {
   try {
-    const data = await readFile('pages.json', 'utf8');
+    const data = await readFile('pages-tour.json', 'utf8');
     const jsonObject = JSON.parse(data);
 
     const mainContent = ejs.render(mainPageTemplate, {
       data: jsonObject,
     });
 
-    fs.writeFileSync('main.html', mainContent, 'utf8');
 
     for (let idx = 1; idx < jsonObject.length - 1; idx++) {
       if (idx > 0 && idx < jsonObject.length - 1) {

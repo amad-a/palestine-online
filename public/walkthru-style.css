@@ -135,6 +135,7 @@ iframe {
   grid-column-end: 2;
   width: 800px;
   height: 666px;
+  margin-bottom: 30px;
 }
 
 
@@ -155,8 +156,9 @@ iframe {
   grid-column-end: 2;
   text-align: center;
   font-family: 'Dom';
-  font-size: 55px;
-  padding-bottom: 40px;
+  font-size: 45px;
+  padding-bottom: 20px;
+  width: 800px;
   color: white;
   font-family: 'ArgentPixelCF';
 }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Palestine Online</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link rel="stylesheet" href="../public/98.css" />
+    <link rel="stylesheet" href="../public/walkthru-style.css" />
+    <script src="../src/functions.js"></script>
+  </head>
+  <script></script>
+  <body>
+    <div class="walkthru-grid">
+      <div
+        class="info-panel-container"
+        id="info-panel-container"
+        style="visibility: hidden"
+      >
+        <div class="notes-header">Site Information</div>
+        <div class="close-info-panel-button">
+          <div class="title-bar-controls">
+            <button
+              class="notes-close-button"
+              style="zoom: 1.4"
+              aria-label="Close"
+              onclick="toggleInfo()"
+            ></button>
+          </div>
+        </div>
+        <div class="info-panel-body">
+          A Geocities website containing tutorials for HTML and Paint Shop Pro in Arabic. Shows early Palestinian computer knowledge building and dissemination which extended past existing, English dominant guides to encourage computer users whose Arabic might be stronger than their English to participate in the newly emerging web space. Palestinian pride can be seen in one of the tutorials which uses a photo of the Dome of the Rock to demonstrate how to create and size an image on an HTML page!
+        </div>
+      </div>
+
+      <div class="walkthru-left-arrow">
+        <a href="../jukebox-arabia.html">
+          <input type="image" src="../public/icons/l.png" />
+        </a>
+      </div>
+      <div class="walkthru-right-arrow">
+        <a href="../barghouti-memorial.html">
+          <input type="image" src="../public/icons/r.gif" />
+        </a>
+      </div>
+      <div class="walkthru-title">Innovative Uses of the Early Web </div>
+      <div class="window walkthru-window">
+        <div class="title-bar">
+          <div class="title-bar-text">HTML Tutorial, 2002</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body" style="margin: 0px">
+          <section
+            style="margin: 8px 8px 6px 8px"
+            class="field-row"
+            style="justify-content: flex-start"
+          >
+            <input
+              type="image"
+              onclick="window.history.back()"
+              src="../public/back.svg"
+              height="24px"
+              style="margin-bottom: 4px"
+            />
+            <input
+              type="image"
+              onclick="window.history.forward()"
+              src="../public/front.svg"
+              height="24px"
+              style="margin-bottom: 4px"
+            />
+            <div class="divider">|</div>
+            <a
+              class="tooltip"
+              href="../index.html"
+            >
+              <input
+                type="image"
+                src="../public/home.svg"
+                height="25px"
+              /><span class="tooltiptext">Go to main page & contents</span>
+            </a>
+            <a
+              class="tooltip"
+              onclick="changeIframe('sites/www.geocities.com/siliconvalley/lab/1832/index.html')"
+            >
+              <input
+                type="image"
+                src="../public/netmeeting-1.svg"
+                height="25px"
+              /><span class="tooltiptext">Reset current site</span>
+            </a>
+            <a class="tooltip">
+              <input
+                type="image"
+                src="../public/icons/info.svg"
+                height="25px"
+                onClick="toggleInfo()"
+              />
+              <span class="tooltiptext"
+                >View site information</span
+              >
+            </a>
+            <a class="tooltip" href="https://web.archive.org/web/20011207123828/http://www.geocities.com/siliconvalley/lab/1832/index.html" target="_blank">
+              <input
+                type="image"
+                src="../public/icons/search_web-1.svg"
+                height="25x"
+              />
+              <span class="tooltiptext"
+                >Open site on Wayback Machine</span
+              >
+            </a>
+            <a class="tooltip">
+              <input
+                type="image"
+                src="../public/icons/help_book_small-5.svg"
+                height="25px"
+                onClick="goToRandomPageTour()"
+              />
+              <span class="tooltiptext">Go to random site</span>
+            </a>
+            <a class="tooltip">
+              <input
+                type="image"
+                onclick="setWallpaper()"
+                src="../public/frame_web-1.svg"
+                height="25px"
+              />
+              <span class="tooltiptext">Change wallpaper</span>
+            </a>
+          </section>
+          <iframe
+            id="frame"
+            title="HTML Tutorial"
+            width="99.5%"
+            src="../sites/www.geocities.com/siliconvalley/lab/1832/index.html"
+          >
+          </iframe>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
