@@ -14,6 +14,15 @@ html {
   src: url('fonts/monoid/Monoid-Retina.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'ArgentPixelCF';
+  src: url('ArgentPixelCF-Italic.woff') format('woff');
+}
+
+.preso-header {
+  font-family: 'ArgentPixelCF';
+}
+
 .divider {
   margin: 0px 3px 1px 5px;
   padding-bottom: 5px;
@@ -128,14 +137,7 @@ iframe {
   height: 666px;
 }
 
-.walkthru-title {
-  grid-row-start: 2;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  position: absolute;
-  align-items: center;
-}
+
 
 .title-bar-text {
   font-family: Arial, Helvetica, sans-serif;
@@ -147,17 +149,20 @@ iframe {
 
 .walkthru-title {
   /* width: 50px; */
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-row-start: 0;
+  grid-row-end: 0;
   grid-column-start: 2;
-  grid-column-end: 0;
+  grid-column-end: 2;
   text-align: center;
   font-family: 'Dom';
-  padding-bottom: 0px;
+  font-size: 55px;
+  padding-bottom: 40px;
+  color: white;
+  font-family: 'ArgentPixelCF';
 }
 
 /* h1 {
-  background: -webkit-linear-gradient(90deg, #a50000, #ff5353);
+  background: -wopit-linear-gradient(90deg, #a50000, #ff5353);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 5px;
