@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Palestine Online</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link rel="stylesheet" href="../public/98.css" />
+    <link rel="stylesheet" href="../public/walkthru-style.css" />
+    <script src="../src/functions.js"></script>
+  </head>
+  <script></script>
+  <body>
+    <div class="walkthru-grid">
+      <div
+        class="info-panel-container"
+        id="info-panel-container"
+        style="visibility: hidden"
+      >
+        <div class="notes-header">Site Information</div>
+        <div class="close-info-panel-button">
+          <div class="title-bar-controls">
+            <button
+              class="notes-close-button"
+              style="zoom: 1.4"
+              aria-label="Close"
+              onclick="toggleInfo()"
+            ></button>
+          </div>
+        </div>
+        <div class="info-panel-body">
+          An appeal by Nigel Parry, a British photojournalist who lived in the West Bank from 1994 to 1998, for diaspora Palestinians to donate money for funding computer and networking infrastructure in Palestine. In the West Bank, Parry became heavily involved in documenting and recording conflict in the region, as well as becoming the first webmaster at Birzeit University and leading the creation of several major early Palestinian web projects and resources.
+        </div>
+      </div>
+
+      <div class="walkthru-left-arrow">
+        <a href="hanieh-middle-east-report.html">
+          <input type="image" src="../public/icons/l.png" />
+        </a>
+      </div>
+      <div class="walkthru-right-arrow">
+        <a href="birzeit-guide-to-palestinian-websites.html">
+          <input type="image" src="../public/icons/r.gif" />
+        </a>
+      </div>
+      <div class="walkthru-title">Early WWW Efforts in Palestine </div>
+      <div class="window walkthru-window">
+        <div class="title-bar">
+          <div class="title-bar-text">Nigel Parry&#39;s Appeal to Palestinian Diaspora, 2000</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body" style="margin: 0px">
+          <section
+            style="margin: 8px 8px 6px 8px"
+            class="field-row"
+            style="justify-content: flex-start"
+          >
+            <input
+              type="image"
+              onclick="window.history.back()"
+              src="../public/back.svg"
+              height="24px"
+              style="margin-bottom: 4px"
+            />
+            <input
+              type="image"
+              onclick="window.history.forward()"
+              src="../public/front.svg"
+              height="24px"
+              style="margin-bottom: 4px"
+            />
+            <div class="divider">|</div>
+            <a
+              class="tooltip"
+              href="../index.html"
+            >
+              <input
+                type="image"
+                src="../public/home.svg"
+                height="25px"
+              /><span class="tooltiptext">Go to main page & contents</span>
+            </a>
+            <a
+              class="tooltip"
+              onclick="changeIframe('../sites/nigel-parry-open-letter/open-letter.html')"
+            >
+              <input
+                type="image"
+                src="../public/netmeeting-1.svg"
+                height="25px"
+              /><span class="tooltiptext">Reset current site</span>
+            </a>
+            <a class="tooltip">
+              <input
+                type="image"
+                src="../public/icons/info.svg"
+                height="25px"
+                onClick="toggleInfo()"
+              />
+              <span class="tooltiptext"
+                >View site information</span
+              >
+            </a>
+            <a class="tooltip" href="https://web.archive.org/web/20020602032311/http://www.nigelparry.com/help-addameer.html" target="_blank">
+              <input
+                type="image"
+                src="../public/icons/search_web-1.svg"
+                height="25x"
+              />
+              <span class="tooltiptext"
+                >Open site on Wayback Machine</span
+              >
+            </a>
+            <a class="tooltip">
+              <input
+                type="image"
+                src="../public/icons/help_book_small-5.svg"
+                height="25px"
+                onClick="goToRandomPageTour()"
+              />
+              <span class="tooltiptext">Go to random site</span>
+            </a>
+            <a class="tooltip">
+              <input
+                type="image"
+                onclick="setWallpaper()"
+                src="../public/frame_web-1.svg"
+                height="25px"
+              />
+              <span class="tooltiptext">Change wallpaper</span>
+            </a>
+          </section>
+          <iframe
+            id="frame"
+            title="Nigel Parry&#39;s Appeal to Palestinian Diaspora"
+            width="99.5%"
+            src="../sites/nigel-parry-open-letter/open-letter.html"
+          >
+          </iframe>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -81,12 +81,12 @@ content="text/html; charset=windows-1256">
  <p>
 <img src="http://www.barghouti.com/images/menu.gif" border=0 usemap="#menu">
 <map name="menu"> 
-<area shape="rect" coords="1,0 75,18" href="http://www.barghouti.com" target="_parent">
-<area shape="rect" coords="76,0 150,18" href="http://www.barghouti.com/palestine" target="_parent">
-<area shape="rect" coords="151,0 225,18" href="http://www.barghouti.com/islam" target="_parent">
-<area shape="rect" coords="226,0 300,18" href="http://www.barghouti.com/poetry" target="_parent">
-<area shape="rect" coords="301,0 375,18" href="http://www.barghouti.com/mailbox" target="_parent">
-<area shape="rect" coords="376,0 450,18" href="http://www.barghouti.com/links.shtml" target="_parent">
+<area shape="rect" coords="1,0 75,18" href="http://www.barghouti.com" >
+<area shape="rect" coords="76,0 150,18" href="http://www.barghouti.com/palestine" >
+<area shape="rect" coords="151,0 225,18" href="http://www.barghouti.com/islam" >
+<area shape="rect" coords="226,0 300,18" href="http://www.barghouti.com/poetry" >
+<area shape="rect" coords="301,0 375,18" href="http://www.barghouti.com/mailbox" >
+<area shape="rect" coords="376,0 450,18" href="http://www.barghouti.com/links.shtml" >
 <area shape="default" nohref>
 </map>
 <SCRIPT LANGUAGE="JavaScript" SRC="http://www.barghouti.com/modified.js"></SCRIPT>
