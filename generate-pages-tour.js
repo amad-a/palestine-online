@@ -37,9 +37,15 @@ async function readAndParseJSON() {
         let url = jsonObject[idx].url;
         let description = jsonObject[idx].description;
 
-        let prevId = jsonObject[idx - 1].id;
+        if (url.slice(0, 5) !== 'https') {
+          url = '../' + url;
+          
+        } else {
+          console.log(id, url);
+        }
 
-        let nextId = jsonObject[idx + 1].id;
+        let prevId = jsonObject[idx - 1]?.id || '../index';
+        let nextId = jsonObject[idx + 1]?.id || '../index';
         let year = jsonObject[idx].year;
 
         // Render the template with the current object's data
@@ -55,17 +61,15 @@ async function readAndParseJSON() {
           year: year,
         });
 
-        console.log('filename', htmlContent);
-
         // Generate a unique filename for each HTML file
         const filename = `tour/${id}.html`;
 
         // Write the HTML content to the file
         fs.writeFileSync(filename, htmlContent, 'utf8');
 
-        console.log(
-          `HTML file "${filename}" generated successfully.`
-        );
+        // console.log(
+        //   `HTML file "${filename}" generated successfully.`
+        // );
       }
     }
     // console.log('Parsed JSON object:', jsonObject);
