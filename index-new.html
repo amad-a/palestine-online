@@ -32,11 +32,11 @@
       </div>
 
 
-      <div class="walkthru-info">walkthru-info</div>
+      <!-- <div class="walkthru-info">walkthru-info</div> -->
       <div class="window walkthru-window">
         <div class="title-bar">
           <div class="title-bar-text">
-            Welcome to Palestine Online!
+            Palestine Online
           </div>
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
@@ -47,7 +47,7 @@
         <div class="window-body" style="margin: 0px; overflow: hidden;">
 
           <section
-            style="margin: 8px 8px 6px 8px"
+            style="margin: 6px 8px 4px 8px"
             class="field-row"
             style="justify-content: flex-start"
           >
@@ -126,6 +126,134 @@
               />
               <span class="tooltiptext">Change wallpaper</span>
             </a>
+            <div class="goto">
+              go to...
+            </div>
+            <div class="dropdown-container">
+              <pre>
+                Samia Halaby's Site (1998)
+              </pre>
+              <div class="dropdown">
+              </div>
+              <div class="dropdown-content">
+                <ul class="tree-view" style="height: auto; min-height: 500px;">
+                  <li>
+                    <details>
+                      <summary>⟡⟡ The Early Palestinian Web ⟡⟡ </summary>
+                      <ul>
+                        <li>
+                          <details>
+                            <summary>Birzeit University</summary>
+                            <ul>
+                              <li><a href="">ME Report - Adam Hanieh</a></li>
+                              <li><a href="">Nigel Parry's Open Letter To Palestinians</a></li>
+                              <li><a href="">The Complete Guide to Palestine's Websites</a></li>
+                              <li><a href="">1998 Golden Olive Awards</a></li>
+                              <li><a href="">On the Ground in Ramallah</a></li>
+                              <li><a href="">September 1996 Memorial</a></li>
+                              <li><a href="">Destroyed Palestinian Villages Map</a></li>
+                            </ul>
+                          </details>
+                        </li>
+            
+                        <li>
+                          <details>
+                            <summary>Early Connectivity</summary>
+                            <ul>
+                              <li><a href="">Palestine Yellow Pages</a></li>
+                              <li><a href="">Planet.edu</a></li>
+                              <li><a href="">Palsoft internet Cafe</a></li>
+                            </ul>
+                          </details>
+                        </li>
+            
+                        <li>
+                          <details>
+                            <summary>Internet Service Providers</summary>
+                            <ul>
+                              <li><a href="">Palnet</a></li>
+                              <li><a href="">Zaytonasoft</a></li>
+                            </ul>
+                          </details>
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+            
+                  <li>
+                    <details>
+                      <summary>Putting places online</summary>
+                      <ul>
+                        <li>
+                          <details>
+                            <summary>Cities and Municipalities</summary>
+                            <ul>
+                              <li><a href="">Palestine Net Cities Page</a></li>
+                              <li><a href="">Gaza Municipality</a></li>
+                              <li><a href="">Ramallah</a></li>
+                              <li><a href="">Salfeet</a></li>
+                            </ul>
+                          </details>
+                        </li>
+            
+                        <li>
+                          <details>
+                            <summary>Tourism</summary>
+                            <ul>
+                              <li><a href="">Jerusalem Hotel</a></li>
+                              <li><a href="">Ministry of Tourism and Antiquities</a></li>
+                              <li><a href="">Municipality of Gaza</a></li>
+                              <li><a href="">Gaza International Airport</a></li>
+                            </ul>
+                          </details>
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+            
+                  <li>
+                    <details>
+                      <summary>Art and Culture</summary>
+                      <ul>
+                        <li>
+                          <details>
+                            <summary>Visual Arts</summary>
+                            <ul>
+                              <li><a href="">Samia Halaby's site</a></li>
+                              <li><a href="">Omayya Joha's site</a></li>
+                              <li><a href="">Sakakini Cultural Centre</a></li>
+                            </ul>
+                          </details>
+                        </li>
+            
+                        <li>
+                          <details>
+                            <summary>Literature</summary>
+                            <ul>
+                              <li><a href="">Al Karmel Magazine</a></li>
+                              <li><a href="">Barghouti.com</a></li>
+                            </ul>
+                          </details>
+                        </li>
+            
+                        <li>
+                          <details>
+                            <summary>Crafts</summary>
+                            <ul>
+                              <li><a href="">Palestinian Embroidery</a></li>
+                            </ul>
+                          </details>
+                        </li>
+            
+                      </ul>
+                    </details>
+                  </li>
+            
+            
+                </ul>
+              </div>
+            </div>
+
           </section>
           <iframe
           id="menu"
@@ -163,7 +291,16 @@
   
       document.getElementById('frame').src = siteSrc.url;
 
-      console.log("u got style ", document.getElementById('frame').style)
+      function dropdownOverride(e) {
+        console.log('test');
+        e.preventDefault()
+      }
+
+      document.querySelector('.dropdown').addEventListener('click', function() {
+        console.log('dropped');
+        const dropdownContent = document.querySelector('.dropdown-content');
+        dropdownContent.classList.toggle('open');
+    });
 
       function toggleMenu() {
         let buttonSrc = document.getElementById('toggleMenu').src;
