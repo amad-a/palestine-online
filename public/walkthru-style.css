@@ -134,8 +134,9 @@ iframe {
   grid-column-start: 2;
   grid-column-end: 2;
   width: 800px;
-  height: 666px;
+  height: 682px;
   margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .title-bar-text {
@@ -153,7 +154,6 @@ iframe {
   grid-column-start: 2;
   grid-column-end: 2;
   text-align: center;
-  font-family: 'Dom';
   font-size: 45px;
   padding-bottom: 20px;
   width: 800px;
@@ -221,16 +221,16 @@ iframe {
   background-color: black;
   color: #fff;
   text-align: center;
-  padding: 3px 5px 3px 5px;
+  padding: 4px 5px 4px 5px;
   margin-top: 32.5px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", Arial, sans-serif !important;
   font-style: oblique;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   border: 2px solid black;
-  background-color: rgb(255, 245, 129);
+  background-color: rgb(255, 249, 180);
   color: black;
-  opacity: 0.9;
+  opacity: 1;
   letter-spacing: 0.1px;
   width: max-content;
   /* Position the tooltip */
@@ -359,4 +359,27 @@ iframe {
 
 body {
   background-repeat: repeat;
+}
+
+.status-bar {
+  height: 30px !important;
+  width: fit-content !important;
+  align-items: right !important;
+}
+
+p.status-bar-field {
+  font-family: "Arial Narrow", Arial, sans-serif !important;
+  font-size: 20px !important;
+  width: fit-content !important;
+  padding: 3px 10px 5px 10px;
+}
+
+p.status-bar-field:hover {
+  font-family: "Arial Narrow", Arial, sans-serif !important;
+  font-size: 20px !important;
+  width: fit-content !important;
+  padding: 3px 10px 5px 10px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
 }

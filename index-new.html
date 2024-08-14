@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Palestine Online</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="public/walkthru-style.css" />
+    <script src="src/functions.js"></script>
+  </head>
+
+  <body>
+    <div class="walkthru-grid">
+      <div
+        class="info-panel-container"
+        id="info-panel-container"
+        style="visibility: hidden"
+      >
+        <div class="notes-header">Page Information</div>
+        <div class="close-info-panel-button">
+          <div class="title-bar-controls">
+            <button
+              class="notes-close-button"
+              style="zoom: 1.4"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="walkthru-info">walkthru-info</div>
+      <div class="window walkthru-window">
+        <div class="title-bar">
+          <div class="title-bar-text">
+            Welcome to Palestine Online!
+          </div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body" style="margin: 0px; overflow: hidden;">
+
+          <section
+            style="margin: 8px 8px 6px 8px"
+            class="field-row"
+            style="justify-content: flex-start"
+          >
+            <input
+              type="image"
+              onclick="window.history.back()"
+              src="public/back.svg"
+              height="24px"
+              style="margin-bottom: 4px"
+            />
+            <input
+              type="image"
+              onclick="window.history.forward()"
+              src="public/front.svg"
+              height="24px"
+              style="margin-bottom: 4px"
+            />
+            <div class="divider">|</div>
+            <a>
+              <input
+                id="toggleMenu"
+                style="opacity: 1; cursor: auto"
+                onclick="toggleMenu()"
+                type="image"
+                src="public/directory_closed_cool-4.svg"
+                height="25px"
+              />
+            </a>
+            <a>
+              <input
+                style="opacity: 0.25; cursor: auto"
+                type="image"
+                src="public/home.svg"
+                height="25px"
+              />
+            </a>
+            <a class="tooltip">
+              <input
+                style="opacity: 0.25; cursor: auto"
+                type="image"
+                src="public/netmeeting-1.svg"
+                height="25px"
+              />
+            </a>
+            <a class="tooltip">
+              <input
+                style="opacity: 0.25; cursor: auto"
+                type="image"
+                src="public/icons/info.svg"
+                height="25px"
+              />
+            </a>
+            <a class="tooltip" target="_blank">
+              <input
+                style="opacity: 0.25; cursor: auto"
+                type="image"
+                src="public/icons/search_web-1.svg"
+                height="25px"
+              />
+            </a>
+            <a class="tooltip">
+              <input
+                type="image"
+                src="public/icons/help_book_small-5.svg"
+                height="25px"
+                onclick="goToRandomPage()"
+              />
+              <span class="tooltiptext">Go to random site</span>
+            </a>
+            <a class="tooltip">
+              <input
+                type="image"
+                onclick="setWallpaper()"
+                src="public/frame_web-1.svg"
+                height="25px"
+              />
+              <span class="tooltiptext">Change wallpaper</span>
+            </a>
+          </section>
+          <iframe
+          id="menu"
+          title="Adam Hanieh in Middle East Report"
+          width="99.5%"
+          src="main-new.html"
+          style = "position: absolute; width: 0; height: 0; border: 0; border: none; position: absolute; overflow-y: hidden; background-color: silver;"
+        ></iframe>
+            <iframe
+            id="frame"
+            title="Adam Hanieh in Middle East Report"
+            width="99.5%"
+            src="main.html"
+          >
+          </iframe>
+          </div>
+      
+
+        <div class="status-bar">
+          <p class="status-bar-field">Art + Culture ›</p>
+          <p class="status-bar-field">Visual Art ›
+          <p class="status-bar-field">Samia Halaby's Site</p>
+        </div>
+        
+        </div>
+        
+      </div>
+    </div>
+    <script>
+      const queryString = window.location.search;
+      const params = new URLSearchParams(queryString);
+      const siteParam = params.get("site");
+  
+      const siteSrc = pages.find(page => page.id === siteParam);
+  
+      document.getElementById('frame').src = siteSrc.url;
+
+      console.log("u got style ", document.getElementById('frame').style)
+
+      function toggleMenu() {
+        let buttonSrc = document.getElementById('toggleMenu').src;
+        if (buttonSrc.endsWith('directory_closed_cool-4.svg')) {
+          document.getElementById('toggleMenu').src = buttonSrc.replace('directory_closed_cool-4.svg', 'directory_open_cool-4.svg');
+
+          // document.getElementById('frame').style = "width: 0; height: 0; border: 0; border: none; position: absolute;";
+
+          document.getElementById('menu').style = "position: absolute; width: 400px;"
+          
+
+        } else {
+          document.getElementById('toggleMenu').src = buttonSrc.replace('directory_open_cool-4.svg', 'directory_closed_cool-4.svg');
+
+          document.getElementById('menu').style = "width: 0; height: 0; border: 0; border: none; position: absolute;";
+
+          document.getElementById('frame').style = ""  
+        }
+      }
+  
+    </script>
+  </body>
+</html>
