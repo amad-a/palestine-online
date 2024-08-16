@@ -134,8 +134,7 @@ iframe {
   grid-column-start: 2;
   grid-column-end: 2;
   width: 800px;
-  max-height: 682px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 .title-bar-text {
@@ -283,6 +282,7 @@ button {
   grid-column-start: 1;
   grid-column-end: 1;
 }
+
 .noninteractive-grid-2 {
   grid-column-start: 2;
   grid-column-end: 2;
@@ -301,55 +301,68 @@ iframe {
   background-image: url('tiles/aqwa-man-tile-bg.jpg');
   background-repeat: repeat;
 }
+
 #b2 {
   background-image: url('tiles/arabic-html-tutorial-tile-bg.jpg');
   background-repeat: repeat;
 }
+
 #b3 {
   background-image: url('tiles/hadisoft-tile-bg.jpeg');
   background-repeat: repeat;
 }
+
 #b4 {
   background-image: url('tiles/jukebox-arabia-tile-bg.gif');
   background-repeat: repeat;
 }
+
 #b5 {
   background-image: url('tiles/lina-online-tile-bg.GIF');
   background-repeat: repeat;
 }
+
 #b6 {
   background-image: url('tiles/nidal-jayyousi-tile-bg.jpg');
   background-repeat: repeat;
 }
+
 #b7 {
   background-image: url('tiles/palestine-youth-union-tile-bg.jpg');
   background-repeat: repeat;
 }
+
 #b8 {
   background-image: url('tiles/people-of-palestine-tile-bg.gif');
   background-repeat: repeat;
 }
+
 #b9 {
   background-image: url('tiles/zuhair-tile-bg.gif');
   background-repeat: repeat;
   background-size: 20%;
 }
+
 #b10 {
   background-image: url('tiles/rani-tile-bg.jpg');
   background-repeat: repeat;
 }
+
 #b11 {
   background-image: url('tiles/samia-halaby-1-tile-bg.gif');
   background-repeat: repeat;
 }
+
 #b12 {
   background-image: url('tiles/sharabati-tile-bg.JPG');
   background-repeat: repeat;
 }
+
 #b13 {
   background-image: url('tiles/fruit.gif');
   background-repeat: repeat;
 }
+
 #b14 {
   background-image: url('tiles/ocean.gif');
   background-repeat: repeat;
@@ -368,16 +381,16 @@ body {
 
 p.status-bar-field {
   font-family: "Arial Narrow", Arial, sans-serif !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   width: fit-content !important;
-  padding: 3px 10px 5px 10px;
+  padding: 3px 10px 2px 10px;
+  height: 22px;
 }
 
 p.status-bar-field:hover {
   font-family: "Arial Narrow", Arial, sans-serif !important;
-  font-size: 20px !important;
   width: fit-content !important;
-  padding: 3px 10px 5px 10px;
+  /* padding: 3px 10px 5px 10px; */
   background-color: blue;
   color: white;
   cursor: pointer;
@@ -423,7 +436,7 @@ select {
   position: relative;
   width: 22px;
   height: 22px;
-  scale: 1.6;
+  scale: 1.5;
   margin-left: -27px;
   margin-top: 5px;
 }
@@ -456,26 +469,49 @@ pre {
   background-color: #f1f1f1;
   position: absolute;
   overflow-y: scroll;
-  width: 400px;
+  width: 402px;
+  
   margin: 50px auto;
   font-family: Arial, sans-serif;
-  margin-top: 30px;
-  box-shadow: inset -1px -1px #fff, inset -1px -1px grey, inset -2px -2px #dfdfdf, inset -2px -2px #0a0a0a;
+  margin: 30px 0px 0px 0px;
+  /* box-shadow: 10px; */
+  scrollbar-color: auto !important;
+
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+
+
 }
 
-        /* Class to open the dropdown */
+/* Class to open the dropdown */
 .dropdown-content.open {
-  max-height: 600px; /* Adjust this value to fit the content height */
+  max-height: 480px;
+  /* Adjust this value to fit the content height */
   margin-top: 28px;
+  /* box-shadow: 3px 3px 3px rgb(0, 0, 0);
+  box-shadow: 10px 5px 5px red; */
+
+  clip-path: inset(0px -15px 0px 0px);
+  border-right: 1px solid black(183, 118, 118);
+  border-top: 0px;
 }
+
+::-webkit-scrollbar {
+  width: 22px;
+}
+*::-webkit-scrollbar-button { all: initial !important; }
+*::-webkit-scrollbar-track { all: initial !important; }
+*::-webkit-scrollbar-track-piece { all: initial !important; }
+*::-webkit-scrollbar-corner { all: initial !important; }
+*::-webkit-resizer { all: initial !important; } 
 
 ul.tree-view {
+  height: 100px;
   background: #fff;
-
   border-top: 0px;
   display: block;
   margin: 0;
   padding: 6px;
+  z-index: 400;
 }
 
 
@@ -510,7 +546,7 @@ ul.tree-view ul>li:before {
   display: block;
   left: -16px;
   position: absolute;
-  top: 7px;
+  top: 6px;
   width: 12px;
 }
 
@@ -526,7 +562,11 @@ ul.tree-view details>summary:before {
   padding-left: 4px;
   padding-right: 2px !important;
   padding: 2px !important;
-  padding-top: 3px !important;
+  padding-top: 2px !important;
+  font-family: monospace !important;
+  font-size: 17px;
+  font-weight: bold;
+
 
 
   text-align: center;
@@ -539,22 +579,110 @@ ul.tree-view ul {
   /* margin-bottom: -2px !important; */
 }
 
+/* Change cursor to pointer when hovering over the body */
+body:hover {
+  cursor: pointer;
+}
+
+/* Ensure children do not inherit the pointer cursor */
+body * {
+  cursor: default;
+  /* or any other cursor style you prefer */
+  pointer-events: auto;
+  /* Ensure children can still be clicked */
+}
+
 @media only screen and (max-width: 1024px) and (max-height: 768px) {
   .walkthru-window {
-    width: 100vw;
-    height: 768px;
+
+    width: 99.6vw;
+    height: 100vh;
   }
+
   .walkthru-grid {
-    width: 1024px;
-    height: 99vw
+    width: 100vw;
+    height: 100vh;
   }
 
   iframe {
     height: calc(100vh - 90px);
     max-height: calc(100vh - 102px);
   }
+
   .walkthru-window {
     max-height: 100vh;
   }
+
+  button {
+    zoom: 1.4;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  ul.tree-view details>summary:before {
+    font-family: monospace !important;
+  }
+
+  ul.tree-view {
+    box-shadow: initial;
+    border: 0px;
+  }
+
+
+}
+
+@media only screen and (max-width: 800px) {
+  .walkthru-window {
+
+    width: 99.6vw;
+    height: 100vh;
+  }
+
+  .walkthru-grid {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  iframe {
+    height: calc(100vh - 90px);
+    max-height: calc(100vh - 102px);
+  }
+
+  .walkthru-window {
+    max-height: 100vh;
+  }
+
+  button {
+    zoom: 1.4;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  ul.tree-view details>summary:before {
+    font-family: monospace !important;
+  }
+
+  ul.tree-view {
+    box-shadow: initial;
+    border: 0px;
+  }
+
+
+}
+
+@media only screen and (min-width: 1200px) and (min-height: 900px) {
+:root {
+  zoom: 1.4
+}
+
+ul.tree-view {
+  font-family: "Arial Narrow", Arial, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 200;
+}
 
 }

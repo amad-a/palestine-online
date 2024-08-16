@@ -136,7 +136,7 @@
               <div class="dropdown">
               </div>
               <div class="dropdown-content">
-                <ul class="tree-view" style="height: auto; min-height: 500px;">
+                <ul class="tree-view" style="height: 460px;">
                   <li>
                     <details>
                       <summary>⟡⟡ The Early Palestinian Web ⟡⟡ </summary>
@@ -283,12 +283,23 @@
       </div>
     </div>
     <script>
+
+      // Add click event listener to the body
+      document.body.addEventListener('click', function (event) {
+        setWallpaper();
+      });
+
+      // Add click event listener to the child element
+      document.querySelector('.walkthru-grid').addEventListener('click', function (event) {
+        event.stopPropagation(); // Prevents the event from reaching the body
+      });
+
       const queryString = window.location.search;
       const params = new URLSearchParams(queryString);
       const siteParam = params.get("site");
-  
+
       const siteSrc = pages.find(page => page.id === siteParam);
-  
+
       document.getElementById('frame').src = siteSrc.url;
 
       function dropdownOverride(e) {
@@ -296,11 +307,11 @@
         e.preventDefault()
       }
 
-      document.querySelector('.dropdown').addEventListener('click', function() {
+      document.querySelector('.dropdown').addEventListener('click', function () {
         console.log('dropped');
         const dropdownContent = document.querySelector('.dropdown-content');
         dropdownContent.classList.toggle('open');
-    });
+      });
 
       function toggleMenu() {
         let buttonSrc = document.getElementById('toggleMenu').src;
@@ -310,17 +321,17 @@
           // document.getElementById('frame').style = "width: 0; height: 0; border: 0; border: none; position: absolute;";
 
           document.getElementById('menu').style = "position: absolute; width: 400px;"
-          
+
 
         } else {
           document.getElementById('toggleMenu').src = buttonSrc.replace('directory_open_cool-4.svg', 'directory_closed_cool-4.svg');
 
           document.getElementById('menu').style = "width: 0; height: 0; border: 0; border: none; position: absolute;";
 
-          document.getElementById('frame').style = ""  
+          document.getElementById('frame').style = ""
         }
       }
-  
+
     </script>
   </body>
 </html>
