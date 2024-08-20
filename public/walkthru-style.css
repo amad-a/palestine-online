@@ -536,7 +536,7 @@ ul.tree-view a {
 
 ul.tree-view ul {
   border-left: 1px solid black !important;
-  margin-left: 16px !important;
+  margin-left: 4px !important;
   padding-left: 16px !important;
 }
 
@@ -633,56 +633,17 @@ body * {
 
 }
 
-@media only screen and (max-width: 800px) {
-  .walkthru-window {
-
-    width: 99.6vw;
-    height: 100vh;
-  }
-
-  .walkthru-grid {
-    width: 100vw;
-    height: 100vh;
-  }
-
-  iframe {
-    height: calc(100vh - 90px);
-    max-height: calc(100vh - 102px);
-  }
-
-  .walkthru-window {
-    max-height: 100vh;
-  }
-
-  button {
-    zoom: 1.4;
-  }
-
-  body {
-    margin: 0px;
-  }
-
-  ul.tree-view details>summary:before {
-    font-family: monospace !important;
-  }
-
-  ul.tree-view {
-    box-shadow: initial;
-    border: 0px;
-  }
-
-
-}
-
 @media only screen and (min-width: 1200px) and (min-height: 900px) {
 :root {
-  zoom: 1.4
+  scale: 1.4
 }
 
 ul.tree-view {
   font-family: "Arial Narrow", Arial, sans-serif !important;
-  font-size: 16px !important;
+  font-size: 18px !important;
   font-weight: 200;
 }
+
+
 
 }

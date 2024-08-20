@@ -12,7 +12,7 @@
     <script src="src/functions.js"></script>
   </head>
 
-  <body>
+  <body onload="changeFramePage()">
     <div class="walkthru-grid">
       <div
         class="info-panel-container"
@@ -135,8 +135,11 @@
               </pre>
               <div class="dropdown">
               </div>
-              <div class="dropdown-content">
-                <ul class="tree-view" style="height: 460px;">
+              <div class="dropdown-content" >
+
+                <ul class="tree-view" id="tree" style="height: 460px;"></ul>
+
+                <!-- <ul class="tree-view" style="height: 460px;">
                   <li>
                     <details>
                       <summary>⟡⟡ The Early Palestinian Web ⟡⟡ </summary>
@@ -250,22 +253,22 @@
                   </li>
             
             
-                </ul>
+                </ul> -->
               </div>
             </div>
 
           </section>
           <iframe
           id="menu"
-          title="Adam Hanieh in Middle East Report"
-          width="99.5%"
+          title="Menu"
+          width="100%"
           src="main-new.html"
           style = "position: absolute; width: 0; height: 0; border: 0; border: none; position: absolute; overflow-y: hidden; background-color: silver;"
         ></iframe>
             <iframe
             id="frame"
-            title="Adam Hanieh in Middle East Report"
-            width="99.5%"
+            title="Frame"
+            width="99.25%"
             src="main.html"
           >
           </iframe>
@@ -294,21 +297,7 @@
         event.stopPropagation(); // Prevents the event from reaching the body
       });
 
-      const queryString = window.location.search;
-      const params = new URLSearchParams(queryString);
-      const siteParam = params.get("site");
-
-      const siteSrc = pages.find(page => page.id === siteParam);
-
-      document.getElementById('frame').src = siteSrc.url;
-
-      function dropdownOverride(e) {
-        console.log('test');
-        e.preventDefault()
-      }
-
       document.querySelector('.dropdown').addEventListener('click', function () {
-        console.log('dropped');
         const dropdownContent = document.querySelector('.dropdown-content');
         dropdownContent.classList.toggle('open');
       });
@@ -317,8 +306,6 @@
         let buttonSrc = document.getElementById('toggleMenu').src;
         if (buttonSrc.endsWith('directory_closed_cool-4.svg')) {
           document.getElementById('toggleMenu').src = buttonSrc.replace('directory_closed_cool-4.svg', 'directory_open_cool-4.svg');
-
-          // document.getElementById('frame').style = "width: 0; height: 0; border: 0; border: none; position: absolute;";
 
           document.getElementById('menu').style = "position: absolute; width: 400px;"
 
@@ -332,6 +319,42 @@
         }
       }
 
+      // Get the container element where the tree view will be rendered
+      const treeViewContainer = document.getElementById('tree');
+
+      // Example JavaScript Object
+const datad = {
+  'Art and Culture': {
+    'Visual Art': {
+      'Samia Halaby': 'samia-halaby',
+      'Hanna Safieh': 'hanna-safieh',
+      'Omayya Joha': 'omayya-joha',
+
+    },
+    'Literature': {
+      'Barghouti': 'barghouti',
+      'Al Karmel': 'al-karmel-guestbook',
+    },
+    'Gaza': {
+      'Muncipality of Gaza': 'municipality-gaza',
+      'Gaza International Airport': 'gaza-airport'
+    }
+  },
+  Vegetables: {
+    Leafy: {
+      Spinach: 's',
+      Kale: 'k',
+    },
+    Root: {
+      Carrot: 'c',
+      Beetroot: 'b',
+    },
+  },
+};
+
+
+// Create the tree view from the data object and append it to the container
+treeViewContainer.appendChild(createTreeView(datad));
     </script>
   </body>
 </html>
