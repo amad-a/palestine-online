@@ -7,13 +7,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-    <link rel="stylesheet" href="https://unpkg.com/98.css" />
-    <link rel="stylesheet" href="public/walkthru-style.css" />
+    <link rel="stylesheet" href="public/98.css" />
+    <link rel="stylesheet" href="public/style.css" />
     <script src="src/functions.js"></script>
   </head>
 
-  <body onload="changeFramePage()">
-    <div class="walkthru-grid">
+  <body onload="setFramePage()">
+    <div class="window-grid">
       <div
         class="info-panel-container"
         id="info-panel-container"
@@ -30,9 +30,6 @@
           </div>
         </div>
       </div>
-
-
-      <!-- <div class="walkthru-info">walkthru-info</div> -->
       <div class="window walkthru-window">
         <div class="title-bar">
           <div class="title-bar-text">
@@ -51,13 +48,19 @@
             class="field-row"
             style="justify-content: flex-start"
           >
+          <a class="tooltip">
             <input
-              type="image"
-              onclick="window.history.back()"
-              src="public/back.svg"
-              height="24px"
-              style="margin-bottom: 4px"
-            />
+            type="image"
+            onclick="window.history.back()"
+            src="public/back.svg"
+            height="24px"
+            style="margin-bottom: 4px"
+          />
+          <span class="tooltiptext">Go Back</span>
+
+          </a>
+
+          <a class="tooltip">
             <input
               type="image"
               onclick="window.history.forward()"
@@ -65,6 +68,11 @@
               height="24px"
               style="margin-bottom: 4px"
             />
+            <span class="tooltiptext">Go Forward</span>
+
+          </a>
+
+
             <div class="divider">|</div>
             <a>
               <input
@@ -135,125 +143,8 @@
               </pre>
               <div class="dropdown">
               </div>
-              <div class="dropdown-content" >
-
+              <div class="dropdown-content">
                 <ul class="tree-view" id="tree" style="height: 460px;"></ul>
-
-                <!-- <ul class="tree-view" style="height: 460px;">
-                  <li>
-                    <details>
-                      <summary>⟡⟡ The Early Palestinian Web ⟡⟡ </summary>
-                      <ul>
-                        <li>
-                          <details>
-                            <summary>Birzeit University</summary>
-                            <ul>
-                              <li><a href="">ME Report - Adam Hanieh</a></li>
-                              <li><a href="">Nigel Parry's Open Letter To Palestinians</a></li>
-                              <li><a href="">The Complete Guide to Palestine's Websites</a></li>
-                              <li><a href="">1998 Golden Olive Awards</a></li>
-                              <li><a href="">On the Ground in Ramallah</a></li>
-                              <li><a href="">September 1996 Memorial</a></li>
-                              <li><a href="">Destroyed Palestinian Villages Map</a></li>
-                            </ul>
-                          </details>
-                        </li>
-            
-                        <li>
-                          <details>
-                            <summary>Early Connectivity</summary>
-                            <ul>
-                              <li><a href="">Palestine Yellow Pages</a></li>
-                              <li><a href="">Planet.edu</a></li>
-                              <li><a href="">Palsoft internet Cafe</a></li>
-                            </ul>
-                          </details>
-                        </li>
-            
-                        <li>
-                          <details>
-                            <summary>Internet Service Providers</summary>
-                            <ul>
-                              <li><a href="">Palnet</a></li>
-                              <li><a href="">Zaytonasoft</a></li>
-                            </ul>
-                          </details>
-                        </li>
-                      </ul>
-                    </details>
-                  </li>
-            
-                  <li>
-                    <details>
-                      <summary>Putting places online</summary>
-                      <ul>
-                        <li>
-                          <details>
-                            <summary>Cities and Municipalities</summary>
-                            <ul>
-                              <li><a href="">Palestine Net Cities Page</a></li>
-                              <li><a href="">Gaza Municipality</a></li>
-                              <li><a href="">Ramallah</a></li>
-                              <li><a href="">Salfeet</a></li>
-                            </ul>
-                          </details>
-                        </li>
-            
-                        <li>
-                          <details>
-                            <summary>Tourism</summary>
-                            <ul>
-                              <li><a href="">Jerusalem Hotel</a></li>
-                              <li><a href="">Ministry of Tourism and Antiquities</a></li>
-                              <li><a href="">Municipality of Gaza</a></li>
-                              <li><a href="">Gaza International Airport</a></li>
-                            </ul>
-                          </details>
-                        </li>
-                      </ul>
-                    </details>
-                  </li>
-            
-                  <li>
-                    <details>
-                      <summary>Art and Culture</summary>
-                      <ul>
-                        <li>
-                          <details>
-                            <summary>Visual Arts</summary>
-                            <ul>
-                              <li><a href="">Samia Halaby's site</a></li>
-                              <li><a href="">Omayya Joha's site</a></li>
-                              <li><a href="">Sakakini Cultural Centre</a></li>
-                            </ul>
-                          </details>
-                        </li>
-            
-                        <li>
-                          <details>
-                            <summary>Literature</summary>
-                            <ul>
-                              <li><a href="">Al Karmel Magazine</a></li>
-                              <li><a href="">Barghouti.com</a></li>
-                            </ul>
-                          </details>
-                        </li>
-            
-                        <li>
-                          <details>
-                            <summary>Crafts</summary>
-                            <ul>
-                              <li><a href="">Palestinian Embroidery</a></li>
-                            </ul>
-                          </details>
-                        </li>
-            
-                      </ul>
-                    </details>
-                  </li>
-            
-            
-                </ul> -->
               </div>
             </div>
 
@@ -269,16 +160,15 @@
             id="frame"
             title="Frame"
             width="99.25%"
-            src="main.html"
+            src=""
+            onLoad="console.log('hey ' + this.contentWindow.location.href);"
           >
           </iframe>
           </div>
       
 
-        <div class="status-bar">
-          <p class="status-bar-field">Art + Culture ›</p>
-          <p class="status-bar-field">Visual Art ›
-          <p class="status-bar-field">Samia Halaby's Site</p>
+        <div id="breadcrumbs" class="status-bar">
+
         </div>
         
         </div>
@@ -293,7 +183,7 @@
       });
 
       // Add click event listener to the child element
-      document.querySelector('.walkthru-grid').addEventListener('click', function (event) {
+      document.querySelector('.window-grid').addEventListener('click', function (event) {
         event.stopPropagation(); // Prevents the event from reaching the body
       });
 
@@ -308,8 +198,6 @@
           document.getElementById('toggleMenu').src = buttonSrc.replace('directory_closed_cool-4.svg', 'directory_open_cool-4.svg');
 
           document.getElementById('menu').style = "position: absolute; width: 400px;"
-
-
         } else {
           document.getElementById('toggleMenu').src = buttonSrc.replace('directory_open_cool-4.svg', 'directory_closed_cool-4.svg');
 
@@ -319,38 +207,28 @@
         }
       }
 
-      // Get the container element where the tree view will be rendered
       const treeViewContainer = document.getElementById('tree');
 
-      // Example JavaScript Object
-const datad = {
-  'Art and Culture': {
-    'Visual Art': {
-      'Samia Halaby': 'samia-halaby',
-      'Hanna Safieh': 'hanna-safieh',
-      'Omayya Joha': 'omayya-joha',
-
-    },
-    'Literature': {
-      'Barghouti': 'barghouti',
-      'Al Karmel': 'al-karmel-guestbook',
-    },
-    'Gaza': {
-      'Muncipality of Gaza': 'municipality-gaza',
-      'Gaza International Airport': 'gaza-airport'
-    }
-  },
-  Vegetables: {
-    Leafy: {
-      Spinach: 's',
-      Kale: 'k',
-    },
-    Root: {
-      Carrot: 'c',
-      Beetroot: 'b',
-    },
-  },
-};
+      const datad = {
+        'Art and Culture': {
+          'a': {
+            'b': {
+              'Visual Art': [
+            'samia-halaby',
+            'hanna-safieh',
+            'omayya-joha'
+          ]
+            },
+            'Gaza': ['municipality-gaza', 'gaza-airport']
+          },
+          'Putting Places Online': [
+            'jerusalem-hotel',
+            'ministry-tourism',
+            'salfeet',
+            'ramallah-city'
+        ]
+        },
+      };
 
 
 // Create the tree view from the data object and append it to the container

@@ -916,7 +916,7 @@ let pagesTour = [
     headerText: 'Palestinian Art and Artists on the Early Web',
     waybackUrl:
       'https://web.archive.org/web/20011130122507/http://omayya.com/',
-    url: 'sites/art-culture-history/omayya/index.html',
+    url: 'crystal-clear/raffi/index.html',
     description:
       'The personal/portfolio website of Omayyah Joha, a Palestinian political cartoonist and caricaturist for Al Quds Newspaper. Included on this site are her cartoons on various subjects including Palestine, Israel, the United States, and the greater Arab World.',
   },
@@ -1173,8 +1173,9 @@ let pagesTour = [
 ];
 
 let randomPage = pages[Math.floor(Math.random() * pages.length)];
-
 let randomPageTour = pages[Math.floor(Math.random() * pages.length)];
+
+let breadcrumbs = [];
 
 function goToRandomPage() {
   open(randomPage.id + '.html', '_self');
@@ -1208,7 +1209,6 @@ function setWallpaper() {
 
 function createTreeView(obj) {
   const ul = document.createElement('ul');
-
   ul.append(
     ...Object.entries(obj).map(([key, value]) => {
       const li = document.createElement('li');
@@ -1216,27 +1216,88 @@ function createTreeView(obj) {
       if (typeof value === 'object' && value !== null) {
         const details = document.createElement('details');
         const summary = document.createElement('summary');
-        summary.textContent = key;
 
+        const siteCount = countTotalSites(value);
+        summary.textContent = `${key} (${siteCount})`;
         const nestedUl = createTreeView(value);
 
         details.append(summary, nestedUl);
         li.appendChild(details);
       } else {
-        li.innerHTML = `<a href='file:///Users/amadansari/code/palestine-online/index-new.html?site=${value}'>${key}</a>`;
-      }
+        const pageMatch = pagesTour.filter((page) => page.id === value)[0];
+        li.id = `${value}-link`;
 
+        li.innerHTML = `<a class="menu-link" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
+      }
       return li;
     })
   );
   return ul;
 }
 
-function changeFramePage() { 
+function traverseUpTree(node) {
+
+  let parent = node.parentElement.parentElement.firstChild
+
+  if (parent.nodeName === 'SUMMARY') {
+    const breadcrumbItem = {
+      breadcrumbText:
+        `${(node.parentElement.parentElement.firstChild.textContent).replace(/\s*\(.*?\)\s*/g, '')} ›`,
+      breadcrumbNode: node.parentElement.parentElement.firstChild
+    };
+    breadcrumbs.push(breadcrumbItem);
+    traverseUpTree(node.parentElement.parentElement.parentElement);
+  }
+}
+
+function queryUpdate(pageId) {
+
+  if (history.pushState) {
+    let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?site=' + pageId;
+    window.history.pushState({ path: newurl }, '', newurl);
+  }
+  setFramePage(pageId);
+}
+
+// Helper function to count the number of leaf nodes
+function countTotalSites(obj) {
+  return Object.values(obj).reduce((count, value) => {
+    if (typeof value === 'object' && value !== null) {
+      return count + countTotalSites(value);
+    }
+    return count + 1;
+  }, 0);
+}
+
+function setFramePage(pageId) {
   const queryString = window.location.search;
   const params = new URLSearchParams(queryString);
   const siteParam = params.get("site");
   const siteSrc = pagesTour.find(page => page.id === siteParam);
 
   document.getElementById('frame').src = siteSrc.url;
+
+
+  console.log('frame SITE PARAM', siteParam);
+
+  if (siteParam) {
+    const pageMatch = pagesTour.filter((page) => page.id === siteParam)[0];
+
+    breadcrumbs = [];
+    breadcrumbs.push({
+      breadcrumbText: pageMatch.title,
+      breadcrumbNode: null,
+    });
+  
+    traverseUpTree(document.getElementById(`${siteParam}-link`));
+    breadcrumbs.reverse();
+    
+    console.log('breadcrumvs', breadcrumbs);
+  
+    let crumbsDiv = document.getElementById('breadcrumbs');
+    crumbsDiv.innerHTML = '';
+    breadcrumbs.forEach(crumb => {
+      crumbsDiv.innerHTML += `<p class="status-bar-field">${crumb.breadcrumbText}</p>`;
+    });  
+  }
 }
