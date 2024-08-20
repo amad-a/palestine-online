@@ -237,6 +237,12 @@ iframe {
   box-shadow: 3px 3px 3px rgb(0, 0, 0);
 }
 
+.urltooltip {
+  margin-top: 10px !important;
+  margin-left: -145px !important;
+  z-index: 1;
+}
+
 button {
   zoom: 1.25;
 }
@@ -445,6 +451,10 @@ select {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h16v17H0V0zm1 16h14V1H1v15z' fill='gray'/%3E%3Cpath fill='silver' d='M1 1h14v15H1z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 7H5v1h1v1h1v1h1v1h1v-1h1V9h1V8h1V7z' fill='%23000'/%3E%3C/svg%3E");
 }
 
+.dropdown:hover {
+  cursor: pointer;
+}
+
 pre {
   background: #fff;
   box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
@@ -493,6 +503,7 @@ pre {
   clip-path: inset(0px -15px 0px 0px);
   border-right: 1px solid black(183, 118, 118);
   border-top: 0px;
+  z-index: 999;
 }
 
 ::-webkit-scrollbar {
@@ -525,7 +536,7 @@ ul.tree-view {
 
 ul.tree-view {
   font-family: "Arial Narrow", Arial, sans-serif !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 200;
 }
 

@@ -1238,7 +1238,6 @@ function createTreeView(obj) {
 function traverseUpTree(node) {
 
   let parent = node.parentElement.parentElement.firstChild
-
   if (parent.nodeName === 'SUMMARY') {
     const breadcrumbItem = {
       breadcrumbText:
@@ -1269,7 +1268,26 @@ function countTotalSites(obj) {
   }, 0);
 }
 
-function setFramePage(pageId) {
+function setBreadcrumbs(pageId) {
+  const pageMatch = pagesTour.filter((page) => page.id === pageId)[0];
+
+  breadcrumbs = [];
+  breadcrumbs.push({
+    breadcrumbText: pageMatch.title,
+    breadcrumbNode: null,
+  });
+
+  traverseUpTree(document.getElementById(`${pageId}-link`));
+  breadcrumbs.reverse();
+  
+  let crumbsDiv = document.getElementById('breadcrumbs');
+  crumbsDiv.innerHTML = '';
+  breadcrumbs.forEach(crumb => {
+    crumbsDiv.innerHTML += `<p class="status-bar-field">${crumb.breadcrumbText}</p>`;
+  });
+}
+
+function setFramePage() {
   const queryString = window.location.search;
   const params = new URLSearchParams(queryString);
   const siteParam = params.get("site");
@@ -1277,27 +1295,8 @@ function setFramePage(pageId) {
 
   document.getElementById('frame').src = siteSrc.url;
 
+  document.getElementById('current-site').innerHTML = `${siteSrc.title} <i>${siteSrc.year}</i>`;
 
-  console.log('frame SITE PARAM', siteParam);
+  if (siteParam) setBreadcrumbs(siteParam);
 
-  if (siteParam) {
-    const pageMatch = pagesTour.filter((page) => page.id === siteParam)[0];
-
-    breadcrumbs = [];
-    breadcrumbs.push({
-      breadcrumbText: pageMatch.title,
-      breadcrumbNode: null,
-    });
-  
-    traverseUpTree(document.getElementById(`${siteParam}-link`));
-    breadcrumbs.reverse();
-    
-    console.log('breadcrumvs', breadcrumbs);
-  
-    let crumbsDiv = document.getElementById('breadcrumbs');
-    crumbsDiv.innerHTML = '';
-    breadcrumbs.forEach(crumb => {
-      crumbsDiv.innerHTML += `<p class="status-bar-field">${crumb.breadcrumbText}</p>`;
-    });  
-  }
 }
