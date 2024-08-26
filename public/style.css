@@ -472,14 +472,17 @@ pre {
   width: 400px;
 }
 
+
+
 .dropdown-content {
+  position: relative;
   overflow: hidden;
   max-height: 0;
   /* transition: max-height 0.1s ease-in-out; */
-  background-color: #f1f1f1;
+  background-color: white;
   position: absolute;
   overflow-y: scroll;
-  width: 402px;
+  width: 397px;
   
   margin: 50px auto;
   font-family: Arial, sans-serif;
@@ -492,9 +495,21 @@ pre {
 
 }
 
+.dropdown-content .fade {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255, 1));
+}
+
 /* Class to open the dropdown */
 .dropdown-content.open {
-  max-height: 480px;
+  
+  height: 500px;
+max-height: 500px;
   /* Adjust this value to fit the content height */
   margin-top: 28px;
   /* box-shadow: 3px 3px 3px rgb(0, 0, 0);
@@ -504,6 +519,7 @@ pre {
   border-right: 1px solid black(183, 118, 118);
   border-top: 0px;
   z-index: 999;
+
 }
 
 ::-webkit-scrollbar {
@@ -516,29 +532,18 @@ pre {
 *::-webkit-resizer { all: initial !important; } 
 
 ul.tree-view {
-  height: 100px;
+  min-height: 500px;
   background: #fff;
-  border-top: 0px;
+  border: 0px solid white !important;
   display: block;
   margin: 0;
   padding: 6px;
   z-index: 400;
-}
-
-
-
-
-
-
-
-
-
-
-ul.tree-view {
   font-family: "Arial Narrow", Arial, sans-serif !important;
   font-size: 18px !important;
   font-weight: 200;
 }
+
 
 ul.tree-view a {
   color: blue !important;
@@ -655,7 +660,7 @@ input[type="image" i]:hover {
 
 @media only screen and (min-width: 1200px) and (min-height: 900px) {
 :root {
-  scale: 1.4
+  scale: 1.0
 }
 
 ul.tree-view {

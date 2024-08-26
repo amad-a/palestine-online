@@ -451,6 +451,28 @@ let pages = [
 
 let pagesTour = [
   {
+    id: 'asa-group',
+    title: 'Asa Group',
+    year: '2001',
+    label: 'The People of Palestine, Online',
+    headerText: 'The Personal Homepage',
+    waybackUrl:
+      'https://web.archive.org/web/20011129082722/http://www.angelfire.com/pa/asagroup/',
+    url: 'https://web.archive.org/web/20011129082722/http://www.angelfire.com/pa/asagroup/',
+    description: '',
+  },
+  {
+    id: 'doctor-hani',
+    title: "Doctor Hani's site",
+    year: '2001',
+    label: 'The People of Palestine, Online',
+    headerText: 'The Personal Homepage',
+    waybackUrl:
+      'https://web.archive.org/web/20010607183034/http://gurlpages.com/doctorhani/',
+    url: 'https://web.archive.org/web/20010607183034/http://gurlpages.com/doctorhani/',
+    description: '',
+  },
+  {
     id: 'index',
     title: 'Welcome to Palestine Online',
     year: '2024',
@@ -760,7 +782,7 @@ let pagesTour = [
     headerText: 'Palestinian News Online',
     waybackUrl:
       'https://web.archive.org/web/20040930222249/http://www.falasteen.com/',
-    url: 'sites/NEWS/falasteen/falasteen-2004.html',
+    url: 'crystal-clear/hanthala.virtualave.net/index.html',
     description:
       'Front page of a primarily educational and literary Arabic language magazine.',
   },
@@ -955,6 +977,16 @@ let pagesTour = [
     description: '',
   },
   {
+    id: "palestine-embroider",
+    title: "Palestine Embroidery",
+    year: "2001",
+    label: "Palestinian Art and Artists",
+    headerText: "Palestinian Art and Artists",
+    waybackUrl: "https://web.archive.org/web/20011202120634/http://palestinianembroider.tripod.com/",
+    url: "sites/palestinianembroider.tripod.com/index.html",
+    description: ""
+  },
+  {
     id: 'sakakini',
     title: 'Sakakini',
     year: '2000',
@@ -1061,8 +1093,8 @@ let pagesTour = [
     description: '',
   },
   {
-    id: 'athens',
-    title: 'Athens',
+    id: 'hopes-space',
+    title: "Hope's Space",
     year: '1999',
     label: 'The People of Palestine, Online',
     headerText: 'The Personal Homepage',
@@ -1109,8 +1141,8 @@ let pagesTour = [
     label: 'The People of Palestine, Online',
     headerText: 'The Personal Homepage',
     waybackUrl:
-      'https://web.archive.org/web/19991008145305/http://www.geocities.com/Athens/Parthenon/3078/Israel_in_Palestine.htm',
-    url: 'https://web.archive.org/web/19991008145305/http://www.geocities.com/Athens/Parthenon/3078/Israel_in_Palestine.htm',
+      'https://web.archive.org/web/20010607183034/http://gurlpages.com/doctorhani/',
+    url: 'https://web.archive.org/web/20010607183034/http://gurlpages.com/doctorhani/',
     description: '',
   },
   {
@@ -1162,12 +1194,33 @@ let pagesTour = [
       'A Geocities page promising to show the visitor the truth about Palestine. Some killer gifs, could not find any of the linked pages in Wayback Machine though :(',
   },
   {
-    id: 'placeholder',
-    title: '',
+    id: 'gazelle',
+    title: 'Gazelle: The Palestinian Biological Bulletin',
+    year: '2003',
     label: '',
     headerText: '',
-    waybackUrl: '',
-    url: '',
+    waybackUrl: 'https://web.archive.org/web/20030830220740/http://www.gazelle.8m.net/',
+    url: 'https://web.archive.org/web/20030830220740/http://www.gazelle.8m.net/',
+    description: '',
+  },
+  {
+    id: 'gaza-mental-health',
+    title: 'Gaza Community Mental Health Programme',
+    year: '2000',
+    label: '',
+    headerText: '',
+    waybackUrl: 'https://web.archive.org/web/19991104171312/http://www.gcmhp.net:80/main.htm',
+    url: 'https://web.archive.org/web/19991104171312/http://www.gcmhp.net:80/main.htm',
+    description: '',
+  },
+  {
+    id: 'palestine-wildlife-society',
+    title: 'Palestine Wildlife Society',
+    year: '2003-2007',
+    label: '',
+    headerText: '',
+    waybackUrl: 'https://web.archive.org/web/20070127225716/http://www.wildlife-pal.org/toc.htm',
+    url: 'https://web.archive.org/web/20070127225716/http://www.wildlife-pal.org/toc.htm',
     description: '',
   },
 ];
@@ -1224,7 +1277,9 @@ function createTreeView(obj) {
         details.append(summary, nestedUl);
         li.appendChild(details);
       } else {
-        const pageMatch = pagesTour.filter((page) => page.id === value)[0];
+        const pageMatch = pagesTour.filter(
+          (page) => page.id === value
+        )[0];
         li.id = `${value}-link`;
 
         li.innerHTML = `<a class="menu-link" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
@@ -1236,13 +1291,14 @@ function createTreeView(obj) {
 }
 
 function traverseUpTree(node) {
-
-  let parent = node.parentElement.parentElement.firstChild
+  let parent = node.parentElement.parentElement.firstChild;
   if (parent.nodeName === 'SUMMARY') {
     const breadcrumbItem = {
-      breadcrumbText:
-        `${(node.parentElement.parentElement.firstChild.textContent).replace(/\s*\(.*?\)\s*/g, '')} ›`,
-      breadcrumbNode: node.parentElement.parentElement.firstChild
+      breadcrumbText: `${node.parentElement.parentElement.firstChild.textContent.replace(
+        /\s*\(.*?\)\s*/g,
+        ''
+      )} ›`,
+      breadcrumbNode: node.parentElement.parentElement.firstChild,
     };
     breadcrumbs.push(breadcrumbItem);
     traverseUpTree(node.parentElement.parentElement.parentElement);
@@ -1250,9 +1306,14 @@ function traverseUpTree(node) {
 }
 
 function queryUpdate(pageId) {
-
   if (history.pushState) {
-    let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?site=' + pageId;
+    let newurl =
+      window.location.protocol +
+      '//' +
+      window.location.host +
+      window.location.pathname +
+      '?site=' +
+      pageId;
     window.history.pushState({ path: newurl }, '', newurl);
   }
   setFramePage(pageId);
@@ -1273,16 +1334,16 @@ function setBreadcrumbs(pageId) {
 
   breadcrumbs = [];
   breadcrumbs.push({
-    breadcrumbText: pageMatch.title,
+    breadcrumbText: `${pageMatch.title}`,
     breadcrumbNode: null,
   });
 
   traverseUpTree(document.getElementById(`${pageId}-link`));
   breadcrumbs.reverse();
-  
+
   let crumbsDiv = document.getElementById('breadcrumbs');
   crumbsDiv.innerHTML = '';
-  breadcrumbs.forEach(crumb => {
+  breadcrumbs.forEach((crumb) => {
     crumbsDiv.innerHTML += `<p class="status-bar-field">${crumb.breadcrumbText}</p>`;
   });
 }
@@ -1290,13 +1351,36 @@ function setBreadcrumbs(pageId) {
 function setFramePage() {
   const queryString = window.location.search;
   const params = new URLSearchParams(queryString);
-  const siteParam = params.get("site");
-  const siteSrc = pagesTour.find(page => page.id === siteParam);
+  const siteParam = params.get('site');
+  const siteSrc = pagesTour.find((page) => page.id === siteParam);
 
   document.getElementById('frame').src = siteSrc.url;
 
-  document.getElementById('current-site').innerHTML = `${siteSrc.title} <i>${siteSrc.year}</i>`;
+  document.getElementById(
+    'current-site'
+  ).innerHTML = `${siteSrc.title} <i>${siteSrc.year}</i>`;
 
   if (siteParam) setBreadcrumbs(siteParam);
-
 }
+
+const datad = {
+  'Art and Culture': {
+    'Visual Art': ['samia-halaby', 'hanna-safieh', 'omayya-joha'],
+    'Literature': ['barghouti', 'al-karmel-guestbook'],
+    'Music': ['jukebox-arabia'],
+    'Crafts': ['palestine-embroider'],
+    'Institutions': ['sakakini']
+  },
+  'Personal Homepages':
+    ['jayyousi-pages', 'amnah-site', 'palestine-oasis', 'esam-shashaa-bio', 'faaz', 'hopes-space', 'musa-budieri', 'aimans-site', 'asa-group', 'doctor-hani', 'alsharabatis-homepages', 'abboud-page', 'zuhair-page', 'reality-of-palestine'],
+  'Tourism and Travel': [ 'jerusalem-hotel', 'ministry-tourism'
+  ],
+  'Cities Online': [
+    'palestine-net-geography', 'ramallah-city', 'salfeet', 'municipality-gaza'
+  ],
+  'News': ['al-quds-news', 'alayyam-news', 'palestinian-information-center', 'hanthala'],
+  'Documenting and Memorializing': ['barghouti-memorial', 'ramallah-1996', 'september-1996-memorial'],
+  'Nature': ['gazelle']
+
+
+};
