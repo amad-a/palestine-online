@@ -1,5 +1,5 @@
 //set saved wallpaper on load or set random wallpaper on first load
-let randomWallpaper = Math.floor(Math.random() * 14);
+let randomWallpaper = Math.floor(Math.random() * 20);
 
 if (localStorage.getItem('wallpaper') === null) {
   let wallpaperString = randomWallpaper.toString();
@@ -608,7 +608,7 @@ let pagesTour = [
     headerText: 'Putting Places Online',
     waybackUrl:
       'https://web.archive.org/web/20020803230608/http://www.palestine-net.com/geography/kth.html',
-    url: 'sites/noursoft/noursoft.html',
+    url: 'https://web.archive.org/web/20020803230608/http://www.palestine-net.com/geography/kth.html',
     description: '',
   },
   {
@@ -1225,6 +1225,8 @@ let pagesTour = [
   },
 ];
 
+let ids = pagesTour.map(page => page.id);
+
 let randomPage = pages[Math.floor(Math.random() * pages.length)];
 let randomPageTour = pages[Math.floor(Math.random() * pages.length)];
 
@@ -1255,7 +1257,7 @@ function setWallpaper() {
   const currentWallpaper = localStorage.getItem('wallpaper');
   let num = parseInt(currentWallpaper) || 0;
   num += 1;
-  if (num > 14) num = 0;
+  if (num > 20) num = 0;
   document.documentElement.id = 'b' + num.toString();
   localStorage.setItem('wallpaper', num.toString());
 }
@@ -1281,6 +1283,8 @@ function createTreeView(obj) {
           (page) => page.id === value
         )[0];
         li.id = `${value}-link`;
+
+        console.log('PAGE MATCJ', pageMatch);
 
         li.innerHTML = `<a class="menu-link" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
       }
@@ -1364,6 +1368,7 @@ function setFramePage() {
 }
 
 const datad = {
+  'Gaza': ['gaza-airport', 'municipality-gaza', 'gaza-mental-health'],
   'Art and Culture': {
     'Visual Art': ['samia-halaby', 'hanna-safieh', 'omayya-joha'],
     'Literature': ['barghouti', 'al-karmel-guestbook'],
@@ -1373,14 +1378,19 @@ const datad = {
   },
   'Personal Homepages':
     ['jayyousi-pages', 'amnah-site', 'palestine-oasis', 'esam-shashaa-bio', 'faaz', 'hopes-space', 'musa-budieri', 'aimans-site', 'asa-group', 'doctor-hani', 'alsharabatis-homepages', 'abboud-page', 'zuhair-page', 'reality-of-palestine'],
-  'Tourism and Travel': [ 'jerusalem-hotel', 'ministry-tourism'
-  ],
+  'Tourism and Travel': [ 'jerusalem-hotel', 'ministry-tourism'],
   'Cities Online': [
     'palestine-net-geography', 'ramallah-city', 'salfeet', 'municipality-gaza'
   ],
-  'News': ['al-quds-news', 'alayyam-news', 'palestinian-information-center', 'hanthala'],
-  'Documenting and Memorializing': ['barghouti-memorial', 'ramallah-1996', 'september-1996-memorial'],
-  'Nature': ['gazelle']
+  'News': ['al-quds-news', 'alayyam-news', 'palestinian-information-center', 
+    'palestinian-information-center-hamas','hanthala'],
+  'Documenting and Memorializing': ['barghouti-memorial', 'ramallah-1996', 'september-1996-memorial', 'villages-map'],
+  'Nature': ['gazelle', 'palestine-wildlife-society'],
+  'Magazines': ['jerusalem-i-love-you', 'palestine-times-uk'],
+  'Birzeit University': ['parry-open-letter','birzeit-guide-to-palestinian-websites', 'birzeit-golden-olive-awards'],
+  'Communicating on the Internet': ['planet-message-board', 'barghouti-guestbook', 'al-karmel-guestbook', 'pal-voice-forums-2005'],
+  'Early Internet Infrastructure': ['palestine-yellow-pages', 'palsoft', 'zaytonasoft', 'planetedu', 'palnet'],
+  
 
 
 };
