@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Page</title>
+</head>
+<body>
+  <iframe id="myIframe" src="iframe-content.html" style="width: 600px; height: 400px;"></iframe>
+
+  <script>
+    function attachTouchEventListenersToIframe() {
+      const iframe = document.getElementById('myIframe');
+
+      iframe.addEventListener('load', function() {
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+
+        // Ensure iframeDocument is available
+        if (iframeDocument) {
+          // Add touch event listeners to the iframe's document
+          iframeDocument.addEventListener('touchstart', function(event) {
+            console.log('Touch start detected in iframe');
+          });
+
+          iframeDocument.addEventListener('touchend', function(event) {
+            console.log('Touch end detected in iframe');
+          });
+
+          // Optionally handle other touch events
+          iframeDocument.addEventListener('touchmove', function(event) {
+            console.log('Touch mooove detected in iframe', 'f');
+          });
+        } else {
+          console.log('Unable to access iframe document');
+        }
+      });
+    }
+
+    // Call the function to attach touch event listeners
+    attachTouchEventListenersToIframe();
+  </script>
+</body>
+</html>

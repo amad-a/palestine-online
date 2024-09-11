@@ -1284,7 +1284,7 @@ function createTreeView(obj) {
         )[0];
         li.id = `${value}-link`;
 
-        console.log('PAGE MATCJ', pageMatch);
+        // console.log('PAGE MATCJ', pageMatch);
 
         li.innerHTML = `<a class="menu-link" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
       }
@@ -1365,6 +1365,33 @@ function setFramePage() {
   ).innerHTML = `${siteSrc.title} <i>${siteSrc.year}</i>`;
 
   if (siteParam) setBreadcrumbs(siteParam);
+}
+
+function adjustButtonPosition() {
+  // Get the viewport width and height
+  const viewportWidth = window.innerWidth;
+  const viewportHeight = window.innerHeight;
+  console.log('measure', viewportWidth, viewportHeight);
+
+  console.log('hmmm', document.documentElement.clientWidth, window.innerWidth);
+
+  // Get the button element
+  const button = document.getElementById('mobile-nav');
+  console.log('button', button.style);
+  
+  // Calculate zoom level based on viewport width vs document width
+  const zoomLevel = document.documentElement.clientWidth / viewportWidth;
+
+  // Adjust the button size and position based on zoom level
+  button.style.bottom = 20 / zoomLevel + 'px';  // Adjusting the bottom distance
+  button.style.right = 20 / zoomLevel + 'px';   // Adjusting the right distance
+
+  // Optionally adjust button size
+  button.style.padding = (15 / zoomLevel) + 'px ' + (30 / zoomLevel) + 'px';
+  button.style.fontSize = (16 / zoomLevel) + 'px';
+
+  console.log('button', button.style);
+
 }
 
 const datad = {
