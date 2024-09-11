@@ -255,6 +255,7 @@ treeViewContainer.appendChild(createTreeView(datad));
 
 function changeZoom(value) {
   document.getElementById('frame').style.zoom = value/15;
+  console.log('ZOOOM',  document.getElementById('frame').style.zoom);
 }
 
 function attachTouchEventListenersToIframe() {
