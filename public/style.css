@@ -732,7 +732,7 @@ input[type='image' i]:hover {
     overflow: hidden;
     z-index: 999998;
     max-height: 100%;
-    zoom: 0.734873;
+    transform: scale(0.3);
   }
 
   .window {

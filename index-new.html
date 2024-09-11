@@ -254,7 +254,16 @@
 treeViewContainer.appendChild(createTreeView(datad));
 
 function changeZoom(value) {
-  document.getElementById('frame').contentWindow.document.body.style.transform = `scale(${value/15})`;
+
+  let scale = value/10;
+  document.getElementById('frame').contentWindow.document.body.style.transform = `scale(${scale})`;
+
+  document.getElementById('frame').contentWindow.document.body.style.width = `${100 / scale}%`;
+
+  document.getElementById('frame').contentWindow.document.body.style.height = `${100 / scale}%`;
+
+  document.getElementById('frame').contentWindow.document.body.style.transformOrigin = `0 0`;
+
   console.log('ZkkOOOM',  document.getElementById('frame').style.zoom);
 }
 
