@@ -1,0 +1,399 @@
+html {
+  overflow: hidden;
+  height: 100%;
+  zoom: 1;
+}
+
+@font-face {
+  font-family: 'Dom';
+  src: url('fonts/dom/DomDiagonalBT.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Monoid';
+  src: url('fonts/monoid/Monoid-Retina.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ArgentPixelCF';
+  src: url('ArgentPixelCF-Italic.woff') format('woff');
+}
+
+.preso-header {
+  font-family: 'ArgentPixelCF';
+}
+
+.divider {
+  margin: 0px 3px 1px 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  color: #6f6f6f;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+iframe {
+  height: 72vh;
+}
+
+/* @media only screen and (min-height  : 1100px) {
+  html {
+    zoom: 1.25;
+  }
+} */
+
+@media only screen and (max-width: 480px) {
+  .mobile-body {
+    zoom: 1;
+    display: grid;
+    grid-template-columns: 1;
+    align-items: center;
+    margin: 0px;
+    background-color: #b5b5b5;
+    height: 100%;
+  }
+
+  iframe {
+    height: 92.5vh;
+  }
+
+  /* … */
+}
+
+.walkthru-grid {
+  display: inline-grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  grid-gap: 0;
+}
+
+.loading {
+  margin: 225px 500px 225px 350px;
+  z-index: 1;
+}
+
+#info-panel-container {
+  width: 760px;
+  height: 580px;
+  margin: 75px;
+  outline: solid 1px black;
+  display: flex;
+  position: absolute;
+  border: 2px solid black;
+  background-color: rgb(255, 245, 129);
+  opacity: 0.97;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0);
+  height: max-content;
+  padding-bottom: 10px;
+}
+
+.close-info-panel-button {
+  position: absolute;
+  top: 7.5px;
+  right: 7.5px;
+}
+
+.notes-header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding-left: 10px;
+  font-size: 24px;
+  font-family: serif;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+}
+
+.notes-close-button:hover {
+  cursor: pointer;
+}
+
+.info-panel-body {
+  text-align: left;
+  padding: 20px 20px 10px 20px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 50px;
+}
+
+.walkthru-window {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  width: 800px;
+  height: 666px;
+  margin-bottom: 30px;
+}
+
+.title-bar-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-size: 14px;
+  padding-left: 2px;
+  letter-spacing: 0.1px;
+}
+
+.walkthru-title {
+  /* width: 50px; */
+  grid-row-start: 0;
+  grid-row-end: 0;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  text-align: center;
+  font-family: 'Dom';
+  font-size: 45px;
+  padding-bottom: 20px;
+  width: 800px;
+  color: rgb(255, 0, 0);
+  font-family: 'ArgentPixelCF';
+}
+
+/* h1 {
+  background: -wopit-linear-gradient(90deg, #a50000, #ff5353);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  font-size: 48px;
+} */
+
+.walkthru-left-arrow {
+  justify-content: right;
+  text-align: right;
+  grid-column-start: 0;
+  grid-column-end: 0;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 25px;
+}
+
+.walkthru-right-arrow {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.walkthru-info {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  visibility: hidden;
+}
+
+iframe {
+  height: 597px;
+}
+
+.frame {
+  z-index: 999999;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 3px 5px 3px 5px;
+  margin-top: 32.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 14px;
+  border: 2px solid black;
+  background-color: rgb(255, 245, 129);
+  color: black;
+  opacity: 0.9;
+  letter-spacing: 0.1px;
+  width: max-content;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+
+button {
+  zoom: 1.25;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.infopanel {
+  padding: 100px;
+  width: 745px;
+  height: 550px;
+
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  padding: 3px 5px 3px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 14px;
+  border: 2px solid black;
+  background-color: rgb(255, 245, 129);
+  color: black;
+  opacity: 0.9;
+  letter-spacing: 0.1px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0);
+  margin: -240px 0px 400px 74px;
+}
+
+.noninteractive-grid {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  grid-gap: 100px;
+}
+
+.noninteractive-grid-1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.noninteractive-grid-2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+#b1 {
+  background-image: url('tiles/aqwa-man-tile-bg.jpg');
+  background-repeat: repeat;
+}
+
+#b2 {
+  background-image: url('tiles/arabic-html-tutorial-tile-bg.jpg');
+  background-repeat: repeat;
+}
+
+#b3 {
+  background-image: url('tiles/hadisoft-tile-bg.jpeg');
+  background-repeat: repeat;
+}
+
+#b4 {
+  background-image: url('tiles/jukebox-arabia-tile-bg.gif');
+  background-repeat: repeat;
+}
+
+#b5 {
+  background-image: url('tiles/lina-online-tile-bg.GIF');
+  background-repeat: repeat;
+}
+
+#b6 {
+  background-image: url('tiles/nidal-jayyousi-tile-bg.jpg');
+  background-repeat: repeat;
+}
+
+#b7 {
+  /* change */
+  background-image: url('tiles/palestine-youth-union-tile-bg.jpg');
+  background-repeat: repeat;
+}
+
+#b8 {
+  background-image: url('tiles/people-of-palestine-tile-bg.gif');
+  background-repeat: repeat;
+}
+
+#b9 {
+  background-image: url('tiles/zuhair-tile-bg.gif');
+  background-repeat: repeat;
+  background-size: 20%;
+}
+
+#b10 {
+  background-image: url('tiles/rani-tile-bg.jpg');
+  background-repeat: repeat;
+}
+
+#b11 {
+  background-image: url('tiles/samia-halaby-1-tile-bg.gif');
+  background-repeat: repeat;
+}
+
+#b12 {
+  background-image: url('tiles/sharabati-tile-bg.JPG');
+  background-repeat: repeat;
+}
+
+#b13 {
+  /* change */
+
+  background-image: url('tiles/pals2.gif');
+  background-repeat: repeat;
+}
+
+#b14 {
+  background-image: url('tiles/back1.jpg');
+  background-repeat: repeat;
+}
+
+#b15 {
+  background-image: url('tiles/back4.jpg');
+  background-repeat: repeat;
+}
+
+#b16 {
+  background-image: url('tiles/hanthbg.gif');
+  background-repeat: repeat;
+}
+
+#b17 {
+  background-image: url('tiles/cloudtil.jpg');
+  background-repeat: repeat;
+}
+
+#b18 {
+  background-image: url('tiles/welcome.gif');
+  background-repeat: repeat;
+}
+
+#b19 {
+  background-image: url('tiles/back.jpg');
+  background-repeat: repeat;
+}
+
+#b20 {
+  background-image: url('tiles/starz.jpg');
+  background-repeat: repeat;
+}
+
+
+body {
+  background-repeat: repeat;
+}
