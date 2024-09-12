@@ -744,12 +744,10 @@ input[type='image' i]:hover {
     padding: 0px;
     margin: 0px;
     position: fixed;
-    touch-action: pan-x pan-y;
   }
 
   :root {
     overflow: hidden;
-    touch-action: pan-x pan-y;
   }
 
   #frame-container {
