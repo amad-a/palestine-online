@@ -13,7 +13,7 @@
         "type": "image/png"
       }
     ],
-    "start_url": "index-new.html",
+    "start_url": "index-new.html?site=samia-halaby",
     "display": "fullscreen",
     "theme_color": "#C0C0C0",
     "background_color": "#C0C0C0"
