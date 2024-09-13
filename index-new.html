@@ -15,28 +15,37 @@
   </head>
 
   <body onload="setFramePage()">
-    <div class="mobile-buttons-grid" id="mobile-nav">
-            <button id="zoomSlider">
+    <!-- <div class="mobile-top-grid" id="mobile-nav">
+      <button id="zoomSlider">
         <div class="field-row">
           <label class="slider-label" for="range26">-</label>
           <input step="any" onchange="changeZoom(this.value)" id="range26" type="range" min="1" max="21" value="11" />
-          <label class="slider-label"  for="range27">+</label>
+          <label class="slider-label" for="range27">+</label>
+        </div>
+      </button>
+    </div> -->
+    <div class="mobile-buttons-grid" id="mobile-nav">
+      <button id="zoomSlider">
+        <div class="field-row">
+          <label class="slider-label" for="range26">-</label>
+          <input step="any" onchange="changeZoom(this.value)" id="range26" type="range" min="1" max="21" value="11" />
+          <label class="slider-label" for="range27">+</label>
         </div>
       </button>
       <button>
-        <img height="16px" src="public/home.svg"/>
-        Home
+        <img src="public/back.svg" height="30px" onclick="window.history.back()" />
       </button>
       <button>
-        <img height="16px" src="public/directory_closed_cool-4.svg"/>
-        Sites
+        <img src="public/front.svg" height="30px" onclick="window.history.forward()" />
       </button>
       <button>
-        <img height="16px" src="public/icons/help_book_small-5.svg"/>
-        Random
+        <img height="30px" src="public/icons/envelope_closed-1.svg" />
       </button>
       <button>
-        Menu
+        <img height="30px" src="public/icons/help_book_small-5.svg" />
+      </button>
+      <button>
+        <img height="30px" src="public/icons/info.svg" />
       </button>
     </div>
     <div class="window-grid" id="window">
@@ -191,7 +200,6 @@
             title="Frame"
             width="99.25%"
             src=""
-            onLoad="console.log('hey ' + this.contentWindow.location.href);"
           >
           </iframe>
           </div>
@@ -217,7 +225,6 @@
       let sliderButton = document.getElementById("zoomSlider");
       sliderButton.disabled = true;
       
-
       // Add click event listener to the child element
       document.querySelector('.window-grid').addEventListener('click', function (event) {
         event.stopPropagation(); // Prevents the event from reaching the body
@@ -245,14 +252,18 @@
 
       const treeViewContainer = document.getElementById('tree');
 
-;
-
 
 // Create the tree view from the data object and append it to the container
 treeViewContainer.appendChild(createTreeView(datad));
 
-function changeZoom(value) {
+let value;
 
+document.getElementById('frame').onload = function() {
+  changeZoom(value);
+}
+
+function changeZoom(currentValue) {
+  value = currentValue;
   let scale = value/10;
   document.getElementById('frame').contentWindow.document.body.style.transform = `scale(${scale})`;
 
@@ -261,8 +272,6 @@ function changeZoom(value) {
   document.getElementById('frame').contentWindow.document.body.style.height = `${100 / scale}%`;
 
   document.getElementById('frame').contentWindow.document.body.style.transformOrigin = `0 0`;
-
-  console.log('ZOOOM',  document.getElementById('frame').style.zoom);
 }
 
 function attachTouchEventListenersToIframe() {
