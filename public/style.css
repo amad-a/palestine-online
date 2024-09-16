@@ -727,17 +727,6 @@ input[type='image' i]:hover {
     outline-offset: -4px;
   }
 
-  .mobile-button-graphic:hover .mobile-button-graphic:active {
-    height: 28px;
-    cursor: pointer;
-  }
-
-  .mobile-button:hover .mobile-button:active {
-    box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a,
-    inset -2px -2px #dfdfdf, inset 2px 2px grey;
-    text-shadow: 1px 1px #222;
-  }
-
   .title-bar {
     visibility: none;
   }
