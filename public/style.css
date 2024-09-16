@@ -722,14 +722,14 @@ input[type='image' i]:hover {
     cursor: pointer;
   }
 
-  .mobile-button-graphic:hover .mobile-button-graphic:active {
-    height: 28px;
-    cursor: pointer;
-  }
-
   button:focus, input[type='reset']:focus, input[type='submit']:focus {
     outline: 0px dotted #000;
     outline-offset: -4px;
+  }
+
+  .mobile-button-graphic:hover .mobile-button-graphic:active {
+    height: 28px;
+    cursor: pointer;
   }
 
   .mobile-button:hover .mobile-button:active {
@@ -831,4 +831,17 @@ input[type='image' i]:hover {
     height: 85dvh;
   }
 
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .mobile-button-graphic:hover .mobile-button-graphic:active {
+    height: 28px;
+    cursor: pointer;
+  }
+
+  .mobile-button:hover .mobile-button:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a,
+    inset -2px -2px #dfdfdf, inset 2px 2px grey;
+    text-shadow: 1px 1px #222;
+  }
 }
