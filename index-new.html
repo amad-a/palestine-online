@@ -16,14 +16,14 @@
 
   <body onload="setFramePage()">
     <!-- <div class="mobile-top-grid" id="mobile-nav">
-      <button id="zoomSlider">
-        <div class="field-row">
-          <label class="slider-label" for="range26">-</label>
-          <input step="any" onchange="changeZoom(this.value)" id="range26" type="range" min="1" max="21" value="11" />
-          <label class="slider-label" for="range27">+</label>
-        </div>
-      </button>
-    </div> -->
+        <button id="zoomSlider">
+          <div class="field-row">
+            <label class="slider-label" for="range26">-</label>
+            <input step="any" onchange="changeZoom(this.value)" id="range26" type="range" min="1" max="21" value="11" />
+            <label class="slider-label" for="range27">+</label>
+          </div>
+        </button>
+      </div> -->
     <div class="mobile-buttons-grid" id="mobile-nav">
       <button id="zoomSlider">
         <div class="field-row">
@@ -49,19 +49,11 @@
       </button>
     </div>
     <div class="window-grid" id="window">
-      <div
-        class="info-panel-container"
-        id="info-panel-container"
-        style="visibility: hidden"
-      >
+      <div class="info-panel-container" id="info-panel-container" style="visibility: hidden">
         <div class="notes-header">Page Information</div>
         <div class="close-info-panel-button">
           <div class="title-bar-controls">
-            <button
-              class="notes-close-button"
-              style="zoom: 1.4"
-              aria-label="Close"
-            ></button>
+            <button class="notes-close-button" style="zoom: 1.4" aria-label="Close"></button>
           </div>
         </div>
       </div>
@@ -77,104 +69,47 @@
           </div>
         </div>
         <div class="window-body" style="margin: 0px; overflow: hidden;">
-
-          <section
-            style="margin: 6px 8px 4px 8px"
-            class="field-row"
-            style="justify-content: flex-start"
-          >
-          <a class="tooltip">
-            <input
-            type="image"
-            onclick="window.history.back()"
-            src="public/back.svg"
-            height="24px"
-            style="margin-bottom: 4px"
-          />
-          <span class="tooltiptext">Go Back</span>
-
-          </a>
-
-          <a class="tooltip">
-            <input
-              type="image"
-              onclick="window.history.forward()"
-              src="public/front.svg"
-              height="24px"
-              style="margin-bottom: 4px"
-            />
-            <span class="tooltiptext">Go Forward</span>
-
-          </a>
-
-
+          <section style="margin: 6px 8px 4px 8px" class="field-row" style="justify-content: flex-start">
+            <a class="tooltip">
+              <input type="image" onclick="window.history.back()" src="public/back.svg" height="24px"
+                style="margin-bottom: 4px" />
+              <span class="tooltiptext">Go Back</span>
+            </a>
+            <a class="tooltip">
+              <input type="image" onclick="window.history.forward()" src="public/front.svg" height="24px"
+                style="margin-bottom: 4px" />
+              <span class="tooltiptext">Go Forward</span>
+            </a>
             <div class="divider">|</div>
             <a>
-              <input
-                id="toggleMenu"
-                style="opacity: 1; cursor: auto"
-                onclick="toggleMenu()"
-                type="image"
-                src="public/directory_closed_cool-4.svg"
-                height="25px"
-              />
+              <input id="toggleMenu" style="opacity: 1; cursor: auto" onclick="toggleMenu()" type="image"
+                src="public/directory_closed_cool-4.svg" height="25px" />
             </a>
             <a>
-              <input
-                style="opacity: 0.25; cursor: auto"
-                type="image"
-                src="public/home.svg"
-                height="25px"
-              />
+              <input style="opacity: 0.25; cursor: auto" type="image" src="public/home.svg" height="25px" />
             </a>
             <a class="tooltip">
-              <input
-                style="opacity: 0.25; cursor: auto"
-                type="image"
-                src="public/netmeeting-1.svg"
-                height="25px"
-              />
+              <input style="opacity: 0.25; cursor: auto" type="image" src="public/netmeeting-1.svg" height="25px" />
             </a>
             <a class="tooltip">
-              <input
-                style="opacity: 0.25; cursor: auto"
-                type="image"
-                src="public/icons/info.svg"
-                height="25px"
-              />
+              <input style="opacity: 0.25; cursor: auto" type="image" src="public/icons/info.svg" height="25px" />
             </a>
             <a class="tooltip" target="_blank">
-              <input
-                style="opacity: 0.25; cursor: auto"
-                type="image"
-                src="public/icons/search_web-1.svg"
-                height="25px"
-              />
+              <input style="opacity: 0.25; cursor: auto" type="image" src="public/icons/search_web-1.svg" height="25px" />
             </a>
             <a class="tooltip">
-              <input
-                type="image"
-                src="public/icons/help_book_small-5.svg"
-                height="25px"
-                onclick="goToRandomPage()"
-              />
+              <input type="image" src="public/icons/help_book_small-5.svg" height="25px" onclick="goToRandomPage()" />
               <span class="tooltiptext">Go to random site</span>
             </a>
             <a class="tooltip">
-              <input
-                type="image"
-                onclick="setWallpaper()"
-                src="public/frame_web-1.svg"
-                height="25px"
-              />
+              <input type="image" onclick="setWallpaper()" src="public/frame_web-1.svg" height="25px" />
               <span class="tooltiptext">Change wallpaper</span>
             </a>
             <div class="goto">
-              
             </div>
             <div class="dropdown-container">
               <pre id="current-site">
-              </pre>
+                </pre>
               <a class="tooltip">
                 <div class="dropdown">
                 </div>
@@ -183,37 +118,19 @@
               <div class="dropdown-content">
                 <ul class="tree-view" id="tree"></ul>
               </div>
-              
             </div>
-
           </section>
-          <iframe
-          id="menu"
-          title="Menu"
-          width="100%"
-          src="main-new.html"
-          style = "position: absolute; width: 0; height: 0; border: 0; border: none; position: absolute; overflow-y: hidden; background-color: silver;"
-        ></iframe>
+          <iframe id="menu" title="Menu" width="100%" src="main-new.html"
+            style="position: absolute; width: 0; height: 0; border: 0; border: none; position: absolute; overflow-y: hidden; background-color: silver;"></iframe>
           <div id="frame-container">
-            <iframe
-            id="frame"
-            title="Frame"
-            width="99.25%"
-            src=""
-          >
-          </iframe>
+            <iframe id="frame" title="Frame" width="99.25%" src="">
+            </iframe>
           </div>
-
-          </div>
-      
-
+        </div>
         <div id="breadcrumbs" class="status-bar">
-
         </div>
-        
-        </div>
-        
       </div>
+    </div>
     </div>
     <script>
 
@@ -224,7 +141,7 @@
 
       let sliderButton = document.getElementById("zoomSlider");
       sliderButton.disabled = true;
-      
+
       // Add click event listener to the child element
       document.querySelector('.window-grid').addEventListener('click', function (event) {
         event.stopPropagation(); // Prevents the event from reaching the body
@@ -235,80 +152,16 @@
         dropdownContent.classList.toggle('open');
       });
 
-      function toggleMenu() {
-        let buttonSrc = document.getElementById('toggleMenu').src;
-        if (buttonSrc.endsWith('directory_closed_cool-4.svg')) {
-          document.getElementById('toggleMenu').src = buttonSrc.replace('directory_closed_cool-4.svg', 'directory_open_cool-4.svg');
-
-          document.getElementById('menu').style = "position: absolute; width: 400px;"
-        } else {
-          document.getElementById('toggleMenu').src = buttonSrc.replace('directory_open_cool-4.svg', 'directory_closed_cool-4.svg');
-
-          document.getElementById('menu').style = "width: 0; height: 0; border: 0; border: none; position: absolute;";
-
-          document.getElementById('frame').style = ""
-        }
-      }
-
       const treeViewContainer = document.getElementById('tree');
 
+      // Create the tree view from the data object and append it to the container
+      treeViewContainer.appendChild(createTreeView(datad));
 
-// Create the tree view from the data object and append it to the container
-treeViewContainer.appendChild(createTreeView(datad));
+      let value;
 
-let value;
-
-document.getElementById('frame').onload = function() {
-  changeZoom(value);
-}
-
-function changeZoom(currentValue) {
-  value = currentValue;
-  let scale = value/10;
-  document.getElementById('frame').contentWindow.document.body.style.transform = `scale(${scale})`;
-
-  document.getElementById('frame').contentWindow.document.body.style.width = `${100 / scale}%`;
-
-  document.getElementById('frame').contentWindow.document.body.style.height = `${100 / scale}%`;
-
-  document.getElementById('frame').contentWindow.document.body.style.transformOrigin = `0 0`;
-}
-
-function attachTouchEventListenersToIframe() {
-      const iframe = document.getElementById('frame');
-
-      iframe.addEventListener('load', function() {
-        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-
-        // Ensure iframeDocument is available
-        if (iframeDocument) {
-          // Add touch event listeners to the iframe's document
-          iframeDocument.addEventListener('touchstart', function(event) {
-            console.log('Touch start detected in iframe');
-          });
-
-          iframeDocument.addEventListener('touchend', function(event) {
-            console.log('Touch end detected in iframe');
-          });
-
-          // Optionally handle other touch events
-          iframeDocument.addEventListener('touchmove', function(event) {
-            console.log('Touch move detected in iframe', iframe.contentWindow.scrollY, iframe.contentWindow.scrollX)
-          });
-
-          window.addEventListener('resize', function(event) {
-            console.log('Resize detected in iframe', iframe.contentWindow.scrollY, iframe.contentWindow.scrollX)
-          });
-
-
-        } else {
-          console.log('Unable to access iframe document');
-        }
-      });
-    }
-
-    // Call the function to attach touch event listeners
-    attachTouchEventListenersToIframe();
+      document.getElementById('frame').onload = function () {
+        changeZoom(value);
+      }
     </script>
   </body>
 </html>

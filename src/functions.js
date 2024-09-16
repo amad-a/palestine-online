@@ -1284,8 +1284,6 @@ function createTreeView(obj) {
         )[0];
         li.id = `${value}-link`;
 
-        // console.log('PAGE MATCJ', pageMatch);
-
         li.innerHTML = `<a class="menu-link" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
       }
       return li;
@@ -1367,31 +1365,31 @@ function setFramePage() {
   if (siteParam) setBreadcrumbs(siteParam);
 }
 
-function adjustButtonPosition() {
-  // Get the viewport width and height
-  const viewportWidth = window.innerWidth;
-  const viewportHeight = window.innerHeight;
-  console.log('measure', viewportWidth, viewportHeight);
+function changeZoom(currentValue) {
+  value = currentValue;
+  let scale = value/10;
+  document.getElementById('frame').contentWindow.document.body.style.transform = `scale(${scale})`;
 
-  console.log('hmmm', document.documentElement.clientWidth, window.innerWidth);
+  document.getElementById('frame').contentWindow.document.body.style.width = `${100 / scale}%`;
 
-  // Get the button element
-  const button = document.getElementById('mobile-nav');
-  console.log('button', button.style);
-  
-  // Calculate zoom level based on viewport width vs document width
-  const zoomLevel = document.documentElement.clientWidth / viewportWidth;
+  document.getElementById('frame').contentWindow.document.body.style.height = `${100 / scale}%`;
 
-  // Adjust the button size and position based on zoom level
-  button.style.bottom = 20 / zoomLevel + 'px';  // Adjusting the bottom distance
-  button.style.right = 20 / zoomLevel + 'px';   // Adjusting the right distance
+  document.getElementById('frame').contentWindow.document.body.style.transformOrigin = `0 0`;
+}
 
-  // Optionally adjust button size
-  button.style.padding = (15 / zoomLevel) + 'px ' + (30 / zoomLevel) + 'px';
-  button.style.fontSize = (16 / zoomLevel) + 'px';
+function toggleMenu() {
+  let buttonSrc = document.getElementById('toggleMenu').src;
+  if (buttonSrc.endsWith('directory_closed_cool-4.svg')) {
+    document.getElementById('toggleMenu').src = buttonSrc.replace('directory_closed_cool-4.svg', 'directory_open_cool-4.svg');
 
-  console.log('button', button.style);
+    document.getElementById('menu').style = "position: absolute; width: 400px;"
+  } else {
+    document.getElementById('toggleMenu').src = buttonSrc.replace('directory_open_cool-4.svg', 'directory_closed_cool-4.svg');
 
+    document.getElementById('menu').style = "width: 0; height: 0; border: 0; border: none; position: absolute;";
+
+    document.getElementById('frame').style = ""
+  }
 }
 
 const datad = {
