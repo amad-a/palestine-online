@@ -819,6 +819,8 @@ input[type='image' i]:hover {
 
   #frame {
     height: 85dvh;
+    max-height: 85dvh;
+    min-height: 85dvh;
   }
 
 }
