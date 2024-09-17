@@ -738,8 +738,8 @@ input[type='image' i]:hover {
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 84dvh;
-    min-height: 84dvh;
+    height: 84.5dvh;
+    min-height: 84.5dvh;
     border: none;
     margin: 0;
     padding: 0;
@@ -782,7 +782,7 @@ input[type='image' i]:hover {
     gap: 0px;
     display: grid;
     position: fixed;
-    padding-bottom: 4vh;
+    padding-bottom: 3vh;
     background-color: silver;
     z-index: 999999;
     grid-template-columns: repeat(5, 20vw);
