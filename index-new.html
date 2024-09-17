@@ -15,15 +15,18 @@
   </head>
 
   <body onload="setFramePage()">
-    <!-- <div class="mobile-top-grid" id="mobile-nav">
-        <button id="zoomSlider">
-          <div class="field-row">
-            <label class="slider-label" for="range26">-</label>
-            <input step="any" onchange="changeZoom(this.value)" id="range26" type="range" min="1" max="21" value="11" />
-            <label class="slider-label" for="range27">+</label>
-          </div>
-        </button>
-      </div> -->
+    <div id="mobile-dropdown-content" class="dropdown-content">
+      <ul class="tree-view" id="tree"></ul>
+    </div>
+    <div class="mobile-top-nav">
+      <button class="address-bar">
+        <div id="address-bar-text">
+          Samia Halaby's site
+        </div>
+      </button>
+      <button id="bleh" class="mobile-dropdown">
+      </button>
+    </div>
     <div class="mobile-buttons-grid" id="mobile-nav">
       <button id="zoomSlider">
         <div class="field-row">
@@ -115,8 +118,8 @@
                 </div>
                 <span class="tooltiptext urltooltip">View websites</span>
               </a>
-              <div class="dropdown-content">
-                <ul class="tree-view" id="tree"></ul>
+              <div id="dropdown-content" class="dropdown-content">
+                <ul class="tree-view" id="tree-original"></ul>
               </div>
             </div>
           </section>
@@ -139,6 +142,9 @@
         setWallpaper();
       });
 
+      let addressBar = document.querySelector(".address-bar");
+      addressBar.disabled = true;
+
       let sliderButton = document.getElementById("zoomSlider");
       sliderButton.disabled = true;
 
@@ -148,9 +154,16 @@
       });
 
       document.querySelector('.dropdown').addEventListener('click', function () {
-        const dropdownContent = document.querySelector('.dropdown-content');
+        const dropdownContent = document.querySelector('#dropdown-content');
         dropdownContent.classList.toggle('open');
       });
+
+      document.querySelector('#bleh').addEventListener('click', function () {
+        console.log('test')
+        const dropdownContent1 = document.querySelector('#mobile-dropdown-content');
+        dropdownContent1.classList.toggle('open');
+      });
+
 
       const treeViewContainer = document.getElementById('tree');
 

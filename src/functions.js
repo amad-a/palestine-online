@@ -1362,6 +1362,10 @@ function setFramePage() {
     'current-site'
   ).innerHTML = `${siteSrc.title} <i>${siteSrc.year}</i>`;
 
+  document.getElementById(
+    'address-bar-text'
+  ).innerHTML = `${siteSrc.title} <i>${siteSrc.year}</i>`;
+
   if (siteParam) setBreadcrumbs(siteParam);
 }
 
