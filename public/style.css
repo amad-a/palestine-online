@@ -814,13 +814,13 @@ input[type='image' i]:hover {
 @media only screen and (max-width: 375px) and (max-height: 700px) {
   
   .mobile-buttons-grid {
-    grid-template-rows: repeat(2, 7.5dvh);
+    grid-template-rows: repeat(2, 8.5dvh);
   }
 
   #frame {
-    height: 85dvh;
-    max-height: 85dvh;
-    min-height: 85dvh;
+    height: 83dvh;
+    max-height: 83dvh;
+    min-height: 83dvh;
   }
 
 }
