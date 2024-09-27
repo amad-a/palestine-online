@@ -10,12 +10,19 @@ html {
 
 .mobile-top-nav {
   visibility: hidden;
+  width: 0px;
+  height: 0px;
 }
 
 @font-face {
   font-family: 'Dom';
   src: url('fonts/dom/DomDiagonalBT.woff') format('woff');
 }
+
+/* @font-face {
+  font-family: 'Arial Narrow';
+  src: url('fonts/dom/DomDiagonalBT.woff') format('woff');
+} */
 
 @font-face {
   font-family: 'Monoid';
