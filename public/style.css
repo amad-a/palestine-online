@@ -723,6 +723,12 @@ input[type='image' i]:hover {
 
 @media only screen and (max-width: 450px) {
 
+  .mobile-top-nav {
+    visibility: visible;
+    width: auto;
+    height: auto;
+  }
+
   ul.tree-view {
     font-family: 'Arial Narrow', Arial, sans-serif !important;
     font-size: 18px !important;
