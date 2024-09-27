@@ -7,45 +7,63 @@
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-    <link rel="stylesheet" href="https://unpkg.com/98.css" />
-    <link rel="stylesheet" href="public/walkthru-style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="public/98.css" />
+    <link rel="stylesheet" href="public/style.css" />
     <script src="src/functions.js"></script>
   </head>
-  <script></script>
-  <body>
-    <div class="walkthru-grid">
-      <div
-        class="info-panel-container"
-        id="info-panel-container"
-        style="visibility: hidden"
-      >
+
+  <body onload="setFramePage()">
+    <div id="mobile-dropdown-content" class="dropdown-content">
+      <ul class="tree-view" id="tree"></ul>
+    </div>
+    <div class="mobile-top-nav">
+      <button class="address-bar">
+        <div id="address-bar-text">
+          Samia Halaby's site
+        </div>
+      </button>
+      <button id="mobile-dropdown" class="mobile-dropdown">
+      </button>
+    </div>
+    <div class="mobile-buttons-grid" id="mobile-nav">
+      <button id="zoomSlider">
+        <div class="field-row">
+          <label class="slider-label" for="range26">-</label>
+          <input step="any" onchange="changeZoom(this.value)" id="range26" type="range" min="1" max="21" value="11" />
+          <label class="slider-label" for="range27">+</label>
+        </div>
+      </button>
+      <button class="mobile-button">
+        <img class="mobile-button-graphic" src="public/back.svg" height="30px" onclick="window.history.back()" />
+      </button>
+      <button class="mobile-button">
+        <img class="mobile-button-graphic" src="public/front.svg" height="30px" onclick="window.history.forward()" />
+      </button>
+      <button class="mobile-button">
+        <img class="mobile-button-graphic" height="30px" src="public/icons/envelope_closed-1.svg" />
+      </button>
+      <button class="mobile-button">
+        <img class="mobile-button-graphic" height="30px" src="public/icons/help_book_small-5.svg" />
+      </button>
+      <button class="mobile-button">
+        <img class="mobile-button-graphic" height="30px" src="public/icons/info.svg" />
+      </button>
+    </div>
+    <div class="window-grid" id="window">
+      <div class="info-panel-container" id="info-panel-container" style="visibility: hidden">
         <div class="notes-header">Page Information</div>
         <div class="close-info-panel-button">
           <div class="title-bar-controls">
-            <button
-              class="notes-close-button"
-              style="zoom: 1.4"
-              aria-label="Close"
-            ></button>
+            <button class="notes-close-button" style="zoom: 1.4" aria-label="Close"></button>
           </div>
         </div>
       </div>
-
-      <div class="walkthru-left-arrow">
-        <a>
-          <input type="image" src="public/icons/l.png" style="cursor: auto; opacity: .35;" />
-        </a>
-      </div>
-      <div class="walkthru-right-arrow">
-        <a href="hanieh-middle-east-report.html">
-          <input type="image" src="public/icons/r.gif" />
-        </a>
-      </div>
-      <div class="walkthru-info">walkthru-info</div>
       <div class="window walkthru-window">
         <div class="title-bar">
           <div class="title-bar-text">
-            Welcome to Palestine Online!
+            Palestine Online
           </div>
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
@@ -53,87 +71,114 @@
             <button aria-label="Close"></button>
           </div>
         </div>
-        <div class="window-body" style="margin: 0px">
-          <section
-            style="margin: 8px 8px 6px 8px"
-            class="field-row"
-            style="justify-content: flex-start"
-          >
-            <input
-              type="image"
-              onclick="window.history.back()"
-              src="public/back.svg"
-              height="24px"
-              style="margin-bottom: 4px"
-            />
-            <input
-              type="image"
-              onclick="window.history.forward()"
-              src="public/front.svg"
-              height="24px"
-              style="margin-bottom: 4px"
-            />
+        <div class="window-body" style="margin: 0px; overflow: hidden;">
+          <section style="margin: 6px 8px 4px 8px" class="field-row" style="justify-content: flex-start">
+            <a class="tooltip">
+              <input type="image" onclick="window.history.back()" src="public/back.svg" height="24px"
+                style="margin-bottom: 4px" />
+              <span class="tooltiptext">Go Back</span>
+            </a>
+            <a class="tooltip">
+              <input type="image" onclick="window.history.forward()" src="public/front.svg" height="24px"
+                style="margin-bottom: 4px" />
+              <span class="tooltiptext">Go Forward</span>
+            </a>
             <div class="divider">|</div>
+            <!-- <a>
+              <input id="toggleMenu" style="opacity: 1; cursor: auto" onclick="toggleMenu()" type="image"
+                src="public/directory_closed_cool-4.svg" height="25px" />
+            </a>
             <a>
-              <input
-                style="opacity: 0.25; cursor: auto"
-                type="image"
-                src="public/home.svg"
-                height="25px"
-              />
-            </a>
+              <input style="opacity: 0.25; cursor: auto" type="image" src="public/home.svg" height="25px" />
+            </a> -->
             <a class="tooltip">
-              <input
-                style="opacity: 0.25; cursor: auto"
-                type="image"
-                src="public/netmeeting-1.svg"
-                height="25px"
-              />
+              <input style="opacity: 1; cursor: pointer" type="image" src="public/netmeeting-1.svg" height="25px" onclick="setFramePage()" />
+              <span class="tooltiptext">Reset current site</span>
             </a>
-            <a class="tooltip">
-              <input
-                style="opacity: 0.25; cursor: auto"
-                type="image"
-                src="public/icons/info.svg"
-                height="25px"
-              />
+            <!-- <a class="tooltip">
+              <input style="opacity: 0.25; cursor: auto" type="image" src="public/icons/info.svg" height="25px" />
             </a>
             <a class="tooltip" target="_blank">
-              <input
-                style="opacity: 0.25; cursor: auto"
-                type="image"
-                src="public/icons/search_web-1.svg"
-                height="25x"
-              />
-            </a>
+              <input style="opacity: 0.25; cursor: auto" type="image" src="public/icons/search_web-1.svg" height="25px" />
+            </a> -->
             <a class="tooltip">
-              <input
-                type="image"
-                src="public/icons/help_book_small-5.svg"
-                height="25px"
-                onclick="goToRandomPage()"
-              />
+              <input type="image" src="public/icons/help_book_small-5.svg" height="25px" onclick="setRandomPage()" />
               <span class="tooltiptext">Go to random site</span>
             </a>
             <a class="tooltip">
-              <input
-                type="image"
-                onclick="setWallpaper()"
-                src="public/frame_web-1.svg"
-                height="25px"
-              />
+              <input type="image" onclick="setWallpaper()" src="public/frame_web-1.svg" height="25px" />
               <span class="tooltiptext">Change wallpaper</span>
             </a>
+            <a class="tooltip">
+            </a>
+            <div class="dropdown-container">
+              <pre id="current-site">
+                </pre>
+              <a class="tooltip">
+                <div class="dropdown">
+                </div>
+                <span class="tooltiptext urltooltip">View websites</span>
+              </a>
+              <div id="dropdown-content" class="dropdown-content">
+                <ul class="tree-view" id="tree-original"></ul>
+              </div>
+            </div>
           </section>
-          <iframe
-            id="frame"
-            title="Adam Hanieh in Middle East Report"
-            width="99.5%"
-            src="main.html"
-          >
-          </iframe>
+          <iframe id="menu" title="Menu" width="100%" src=""
+            style="position: absolute; width: 0; height: 0; border: 0; border: none; position: absolute; overflow-y: hidden; background-color: silver;"></iframe>
+          <div id="frame-container">
+            <iframe id="frame" title="Frame" width="99.25%" src="">
+            </iframe>
+          </div>
+        </div>
+        <div id="breadcrumbs" class="status-bar">
         </div>
       </div>
     </div>
+    </div>
+    <script>
+
+      // Add click event listener to the body
+      document.body.addEventListener('click', function (event) {
+        setWallpaper();
+      });
+
+      let addressBar = document.querySelector(".address-bar");
+      addressBar.disabled = true;
+
+      let sliderButton = document.getElementById("zoomSlider");
+      sliderButton.disabled = true;
+
+      // Add click event listener to the child element
+      document.querySelector('.window-grid').addEventListener('click', function (event) {
+        event.stopPropagation(); // Prevents the event from reaching the body
+      });
+
+      document.querySelector('.dropdown').addEventListener('click', function () {
+        const dropdownContent = document.querySelector('#dropdown-content');
+        dropdownContent.classList.toggle('open');
+      });
+
+      document.querySelector('#mobile-dropdown').addEventListener('click', function () {
+        console.log('test')
+        const dropdownContent1 = document.querySelector('#mobile-dropdown-content');
+        dropdownContent1.classList.toggle('open');
+      });
+
+      const parentElement = document.getElementById('frame-container');
+
+      const treeViewContainer = document.getElementById('tree');
+      const treeViewContainerOriginal = document.getElementById('tree-original');
+
+      // Create the tree view from the data object and append it to the container
+      treeViewContainer.appendChild(createTreeView(siteTree));
+      treeViewContainerOriginal.appendChild(createTreeView(siteTree));
+
+      let value;
+
+      document.getElementById('frame').onload = function () {
+        changeZoom(value);
+      }
+    </script>
   </body>
 </html>

@@ -1223,6 +1223,17 @@ let pagesTour = [
     url: 'https://web.archive.org/web/20070127225716/http://www.wildlife-pal.org/toc.htm',
     description: '',
   },
+  {
+    id: 'omars-site',
+    title: "Omar's Site",
+    year: '2001',
+    label: '',
+    headerText: '',
+    waybackUrl: 'https://web.archive.org/web/20011117093728/http://www.chem.metu.edu.tr/~omara/',
+    url: 'https://web.archive.org/web/20011117093728/http://www.chem.metu.edu.tr/~omara/',
+    description: '',
+  },
+
 ];
 
 let ids = pagesTour.map(page => page.id);
@@ -1350,12 +1361,23 @@ function setBreadcrumbs(pageId) {
   });
 }
 
+function setRandomPage() {
+  const randomPageId = getRandomSiteFromSiteTree(siteTree);
+  queryUpdate(randomPageId);
+  setFramePage();
+}
+
 function setFramePage() {
   const queryString = window.location.search;
   const params = new URLSearchParams(queryString);
-  const siteParam = params.get('site');
-  const siteSrc = pagesTour.find((page) => page.id === siteParam);
+  let siteParam = params.get('site');
 
+  if (!siteParam) {
+    siteParam = getRandomSiteFromSiteTree(siteTree);
+    queryUpdate(siteParam);
+  }
+
+  const siteSrc = pagesTour.find((page) => page.id === siteParam);
   document.getElementById('frame').src = siteSrc.url;
 
   document.getElementById(
@@ -1396,7 +1418,34 @@ function toggleMenu() {
   }
 }
 
-const datad = {
+function getRandomSiteFromSiteTree(siteTree) {
+  let allStrings = [];
+
+  function traverse(obj) {
+    for (let key in obj) {
+      if (Array.isArray(obj[key])) {
+        // If the value is an array, push its elements into allStrings
+        allStrings.push(...obj[key]);
+      } else if (typeof obj[key] === 'object') {
+        // If the value is an object, recurse into it
+        traverse(obj[key]);
+      }
+    }
+  }
+
+  // Traverse the siteTree to collect all strings
+  traverse(siteTree);
+
+  // Fetch a random string from the collected strings
+  if (allStrings.length > 0) {
+    const randomIndex = Math.floor(Math.random() * allStrings.length);
+    return allStrings[randomIndex];
+  }
+
+  return null; // Return null if no strings were found
+}
+
+const siteTree = {
   'Gaza': ['gaza-airport', 'municipality-gaza', 'gaza-mental-health'],
   'Art and Culture': {
     'Visual Art': ['samia-halaby', 'hanna-safieh', 'omayya-joha'],
@@ -1406,7 +1455,7 @@ const datad = {
     'Institutions': ['sakakini']
   },
   'Personal Homepages':
-    ['jayyousi-pages', 'amnah-site', 'palestine-oasis', 'esam-shashaa-bio', 'faaz', 'hopes-space', 'musa-budieri', 'aimans-site', 'asa-group', 'doctor-hani', 'alsharabatis-homepages', 'abboud-page', 'zuhair-page', 'reality-of-palestine'],
+    ['jayyousi-pages', 'amnah-site', 'palestine-oasis', 'esam-shashaa-bio', 'faaz', 'hopes-space', 'omars-site', 'musa-budieri', 'aimans-site', 'asa-group', 'doctor-hani', 'alsharabatis-homepages', 'abboud-page', 'zuhair-page', 'reality-of-palestine'],
   'Tourism and Travel': [ 'jerusalem-hotel', 'ministry-tourism'],
   'Cities Online': [
     'palestine-net-geography', 'ramallah-city', 'salfeet', 'municipality-gaza'
@@ -1419,7 +1468,4 @@ const datad = {
   'Birzeit University': ['parry-open-letter','birzeit-guide-to-palestinian-websites', 'birzeit-golden-olive-awards'],
   'Communicating on the Internet': ['planet-message-board', 'barghouti-guestbook', 'al-karmel-guestbook', 'pal-voice-forums-2005'],
   'Early Internet Infrastructure': ['palestine-yellow-pages', 'palsoft', 'zaytonasoft', 'planetedu', 'palnet'],
-  
-
-
 };
