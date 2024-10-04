@@ -1233,6 +1233,16 @@ let pagesTour = [
     url: 'https://web.archive.org/web/20011117093728/http://www.chem.metu.edu.tr/~omara/',
     description: '',
   },
+  {
+    id: 'aaa-ny',
+    title: "AAA NY",
+    year: '2024',
+    label: '',
+    headerText: '',
+    waybackUrl: '',
+    url: 'sites/aaa-ny.html',
+    description: '',
+  },
 
 ];
 
@@ -1452,7 +1462,7 @@ const siteTree = {
     'Literature': ['barghouti', 'al-karmel-guestbook'],
     'Music': ['jukebox-arabia'],
     'Crafts': ['palestine-embroider'],
-    'Institutions': ['sakakini']
+    'Institutions': ['sakakini', 'aaa-ny']
   },
   'Personal Homepages':
     ['jayyousi-pages', 'amnah-site', 'palestine-oasis', 'esam-shashaa-bio', 'faaz', 'hopes-space', 'omars-site', 'musa-budieri', 'aimans-site', 'asa-group', 'doctor-hani', 'alsharabatis-homepages', 'abboud-page', 'zuhair-page', 'reality-of-palestine'],
