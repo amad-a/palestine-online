@@ -1,15 +1,15 @@
 {
     "name": "Palestine Online",
-    "short_name": "pal online",
+    "short_name": "🇵🇸 online",
     "description": "Archive of early Palestinian websites",
     "icons": [
       {
-        "src": "public/icons/magnifying_glass-1.svg",
+        "src": "public/waveflag-crop.png",
         "sizes": "32x32",
         "type": "image/png"
       },
       {
-        "src": "public/icons/magnifying_glass-1.svg",        
+        "src": "public/waveflag-crop.png",        
         "sizes": "512x512",
         "type": "image/png"
       }
