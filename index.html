@@ -18,21 +18,22 @@
     <div id="mobile-dropdown-content" class="dropdown-content">
       <ul class="tree-view" id="tree"></ul>
     </div>
-    <div class="mobile-top-nav">
-      <button class="address-bar">
+    <button class="mobile-top-nav">
+      <div class="address-bar">
         <div id="address-bar-text">
           Samia Halaby's site
         </div>
-      </button>
-      <button id="mobile-dropdown" class="mobile-dropdown">
-      </button>
-    </div>
+      </div>
+      <img class="mobile-nav-folder" src="public/directory_closed_cool-4.svg" onclick="dropdownContent.classList.toggle('open');" />
+      <!-- <button id="mobile-dropdown" class="mobile-dropdown">
+      </button> -->
+    </button>
     <div class="mobile-buttons-grid" id="mobile-nav">
       <button id="zoomSlider">
         <div class="field-row">
-          <label class="slider-label" for="range26">-</label>
-          <input step="any" onchange="changeZoom(this.value)" id="range26" type="range" min="1" max="21" value="11" />
-          <label class="slider-label" for="range27">+</label>
+          <label id="mobile-zoom-out" class="slider-label">-</label>
+          <input id="zoom-slider" step="any" onchange="changeZoom(this.value)" id="range26" type="range" min="1" max="21" value="11" />
+          <label class="slider-label" id="mobile-zoom-in">+</label>
         </div>
       </button>
       <button class="mobile-button">
@@ -75,12 +76,12 @@
           <section style="margin: 6px 8px 4px 8px" class="field-row" style="justify-content: flex-start">
             <a class="tooltip">
               <input type="image" onclick="window.history.back()" src="public/back.svg" height="24px"
-                style="margin-bottom: 4px" />
+                style="margin-bottom: 2px" />
               <span class="tooltiptext">Go Back</span>
             </a>
             <a class="tooltip">
               <input type="image" onclick="window.history.forward()" src="public/front.svg" height="24px"
-                style="margin-bottom: 4px" />
+                style="margin-bottom: 2px" />
               <span class="tooltiptext">Go Forward</span>
             </a>
             <div class="divider">|</div>
@@ -93,12 +94,12 @@
               <span class="tooltiptext">Go to random site</span>
             </a>
             <a class="tooltip">
-              <input type="image" onclick="setWallpaper()" src="public/frame_web-1.svg" height="25px" />
-              <span class="tooltiptext">Change wallpaper</span>
+              <input type="image" onclick="setWallpaper()" src="public/icons/info.svg" height="25px" />
+              <span class="tooltiptext">Site Information</span>
             </a>
             <a class="tooltip">
             </a>
-            <div class="dropdown-container">
+            <div id="bleh2" class="dropdown-container">
               <pre id="current-site">
                 </pre>
               <a class="tooltip">
@@ -114,7 +115,7 @@
           <iframe id="menu" title="Menu" width="100%" src=""
             style="position: absolute; width: 0; height: 0; border: 0; border: none; position: absolute; overflow-y: hidden; background-color: silver;"></iframe>
           <div id="frame-container">
-            <iframe id="frame" title="Frame" width="99.25%" src="">
+            <iframe id="frame" title="Frame" width="99.5%" src="">
             </iframe>
           </div>
         </div>
@@ -125,6 +126,19 @@
     </div>
     <script>
 
+      const mobileZoomOut = document.getElementById('mobile-zoom-out');
+      const mobileZoomIn = document.getElementById('mobile-zoom-in');
+      const zoomSlider = document.getElementById('zoom-slider');
+
+      mobileZoomOut.addEventListener('touchstart', () => {
+        zoomSlider.value -= 1;
+        changeZoom(zoomSlider.value)
+      });
+
+      mobileZoomIn.addEventListener('touchstart', () => {
+        zoomSlider.value++;
+        changeZoom(zoomSlider.value)
+      });
       // Add click event listener to the body
       document.body.addEventListener('click', function (event) {
         setWallpaper();
@@ -141,13 +155,17 @@
         event.stopPropagation(); // Prevents the event from reaching the body
       });
 
+      document.querySelector('#current-site').addEventListener('click', function () {
+        const dropdownContent = document.querySelector('#dropdown-content');
+        dropdownContent.classList.toggle('open');
+      });
+
       document.querySelector('.dropdown').addEventListener('click', function () {
         const dropdownContent = document.querySelector('#dropdown-content');
         dropdownContent.classList.toggle('open');
       });
 
-      document.querySelector('#mobile-dropdown').addEventListener('click', function () {
-        console.log('test')
+      document.querySelector('.mobile-top-nav').addEventListener('click', function () {
         const dropdownContent1 = document.querySelector('#mobile-dropdown-content');
         dropdownContent1.classList.toggle('open');
       });

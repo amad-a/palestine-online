@@ -1292,9 +1292,12 @@ function createTreeView(obj) {
       if (typeof value === 'object' && value !== null) {
         const details = document.createElement('details');
         const summary = document.createElement('summary');
+        const summaryChild = document.createElement('span');
+        summaryChild.classList.add('summary-category')
 
         const siteCount = countTotalSites(value);
-        summary.textContent = `${key} (${siteCount})`;
+        summaryChild.textContent = `${key} (${siteCount})`;
+        summary.appendChild(summaryChild);
         const nestedUl = createTreeView(value);
 
         details.append(summary, nestedUl);
@@ -1329,6 +1332,14 @@ function traverseUpTree(node) {
 }
 
 function queryUpdate(pageId) {
+  const dropdown = document.getElementById('dropdown-content');
+  const mobileDropdown = document.getElementById('mobile-dropdown-content');
+  if (dropdown.classList.contains('open')) {
+    dropdown.classList.remove('open');
+  }
+  if (mobileDropdown.classList.contains('open')) {
+    mobileDropdown.classList.remove('open');
+  }
   if (history.pushState) {
     let newurl =
       window.location.protocol +
