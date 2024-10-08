@@ -4,12 +4,12 @@
     "description": "Archive of early Palestinian websites",
     "icons": [
       {
-        "src": "public/waveflag-crop.png",
+        "src": "public/pal32.png",
         "sizes": "32x32",
         "type": "image/png"
       },
       {
-        "src": "public/waveflag-crop.png",        
+        "src": "public/pal512.png",        
         "sizes": "512x512",
         "type": "image/png"
       }
