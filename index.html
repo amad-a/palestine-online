@@ -15,6 +15,9 @@
   </head>
 
   <body onload="setFramePage()">
+    <button class="mobile-share-alert">
+      Page Link copied to clipboard.
+    </button>
     <div id="mobile-dropdown-content" class="dropdown-content">
       <ul class="tree-view" id="tree"></ul>
     </div>
@@ -43,14 +46,19 @@
         <img class="mobile-button-graphic" src="public/front.svg" height="30px" onclick="window.history.forward()" />
       </button>
       <button class="mobile-button">
-        <img class="mobile-button-graphic" height="30px" src="public/icons/envelope_closed-1.svg" />
+        <img class="mobile-button-graphic" height="30px" src="public/icons/envelope_closed-1.svg" onclick="shareSite('mobile')"/>
       </button>
+
       <button class="mobile-button">
-        <img class="mobile-button-graphic" height="30px" src="public/icons/help_book_small-5.svg" />
+        <img class="mobile-button-graphic" height="30px" src="public/netmeeting-1.svg" onclick="setFramePage(true)" />
       </button>
+
       <button class="mobile-button">
+        <img class="mobile-button-graphic" height="30px" src="public/icons/help_book_small-5.svg" onclick="setRandomPage()"/>
+      </button>
+      <!-- <button class="mobile-button">
         <img class="mobile-button-graphic" height="30px" src="public/icons/info.svg" />
-      </button>
+      </button> -->
     </div>
     <div class="window-grid" id="window">
       <div class="info-panel-container" id="info-panel-container" style="visibility: hidden">
@@ -86,21 +94,18 @@
             </a>
             <div class="divider">|</div>
             <a class="tooltip">
-              <input style="opacity: 1; cursor: pointer" type="image" src="public/netmeeting-1.svg" height="25px" onclick="setFramePage(true)" />
-              <span class="tooltiptext">Reset current site</span>
+              <input style="opacity: 1; cursor: pointer" type="image" src="public/home.svg" height="25px" onclick="" />
+              <span class="tooltiptext">Go to Homepage</span>
             </a>
             <a class="tooltip">
               <input type="image" src="public/icons/help_book_small-5.svg" height="25px" onclick="setRandomPage()" />
               <span class="tooltiptext">Go to random site</span>
             </a>
             <a class="tooltip">
-              <input type="image" onclick="setWallpaper()" src="public/icons/info.svg" height="25px" />
-              <span class="tooltiptext">Site Information</span>
+              <input style="opacity: 1; cursor: pointer" type="image" src="public/netmeeting-1.svg" height="25px" onclick="setFramePage(true)" />
+              <span class="tooltiptext">Reset current site</span>
             </a>
-            <a class="tooltip">
-              <input type="image" onclick="shareSite()" src="public/icons/envelope_closed-1.svg" height="25px" />
-              <span id="share-page-tooltip" class="tooltiptext">Share Page</span>
-            </a>
+
             <a class="tooltip">
             </a>
             <div id="bleh2" class="dropdown-container">
@@ -115,6 +120,14 @@
                 <ul class="tree-view" id="tree-original"></ul>
               </div>
             </div>
+            <a class="tooltip">
+              <input type="image" onclick="setWallpaper()" src="public/icons/info.svg" height="25px" />
+              <span class="tooltiptext">Site Information</span>
+            </a>
+            <a class="tooltip">
+              <input type="image" onclick="shareSite()" src="public/icons/envelope_closed-1.svg" height="25px" />
+              <span id="share-page-tooltip" class="tooltiptext">Share Page</span>
+            </a>
           </section>
           <iframe id="menu" title="Menu" width="100%" src=""
             style="position: absolute; width: 0; height: 0; border: 0; border: none; position: absolute; overflow-y: hidden; background-color: silver;"></iframe>
@@ -153,6 +166,9 @@
 
       let sliderButton = document.getElementById("zoomSlider");
       sliderButton.disabled = true;
+
+      let mobileShareAlert = document.querySelector(".mobile-share-alert");
+      mobileShareAlert.disabled = true;
 
       // Add click event listener to the child element
       document.querySelector('.window-grid').addEventListener('click', function (event) {
@@ -193,7 +209,7 @@
 
       }
 
-      function shareSite() {
+      function shareSite(mode = 'desktop') {
         console.log('share site')
         const scrollPosition = document.getElementById('frame').contentWindow.scrollY;
 
@@ -204,7 +220,7 @@
         const regex = /\/sites\/(.*)/;
 
         const path = (document.getElementById("frame").contentWindow.location.href).match(regex)[1];
-        windowLocation += `&page=${path}&scroll=${Math.floor(scrollPosition)}`;
+        windowLocation += `&page=${path}`;
         document.body.appendChild(dummy);
         dummy.value = windowLocation;
         dummy.select();
@@ -212,8 +228,15 @@
         document.body.removeChild(dummy);
 
         const tooltip = document.getElementById('share-page-tooltip');
-        tooltip.innerHTML = 'Page link copied to clipboard.'
-        setTimeout(() => tooltip.innerHTML = 'Share Page' , 2500)
+        tooltip.innerHTML = 'Page link copied to clipboard.';
+
+        if (mode === 'desktop') {
+          setTimeout(() => tooltip.innerHTML = 'Share Page' , 2500)
+        }
+        if (mode = 'mobile') {
+          mobileShareAlert.style.visibility = 'visible';
+          setTimeout(() => mobileShareAlert.style.visibility = 'hidden', 2500)
+        }
       };
     </script>
   </body>

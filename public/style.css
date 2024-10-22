@@ -1008,6 +1008,23 @@ input[type='image' i]:hover {
     top: 4vh;
   }
 
+  button.mobile-share-alert {
+    font-family: 'Arial Narrow Bold', Arial, sans-serif !important;
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-inline: auto; 
+    width: fit-content;
+    z-index: 999999999;
+    padding: 10px;
+    border: 2px solid black;
+    text-shadow: none;
+    margin-bottom: 20px;
+    visibility: hidden;
+  }
+
 }
 
 @media only screen and (max-width: 375px) and (max-height: 700px) {
