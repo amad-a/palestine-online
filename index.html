@@ -86,7 +86,7 @@
             </a>
             <div class="divider">|</div>
             <a class="tooltip">
-              <input style="opacity: 1; cursor: pointer" type="image" src="public/netmeeting-1.svg" height="25px" onclick="setFramePage()" />
+              <input style="opacity: 1; cursor: pointer" type="image" src="public/netmeeting-1.svg" height="25px" onclick="setFramePage(true)" />
               <span class="tooltiptext">Reset current site</span>
             </a>
             <a class="tooltip">
@@ -96,6 +96,10 @@
             <a class="tooltip">
               <input type="image" onclick="setWallpaper()" src="public/icons/info.svg" height="25px" />
               <span class="tooltiptext">Site Information</span>
+            </a>
+            <a class="tooltip">
+              <input type="image" onclick="shareSite()" src="public/icons/envelope_closed-1.svg" height="25px" />
+              <span id="share-page-tooltip" class="tooltiptext">Share Page</span>
             </a>
             <a class="tooltip">
             </a>
@@ -180,10 +184,38 @@
       treeViewContainerOriginal.appendChild(createTreeView(siteTree));
 
       let value;
+      
 
       document.getElementById('frame').onload = function () {
         changeZoom(value);
+
+        console.log('titley', document.getElementById('frame').contentDocument.title);
+
       }
+
+      function shareSite() {
+
+
+        const scrollPosition = document.getElementById('frame').contentWindow.scrollY;
+
+        let dummy = document.createElement('input'),
+        windowLocation = (window.location.href).replace(/&page=.*$/, '');
+        const iframe = document.getElementById('frame')
+        
+        const regex = /\/sites\/(.*)/;
+
+        const path = (document.getElementById("frame").contentWindow.location.href).match(regex)[1];
+        windowLocation += `&page=${path}&scroll=${Math.floor(scrollPosition)}`;
+        document.body.appendChild(dummy);
+        dummy.value = windowLocation;
+        dummy.select();
+        document.execCommand('copy');
+        document.body.removeChild(dummy);
+
+        const tooltip = document.getElementById('share-page-tooltip');
+        tooltip.innerHTML = 'Page link copied to clipboard.'
+        setTimeout(() => tooltip.innerHTML = 'Share Page' , 2500)
+      };
     </script>
   </body>
 </html>

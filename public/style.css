@@ -462,12 +462,7 @@ p.status-bar-field {
 }
 
 p.status-bar-field:hover {
-  font-family: 'Arial Narrow', Arial, sans-serif !important;
-  width: fit-content !important;
-  /* padding: 3px 10px 5px 10px; */
-  background-color: blue;
-  color: white;
-  cursor: pointer;
+
 }
 
 select {
@@ -700,6 +695,7 @@ body * {
 .menu-link:hover {
   cursor: pointer;
   color: white !important;
+  /* background-color: rgb(0, 86, 42); */
   background-color: blue;
 }
 
@@ -708,6 +704,18 @@ body * {
   color: white !important;
   background-color: blue;
 }
+
+ul.tree-view a.red-class {
+  color: rgb(0, 96, 34) !important;
+  text-decoration: underline !important;
+}
+
+ul.tree-view a.red-class:hover {
+  color: white !important;
+  background-color: rgb(0, 96, 34) !important;
+  text-decoration: underline !important;
+}
+
 
 input[type='image' i]:hover {
   cursor: pointer;
@@ -726,7 +734,6 @@ input[type='image' i]:hover {
 
   #frame {
     height: calc(100vh - 90px);
-    max-height: calc(100vh - 102px);
   }
 
   .walkthru-window {
@@ -764,6 +771,10 @@ input[type='image' i]:hover {
 }
 
 @media only screen and (max-width: 450px) {
+
+  ul.tree-view {
+    
+  }
 
   button {
     zoom: 1.0;

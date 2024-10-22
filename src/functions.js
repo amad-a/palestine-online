@@ -92,7 +92,7 @@ let pages = [
     'header-text': 'Information Technology',
     'wayback-url':
       'https://web.archive.org/web/20010331104253/http://www.pal-soft.com/',
-    url: '/sites/palsoft/palsoft.html',
+    url: 'sites/palsoft/palsoft.html',
     description:
       'Website for an Internet Cafe in Ramallah, which also sells PCs, Digital Media, VHS Digitization, Print Services, among other goods and services.',
   },
@@ -1122,6 +1122,8 @@ let pagesTour = [
     headerText: 'The Personal Homepage',
     waybackUrl:
       'https://web.archive.org/web/20011129082722/http://www.angelfire.com/pa/asagroup/',
+    url:
+      'https://web.archive.org/web/20011129082722/http://www.angelfire.com/pa/asagroup/',
     description: '',
   },
   {
@@ -1307,8 +1309,13 @@ function createTreeView(obj) {
           (page) => page.id === value
         )[0];
         li.id = `${value}-link`;
+        let redClass = '';
+        // if (!pageMatch.url.startsWith('sites')) {
+        //   console.log('page match url red', pageMatch.url);
+        //   redClass = 'red-class'
+        // }
 
-        li.innerHTML = `<a class="menu-link" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
+        li.innerHTML = `<a class="menu-link ${redClass}" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
       }
       return li;
     })
@@ -1388,10 +1395,12 @@ function setRandomPage() {
   setFramePage();
 }
 
-function setFramePage() {
+function setFramePage(reset = false) {
   const queryString = window.location.search;
   const params = new URLSearchParams(queryString);
   let siteParam = params.get('site');
+  let pageParam = params.get('page');
+  let scrollParam = params.get('scroll');
 
   if (!siteParam) {
     siteParam = getRandomSiteFromSiteTree(siteTree);
@@ -1399,7 +1408,12 @@ function setFramePage() {
   }
 
   const siteSrc = pagesTour.find((page) => page.id === siteParam);
-  document.getElementById('frame').src = siteSrc.url;
+
+  if (pageParam && !reset) {
+    document.getElementById('frame').src = '/sites/' + pageParam;
+  } else {
+    document.getElementById('frame').src = siteSrc.url;
+  }
 
   document.getElementById(
     'current-site'
@@ -1466,27 +1480,27 @@ function getRandomSiteFromSiteTree(siteTree) {
   return null; // Return null if no strings were found
 }
 
+
 const siteTree = {
   'Gaza': ['gaza-airport', 'municipality-gaza', 'gaza-mental-health'],
   'Art and Culture': {
-    'Visual Art': ['samia-halaby', 'hanna-safieh', 'omayya-joha'],
+    'Visual Art': ['samia-halaby', 'hanna-safieh', 'omayya-joha', 'al-aqsa-tour'],
     'Literature': ['barghouti', 'al-karmel-guestbook'],
     'Music': ['jukebox-arabia'],
     'Crafts': ['palestine-embroider'],
-    'Institutions': ['sakakini', 'aaa-ny']
+    'Institutions': ['sakakini', 'aaa-ny'],
   },
   'Personal Homepages':
-    ['jayyousi-pages', 'amnah-site', 'palestine-oasis', 'esam-shashaa-bio', 'faaz', 'hopes-space', 'omars-site', 'musa-budieri', 'aimans-site', 'asa-group', 'doctor-hani', 'alsharabatis-homepages', 'abboud-page', 'zuhair-page', 'reality-of-palestine'],
+    ['the-holly-land', 'jayyousi-pages', 'amnah-site', 'palestine-oasis', 'esam-shashaa-bio', 'faaz', 'hopes-space', 'omars-site', 'musa-budieri', 'aimans-site', 'asa-group', 'doctor-hani', 'alsharabatis-homepages', 'abboud-page', 'zuhair-page', 'reality-of-palestine'],
   'Tourism and Travel': [ 'jerusalem-hotel', 'ministry-tourism'],
   'Cities Online': [
     'palestine-net-geography', 'ramallah-city', 'salfeet', 'municipality-gaza'
   ],
-  'News': ['al-quds-news', 'alayyam-news', 'palestinian-information-center', 
-    'palestinian-information-center-hamas','hanthala'],
+  'News': ['al-quds-news', 'alayyam-news', 'palestinian-information-center','hanthala'],
   'Documenting and Memorializing': ['barghouti-memorial', 'ramallah-1996', 'september-1996-memorial', 'villages-map'],
   'Nature': ['gazelle', 'palestine-wildlife-society'],
   'Magazines': ['jerusalem-i-love-you', 'palestine-times-uk'],
-  'Birzeit University': ['parry-open-letter','birzeit-guide-to-palestinian-websites', 'birzeit-golden-olive-awards'],
+  'Birzeit University': ['parry-open-letter','birzeit-guide-to-palestinian-websites', 'birzeit-golden-olive-awards', 'hanieh-middle-east-report'],
   'Communicating on the Internet': ['planet-message-board', 'barghouti-guestbook', 'al-karmel-guestbook', 'pal-voice-forums-2005'],
-  'Early Internet Infrastructure': ['palestine-yellow-pages', 'palsoft', 'zaytonasoft', 'planetedu', 'palnet'],
+  'Early Internet Infrastructure': ['palestine-yellow-pages', 'palsoft', 'zaytonasoft', 'planetedu', 'palnet', 'tutorials-in-arabic'],
 };
