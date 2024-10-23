@@ -8,6 +8,10 @@ html {
   zoom: 1;
 }
 
+button:disabled.zoom-disabled {
+  color: black;
+}
+
 .mobile-top-nav {
   visibility: hidden;
   width: 0px;
@@ -715,6 +719,13 @@ ul.tree-view a.red-class:hover {
   background-color: rgb(0, 96, 34) !important;
   text-decoration: underline !important;
 }
+button.mobile-share-alert {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  min-width: 0px;
+  padding: 0px;
+}
 
 
 input[type='image' i]:hover {
@@ -1023,6 +1034,8 @@ input[type='image' i]:hover {
     text-shadow: none;
     margin-bottom: 20px;
     visibility: hidden;
+    width: 322px;
+    height: 52px;
   }
 
 }
