@@ -1247,7 +1247,7 @@ let pagesTour = [
   },
   {
     id: 'pr-preso-2024',
-    title: "Processing Fellowship",
+    title: "Presentation",
     year: '2024',
     label: '',
     headerText: '',
