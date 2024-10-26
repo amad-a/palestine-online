@@ -1245,6 +1245,16 @@ let pagesTour = [
     url: 'sites/aaa-ny.html',
     description: '',
   },
+  {
+    id: 'pr-preso-2024',
+    title: "Processing Fellowship",
+    year: '2024',
+    label: '',
+    headerText: '',
+    waybackUrl: '',
+    url: 'sites/pr-preso-2024/1.html',
+    description: '',
+  },
 
 ];
 
@@ -1503,4 +1513,5 @@ const siteTree = {
   'Birzeit University': ['parry-open-letter','birzeit-guide-to-palestinian-websites', 'birzeit-golden-olive-awards', 'hanieh-middle-east-report'],
   'Communicating on the Internet': ['planet-message-board', 'barghouti-guestbook', 'al-karmel-guestbook', 'pal-voice-forums-2005'],
   'Early Internet Infrastructure': ['palestine-yellow-pages', 'palsoft', 'zaytonasoft', 'planetedu', 'palnet', 'tutorials-in-arabic'],
+  'Processing Fellowship Documentation': ['pr-preso-2024']
 };
