@@ -334,13 +334,13 @@ button {
   grid-column-end: 2;
 }
 
+iframe {
+  background-color: white;
+}
+
 #b0 {
   background-image: url('tiles/keffiyeh-dithered.gif');
   background-repeat: repeat;
-}
-
-iframe {
-  background-color: white;
 }
 
 #b1 {
@@ -407,7 +407,6 @@ iframe {
 
 #b13 {
   /* change */
-
   background-image: url('tiles/pals2.gif');
   background-repeat: repeat;
 }
@@ -537,7 +536,7 @@ pre {
 
 .dropdown-container {
   display: flex;
-  width: 400px;
+  width: 800px;
 }
 
 .dropdown-container:hover {
