@@ -1325,7 +1325,7 @@ function createTreeView(obj) {
         //   redClass = 'red-class'
         // }
 
-        li.innerHTML = `<a class="menu-link ${redClass}" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
+        li.innerHTML = `<a class="menu-link ${redClass}" onmouseover="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
       }
       return li;
     })
@@ -1351,9 +1351,9 @@ function traverseUpTree(node) {
 function queryUpdate(pageId) {
   const dropdown = document.getElementById('dropdown-content');
   const mobileDropdown = document.getElementById('mobile-dropdown-content');
-  if (dropdown.classList.contains('open')) {
-    dropdown.classList.remove('open');
-  }
+  // if (dropdown.classList.contains('open')) {
+  //   dropdown.classList.remove('open');
+  // }
   if (mobileDropdown.classList.contains('open')) {
     mobileDropdown.classList.remove('open');
   }
