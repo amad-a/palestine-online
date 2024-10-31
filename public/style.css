@@ -6,10 +6,27 @@ html {
   overflow: hidden;
   height: 100%;
   zoom: 1;
+  -webkit-font-smoothing: auto !important;
+
 }
 
 button:disabled.zoom-disabled {
   color: black;
+}
+
+#frame-container {
+  
+}
+
+.opacity {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.frame-preview-image {
+  background-size: 99.2%;
+  background-repeat: no-repeat;
+  background-position: center;
+  image-rendering: optimizeSpeed;
 }
 
 .mobile-top-nav {
@@ -177,13 +194,20 @@ iframe {
   padding-bottom: 0px;
 }
 
+
+.title-bar {
+  padding: 0px;
+}
+
 .title-bar-text {
   font-family: Arial, Helvetica, sans-serif;
   font-style: oblique;
-  font-size: 15px;
-  margin: 2px;
+  font-size: 28px;
+  margin: 6px;
+  margin-left: 8px;
   letter-spacing: 0.1px;
 }
+
 
 .walkthru-title {
   /* width: 50px; */
@@ -242,6 +266,11 @@ iframe {
 }
 
 #frame {
+  max-height: 625px;
+  background-color: white;
+}
+
+#preview-image {
   max-height: 597px;
 }
 
@@ -284,7 +313,11 @@ iframe {
 }
 
 button {
-  zoom: 1.25;
+  zoom: 2.5;
+}
+
+.title-bar-controls {
+  margin-right: 2px;
 }
 
 .tooltip:hover .tooltiptext {
@@ -334,9 +367,9 @@ button {
   grid-column-end: 2;
 }
 
-iframe {
+/* iframe {
   background-color: white;
-}
+} */
 
 #b0 {
   background-image: url('tiles/keffiyeh-dithered.gif');
@@ -626,6 +659,11 @@ ul.tree-view {
   font-family: 'Arial Narrow Regular', Arial, sans-serif !important;
   font-size: 18px !important;
   font-weight: 200;
+  background: rgba(255, 255, 255, 0)
+}
+
+.dropdown-hover-transparent {
+  background: rgba(255, 255, 255, .5);
 }
 
 ul.tree-view a {
@@ -739,7 +777,11 @@ input[type='image' i]:hover {
 
   #frame {
     max-height: 86vh;
-}
+  }
+
+  #preview-image {
+    max-height: 86vh;
+  }
 
   .window-grid {
     width: 100vw;
@@ -747,6 +789,10 @@ input[type='image' i]:hover {
   }
 
   #frame {
+    height: calc(100vh - 90px);
+  }
+
+  #preview-image {
     height: calc(100vh - 90px);
   }
 
