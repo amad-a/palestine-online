@@ -106,14 +106,14 @@
           <div class="title-bar-text">
             Palestine Online
           </div>
-          <!-- <div class="title-bar-controls">
+          <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>
             <button aria-label="Close"></button>
-          </div> -->
+          </div>
         </div>
         <div class="window-body" style="margin: 0px; overflow: hidden;">
-          <section style="margin: 6px 8px 4px 8px" class="field-row" style="justify-content: flex-start">
+          <section style="margin: 6px 8px 4px 8px; display: none;" class="field-row" style="justify-content: flex-start">
             <a class="tooltip">
               <input type="image" onclick="window.history.back()" src="public/back.svg" height="24px"
                 style="margin-bottom: 2px" />
@@ -166,9 +166,8 @@
           <div id="frame-container">
             <iframe id="frame" title="Frame" width="99.5%" src="">
             </iframe>
-          </div>
         </div>
-        <div id="breadcrumbs" class="status-bar">
+        <div id="breadcrumbs" style="display: none;" class="status-bar">
         </div>
       </div>
     </div>

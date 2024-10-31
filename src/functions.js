@@ -1255,6 +1255,16 @@ let pagesTour = [
     url: 'sites/pr-preso-2024/1.html',
     description: '',
   },
+  {
+    id: 'dazed-copy',
+    title: "Presentation",
+    year: '2024',
+    label: '',
+    headerText: '',
+    waybackUrl: '',
+    url: 'sites/dazed-copy.html',
+    description: '',
+  },
 
 ];
 
@@ -1295,6 +1305,32 @@ function setWallpaper() {
   localStorage.setItem('wallpaper', num.toString());
 }
 
+function navHoverImage() {
+  const frame = document.getElementById('frame');
+  const dropdown = document.getElementById('dropdown-content');
+  dropdown.classList.add('dropdown-hover-transparent');
+  frame.style.visibility = "hidden";
+
+  const frameContainer = document.getElementById('frame-container');
+
+  frameContainer.style.backgroundImage = "url('public/preview-images/samia-halaby.webp')"
+  // frameContainer.style.margin = "1px"
+
+  frameContainer.classList.add('frame-preview-image');
+}
+
+function navHoverLeave() {
+  const frame = document.getElementById('frame');
+  frame.style.visibility = "visible";
+  const dropdown = document.getElementById('dropdown-content');
+  dropdown.classList.remove('dropdown-hover-transparent');
+
+  const frameContainer = document.getElementById('frame-container');
+  frameContainer.classList.remove('frame-preview-image');
+
+  frameContainer.style.backgroundImage = "none";
+}
+
 function createTreeView(obj) {
   const ul = document.createElement('ul');
   ul.append(
@@ -1325,7 +1361,8 @@ function createTreeView(obj) {
         //   redClass = 'red-class'
         // }
 
-        li.innerHTML = `<a class="menu-link ${redClass}" onmouseover="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
+        li.innerHTML = `<a class="menu-link ${redClass}" 
+        onmouseover="navHoverImage()" onmouseleave="navHoverLeave()" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
       }
       return li;
     })
@@ -1351,9 +1388,9 @@ function traverseUpTree(node) {
 function queryUpdate(pageId) {
   const dropdown = document.getElementById('dropdown-content');
   const mobileDropdown = document.getElementById('mobile-dropdown-content');
-  // if (dropdown.classList.contains('open')) {
-  //   dropdown.classList.remove('open');
-  // }
+  if (dropdown.classList.contains('open')) {
+    dropdown.classList.remove('open');
+  }
   if (mobileDropdown.classList.contains('open')) {
     mobileDropdown.classList.remove('open');
   }
@@ -1367,6 +1404,7 @@ function queryUpdate(pageId) {
       pageId;
     window.history.pushState({ path: newurl }, '', newurl);
   }
+  navHoverLeave();
   setFramePage(pageId);
 }
 
@@ -1434,6 +1472,10 @@ function setFramePage(reset = false) {
   ).innerHTML = `${siteSrc.title} <i>${siteSrc.year}</i>`;
 
   if (siteParam) setBreadcrumbs(siteParam);
+
+  if (siteParam) {
+    document.querySelector('.title-bar-text').innerHTML = `<i>${siteSrc.title}</i>`;
+  }
 }
 
 function changeZoom(currentValue) {
@@ -1513,5 +1555,5 @@ const siteTree = {
   'Birzeit University': ['parry-open-letter','birzeit-guide-to-palestinian-websites', 'birzeit-golden-olive-awards', 'hanieh-middle-east-report'],
   'Communicating on the Internet': ['planet-message-board', 'barghouti-guestbook', 'al-karmel-guestbook', 'pal-voice-forums-2005'],
   'Early Internet Infrastructure': ['palestine-yellow-pages', 'palsoft', 'zaytonasoft', 'planetedu', 'palnet', 'tutorials-in-arabic'],
-  'Processing Fellowship Documentation': ['pr-preso-2024']
+  'Processing Fellowship Documentation': ['pr-preso-2024', 'dazed-copy']
 };
