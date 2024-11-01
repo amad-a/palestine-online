@@ -209,11 +209,16 @@
 
       document.querySelector('#current-site').addEventListener('click', function () {
         const dropdownContent = document.querySelector('#dropdown-content');
+        console.log('dropdown size', dropdownContent.offsetWidth)
+        dropdownContent.style.width = `${document.querySelector('.dropdown-container').offsetWidth - 3}px`;
+        console.log('dropdown size', dropdownContent.style)
+
         dropdownContent.classList.toggle('open');
       });
 
       document.querySelector('.dropdown').addEventListener('click', function () {
         const dropdownContent = document.querySelector('#dropdown-content');
+        dropdownContent.style.width = `${document.querySelector('.dropdown-container').offsetWidth - 3}px`;
         dropdownContent.classList.toggle('open');
       });
 

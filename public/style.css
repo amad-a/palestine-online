@@ -189,7 +189,7 @@ iframe {
   grid-column-start: 2;
   grid-column-end: 2;
   width: 800px;
-  padding-bottom: 0px;
+  padding-bottom: 2px;
 }
 
 .title-bar-text {
@@ -354,8 +354,9 @@ iframe {
 }
 
 #b0 {
-  background-image: url('tiles/keffiyeh-dithered.gif');
+  background-image: url('tiles/keffiyeh.gif');
   background-repeat: repeat;
+  image-rendering: pixelated;
 }
 
 #b1 {
@@ -463,12 +464,15 @@ iframe {
 
 body {
   background-repeat: repeat;
+  padding: 0px;
+  margin: 0px;
 }
 
 .status-bar {
   height: 30px !important;
   width: fit-content !important;
   align-items: right !important;
+  display: none;
 }
 
 p.status-bar-field {
