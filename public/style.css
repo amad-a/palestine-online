@@ -19,6 +19,21 @@ button:disabled.zoom-disabled {
   position: absolute;
 }
 
+#frame-container {
+
+}
+
+.opacity {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.frame-preview-image {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  image-rendering: optimizeSpeed;
+}
+
 .summary-category {
   width: fit-content;
 }
@@ -626,6 +641,11 @@ ul.tree-view {
   font-family: 'Arial Narrow Regular', Arial, sans-serif !important;
   font-size: 18px !important;
   font-weight: 200;
+  background: rgba(255, 255, 255, 0)
+}
+
+.dropdown-hover-transparent {
+  background: rgba(255, 255, 255, .5);
 }
 
 ul.tree-view a {
@@ -669,10 +689,12 @@ ul.tree-view details > summary:before {
   font-weight: bold;
   text-align: center;
   width: 15px !important;
+  background-color: transparent;
 }
 
 ul.tree-view details[open] > summary:before {
   background-image: url('directory_open_cool-4.svg');
+  background-color: transparent;
   content: '';
 }
 
@@ -729,6 +751,10 @@ button.mobile-share-alert {
 
 input[type='image' i]:hover {
   cursor: pointer;
+}
+
+#preview-image {
+  max-height: 88vh;
 }
 
 @media only screen and (max-width: 1024px) and (max-height: 768px) {

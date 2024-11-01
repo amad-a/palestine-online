@@ -1325,13 +1325,49 @@ function createTreeView(obj) {
         //   redClass = 'red-class'
         // }
 
-        li.innerHTML = `<a class="menu-link ${redClass}" onmouseover="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
+        li.innerHTML = `<a class="menu-link ${redClass}" onmouseover="navHoverImage('${pageMatch.id}')" onmouseleave="navHoverLeave()" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
+
       }
       return li;
     })
   );
   return ul;
 }
+
+async function navHoverImage(pageId) {
+  const imageUrl = `public/preview-images/${pageId}.webp`
+  fetch(imageUrl)
+    .then(response => {
+      if (response.ok) {
+        
+        const frame = document.getElementById('frame');
+        const dropdown = document.getElementById('dropdown-content');
+        dropdown.classList.add('dropdown-hover-transparent');
+        frame.style.visibility = "hidden";
+        const frameContainer = document.getElementById('frame-container');
+        frameContainer.style.backgroundImage = `url('public/preview-images/${pageId}.webp')`
+        frameContainer.classList.add('frame-preview-image');
+      } else {
+        console.error('Image not found:', filename);
+      }
+    })
+    .catch(error => {
+      console.error('Error fetching image:', error);
+    });
+}
+
+function navHoverLeave() {
+  const frame = document.getElementById('frame');
+  frame.style.visibility = "visible";
+  const dropdown = document.getElementById('dropdown-content');
+  dropdown.classList.remove('dropdown-hover-transparent');
+
+  const frameContainer = document.getElementById('frame-container');
+  frameContainer.classList.remove('frame-preview-image');
+
+  frameContainer.style.backgroundImage = "none";
+}
+
 
 function traverseUpTree(node) {
   let parent = node.parentElement.parentElement.firstChild;
@@ -1351,9 +1387,10 @@ function traverseUpTree(node) {
 function queryUpdate(pageId) {
   const dropdown = document.getElementById('dropdown-content');
   const mobileDropdown = document.getElementById('mobile-dropdown-content');
-  // if (dropdown.classList.contains('open')) {
-  //   dropdown.classList.remove('open');
-  // }
+  if (dropdown.classList.contains('open')) {
+    dropdown.classList.remove('open');
+  }
+  
   if (mobileDropdown.classList.contains('open')) {
     mobileDropdown.classList.remove('open');
   }
