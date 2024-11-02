@@ -572,7 +572,7 @@ ul.tree-view ul > li:before {
   width: 12px;
 }
 ul.tree-view ul > li:last-child:after {
-  background: #fff;
+  /* background: palevioletred; */
   bottom: 0;
   content: '';
   display: block;
@@ -580,6 +580,7 @@ ul.tree-view ul > li:last-child:after {
   position: absolute;
   top: 7px;
   width: 8px;
+  color: transparent;
   background-color: transparent;
 }
 ul.tree-view details {

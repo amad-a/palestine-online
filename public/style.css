@@ -223,7 +223,7 @@ iframe {
   font-size: 48px;
 } */
 
-.walkthru-left-arrow {
+/* .walkthru-left-arrow {
   justify-content: right;
   text-align: right;
   grid-column-start: 0;
@@ -246,7 +246,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding-left: 25px;
-}
+} */
 
 .walkthru-info {
   grid-column-start: 2;
@@ -271,8 +271,6 @@ iframe {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  background-color: black;
-  color: #fff;
   text-align: center;
   padding: 4px 5px 4px 5px;
   margin-top: 32.5px;
@@ -292,10 +290,16 @@ iframe {
   box-shadow: 3px 3px 3px rgb(0, 0, 0);
 }
 
-.urltooltip {
+.tooltip-address-bar {
   margin-top: 10px !important;
   margin-left: -145px !important;
-  z-index: 1;
+  z-index: 9999999;
+}
+
+.tooltip-right {
+  z-index: 99999999;
+  left: calc(100% - 125px)
+  /* margin-left: -145px !important; */
 }
 
 button {
@@ -673,6 +677,15 @@ ul.tree-view ul > li:before {
   width: 12px;
 }
 
+ul.tree-view ul > li:after {
+  display: block;
+  left: -16px;
+  position: absolute;
+  top: 0px;
+  width: 12px;
+  color: transparent;
+}
+
 ul.tree-view details > summary:before {
   background-image: url('directory_closed_cool-4.svg');
   background-size: cover;
@@ -765,19 +778,25 @@ input[type='image' i]:hover {
   .walkthru-window {
     width: 99.6vw;
     height: 100vh;
+    margin-left: 1px;
   }
 
   #frame {
-    max-height: 86vh;
-}
+    max-height: calc(100vh - 79px);
+    height: calc(100vh - 79px);
+  }
+
+  .frame-preview-image {
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: top;
+    image-rendering: optimizeSpeed;
+  }
 
   .window-grid {
     width: 100vw;
     height: 100vh;
-  }
-
-  #frame {
-    height: calc(100vh - 90px);
+    justify-content: center;
   }
 
   .walkthru-window {
@@ -796,10 +815,6 @@ input[type='image' i]:hover {
     font-family: monospace !important;
   }
 
-  ul.tree-view {
-    box-shadow: initial;
-    border: 0px;
-  }
 }
 
 @media only screen and (min-width: 1200px) and (min-height: 900px) {

@@ -146,7 +146,7 @@
               <a class="tooltip">
                 <div class="dropdown">
                 </div>
-                <span class="tooltiptext urltooltip">View websites</span>
+                <span class="tooltiptext tooltip-address-bar">View websites</span>
               </a>
               <div id="dropdown-content" class="dropdown-content">
                 <ul class="tree-view" id="tree-original"></ul>
@@ -154,11 +154,11 @@
             </div>
             <a class="tooltip">
               <input type="image" onclick="setWallpaper()" src="public/icons/info.svg" height="25px" />
-              <span class="tooltiptext">Site Information</span>
+              <span class="tooltiptext tooltip-right">Information</span>
             </a>
             <a class="tooltip">
               <input type="image" onclick="shareSite()" src="public/icons/envelope_closed-1.svg" height="25px" />
-              <span id="share-page-tooltip" class="tooltiptext">Share Page</span>
+              <span id="share-page-tooltip" class="tooltiptext tooltip-right">Share Page</span>
             </a>
           </section>
           <iframe id="menu" title="Menu" width="100%" src=""
@@ -265,7 +265,7 @@
         document.body.removeChild(dummy);
 
         const tooltip = document.getElementById('share-page-tooltip');
-        tooltip.innerHTML = 'Page link copied to clipboard.';
+        tooltip.innerHTML = 'Link copied.';
 
         if (mode === 'desktop') {
           setTimeout(() => tooltip.innerHTML = 'Share Page' , 2500)
