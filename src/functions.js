@@ -1403,7 +1403,7 @@ function setFramePage(reset = false) {
   } else {
     document.getElementById('frame').src = siteSrc.url;
   }
-    // document.getElementById('loading').style.display = 'block';
+    document.getElementById('loading').style.display = 'block';
   
     document.getElementById('frame').addEventListener('load', function() {
       console.log('Iframe has finished loading!');
