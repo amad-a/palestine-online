@@ -1464,36 +1464,6 @@ function getRandomSiteFromSiteTree(siteTree) {
   return null; // Return null if no strings were found
 }
 
-function shareSite(mode = 'desktop') {
-  console.log('share site');
-  const scrollPosition = document.getElementById('frame').contentWindow.scrollY;
-
-  let dummy = document.createElement('input'),
-  windowLocation = (window.location.href).replace(/&page=.*$/, '');
-  // const iframe = document.getElementById('frame')
-  
-  const regex = /\/sites\/(.*)/;
-
-  const path = (document.getElementById("frame").contentWindow.location.href).match(regex)[1];
-  windowLocation += `&page=${path}`;
-  document.body.appendChild(dummy);
-  dummy.value = windowLocation;
-  dummy.select();
-  document.execCommand('copy');
-  document.body.removeChild(dummy);
-
-  const tooltip = document.getElementById('share-page-tooltip');
-  tooltip.innerHTML = 'Link copied.';
-
-  if (mode === 'desktop') {
-    setTimeout(() => tooltip.innerHTML = 'Share Page' , 2500)
-  }
-  if (mode = 'mobile') {
-    mobileShareAlert.style.visibility = 'visible';
-    setTimeout(() => mobileShareAlert.style.visibility = 'hidden', 2500)
-  }
-};
-
 const siteTree = {
   'Gaza': ['gaza-airport', 'municipality-gaza', 'gaza-mental-health'],
   'Art and Culture':
