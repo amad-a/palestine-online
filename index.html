@@ -241,8 +241,11 @@
   // const iframe = document.getElementById('frame')
   
   const regex = /\/sites\/(.*)/;
+  
+  // console.log('path', document.getElementById("frame").contentWindow.location.href);
 
-  const path = (document.getElementById("frame").contentWindow.location.href).match(regex)[1];
+  const path = (document.getElementById("frame").contentWindow.location.href).match(regex);
+  console.log('path', path);
   windowLocation += `&page=${path}`;
   document.body.appendChild(dummy);
   dummy.value = windowLocation;
