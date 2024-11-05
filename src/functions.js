@@ -1330,7 +1330,7 @@ async function navHoverImage(pageId) {
         frameContainer.style.backgroundImage = `url('public/preview-images/${pageId}.webp')`
         frameContainer.classList.add('frame-preview-image');
       } else {
-        console.error('Image not found:', filename);
+        console.error('Image not found:', imageUrl);
       }
     })
     .catch(error => {
