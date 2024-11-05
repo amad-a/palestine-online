@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="public/style.css" />
     <link rel="preconnect" href="https://web.archive.org">
 
-
     <link rel="preload" href="/images/bg-min.png" as="image">
     <link rel="preload" href="/images/bg-min.png" as="image">
 
@@ -41,8 +40,6 @@
     <link rel="preload" href="/public/tiles/welcome.gif" as="image">
     <link rel="preload" href="/public/tiles/back.jpg" as="image">
 
-
-
     <script src="src/functions.js"></script>
   </head>
 
@@ -60,8 +57,6 @@
         </div>
       </div>
       <img class="mobile-nav-folder" src="public/directory_closed_cool-4.svg" onclick="dropdownContent.classList.toggle('open');" />
-      <!-- <button id="mobile-dropdown" class="mobile-dropdown">
-      </button> -->
     </button>
     <div class="mobile-buttons-grid" id="mobile-nav">
       <button id="zoomSlider">
@@ -80,17 +75,12 @@
       <button class="mobile-button">
         <img class="mobile-button-graphic" height="30px" src="public/icons/envelope_closed-1.svg" onclick="shareSite('mobile')"/>
       </button>
-
       <button class="mobile-button">
         <img class="mobile-button-graphic" height="30px" src="public/netmeeting-1.svg" onclick="setFramePage(true)" />
       </button>
-
       <button class="mobile-button">
         <img class="mobile-button-graphic" height="30px" src="public/icons/help_book_small-5.svg" onclick="setRandomPage()"/>
       </button>
-      <!-- <button class="mobile-button">
-        <img class="mobile-button-graphic" height="30px" src="public/icons/info.svg" />
-      </button> -->
     </div>
     <div class="window-grid" id="window">
       <div class="info-panel-container" id="info-panel-container" style="visibility: hidden">
@@ -106,11 +96,6 @@
           <div class="title-bar-text">
             Palestine Online
           </div>
-          <!-- <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
-          </div> -->
         </div>
         <div class="window-body" style="margin: 0px; overflow: hidden;">
           <section style="margin: 6px 8px 4px 8px" class="field-row" style="justify-content: flex-start">
@@ -137,10 +122,9 @@
               <input style="opacity: 1; cursor: pointer" type="image" src="public/netmeeting-1.svg" height="25px" onclick="setFramePage(true)" />
               <span class="tooltiptext">Reset current site</span>
             </a>
-
             <a class="tooltip">
             </a>
-            <div id="bleh2" class="dropdown-container">
+            <div class="dropdown-container">
               <pre id="current-site">
                 </pre>
               <a class="tooltip">
@@ -164,6 +148,16 @@
           <iframe id="menu" title="Menu" width="100%" src=""
             style="position: absolute; width: 0; height: 0; border: 0; border: none; position: absolute; overflow-y: hidden; background-color: silver;"></iframe>
           <div id="frame-container">
+            <div id="loading" style="
+            position: absolute;
+            display: none;
+            margin-bottom: auto; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);"  >
+              <img style="height: 50px;" src="public/loading4.gif"/>
+            </div>  
             <iframe id="frame" title="Frame" width="99.5%" src="">
             </iframe>
           </div>
@@ -178,20 +172,7 @@
       const mobileZoomOut = document.getElementById('mobile-zoom-out');
       const mobileZoomIn = document.getElementById('mobile-zoom-in');
       const zoomSlider = document.getElementById('zoom-slider');
-
-      mobileZoomOut.addEventListener('touchstart', () => {
-        zoomSlider.value -= 1;
-        changeZoom(zoomSlider.value)
-      });
-
-      mobileZoomIn.addEventListener('touchstart', () => {
-        zoomSlider.value++;
-        changeZoom(zoomSlider.value)
-      });
-      // Add click event listener to the body
-      document.body.addEventListener('click', function (event) {
-        setWallpaper();
-      });
+      let zoomValue;
 
       let addressBar = document.querySelector(".address-bar");
       addressBar.disabled = true;
@@ -202,20 +183,33 @@
       let mobileShareAlert = document.querySelector(".mobile-share-alert");
       mobileShareAlert.disabled = true;
 
-      // Add click event listener to the child element
-      document.querySelector('.window-grid').addEventListener('click', function (event) {
-        event.stopPropagation(); // Prevents the event from reaching the body
+      mobileZoomOut.addEventListener('touchstart', () => {
+        zoomSlider.value -= 1;
+        changeZoom(zoomSlider.value)
       });
 
+      mobileZoomIn.addEventListener('touchstart', () => {
+        zoomSlider.value++;
+        changeZoom(zoomSlider.value)
+      });
+
+      // change wallpaper on click of page body  
+      document.body.addEventListener('click', function (event) {
+        setWallpaper();
+      });
+      // but not window
+      document.querySelector('.window-grid').addEventListener('click', function (event) {
+        event.stopPropagation();
+      });
+
+      // adjust dropdown size based on flex address bar
       document.querySelector('#current-site').addEventListener('click', function () {
         const dropdownContent = document.querySelector('#dropdown-content');
-        console.log('dropdown size', dropdownContent.offsetWidth)
-        dropdownContent.style.width = `${document.querySelector('.dropdown-container').offsetWidth - 3}px`;
-        console.log('dropdown size', dropdownContent.style)
-
+        dropdownContent.style.width = `${document.querySelector('.dropdown-container').offsetWidth - 2}px`;
         dropdownContent.classList.toggle('open');
       });
 
+      // add event listener to dropdown bar and button
       document.querySelector('.dropdown').addEventListener('click', function () {
         const dropdownContent = document.querySelector('#dropdown-content');
         dropdownContent.style.width = `${document.querySelector('.dropdown-container').offsetWidth - 3}px`;
@@ -227,54 +221,16 @@
         dropdownContent1.classList.toggle('open');
       });
 
-      const parentElement = document.getElementById('frame-container');
-
       const treeViewContainer = document.getElementById('tree');
       const treeViewContainerOriginal = document.getElementById('tree-original');
 
       // Create the tree view from the data object and append it to the container
       treeViewContainer.appendChild(createTreeView(siteTree));
       treeViewContainerOriginal.appendChild(createTreeView(siteTree));
-
-      let value;
       
-
       document.getElementById('frame').onload = function () {
-        changeZoom(value);
-
-        console.log('titley', document.getElementById('frame').contentDocument.title);
-
+        changeZoom(zoomValue);
       }
-
-      function shareSite(mode = 'desktop') {
-        console.log('share site')
-        const scrollPosition = document.getElementById('frame').contentWindow.scrollY;
-
-        let dummy = document.createElement('input'),
-        windowLocation = (window.location.href).replace(/&page=.*$/, '');
-        const iframe = document.getElementById('frame')
-        
-        const regex = /\/sites\/(.*)/;
-
-        const path = (document.getElementById("frame").contentWindow.location.href).match(regex)[1];
-        windowLocation += `&page=${path}`;
-        document.body.appendChild(dummy);
-        dummy.value = windowLocation;
-        dummy.select();
-        document.execCommand('copy');
-        document.body.removeChild(dummy);
-
-        const tooltip = document.getElementById('share-page-tooltip');
-        tooltip.innerHTML = 'Link copied.';
-
-        if (mode === 'desktop') {
-          setTimeout(() => tooltip.innerHTML = 'Share Page' , 2500)
-        }
-        if (mode = 'mobile') {
-          mobileShareAlert.style.visibility = 'visible';
-          setTimeout(() => mobileShareAlert.style.visibility = 'hidden', 2500)
-        }
-      };
     </script>
   </body>
 </html>

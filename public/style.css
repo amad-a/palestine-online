@@ -491,6 +491,10 @@ p.status-bar-field:hover {
 
 }
 
+#current-site > i:hover {
+  cursor: pointer;
+}
+
 select {
   font-family: 'Arial Narrow', Arial, sans-serif !important;
   font-size: 14px;
@@ -639,7 +643,7 @@ pre {
 }
 
 ul.tree-view {
-  min-height: 500px;
+  min-height: 486px;
   background: #fff;
   border: 0px solid white !important;
   display: block;

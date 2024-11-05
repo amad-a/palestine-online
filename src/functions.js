@@ -1258,32 +1258,11 @@ let pagesTour = [
 
 ];
 
-let ids = pagesTour.map(page => page.id);
-
-let randomPage = pages[Math.floor(Math.random() * pages.length)];
-let randomPageTour = pages[Math.floor(Math.random() * pages.length)];
-
-let breadcrumbs = [];
-
-function goToRandomPage() {
-  open(randomPage.id + '.html', '_self');
-}
-
-function goToRandomPageTour() {
-  open(randomPage.id + '.html', '_self');
-}
-
 function toggleInfo() {
   let panel = document.getElementById('info-panel-container');
   panel.style.visibility === 'hidden'
     ? (panel.style.visibility = 'visible')
     : (panel.style.visibility = 'hidden');
-}
-
-function changeIframe(src) {
-  let panel = document.getElementById('info-panel-container');
-  panel.style.visibility = 'hidden';
-  document.getElementById('frame').src = src;
 }
 
 function setWallpaper() {
@@ -1325,7 +1304,7 @@ function createTreeView(obj) {
         //   redClass = 'red-class'
         // }
 
-        li.innerHTML = `<a class="menu-link ${redClass}" onmouseover="navHoverImage('${pageMatch.id}')" onmouseleave="navHoverLeave()" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
+        li.innerHTML = `<a class="menu-link" onmouseover="navHoverImage('${pageMatch.id}')" onmouseleave="navHoverLeave()" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
 
       }
       return li;
@@ -1335,11 +1314,14 @@ function createTreeView(obj) {
 }
 
 async function navHoverImage(pageId) {
+  if (window.innerWidth < 450) {
+    return;
+  }
+
   const imageUrl = `public/preview-images/${pageId}.webp`
   fetch(imageUrl)
     .then(response => {
       if (response.ok) {
-        
         const frame = document.getElementById('frame');
         const dropdown = document.getElementById('dropdown-content');
         dropdown.classList.add('dropdown-hover-transparent');
@@ -1368,22 +1350,6 @@ function navHoverLeave() {
   frameContainer.style.backgroundImage = "none";
 }
 
-
-function traverseUpTree(node) {
-  let parent = node.parentElement.parentElement.firstChild;
-  if (parent.nodeName === 'SUMMARY') {
-    const breadcrumbItem = {
-      breadcrumbText: `${node.parentElement.parentElement.firstChild.textContent.replace(
-        /\s*\(.*?\)\s*/g,
-        ''
-      )} ›`,
-      breadcrumbNode: node.parentElement.parentElement.firstChild,
-    };
-    breadcrumbs.push(breadcrumbItem);
-    traverseUpTree(node.parentElement.parentElement.parentElement);
-  }
-}
-
 function queryUpdate(pageId) {
   const dropdown = document.getElementById('dropdown-content');
   const mobileDropdown = document.getElementById('mobile-dropdown-content');
@@ -1404,6 +1370,7 @@ function queryUpdate(pageId) {
       pageId;
     window.history.pushState({ path: newurl }, '', newurl);
   }
+  navHoverImage(pageId);
   setFramePage(pageId);
 }
 
@@ -1415,31 +1382,6 @@ function countTotalSites(obj) {
     }
     return count + 1;
   }, 0);
-}
-
-function setBreadcrumbs(pageId) {
-  const pageMatch = pagesTour.filter((page) => page.id === pageId)[0];
-
-  breadcrumbs = [];
-  breadcrumbs.push({
-    breadcrumbText: `${pageMatch.title}`,
-    breadcrumbNode: null,
-  });
-
-  traverseUpTree(document.getElementById(`${pageId}-link`));
-  breadcrumbs.reverse();
-
-  let crumbsDiv = document.getElementById('breadcrumbs');
-  crumbsDiv.innerHTML = '';
-  breadcrumbs.forEach((crumb) => {
-    crumbsDiv.innerHTML += `<p class="status-bar-field">${crumb.breadcrumbText}</p>`;
-  });
-}
-
-function setRandomPage() {
-  const randomPageId = getRandomSiteFromSiteTree(siteTree);
-  queryUpdate(randomPageId);
-  setFramePage();
 }
 
 function setFramePage(reset = false) {
@@ -1461,6 +1403,13 @@ function setFramePage(reset = false) {
   } else {
     document.getElementById('frame').src = siteSrc.url;
   }
+    // document.getElementById('loading').style.display = 'block';
+  
+    document.getElementById('frame').addEventListener('load', function() {
+      console.log('Iframe has finished loading!');
+      navHoverLeave();
+      document.getElementById('loading').style.display = 'none';
+    });
 
   document.getElementById(
     'current-site'
@@ -1470,38 +1419,26 @@ function setFramePage(reset = false) {
     'address-bar-text'
   ).innerHTML = `${siteSrc.title} <i>${siteSrc.year}</i>`;
 
-  if (siteParam) setBreadcrumbs(siteParam);
+  // if (siteParam) setBreadcrumbs(siteParam);
 }
 
 function changeZoom(currentValue) {
-  value = currentValue;
-  let scale = value/10;
-  document.getElementById('frame').contentWindow.document.body.style.transform = `scale(${scale})`;
-
-  document.getElementById('frame').contentWindow.document.body.style.width = `${100 / scale}%`;
-
-  document.getElementById('frame').contentWindow.document.body.style.height = `${100 / scale}%`;
-
-  document.getElementById('frame').contentWindow.document.body.style.transformOrigin = `0 0`;
+  const scale = currentValue / 10;
+  const frameStyle = document.getElementById('frame').contentWindow.document.body.style;
+  frameStyle.transform = `scale(${scale})`;
+  frameStyle.width = `${100 / scale}%`;
+  frameStyle.height = `${100 / scale}%`;
+  frameStyle.transformOrigin = `0 0`;
 }
 
-function toggleMenu() {
-  let buttonSrc = document.getElementById('toggleMenu').src;
-  if (buttonSrc.endsWith('directory_closed_cool-4.svg')) {
-    document.getElementById('toggleMenu').src = buttonSrc.replace('directory_closed_cool-4.svg', 'directory_open_cool-4.svg');
-
-    document.getElementById('menu').style = "position: absolute; width: 400px;"
-  } else {
-    document.getElementById('toggleMenu').src = buttonSrc.replace('directory_open_cool-4.svg', 'directory_closed_cool-4.svg');
-
-    document.getElementById('menu').style = "width: 0; height: 0; border: 0; border: none; position: absolute;";
-
-    document.getElementById('frame').style = ""
-  }
+function setRandomPage() {
+  const randomPageId = getRandomSiteFromSiteTree(siteTree);
+  queryUpdate(randomPageId);
+  setFramePage();
 }
 
 function getRandomSiteFromSiteTree(siteTree) {
-  let allStrings = [];
+  const allStrings = [];
 
   function traverse(obj) {
     for (let key in obj) {
@@ -1527,16 +1464,46 @@ function getRandomSiteFromSiteTree(siteTree) {
   return null; // Return null if no strings were found
 }
 
+function shareSite(mode = 'desktop') {
+  console.log('share site');
+  const scrollPosition = document.getElementById('frame').contentWindow.scrollY;
+
+  let dummy = document.createElement('input'),
+  windowLocation = (window.location.href).replace(/&page=.*$/, '');
+  // const iframe = document.getElementById('frame')
+  
+  const regex = /\/sites\/(.*)/;
+
+  const path = (document.getElementById("frame").contentWindow.location.href).match(regex)[1];
+  windowLocation += `&page=${path}`;
+  document.body.appendChild(dummy);
+  dummy.value = windowLocation;
+  dummy.select();
+  document.execCommand('copy');
+  document.body.removeChild(dummy);
+
+  const tooltip = document.getElementById('share-page-tooltip');
+  tooltip.innerHTML = 'Link copied.';
+
+  if (mode === 'desktop') {
+    setTimeout(() => tooltip.innerHTML = 'Share Page' , 2500)
+  }
+  if (mode = 'mobile') {
+    mobileShareAlert.style.visibility = 'visible';
+    setTimeout(() => mobileShareAlert.style.visibility = 'hidden', 2500)
+  }
+};
 
 const siteTree = {
   'Gaza': ['gaza-airport', 'municipality-gaza', 'gaza-mental-health'],
-  'Art and Culture': {
-    'Visual Art': ['samia-halaby', 'hanna-safieh', 'omayya-joha', 'al-aqsa-tour'],
-    'Literature': ['barghouti', 'al-karmel-guestbook'],
-    'Music': ['jukebox-arabia'],
-    'Crafts': ['palestine-embroider'],
-    'Institutions': ['sakakini', 'aaa-ny'],
-  },
+  'Art and Culture':
+    ['samia-halaby', 'hanna-safieh', 'omayya-joha', 'al-aqsa-tour', 'barghouti', 'al-karmel-guestbook', 'jukebox-arabia', 'palestine-embroider', 'sakakini']
+    // 'Visual Art': ['samia-halaby', 'hanna-safieh', 'omayya-joha', 'al-aqsa-tour'],
+    // 'Literature': ['barghouti', 'al-karmel-guestbook'],
+    // 'Music': ['jukebox-arabia'],
+    // 'Crafts': ['palestine-embroider'],
+    // 'Institutions': ['sakakini', 'aaa-ny'],
+  ,
   'Personal Homepages':
     ['the-holly-land', 'jayyousi-pages', 'amnah-site', 'palestine-oasis', 'esam-shashaa-bio', 'faaz', 'hopes-space', 'omars-site', 'musa-budieri', 'aimans-site', 'asa-group', 'doctor-hani', 'alsharabatis-homepages', 'abboud-page', 'zuhair-page', 'reality-of-palestine'],
   'Tourism and Travel': [ 'jerusalem-hotel', 'ministry-tourism'],
@@ -1552,3 +1519,37 @@ const siteTree = {
   'Early Internet Infrastructure': ['palestine-yellow-pages', 'palsoft', 'zaytonasoft', 'planetedu', 'palnet', 'tutorials-in-arabic'],
   'Processing Fellowship Documentation': ['pr-preso-2024']
 };
+
+// function setBreadcrumbs(pageId) {
+//   const pageMatch = pagesTour.filter((page) => page.id === pageId)[0];
+
+//   breadcrumbs = [];
+//   breadcrumbs.push({
+//     breadcrumbText: `${pageMatch.title}`,
+//     breadcrumbNode: null,
+//   });
+
+//   traverseUpTree(document.getElementById(`${pageId}-link`));
+//   breadcrumbs.reverse();
+
+//   let crumbsDiv = document.getElementById('breadcrumbs');
+//   crumbsDiv.innerHTML = '';
+//   breadcrumbs.forEach((crumb) => {
+//     crumbsDiv.innerHTML += `<p class="status-bar-field">${crumb.breadcrumbText}</p>`;
+//   });
+// }
+
+// function traverseUpTree(node) {
+//   let parent = node.parentElement.parentElement.firstChild;
+//   if (parent.nodeName === 'SUMMARY') {
+//     const breadcrumbItem = {
+//       breadcrumbText: `${node.parentElement.parentElement.firstChild.textContent.replace(
+//         /\s*\(.*?\)\s*/g,
+//         ''
+//       )} ›`,
+//       breadcrumbNode: node.parentElement.parentElement.firstChild,
+//     };
+//     breadcrumbs.push(breadcrumbItem);
+//     traverseUpTree(node.parentElement.parentElement.parentElement);
+//   }
+// }
