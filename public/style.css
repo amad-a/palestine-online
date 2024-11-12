@@ -960,11 +960,13 @@ input[type='image' i]:hover {
   #address-bar-text {
     font-family: 'Arial Narrow Regular', Arial, sans-serif !important;
     font-size: 18px;
-    color: black;
+    color: rgb(0, 0, 0);
     background-color: white;
-    border-color: black;
-    border: 1px solid rgb(123, 123, 123);
-    padding: 2px;
+    border: 1px solid rgb(88, 88, 88);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 4px 10px 4px 10px;
   }
   
   /* .mobile-dropdown {
