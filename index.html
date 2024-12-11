@@ -110,10 +110,10 @@
               <span class="tooltiptext">Go Forward</span>
             </a>
             <div class="divider">|</div>
-            <a class="tooltip">
+            <!-- <a class="tooltip">
               <input style="opacity: 1; cursor: pointer" type="image" src="public/home.svg" height="25px" onclick="" />
               <span class="tooltiptext">Go to Homepage</span>
-            </a>
+            </a> -->
             <a class="tooltip">
               <input type="image" src="public/icons/help_book_small-5.svg" height="25px" onclick="setRandomPage()" />
               <span class="tooltiptext">Go to random site</span>
@@ -121,6 +121,10 @@
             <a class="tooltip">
               <input style="opacity: 1; cursor: pointer" type="image" src="public/netmeeting-1.svg" height="25px" onclick="setFramePage(true)" />
               <span class="tooltiptext">Reset current site</span>
+            </a>
+            <a class="tooltip">
+              <input type="image" onclick="shareSite()" src="public/icons/envelope_closed-1.svg" height="25px" />
+              <span id="share-page-tooltip" class="tooltiptext tooltip-right">Share Page</span>
             </a>
             <a class="tooltip">
             </a>
@@ -139,10 +143,6 @@
             <a class="tooltip">
               <input type="image" onclick="setWallpaper()" src="public/icons/info.svg" height="25px" />
               <span class="tooltiptext tooltip-right">Information</span>
-            </a>
-            <a class="tooltip">
-              <input type="image" onclick="shareSite()" src="public/icons/envelope_closed-1.svg" height="25px" />
-              <span id="share-page-tooltip" class="tooltiptext tooltip-right">Share Page</span>
             </a>
           </section>
           <iframe id="menu" title="Menu" width="100%" src=""
