@@ -1247,12 +1247,22 @@ let pagesTour = [
   },
   {
     id: 'pr-preso-2024',
-    title: "Presentation",
+    title: "Processing Fellowship",
     year: '2024',
     label: '',
     headerText: '',
     waybackUrl: '',
     url: 'sites/pr-preso-2024/1.html',
+    description: '',
+  },
+  {
+    id: 'web-4',
+    title: "Web4 Presentation",
+    year: '2024',
+    label: '',
+    headerText: '',
+    waybackUrl: '',
+    url: 'sites/secret-project-riso/web-4.html',
     description: '',
   },
 
@@ -1467,7 +1477,7 @@ function getRandomSiteFromSiteTree(siteTree) {
 const siteTree = {
   'Gaza': ['gaza-airport', 'municipality-gaza', 'gaza-mental-health'],
   'Art and Culture':
-    ['samia-halaby', 'hanna-safieh', 'omayya-joha', 'al-aqsa-tour', 'barghouti', 'al-karmel-guestbook', 'jukebox-arabia', 'palestine-embroider', 'sakakini']
+    ['samia-halaby', 'hanna-safieh', 'omayya-joha', 'al-aqsa-tour', 'barghouti', 'al-karmel-guestbook', 'jukebox-arabia', 'palestine-embroider', 'sakakini', 'palestine-history-timeline']
     // 'Visual Art': ['samia-halaby', 'hanna-safieh', 'omayya-joha', 'al-aqsa-tour'],
     // 'Literature': ['barghouti', 'al-karmel-guestbook'],
     // 'Music': ['jukebox-arabia'],
@@ -1480,14 +1490,14 @@ const siteTree = {
   'Cities Online': [
     'palestine-net-geography', 'ramallah-city', 'salfeet', 'municipality-gaza'
   ],
-  'News': ['al-quds-news', 'alayyam-news', 'palestinian-information-center','hanthala'],
+  'News': ['al-quds-news', 'alayyam-news', 'palestinian-information-center','hanthala', 'palestinian-information-center-hamas'],
   'Documenting and Memorializing': ['barghouti-memorial', 'ramallah-1996', 'september-1996-memorial', 'villages-map'],
   'Nature': ['gazelle', 'palestine-wildlife-society'],
   'Magazines': ['jerusalem-i-love-you', 'palestine-times-uk'],
   'Birzeit University': ['parry-open-letter','birzeit-guide-to-palestinian-websites', 'birzeit-golden-olive-awards', 'hanieh-middle-east-report'],
   'Communicating on the Internet': ['planet-message-board', 'barghouti-guestbook', 'al-karmel-guestbook', 'pal-voice-forums-2005'],
   'Early Internet Infrastructure': ['palestine-yellow-pages', 'palsoft', 'zaytonasoft', 'planetedu', 'palnet', 'tutorials-in-arabic'],
-  'Processing Fellowship Documentation': ['pr-preso-2024']
+  'Palestine Online Documentation': ['pr-preso-2024', 'web-4']
 };
 
 // function setBreadcrumbs(pageId) {
