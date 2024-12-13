@@ -458,7 +458,7 @@ let pagesTour = [
     headerText: 'The Personal Homepage',
     waybackUrl:
       'https://web.archive.org/web/20011129082722/http://www.angelfire.com/pa/asagroup/',
-    url: 'https://web.archive.org/web/20011129082722/http://www.angelfire.com/pa/asagroup/',
+    url: 'sites/www.angelfire.com/pa/asagroup/index.html',
     description: '',
   },
   {
@@ -608,7 +608,7 @@ let pagesTour = [
     headerText: 'Putting Places Online',
     waybackUrl:
       'https://web.archive.org/web/20020803230608/http://www.palestine-net.com/geography/kth.html',
-    url: 'https://web.archive.org/web/20020803230608/http://www.palestine-net.com/geography/kth.html',
+    url: 'sites/www.palestine-net.com/geography/kth.html',
     description: '',
   },
   {
@@ -1222,7 +1222,7 @@ let pagesTour = [
     label: '',
     headerText: '',
     waybackUrl: 'https://web.archive.org/web/20070127225716/http://www.wildlife-pal.org/toc.htm',
-    url: 'https://web.archive.org/web/20070127225716/http://www.wildlife-pal.org/toc.htm',
+    url: 'sites/www.wildlife-pal.org/index.html',
     description: '',
   },
   {
@@ -1232,7 +1232,7 @@ let pagesTour = [
     label: '',
     headerText: '',
     waybackUrl: 'https://web.archive.org/web/20011117093728/http://www.chem.metu.edu.tr/~omara/',
-    url: 'https://web.archive.org/web/20011117093728/http://www.chem.metu.edu.tr/~omara/',
+    url: 'sites/www.chem.metu.edu.tr/~omara/index.html',
     description: '',
   },
   {
@@ -1360,9 +1360,24 @@ function createTreeView(obj) {
 //   frameContainer.style.backgroundImage = "none";
 // }
 
+const flags = ['sites/secret-project-riso/imgs/palestine-flag2.gif', 'sites/secret-project-riso/imgs/gifs/flag2.gif', 'sites/secret-project-riso/imgs/palestine1.gif', 'sites/secret-project-riso/imgs/gifs/waveflag.gif']
+
+function showInformation() {
+  // dropdownContent.classList.toggle('open');
+  document.getElementById('frame').classList.toggle('closed');
+  document.getElementById('info-panel').classList.toggle('closed');
+
+  if (!document.getElementById('info-panel').classList.contains('closed')) {
+    document.getElementById('info-flag').src = flags[Math.floor(Math.random()*flags.length)];
+  }
+  
+}
+
 function queryUpdate(pageId) {
   const dropdown = document.getElementById('dropdown-content');
   const mobileDropdown = document.getElementById('mobile-dropdown-content');
+  const infoPanel = document.getElementById('info-panel');
+  
   if (dropdown.classList.contains('open')) {
     dropdown.classList.remove('open');
   }
@@ -1370,6 +1385,19 @@ function queryUpdate(pageId) {
   if (mobileDropdown.classList.contains('open')) {
     mobileDropdown.classList.remove('open');
   }
+
+  if (!infoPanel.classList.contains('closed')) {
+    showInformation();
+  }
+
+  let presenterQuery = '';
+
+  const queryString = window.location.search;
+  const params = new URLSearchParams(queryString);
+  let mode = params.get('mode');
+
+  if (mode === 'presenter') presenterQuery = '&mode=presenter'
+
   if (history.pushState) {
     let newurl =
       window.location.protocol +
@@ -1377,7 +1405,8 @@ function queryUpdate(pageId) {
       window.location.host +
       window.location.pathname +
       '?site=' +
-      pageId;
+      pageId + 
+      presenterQuery;
     window.history.pushState({ path: newurl }, '', newurl);
   }
   // navHoverImage(pageId);

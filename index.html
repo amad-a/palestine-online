@@ -122,10 +122,10 @@
               <input style="opacity: 1; cursor: pointer" type="image" src="public/netmeeting-1.svg" height="25px" onclick="setFramePage(true)" />
               <span class="tooltiptext">Reset current site</span>
             </a>
-            <a class="tooltip">
+            <!-- <a class="tooltip">
               <input type="image" onclick="shareSite()" src="public/icons/envelope_closed-1.svg" height="25px" />
-              <span id="share-page-tooltip" class="tooltiptext tooltip-right">Share Page</span>
-            </a>
+              <span id="share-page-tooltip" class="tooltiptext">Share Page</span>
+            </a> -->
             <a class="tooltip">
             </a>
             <div class="dropdown-container">
@@ -141,8 +141,8 @@
               </div>
             </div>
             <a class="tooltip">
-              <input type="image" onclick="setWallpaper()" src="public/icons/info.svg" height="25px" />
-              <span class="tooltiptext tooltip-right">Information</span>
+              <input type="image" onclick="showInformation()" src="public/icons/info.svg" height="25px" />
+              <span class="tooltiptext tooltip-right">About Palestine Online</span>
             </a>
           </section>
           <iframe id="menu" title="Menu" width="100%" src=""
@@ -158,6 +158,27 @@
             transform: translate(-50%, -50%);"  >
               <img style="height: 50px;" src="public/loading4.gif"/>
             </div>  
+
+            <div id="info-panel" class="closed" onclick="showInformation()" >
+              <div class="info-container">
+                <div>
+                  <img id="info-flag" src="sites/secret-project-riso/imgs/palestine-flag2.gif"/>
+                </div>
+                <div class="info-title">
+                  Palestine Online
+                </div><br>
+
+                <div class="info-body">
+                  <div>This is a curated archive of websites created by Palestinians or about Palestine from the late 90s to early 2000s. The archive locates the history of the web as an important tool for Palestinian connection, expression, self determination, and resistance.</div><br>
+
+                  <div>Created by Amad Ansari.</div><br>
+
+                  <div>Special thanks to Sara bin Safwan, Zainab Hassoon, Todd Anderson, Saad Khan, Gufran Jadalla, and Zainab Aliyu for opportunities and guidance which have been integral for this project to flourish.</div><br>
+                  <img height="120px" src="po-qr-code.png"/>
+                </div>
+              </div>
+            </div> 
+
             <iframe id="frame" title="Frame" width="99.5%" src="">
             </iframe>
           </div>
@@ -168,6 +189,29 @@
     </div>
     </div>
     <script>
+
+      const queryString = window.location.search;
+      const params = new URLSearchParams(queryString);
+      let mode = params.get('mode');
+
+      if (mode === 'presenter') {
+        const demoIds = ['palestine-net-geography', 'municipality-gaza', 'al-aqsa-tour']
+        let demoCounter = 0;
+        queryUpdate(demoIds[demoCounter]);
+
+        document.addEventListener("keydown", (e) => {
+        if (!e.repeat &&  (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) {
+          if (e.key === 'ArrowRight') demoCounter++;
+          if (e.key === 'ArrowLeft') demoCounter--;
+          if (demoCounter < 0) demoCounter = demoIds.length - 1;
+          if (demoCounter > demoIds.length - 1) demoCounter = 0;
+          console.log(`DEMO COUNTER "${demoCounter} ${demoIds[demoCounter]}"`);
+          queryUpdate(demoIds[demoCounter]);
+        } else {
+          console.log(`Key "${e.key}" repeating [event: keydown]`);
+        }
+      });
+      }
 
       const mobileZoomOut = document.getElementById('mobile-zoom-out');
       const mobileZoomIn = document.getElementById('mobile-zoom-in');

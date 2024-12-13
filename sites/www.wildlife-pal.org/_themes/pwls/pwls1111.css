@@ -1,0 +1,1716 @@
+.mstheme
+{
+	separator-image: url(anarule.gif);
+	list-image-1: url(anabull1.gif);
+	list-image-2: url(anabull2.gif);
+	list-image-3: url(anabull3.gif);
+	nav-banner-image: url(anabnr2.gif);
+	navbutton-horiz-normal: url(nahbs.gif);
+	navbutton-horiz-hovered: url(nahbh.gif);
+	navbutton-horiz-pushed: url(nahbp.gif);
+	navbutton-vert-normal: url(navbs.gif);
+	navbutton-vert-hovered: url(navbh.gif);
+	navbutton-vert-pushed: url(navbp.gif);
+	navbutton-home-normal: url(nahomes.gif);
+	navbutton-home-hovered: url(nahomeh.gif);
+	navbutton-home-pushed: url(nahomes.gif);
+	navbutton-next-normal: url(nanexts.gif);
+	navbutton-next-hovered: url(nanexth.gif);
+	navbutton-next-pushed: url(nanexts.gif);
+	navbutton-prev-normal: url(naprevs.gif);
+	navbutton-prev-hovered: url(naprevh.gif);
+	navbutton-prev-pushed: url(naprevs.gif);
+	navbutton-up-normal: url(naups.gif);
+	navbutton-up-hovered: url(nauph.gif);
+	navbutton-up-pushed: url(naups.gif);
+}
+.mstheme-bannertxt
+{
+	font-family: Arial,Helvetica;
+	color: rgb(0, 51, 0);
+	font-size: 5;
+	font-style: normal;
+	font-weight: normal;
+}
+.mstheme-horiz-navtxt
+{
+	font-family: trebuchet ms,arial,helvetica;
+	color: rgb(0, 51, 0);
+	font-size: 2;
+	font-style: normal;
+	font-weight: normal;
+}
+.mstheme-vert-navtxt
+{
+	font-family: trebuchet ms,arial,helvetica;
+	color: rgb(0, 74, 0);
+	font-size: 2;
+	font-style: normal;
+	font-weight: normal;
+}
+.mstheme-navtxthome
+{
+	font-family: trebuchet ms,arial,helvetica;
+	color: rgb(51, 0, 0);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+}
+.mstheme-navtxtnext
+{
+	font-family: trebuchet ms,arial,helvetica;
+	color: rgb(51, 0, 0);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+}
+.mstheme-navtxtprev
+{
+	font-family: trebuchet ms,arial,helvetica;
+	color: rgb(51, 0, 0);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+}
+.mstheme-navtxtup
+{
+	font-family: trebuchet ms,arial,helvetica;
+	color: rgb(51, 0, 0);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+}
+ul
+{
+	list-style-image: url('anabull1.gif');
+}
+ul ul
+{
+	list-style-image: url('anabull2.gif');
+}
+ul ul ul
+{
+	list-style-image: url('anabull3.gif');
+}
+a:link
+{
+	color: rgb(0, 102, 0);
+}
+a:active
+{
+	color: rgb(204, 102, 0);
+}
+a:visited
+{
+	color: rgb(153, 51, 51);
+}
+body
+{
+	background-color: rgb(255, 255, 204);
+	color: rgb(0, 0, 0);
+}
+table
+{
+	table-border-color-light: rgb(153, 51, 51);
+	table-border-color-dark: rgb(153, 51, 51);
+	border-color: rgb(153, 51, 51);
+}
+th
+{
+	border-color: rgb(153, 51, 51);
+}
+td
+{
+	border-color: rgb(153, 51, 51);
+}
+h1
+{
+	color: rgb(51, 102, 102);
+}
+h2
+{
+	color: rgb(0, 128, 0);
+}
+h3
+{
+	color: rgb(51, 153, 102);
+}
+h4
+{
+	color: rgb(153, 51, 51);
+}
+h5
+{
+	color: rgb(0, 108, 54);
+}
+h6
+{
+	color: rgb(153, 102, 102);
+}
+hr
+{
+	color: rgb(51, 102, 51);
+}
+button
+{
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+label
+{
+	color: rgb(255, 255, 255);
+}
+.mstheme-text
+{
+	background-color: rgb(0, 0, 0);
+	color: rgb(11, 0, 0);
+}
+textarea
+{
+	color: rgb(0, 0, 0);
+}
+fieldset
+{
+	color: rgb(255, 255, 255);
+}
+legend
+{
+	color: rgb(255, 255, 255);
+}
+select
+{
+	color: rgb(0, 0, 0);
+}
+caption
+{
+	color: rgb(255, 255, 255);
+}
+.mstheme{
+navbutton-background-color:#FFFFFF;
+top-bar-button:url(naglb.gif);
+}
+body{
+font-family:"trebuchet ms",arial,helvetica;
+background-image:url('nabkgnd.jpg');
+}
+IL{
+list-style-image:url('nabull2.gif');
+}
+table.ms-toolbar{
+background-image:url('toolgrad.gif');
+border:1px solid #BBBBBB
+}
+.UserDottedLine{
+margin-bottom:2px;
+height:1px;
+overflow:hidden;
+background-color:transparent;
+background-image:url('dot.gif');
+background-repeat:repeat-x
+}
+.UserToolbar{
+background-image:url('toolgrad.gif');
+border:1px solid #BBBBBB;
+background-repeat:repeat-x;
+background-color:transparent
+}
+.mstheme-topbar-font{
+font-family:"trebuchet ms",arial,helvetica;
+color:#000000;
+}
+h1{
+font-family:Arial,Helvetica;
+font-weight:bold;
+font-style:normal;
+}
+h2{
+font-family:Arial,Helvetica;
+font-weight:normal;
+font-style:normal;
+}
+h3{
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:normal;
+font-style:normal;
+}
+h4{
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:normal;
+font-style:normal;
+}
+h5{
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:normal;
+font-style:normal;
+}
+h6{
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:normal;
+font-style:normal;
+}
+BUTTON{
+border-style:solid;
+border-width:1pt;
+font-family:Arial,Helvetica,sans-serif;
+font-style:normal;
+}
+label, .MSTHEME-LABEL{
+font-family:"trebuchet ms",arial,helvetica;
+font-style:normal;
+}
+TEXTAREA{
+font-family:"trebuchet ms",arial,helvetica;
+font-style:normal
+}
+FIELDSET{
+border-style:solid;
+border-width:1pt;
+font-family:"trebuchet ms",arial,helvetica;
+font-style:normal;
+}
+LEGEND{
+font-family:"trebuchet ms",arial,helvetica;
+font-style:normal;
+}
+SELECT{
+border-style:solid;
+font-family:"trebuchet ms",arial,helvetica;
+font-style:normal
+}
+TABLE{
+font-family:"trebuchet ms",arial,helvetica;
+font-style:normal;
+}
+CAPTION{
+font-family:"trebuchet ms",arial,helvetica;
+font-style:normal;
+}
+TH{
+font-family:"trebuchet ms",arial,helvetica;
+font-style:bold;
+}
+MARQUEE{
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-main{
+border-color:#859933;
+}
+.ms-bannerframe, .ms-GRHeaderBackground, .ms-storMeFree{
+background-color:#4D4D4D;
+background-repeat:repeat-x
+}
+.ms-banner{
+color:#859933;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-banner a:link{
+font-family:"trebuchet ms",arial,helvetica;
+color:#000000;
+font-weight:normal;
+text-decoration:none;
+}
+.ms-banner a:visited{
+font-family:"trebuchet ms",arial,helvetica;
+color:#000000;
+font-weight:normal;
+text-decoration:none;
+}
+.ms-nav td{
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:normal;
+color:#000000;
+}
+.ms-navframe{
+border-color:#D4DBB8;
+}
+.ms-nav a{
+text-decoration:none;
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:normal;
+color:#993333;
+}
+.ms-nav a:hover{
+text-decoration:underline;
+color:#FF6600;
+}
+.ms-nav a:visited{
+color:#993333;
+}
+.ms-viewselect a:link{
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+}
+.ms-titlearea{
+font-family:"trebuchet ms",arial,helvetica;
+color:#000000;
+}
+.ms-pagetitle{
+color:#000000;
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:bold;
+}
+.ms-pagetitle a{
+text-decoration:underline;
+color:#993333;
+}
+.ms-pagetitle a:hover{
+text-decoration:underline;
+color:#FF6600;
+}
+.ms-announcementtitle{
+font-weight:bold;
+}
+.ms-formlabel{
+font-family:verdana;
+font-size:.7em;
+font-weight:normal;
+color:#808080;
+}
+.ms-formbody{
+font-family:"trebuchet ms",arial,helvetica;
+color:#000000;
+}
+.ms-formdescription{
+font-family:"trebuchet ms",arial,helvetica;
+color:#808080;
+}
+.ms-selected{
+background-color:#333399;
+color:#000000;
+}
+.ms-selected SPAN{
+color:#333399;
+}
+.ms-filedialog TD{
+height:16px;
+}
+.ms-descriptiontext{
+color:#000000;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-descriptiontext a{
+color:#993333;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-separator{
+color:#000000;
+}
+.ms-authoringcontrols{
+background-color:#D4DBB8;
+font-family:"trebuchet ms",arial,helvetica;
+color:#000000;
+}
+.ms-alternating{
+background-color:#D4DBB8;
+}
+.ms-back{
+vertical-align:top;
+padding-left:4;
+padding-right:4;
+padding-top:2;
+padding-bottom:4;
+background-color:#D4DBB8;
+}
+.ms-sectionheader{
+color:#000000;
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:bold;
+}
+.ms-sectionline{
+background-color:#669966;
+}
+.ms-partline{
+background-color:#669966;
+}
+.ms-propertysheet{
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-propertysheet th{
+font-family:"trebuchet ms",arial,helvetica;
+color:#000000;
+font-weight:bold;
+}
+.ms-propertysheet a{
+text-decoration:none;
+color:#993333;
+}
+.ms-propertysheet a:hover{
+text-decoration:underline;
+color:#FF6600;
+}
+.ms-propertysheet a:visited{
+text-decoration:none;
+color:#333399;
+}
+.ms-propertysheet a:visited:hover{
+text-decoration:underline;
+}
+.ms-itemheader a{
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:bold;
+color:#000000;
+text-decoration:none;
+}
+.ms-itemheader a:hover{
+text-decoration:underline;
+color:#000000;
+}
+.ms-itemheader a:visited{
+text-decoration:none;
+color:#000000;
+}
+.ms-itemheader a:visited:hover{
+text-decoration:underline;
+}
+.ms-vh{
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+text-decoration:none;
+font-weight:normal;
+}
+.ms-vb{
+font-family:"trebuchet ms",arial,helvetica;
+color:#000000;
+height:18px;
+vertical-align:top;
+}
+.ms-homepagetitle{
+font-family:"trebuchet ms",arial,helvetica;
+color:#000000;
+font-weight:bold;
+text-decoration:none;
+}
+:hover.ms-homepagetitle{
+text-decoration:underline;
+color:#993333;
+}
+.ms-addnew{
+font-weight:normal;
+font-family:"trebuchet ms",arial,helvetica;
+color:#000000;
+text-decoration:none;
+}
+.ms-cal{
+border-collapse:collapse;
+table-layout:fixed;
+font-family:"trebuchet ms",arial,helvetica;
+cursor:default;
+}
+.ms-caltop{
+border-top:1px solid #669966;
+border-left:1px solid #669966;
+border-right:1px solid #669966;
+vertical-align:top;
+width:14%;
+height:30px;
+}
+.ms-calhead{
+border:none;
+text-align:center;
+background-color:#000000;
+color:#FFFFFF;
+font-family:"trebuchet ms",arial,helvetica;
+padding:2px;
+}
+.ms-caldow{
+border-top:1px solid #669966;
+border-left:1px solid #669966;
+border-right:1px solid #669966;
+vertical-align:top;
+text-align:center;
+font-weight:bold;
+color:#000000;
+height:20px;
+}
+.ms-calmid{
+border-left:1px solid #669966;
+border-right:1px solid #669966;
+height:20px;
+}
+.ms-calspacer{
+border-left:1px solid #669966;
+border-right:1px solid #669966;
+height:4px;
+}
+.ms-calbot{
+border-top:none;
+border-left:1px solid #669966;
+border-right:1px solid #669966;
+border-bottom:1px solid #669966;
+height:2px;
+}
+.ms-appt a{
+color:#993333;
+}
+.ms-appt a:hover{
+color:#FF6600;
+}
+.ms-appt{
+border:2px solid #669966;
+text-align:center;
+vertical-align:middle;
+height:18px;
+overflow:hidden;
+text-overflow:ellipsis;
+background-color:#333399;
+color:#000000;
+}
+.ms-caldowdown{
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:bold;
+color:#000000;
+text-align:center;
+vertical-align:middle;
+}
+.ms-caldown{
+color:#000000;
+vertical-align:top;
+}
+.ms-datepickeriframe{
+position:absolute;
+display:none;
+background:#FFFFFF;
+}
+.ms-datepicker{
+font-family:Arial,Helvetica,sans-serif;
+background-color:#FFFFFF;
+color:#000000;
+border:2px outset activeborder;
+cursor:default
+}
+.ms-dpdow{
+border:none;
+vertical-align:top;
+text-align:center;
+font-weight:bold;
+color:#000000;
+border-bottom:1px solid #669966;
+}
+.ms-dpday{
+border:none;
+text-align:center;
+cursor:hand;
+}
+.ms-dpselectedday{
+border:none;
+background-color:#D4DBB8;
+text-align:center;
+cursor:hand;
+}
+.ms-dpnonmonth{
+color:#BBBBBB;
+border:none;
+text-align:center;
+cursor:hand;
+}
+.ms-dphead{
+border:none;
+text-align:center;
+font-weight:bold;
+background-color:#AEBA80;
+color:#000000;
+}
+.ms-dpfoot{
+text-align:center;
+font-style:italic;
+border-top:1px solid;
+border-left:none;
+border-bottom:none;
+border-right:none;
+height:24px;
+}
+IMG.ms-button{
+cursor:hand;
+}
+.ms-toolbar, .ms-toolbar a:visited{
+font-family:"trebuchet ms",arial,helvetica;
+text-decoration:none;
+color:#993333;
+}
+.ms-stylebody{
+font-family:verdana;
+font-size:8pt;
+}
+.ms-styleheader a:link, .ms-stylebody a:link{
+color:#993333;
+text-decoration:none;
+}
+.ms-styleheader a:visited, .ms-stylebody a:visited{
+text-decoration:none
+}
+.ms-styleheader a:hover, .ms-stylebody a:hover{
+color:#ff3300;
+text-decoration:underline;
+}
+.ms-gridT1{
+font-family:"trebuchet ms",arial,helvetica;
+text-align:center;
+color:#BBBBBB;
+}
+select{
+font-family:"trebuchet ms",arial,helvetica;
+}
+hr{
+color:#336633;
+height:2px;
+}
+.ms-formdescription A{
+color:#993333;
+text-decoration:none;
+}
+.ms-formtable .ms-formbody{
+line-height:1.3em;
+}
+.ms-radiotext{
+cursor:default;
+text-align:left;
+font-family:verdana;
+font-size:10pt;
+height:19px;
+}
+.ms-gridtext{
+cursor:default;
+font-family:"trebuchet ms",arial,helvetica;
+height:19px;
+}
+.ms-formbody{
+font-family:"trebuchet ms",arial,helvetica;
+vertical-align:top;
+}
+table.ms-form th{
+color:#000000;
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:normal;
+vertical-align:top;
+}
+table.ms-form td{
+width:100%;
+vertical-align:top;
+}
+.ms-formrecurrence{
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:normal;
+vertical-align:top;
+}
+.ms-long{
+font-family:Arial,Helvetica,sans-serif;
+width:386px;
+}
+.ms-banner a:link{
+font-family:"trebuchet ms",arial,helvetica;
+color:#FFFFFF;
+font-weight:bold;
+text-decoration:none;
+}
+.ms-banner a:visited{
+font-family:"trebuchet ms",arial,helvetica;
+color:#FFFFFF;
+font-weight:bold;
+text-decoration:none;
+}
+.ms-nav td, .ms-nav .ms-SPZoneLabel, .ms-input{
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-nav th{
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:normal;
+color:#000000;
+}
+.ms-navheader a, .ms-navheader a:link, .ms-navheader a:visited{
+font-weight:bold;
+}
+.ms-navframe{
+background:#D4DBB8;
+}
+.ms-navline{
+border-bottom:1px solid #859933;
+}
+.ms-nav .ms-navwatermark{
+color:#C2CBA0;
+}
+.ms-selectednav{
+border:1px solid #000000;
+background:#FFFFFF;
+padding-top:1px;
+padding-bottom:2px;
+}
+.ms-unselectednav{
+border:1px solid #D4DBB8;
+padding-top:1px;
+padding-bottom:2px;
+}
+.ms-verticaldots{
+border-right:1px solid #669966;
+border-left:none;
+}
+.ms-nav a:link{
+}
+TD.ms-titleareaframe{
+color:#000000;
+border-color:#859933;
+}
+TABLE.ms-titleareaframe{
+border-left:0px;
+}
+Div.ms-titleareaframe{
+border-top:4px solid #859933;
+}
+.ms-searchform{
+background-color: #859933;
+}
+.ms-searchcorner{
+background-color:#859933;
+background-image:none;
+}
+.ms-titlearealine{
+background-color:#669966;
+}
+.ms-bodyareaframe{
+border-color:#859933;
+}
+.ms-pagetitle{
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-pagetitle a{
+text-decoration:none;
+}
+.ms-pagetitle a:hover{
+text-decoration:underline;
+}
+.ms-pagecaption{
+color:#000000;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-selectedtitle{
+background-color:#D4DBB8;
+border:1px solid #CC9966;
+padding-top:1px;
+padding-bottom:2px;
+}
+.ms-unselectedtitle{
+margin:1px;
+padding-top:1px;
+padding-bottom:2px;
+}
+.ms-menuimagecell{
+background-color:#D4DBB8;
+cursor:hand;
+}
+.ms-filedialog td{
+height:16px;
+}
+.ms-alerttext{
+color:#DB6751;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-sectionheader a{
+color:#000000;
+text-decoration:none;
+}
+.ms-sectionheader a:hover{
+color:#000000;
+text-decoration:none;
+}
+.ms-sectionheader a:visited{
+color:#000000;
+text-decoration:none;
+}
+.ms-discussiontitle{
+font-family:"trebuchet ms",arial,helvetica;
+color:#000000;
+font-weight:bold;
+}
+.ms-vh2{
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+text-decoration:none;
+font-weight:normal;
+vertical-align:top;
+}
+.ms-vh-icon{
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+text-decoration:none;
+font-weight:normal;
+vertical-align:top;
+width:22px;
+}
+.ms-vh-icon-empty{
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+text-decoration:none;
+font-weight:normal;
+vertical-align:top;
+width:0px;
+}
+.ms-vh-left{
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+text-decoration:none;
+font-weight:normal;
+}
+.ms-vh-left-icon{
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+text-decoration:none;
+font-weight:normal;
+width:22px;
+}
+.ms-vh-left-icon-empty{
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+text-decoration:none;
+font-weight:normal;
+width:0px;
+}
+.ms-vh-right{
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+text-decoration:none;
+font-weight:normal;
+}
+.ms-vh-right-icon{
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+text-decoration:none;
+font-weight:normal;
+width:22px;
+}
+.ms-vh-right-icon-empty{
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+text-decoration:none;
+font-weight:normal;
+width:0px;
+}
+.ms-vh a, .ms-vh a:visited, .ms-vh2 a, .ms-vh2 a:visited, .ms-vh-left a, .ms-vh-right a{
+color:#993333;
+text-decoration:none;
+}
+.ms-vh a:hover, .ms-vh2 a:hover{
+text-decoration:underline;
+}
+.ms-vhImage{
+font-family:"trebuchet ms",arial,helvetica;
+color:#5D5D5D;
+text-decoration:none;
+font-weight:normal;
+vertical-align:top;
+width:18pt;
+}
+.ms-gb{
+font-family:"trebuchet ms",arial,helvetica;
+height:18px;
+color:#000000;
+background-color:#D4DBB8;
+font-weight:bold;
+}
+.ms-styleheader{
+font-family:verdana;
+font-size:0.68em;
+background-color:#D4DBB8;
+}
+.ms-vb, .ms-vb2, .ms-GRFont, .ms-vb-user{
+font-family:"trebuchet ms",arial,helvetica;
+vertical-align:top;
+}
+.ms-vb a, .ms-vb2 a, .ms-GRStatusText a, .ms-vb-user a{
+color:#993333;
+text-decoration:none;
+}
+.ms-vb a:hover, .ms-vb2 a:hover, .ms-vb-user a:hover{
+color:#FF6600;
+text-decoration:underline;
+}
+.ms-vb a:visited, .ms-vb2 a:visited, .ms-GRStatusText a:visited, .ms-vb-user a:visited{
+color:#993333;
+text-decoration:none;
+}
+.ms-vb a:visited:hover, .ms-vb2 a:visited:hover, .ms-vb-user a:visited:hover{
+color:#FF6600;
+text-decoration:underline;
+}
+.ms-vb2, .ms-vb-title, .ms-vb-icon, .ms-vb-user{
+border-top:1px solid #859933;
+}
+.ms-vb-icon{
+vertical-align:top;
+width:16px;
+padding-top:2px;
+padding-bottom:0px;
+}
+.ms-vb2{
+padding-top:3px;
+padding-bottom:0px;
+}
+.ms-addnew{
+font-weight:normal;
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+text-decoration:none;
+}
+.ms-error{
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:normal;
+color:#db6751;
+}
+.ms-vcal{
+border-collapse:separate;
+table-layout:fixed;
+font-family:"trebuchet ms",arial,helvetica;
+cursor:default;
+}
+.ms-Dcal{
+border-collapse:collapse;
+border-left:1px solid #669966;
+border-right:1px solid #669966;
+table-layout:fixed;
+font-family:"trebuchet ms",arial,helvetica;
+cursor:default;
+}
+.ms-calDmidHour{
+border-color:#669966;
+height:20px;
+}
+.ms-calDmidHalfHour{
+border-color:#669966;
+height:20px;
+}
+.ms-calDmidQuarterHour{
+border:0px none;
+height:20px;
+}
+.ms-CalSpacer{
+border-left:1px solid #669966;
+border-right:1px solid #669966;
+height:4px;
+}
+.ms-CalDSpacer{
+border-left:1px solid #669966;
+border-right:1px solid #669966;
+height:4px;
+}
+.ms-CalVSpacer{
+background-color:#669966;
+width:0px;
+}
+.ms-CalAllDay{
+text-align:center;
+vertical-align:top;
+width:10%;
+height:12px;
+}
+.ms-firstCalHour{
+vertical-align:top;
+width:10%;
+height:12px;
+}
+.ms-calHour{
+border-top:1px solid #669966;
+vertical-align:top;
+width:10%;
+height:12px;
+}
+.ms-calHalfHour{
+border-top:1px solid #859933;
+vertical-align:top;
+height:12px;
+}
+.ms-calQuarterHour{
+border-top:0px none;
+vertical-align:top;
+height:12px;
+}
+.ms-Dappt{
+border:2px solid #669966;
+text-align:center;
+vertical-align:middle;
+height:18px;
+overflow:hidden;
+background-color:#333399;
+color:#000000;
+}
+.ms-Vappt{
+border-top:1px solid #996600;
+border-left:2px solid #996600;
+border-bottom:3px solid #996600;
+border-right:2px solid #996600;
+text-align:center;
+padding-left:3px;
+padding-right:3px;
+vertical-align:middle;
+height:12px;
+overflow:hidden;
+text-overflow:ellipsis;
+background-color:#C2CBA0;
+color:#000000;
+}
+.ms-Vapptsingle a, .ms-Vappt a{
+text-decoration:none;
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:normal;
+color:#993333;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+.ms-Vappt a:link{
+}
+.ms-Vappt a:hover{
+text-decoration:underline;
+color:#000000;
+}
+.ms-Vevt{
+padding:0px;
+text-align:center;
+vertical-align:top;
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:normal;
+height:12px;
+overflow:hidden;
+text-overflow:ellipsis;
+color:#000000;
+}
+.ms-Vevt a{
+text-decoration:none;
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:normal;
+color:#000000;
+}
+.ms-Vevt a:link{
+}
+.ms-Vevt a:hover{
+text-decoration:underline;
+color:#000000;
+}
+.ms-Vevt a:visited{
+color:#DFD664;
+}
+.ms-apptsingle{
+border-left:1px solid #336633;
+border-right:1px solid #336633;
+height:18px;
+vertical-align:middle;
+overflow:hidden;
+text-overflow:ellipsis;
+color:#000000;
+}
+.ms-Dapptsingle{
+border-left:1px solid #336633;
+border-right:1px solid #336633;
+height:18px;
+vertical-align:middle;
+overflow:hidden;
+color:#000000;
+}
+.ms-Vapptsingle{
+border:1px solid #336633;
+text-align:center;
+vertical-align:middle;
+overflow:hidden;
+text-overflow:ellipsis;
+color:#000000;
+background-color:#C2CBA0;
+}
+.ms-Vapptsingle a:link{
+}
+.ms-Vapptsingle a:hover{
+text-decoration:underline;
+}
+.ms-Vapptsingle a:visited{
+}
+.ms-dpnextprev{
+border:none;
+text-align:center;
+font-weight:bold;
+background-color:#AEBA80;
+color:#000000;
+cursor:hand;
+}
+.ms-discussionseparator{
+color:#859933;
+height:1px;
+}
+.ms-stylelabel{
+font-family:verdana;
+font-size:8pt;
+color:#859933;
+}
+.ms-stylebox{
+font-family:verdana;
+border:1px solid #859933;
+text-align:left
+}
+img.thumbnail{
+border:3px solid #AEBA80;
+}
+tr.ms-imglibselectedrow{
+background-color:#D4DBB8;
+}
+table.ms-imglibtitletable{
+border:0px solid #859933;
+}
+.ms-imglibthumbnail{
+background-color:#D4DBB8;
+border:solid #AEBA80 0px;
+}
+span.thumbnail{
+padding:16 10;
+position:relative;
+width:5px;
+}
+span.userdata{
+behavior:url(pwls1111.css#default#userData);
+display:none;
+}
+.ms-imglibmenuhead{
+cursor:move;
+}
+.ms-imglibmenu{
+background-color:#D4DBB8;
+cursor:hand;
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+}
+.ms-imglibmenutext{
+cursor:move;
+font-weight:bold;
+color:#993333;
+}
+.ms-imglibmenuarea{
+background-color:#D4DBB8;
+}
+img.ms-imglibpreviewarea{
+border:solid #D4DBB8 3px;
+margin-top:3px;
+}
+a.ms-imglibPreviewTitle{
+overflow:hidden;
+text-overflow:ellipsis;
+width:130;
+}
+table.ms-imglibPreviewTable{
+display:none;
+}
+.UserShadedRegion{
+font-family:"trebuchet ms",arial,helvetica;
+background-color:#D4DBB8;
+}
+.UserCaption{
+font-family:"trebuchet ms",arial,helvetica;
+background-color:#D4DBB8;
+}
+.UserConfiguration{
+font-family:"trebuchet ms",arial,helvetica;
+background-color:#D4DBB8;
+}
+.UserButton, .UserInput, .UserSelect{
+font-family:"trebuchet ms",arial,helvetica;
+color:#000000;
+}
+.UserNotification{
+font-family:"trebuchet ms",arial,helvetica;
+padding:4px;
+COLOR:#BBBBBB;
+}
+.UserToolBarTextArea{
+padding-bottom:5px;
+font-weight:normal;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.UserToolbarTextArea A:link{
+COLOR:#993333;
+TEXT-DECORATION:none;
+}
+.UserToolbarTextArea A:visited{
+COLOR:#993333;
+TEXT-DECORATION:none;
+}
+.UserToolbarTextArea A:hover{
+COLOR:#FF6600;
+TEXT-DECORATION:underline;
+}
+.UserToolbarDisabledLink{
+COLOR:#4D4D4D;
+font-family:"trebuchet ms",arial,helvetica;
+padding:4px;
+}
+.UserToolbarImage{
+border:medium none;
+cursor:hand;
+background-color:#BBBBBB;
+text-align:center;
+}
+.UserToolBarImageArea{
+padding-bottom:5px;
+font-weight:normal;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.UserToolbarSelectedImage{
+border-right:medium none;
+border-top:medium none;
+border-left:medium none;
+border-bottom:#000000 1px solid;
+font-weight:bold;
+vertical-align:top;
+text-align:center;
+}
+.UserGenericHeader{
+font-weight:bold;
+color:#000000;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.UserGeneric{
+padding:8px 5px 7px 5px;
+}
+.UserGenericText{
+color:#000000;
+}
+.UserGenericBody{
+padding:5px 0px 0px 17px;
+}
+.UserSectionTitle{
+font-weight:bold;
+width:100%;
+margin-bottom:5px;
+padding-bottom:2px;
+border-bottom:solid 1px #AEBA80;
+color:#000000;
+}
+.UserSectionHead{
+width:100%;
+padding:0px 0px 3px 0px;
+color:#000000;
+}
+.UserSectionFooter{
+color:#000000;
+border-top:solid 1px #AEBA80;
+}
+.UserSectionBody{
+width:100%;
+padding:0px 0px 0px 7px;
+}
+.UserControlGroup{
+padding-bottom:10px;
+padding-top:2px;
+}
+.UserFooter{
+width:100%;
+padding:10px 7px 7px 7px;
+}
+.UserCommandArea{
+padding-top:7px;
+}
+.UserCellSelected{
+font-family:"trebuchet ms",arial,helvetica;
+padding:1px 4px 2px 4px;
+background-color:#FFFFFF;
+border:solid 1px #000000;
+color:#000000;
+}
+.UserCell{
+font-family:"trebuchet ms",arial,helvetica;
+padding:2px 5px 3px 5px;
+color:#000000;
+}
+.UserGenericBulletItem{
+padding-bottom:2px;
+}
+.ms-ToolPaneFrame{
+padding:0px;
+background-color:#D4DBB8;
+}
+.ms-ToolPaneBody{
+padding-bottom:2px;
+padding-top:2px;
+}
+.ms-ToolPaneHeader{
+background-color:#AEBA80;
+border-style:none;
+}
+.ms-ToolPaneBorder{
+border-right:#D4DBB8 1px solid;
+border-top:solid none;
+border-bottom:solid none;
+border-left:#D4DBB8 1px solid;
+}
+.ms-ToolPaneClose{
+background-color:#AEBA80;
+}
+.ms-ToolPaneTitle{
+color:#000000;
+font-weight:bold;
+font-family:"trebuchet ms",arial,helvetica;
+padding-top:3px;
+padding-bottom:3px;
+background-color:#AEBA80;
+}
+.ms-ToolPaneFooter{
+background-color:#AEBA80;
+padding:5px;
+font-family:"trebuchet ms",arial,helvetica;
+color:#000000;
+}
+.ms-ToolPaneError{
+color:#db6751;
+font-family:"trebuchet ms",arial,helvetica;
+padding:2px;
+}
+.ms-ToolPaneInfo{
+padding-right:5px;
+padding-top:5px;
+padding-bottom:0px;
+padding-left:5px;
+color:#000000;
+font-family:"trebuchet ms",arial,helvetica;
+background-color:#D4DBB8;
+}
+.ms-ToolPartSpacing{
+padding-top:8px;
+}
+.ms-TPBorder{
+border:none;
+}
+.ms-TPHeader{
+background-color:#859933;
+}
+.ms-TPTitle{
+color:#000000;
+font-weight:bold;
+font-family:"trebuchet ms",arial,helvetica;
+padding-top:2px;
+padding-bottom:2px;
+}
+.ms-TPBody{
+color:#000000;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-TPBody a:link, .ms-TPBody a:visited, .ms-TPBody a:hover{
+color:#993333;
+text-decoration:none;
+cursor:hand;
+}
+.ms-TPCommands{
+}
+.ms-TPInput{
+color:#FFFFFF;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-CategoryTitle{
+font-family:"trebuchet ms",arial,helvetica;
+font-weight:bold;
+text-decoration:none;
+}
+.ms-PropGridBuilderButton{
+border:solid 1px #CC9966;
+width:16px;
+display:none;
+background-color:#AEBA80;
+}
+.ms-SPZone{
+border:#336633 1px solid;
+padding:5px;
+}
+.ms-SPZoneSelected{
+border:#FF6600 1px solid;
+padding:5px;
+}
+.ms-SPZoneIBar{
+border:#FF6600 3px solid;
+}
+.ms-SPZoneLabel{
+color:#336633;
+font-family:"trebuchet ms",arial,helvetica;
+padding:0;
+}
+.ms-SPError{
+color:#DB6751;
+font-family:"trebuchet ms",arial,helvetica;
+padding-right:2px;
+padding-top:2px;
+padding-bottom:2px;
+padding-left:2px;
+border-bottom:#D4DBB8 2px solid;
+}
+.ms-SPZoneCaption{
+color:#336633;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-WPDesign{
+background-color:#D4DBB8;
+}
+.ms-WPMenu{
+background-color:#D4DBB8;
+}
+.ms-WPTitle{
+font-weight:bold;
+font-family:"trebuchet ms",arial,helvetica;
+color:#FFFFFF;
+padding-top:2px;
+padding-bottom:2px;
+}
+.ms-WPTitle A:link, .ms-WPTitle A:visited{
+color:#FFFFFF;
+text-decoration:none;
+cursor:hand;
+}
+.ms-WPTitle A:hover{
+color:#FFFFFF;
+text-decoration:underline;
+cursor:hand;
+}
+.ms-WPSelected{
+border:#97BC00 3px dashed;
+}
+.ms-WPBody{
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-WPBody table, .ms-TPBody table{
+}
+.ms-WPBody a:link, .ms-WPBody a:visited{
+color:#993333;
+text-decoration:none;
+}
+.ms-WPBody A:hover{
+color:#FF6600;
+text-decoration:underline;
+}
+.ms-WPBody th, .ms-TPBody th{
+font-weight:bold;
+}
+.ms-WPBody td{
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-WPBody h1, .ms-TPBody h1{
+font-weight:bold;
+}
+.ms-WPBody h2, .ms-TPBody h2{
+font-weight:bold;
+}
+.ms-WPBody h3, .ms-TPBody h3{
+font-weight:bold;
+}
+.ms-WPBody h4, .ms-TPBody h4{
+font-weight:bold;
+}
+.ms-WPBody h5, .ms-TPBody h5{
+font-weight:bold;
+}
+.ms-WPBody h6, .ms-TPBody h6{
+font-weight:bold;
+}
+.ms-WPBorder{
+border-right:#859933 1px solid;
+border-left:#859933 1px solid;
+border-top-style:none;
+border-bottom:#859933 1px solid;
+}
+.ms-HoverCellActive{
+border:#993333 1px solid;
+background-color:#AEBA80;
+}
+.ms-HoverCellActiveDark{
+border:solid 1px #859933;
+background-color:#D4DBB8;
+}
+.ms-SPLink{
+font-family:"trebuchet ms",arial,helvetica;
+color:#993333;
+}
+.ms-SPLink a:link, .ms-SPLink A:visited{
+color:#993333;
+text-decoration:none;
+}
+.ms-SPButton{
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-PartSpacingVertical, .ms-PartSpacingHorizontal{
+padding-top:10px;
+}
+.ms-WPHeader{
+background-color:#D4DBB8;
+background-image:url('blank.gif');
+background-repeat:repeat-x;
+}
+.ms-PageHeaderDate{
+color:#000000;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-PageHeaderGreeting{
+color:#000000;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-rtApplyBackground{
+background-color:#336633;
+border:0.02cm solid #CC9966;
+}
+.ms-rtRemoveBackground{
+background-color:transparent;
+border:0.02cm solid #FFFFFF;
+}
+.ms-rtToolbarDefaultStyle{
+font:normal 8pt "trebuchet ms",arial,helvetica;
+}
+.ms-subsmanageheader{
+background-color:#D4DBB8;
+font-family:"trebuchet ms",arial,helvetica;
+text-decoration:none;
+font-weight:bold;
+vertical-align:top;
+}
+.ms-subsmanagecell{
+color:#000000;
+font-family:"trebuchet ms",arial,helvetica;
+height:18px;
+vertical-align:top;
+}
+.ms-ConnError{
+color:#db6751;
+}
+.ms-storMeUsed{
+background-color:#990033;
+}
+.ms-storMeFree{
+background-color:#006633;
+}
+.ms-storMeEstimated{
+background-color:#FF6600;
+}
+.ms-underline{
+vertical-align:top;
+border-bottom:1px solid #859933;
+padding-left:4;
+padding-right:4;
+padding-top:2;
+padding-bottom:4;
+}
+.ms-underlineback{
+vertical-align:top;
+border-bottom:1px solid #859933;
+padding-left:4;
+padding-right:4;
+padding-top:2;
+padding-bottom:4;
+background-color:#D4DBB8;
+}
+.ms-smallheader{
+font-weight:bold;
+color:#000000;
+font-family:"trebuchet ms",arial,helvetica;
+}
+.ms-smallsectionline{
+padding-left:0;
+padding-right:0;
+padding-top:2;
+padding-bottom:0;
+border-bottom:1px solid #859933;
+}
+.ms-tabselected{
+font-family:"trebuchet ms",arial,helvetica;
+background-color:#669966;
+border-right:#669966 2px solid;
+border-left:#669966 2px solid;
+border-top:#669966 2px solid;
+border-bottom:#669966 2px solid;
+font-weight:bold;
+padding-top:3px;
+padding-bottom:3px;
+padding-left:10px;
+padding-right:10px;
+color:#859933;
+}
+.ms-tabinactive{
+font-family:"trebuchet ms",arial,helvetica;
+background-color:#D4DBB8;
+border-right:#D4DBB8 2px solid;
+border-left:#D4DBB8 2px solid;
+border-top:#D4DBB8 2px solid;
+border-bottom:#D4DBB8 2px solid;
+padding-top:3px;
+padding-bottom:3px;
+padding-right:10px;
+padding-left:10px;
+color:#993333;
+}
+.ms-tabinactive a:link, .ms-tabinactive a:hover, .ms-tabinactive a:visited{
+color:#993333;
+text-decoration:none;
+}
+.ms-surveyVBarT{
+font-size:7pt;
+font-family:verdana;
+text-align:center;
+color:#BBBBBB;
+}
+.ms-surveyGVVBar{
+width:9px;
+background-color:#996600;
+border-top-color:#996600;
+border-top-style:solid;
+border-top-width:0px;
+border-bottom-color:#CC9966;
+border-bottom-style:solid;
+border-bottom-width:0px;
+}
+.ms-surveyGVVBarS{
+width:20px;
+}
+.ms-uploadborder{
+border:1px solid #4D4D4D;
+}
+.ms-uploadcontrol{
+background-color:#333399;
+}
+.ms-highlight{
+background-color:#4D4D4D;
+}
+.UserBackground{
+background-color:#FFFFFF;
+}
+.ms-MWSSelectedInstance{
+color:#000000;
+text-decoration:none;
+}
+.ms-MWSInstantiated a:link, .ms-MWSInstantiated a:visited{
+color:#993333;
+text-decoration:none;
+}
+.ms-MWSInstantiated a:hover{
+color:#FF6600;
+text-decoration:underline;
+}
+.ms-MWSUninstantiated a:link, .ms-MWSUninstantiated a:visited{
+color:#993333;
+text-decoration:none;
+}
+.ms-MWSUninstantiated a:hover{
+color:#993333;
+text-decoration:underline;
+}
+.ms-ToolStrip{
+color:#FFFFFF;
+background-color:#D4DBB8;
+border-left:#336633 1px solid;
+border-right:#336633 1px solid;
+border-top:#336633 1px solid;
+border-bottom:#336633 1px solid;
+}
+/*
+     FILE ARCHIVED ON 03:20:49 Feb 06, 2007 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:12:54 Dec 13, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.452
+  exclusion.robots: 0.016
+  exclusion.robots.policy: 0.008
+  esindex: 0.011
+  cdx.remote: 4.791
+  LoadShardBlock: 150.798 (3)
+  PetaboxLoader3.datanode: 431.635 (4)
+  PetaboxLoader3.resolve: 108.962 (2)
+  load_resource: 411.822
+*/
