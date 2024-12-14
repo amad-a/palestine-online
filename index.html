@@ -193,47 +193,53 @@
       const queryString = window.location.search;
       const params = new URLSearchParams(queryString);
       let mode = params.get('mode');
+      let site = params.get('site');
 
       if (mode === 'presenter') {
         const demoIds = 
+
         // EARLY INFRASTRUCTURE
-        ['hanieh-middle-east-report', 
-        'birzeit-guide-to-palestinian-websites', 
+        ['hanieh-middle-east-report', // atrocities in gaza
+        'birzeit-guide-to-palestinian-websites', // adam hanieh was a webmaster of first guide to Pal websites, pre proliferation of search engines, yahoo -> google maps
         'birzeit-golden-olive-awards',
-        'planetedu', // [not archived]
+        'planetedu', // [not archived] WAN, web statistics
         'palestine-yellow-pages', // [not archived]
         'palsoft',
+
         // PLACES
-        'palestine-net-geography',
-        'salfeet', // gif slideshows, 
-        'municipality-gaza', // 
-        'gaza-airport',
-        'jerusalem-hotel',
-        'ministry-tourism',
+        'palestine-net-geography', // cities/municipalities homepages, placemaking ofc nothing new but definitely held a particular significance for 
+        'salfeet', // gif slideshows, 3d animations and custom buttons which were the norm, scale of these websites allowed very volunteer-y, singular efforts, designer 
+        'municipality-gaza', // as the web matured we saw more robust sites like municipality of gaza - centers -> public library, gaza city -> photo gallery
+        'gaza-airport', // tone of hope and looking to the future, flight schedules, even in seemingly mundane info
+        'jerusalem-hotel', // tourism efforts emerge : services -> quick view -> history
+        'ministry-tourism', // reclaim the image of palestine as a destination, esp by the PA here
         // NEWS
-        'al-quds-news',
-        'alayyam-news',
+        'al-quds-news', // on the flipside, news esp during the second intifada stands in stark contrast: the graphically and typographically dense news print is translated on the virtual hypertext document,
+        'alayyam-news', // arabic text as images
+
         // ART, CULTURE, HERITAGE
-        'sakakini', //institutional websites ofc [not archived]
-        'palestine-wildlife-society', //official, for large orgs
-        'hanna-safieh', //the web as a bridge for older, traditional artists, their father
-        'omayya-joha', //political cartoonist who animated static analogue drawings w the then new GIF form
-        'samia-halaby', //maybe most prolific pali artist who used tech was samia halaaby
-        'barghouti', // other than indivual artists, you had collective efforts to translate palestinin culture to 
-        'palestine-embroider',
+        'sakakini', // institutional websites ofc [not archived]
+        'palestine-wildlife-society', // official, for large orgs
+        'hanna-safieh', // the web as a bridge for older, traditional artists, their father
+        'omayya-joha', // political cartoonist who animated static analogue drawings w the then new GIF form
+        'samia-halaby', // maybe most prolific pali artist who used tech was samia halaaby : words about palestine, kinetic painting
+        'barghouti', // other than indivual artists, you had collective efforts or anonymous projects to translate existing palestinian culture to the web
+        'palestine-embroider', //cross stitch - wedding, pillows TATRIZ
         'jukebox-arabia',
         // though web tech was limited compared to what we are used to today, 
         'villages-map', //bzu center for pal ?
-        'palestine-history-timeline', // bzu
+        'palestine-history-timeline', // also independent efforts -> palestine history
         'al-aqsa-tour', // 
         'esam-shashaa-bio',
-        'tutorials-in-arabic', //people were able to make their own websites 
-        // [custom page of graphics]
+        'tutorials-in-arabic', // people were able to make their own websites 
+        'web-4'
+
         // RECORDKEEPING, HONORING MARTYRS
-        'ramallah-1996', //documentation, photo diary 
-        'september-1996-memorial', //british guy: efforts to collect palestinian voices and saw potential of them , and as evidence and appeal to westerners who he said were often unfamiliar w the conflict 
-        'september-2000-info', //martyrs list
-        'barghouti-memorial', //blood gif, titled blood bar.gif, tho crude by todays standards, used by palestinians
+        'ramallah-1996', // earliest days -> documentation, photo diary 
+        'september-1996-memorial', // british guy: efforts to collect palestinian voices and saw potential of them , and as evidence and appeal to westerners who he said were often unfamiliar w the conflict 
+        'september-2000-info', // martyrs list
+        'barghouti-memorial', // blood gif, titled blood bar.gif, tho crude by todays standards, used by palestinians
+
         // PEOPLE OF PALESTINE ONLINE
         'people-of-palestine', // directory of people, hand collected 
         'the-holly-land', // anonymous, homepage type websites

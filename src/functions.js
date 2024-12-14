@@ -608,7 +608,7 @@ let pagesTour = [
     headerText: 'Putting Places Online',
     waybackUrl:
       'https://web.archive.org/web/20020803230608/http://www.palestine-net.com/geography/kth.html',
-    url: 'sites/www.palestine-net.com/geography/kth.html',
+    url: 'sites/www.palestine-net.com/index.html',
     description: '',
   },
   {
