@@ -1231,8 +1231,8 @@ let pagesTour = [
     year: '2001',
     label: '',
     headerText: '',
-    waybackUrl: 'https://web.archive.org/web/20011117093728/http://www.chem.metu.edu.tr/~omara/',
-    url: 'sites/www.chem.metu.edu.tr/~omara/index.html',
+    waybackUrl: 'https://web.archive.org/web/20011117093728/http://www.chem.metu.edu.tr/omara/',
+    url: 'sites/www.chem.metu.edu.tr/omara/index.html',
     description: '',
   },
   {
