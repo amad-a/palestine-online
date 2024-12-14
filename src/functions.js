@@ -1370,8 +1370,9 @@ function showInformation() {
   if (!document.getElementById('info-panel').classList.contains('closed')) {
     document.getElementById('info-flag').src = flags[Math.floor(Math.random()*flags.length)];
   }
-  
 }
+
+
 
 function queryUpdate(pageId) {
   const dropdown = document.getElementById('dropdown-content');
