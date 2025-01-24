@@ -1530,6 +1530,172 @@ const siteTree = {
   'Palestine Online Documentation': ['pr-preso-2024', 'web-4']
 };
 
+function shareSite(mode = 'desktop') {
+  const scrollPosition = document.getElementById('frame').contentWindow.scrollY;
+
+  let dummy = document.createElement('input'),
+  windowLocation = (window.location.href).replace(/&page=.*$/, '');
+  
+  const regex = /\/sites\/(.*)/;
+  
+  const path = (document.getElementById("frame").contentWindow.location.href).match(regex)[1];
+  console.log('path', path);
+  windowLocation += `&page=${path}`;
+  document.body.appendChild(dummy);
+  dummy.value = windowLocation;
+  dummy.select();
+  document.execCommand('copy');
+  document.body.removeChild(dummy);
+
+  const tooltip = document.getElementById('share-page-tooltip');
+  tooltip.innerHTML = 'Link copied.';
+
+  if (mode === 'desktop') {
+    setTimeout(() => tooltip.innerHTML = 'Share Page' , 2500)
+  }
+  if (mode = 'mobile') {
+    let mobileShareAlert = document.querySelector(".mobile-share-alert");
+
+    mobileShareAlert.style.visibility = 'visible';
+    setTimeout(() => mobileShareAlert.style.visibility = 'hidden', 2500)
+  }
+};
+
+function initDocumentSetup(document) {
+  const mobileZoomOut = document.getElementById('mobile-zoom-out');
+  const mobileZoomIn = document.getElementById('mobile-zoom-in');
+  const zoomSlider = document.getElementById('zoom-slider');
+  let zoomValue;
+
+  let addressBar = document.querySelector(".address-bar");
+  addressBar.disabled = true;
+
+  let sliderButton = document.getElementById("zoomSlider");
+  sliderButton.disabled = true;
+
+  let mobileShareAlert = document.querySelector(".mobile-share-alert");
+  mobileShareAlert.disabled = true;
+
+  mobileZoomOut.addEventListener('touchstart', () => {
+    zoomSlider.value -= 1;
+    changeZoom(zoomSlider.value)
+  });
+
+  mobileZoomIn.addEventListener('touchstart', () => {
+    zoomSlider.value++;
+    changeZoom(zoomSlider.value)
+  });
+
+  // change wallpaper on click of page body  
+  document.body.addEventListener('click', function (event) {
+    setWallpaper();
+  });
+  // but not window
+  document.querySelector('.window-grid').addEventListener('click', function (event) {
+    event.stopPropagation();
+  });
+
+  // adjust dropdown size based on flex address bar
+  document.querySelector('#current-site').addEventListener('click', function () {
+    const dropdownContent = document.querySelector('#dropdown-content');
+    dropdownContent.style.width = `${document.querySelector('.dropdown-container').offsetWidth - 2}px`;
+    dropdownContent.classList.toggle('open');
+  });
+
+  // add event listener to dropdown bar and button
+  document.querySelector('.dropdown').addEventListener('click', function () {
+    const dropdownContent = document.querySelector('#dropdown-content');
+    dropdownContent.style.width = `${document.querySelector('.dropdown-container').offsetWidth - 3}px`;
+    dropdownContent.classList.toggle('open');
+  });
+
+  document.querySelector('.mobile-top-nav').addEventListener('click', function () {
+    const dropdownContent1 = document.querySelector('#mobile-dropdown-content');
+    dropdownContent1.classList.toggle('open');
+  });
+
+  const treeViewContainer = document.getElementById('tree');
+  const treeViewContainerOriginal = document.getElementById('tree-original');
+
+  // Create the tree view from the data object and append it to the container
+  treeViewContainer.appendChild(createTreeView(siteTree));
+  treeViewContainerOriginal.appendChild(createTreeView(siteTree));
+  
+  document.getElementById('frame').onload = function () {
+    changeZoom(zoomValue);
+  }
+}
+
+function presenterModeSetup(document) {
+  const demoIds = 
+  // EARLY INFRASTRUCTURE
+  ['hanieh-middle-east-report', // atrocities in gaza
+  'birzeit-guide-to-palestinian-websites', // adam hanieh was a webmaster of first guide to Pal websites, pre proliferation of search engines, yahoo -> google maps
+  'birzeit-golden-olive-awards',
+  'planetedu', // [not archived] WAN, web statistics
+  'palestine-yellow-pages', // [not archived]
+  'palsoft',
+
+  // PLACES
+  'palestine-net-geography', // cities/municipalities homepages, placemaking ofc nothing new but definitely held a particular significance for 
+  'salfeet', // gif slideshows, 3d animations and custom buttons which were the norm, scale of these websites allowed very volunteer-y, singular efforts, designer 
+  'municipality-gaza', // as the web matured we saw more robust sites like municipality of gaza - centers -> public library, gaza city -> photo gallery
+  'gaza-airport', // tone of hope and looking to the future, flight schedules, even in seemingly mundane info
+  'jerusalem-hotel', // tourism efforts emerge : services -> quick view -> history
+  'ministry-tourism', // reclaim the image of palestine as a destination, esp by the PA here
+  // NEWS
+  'al-quds-news', // on the flipside, news esp during the second intifada stands in stark contrast: the graphically and typographically dense news print is translated on the virtual hypertext document,
+  'alayyam-news', // arabic text as images
+
+  // ART, CULTURE, HERITAGE
+  'sakakini', // institutional websites ofc [not archived]
+  'palestine-wildlife-society', // official, for large orgs
+  'hanna-safieh', // the web as a bridge for older, traditional artists, their father
+  'omayya-joha', // political cartoonist who animated static analogue drawings w the then new GIF form
+  'samia-halaby', // maybe most prolific pali artist who used tech was samia halaaby : words about palestine, kinetic painting
+  'barghouti', // other than indivual artists, you had collective efforts or anonymous projects to translate existing palestinian culture to the web
+  'palestine-embroider', //cross stitch - wedding, pillows TATRIZ
+  'jukebox-arabia',
+  // though web tech was limited compared to what we are used to today, 
+  'villages-map', //bzu center for pal ?
+  'palestine-history-timeline', // also independent efforts -> palestine history
+  'al-aqsa-tour', // 
+  'esam-shashaa-bio',
+  'tutorials-in-arabic', // people were able to make their own websites 
+  'web-4',
+
+  // RECORDKEEPING, HONORING MARTYRS
+  'ramallah-1996', // earliest days -> documentation, photo diary 
+  'september-1996-memorial', // british guy: efforts to collect palestinian voices and saw potential of them , and as evidence and appeal to westerners who he said were often unfamiliar w the conflict 
+  'september-2000-info', // martyrs list
+  'barghouti-memorial', // blood gif, titled blood bar.gif, tho crude by todays standards, used by palestinians
+
+  // PEOPLE OF PALESTINE ONLINE
+  'people-of-palestine', // directory of people, hand collected 
+  'the-holly-land', // anonymous, homepage type websites
+  'amnah-site', // what you could find on a more personal site, often times students would take a class on web development, like we saw w barghouti, the demarcation of web1.0 and having a martyrs section, black and red
+  'jayyousi-pages', // connection
+  'asa-group', //
+  'zuhair-page',
+  'reality-of-palestine'
+  ]
+  let demoCounter = 0;
+  queryUpdate(demoIds[demoCounter]);
+
+  document.addEventListener("keydown", (e) => {
+    if (!e.repeat &&  (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) {
+      if (e.key === 'ArrowRight') demoCounter++;
+      if (e.key === 'ArrowLeft') demoCounter--;
+      if (demoCounter < 0) demoCounter = demoIds.length - 1;
+      if (demoCounter > demoIds.length - 1) demoCounter = 0;
+      console.log(`DEMO COUNTER "${demoCounter} ${demoIds[demoCounter]}"`);
+      queryUpdate(demoIds[demoCounter]);
+    } else {
+      console.log(`Key "${e.key}" repeating [event: keydown]`);
+    }
+  });
+}
+
 // function setBreadcrumbs(pageId) {
 //   const pageMatch = pagesTour.filter((page) => page.id === pageId)[0];
 
