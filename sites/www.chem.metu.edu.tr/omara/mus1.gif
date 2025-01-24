@@ -1,0 +1,432 @@
+<!doctype html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <title>404 - Department of Chemistry | METU</title>
+
+    <!-- Search Engine Optimization -->
+    <meta name="description" content="404 Not Found Department of Chemistry - Middle East Technical University">
+    <meta name="keywords" content="ODTÜ, odtü, odtu, metu, METU, erasmus, O.D.T.U.,odtü kimya, kimya, bölümü, odtü kimya bölümü, metu chemistry department, chem, chemistry, orta doğu teknik üniversitesi, middle east technical university, orta doğu teknik üniversitesi kimya bölümü, middle east technical university chemistry department, middle east technical university department of chemistry"
+    <meta name="author" content="Department of Chemistry - Middle East Technical University">
+    <link rel="shortcut icon" href=images/favicon.png>
+
+  <!-- Define Charset -->
+  <meta charset="utf-8">
+
+  <!-- Responsive Metatag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 
+
+  <!-- Bootstrap CSS  -->
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css" media="screen">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
+
+  <!-- Slicknav -->
+  <link rel="stylesheet" type="text/css" href="css/slicknav.css" media="screen">
+
+  <!-- Margo CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+
+  <!-- Responsive CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+
+  <!-- Css3 Transitions Styles  -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
+
+  <!-- Color CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="css/colors/red.css" title="red" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/jade.css" title="jade" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/green.css" title="green" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/beige.css" title="beige" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/cyan.css" title="cyan" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/orange.css" title="orange" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/peach.css" title="peach" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/pink.css" title="pink" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/purple.css" title="purple" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/sky-blue.css" title="sky-blue" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/yellow.css" title="yellow" media="screen" />
+
+  <!-- Margo JS  -->
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/jquery.migrate.js"></script>
+  <script type="text/javascript" src="js/modernizrr.js"></script>
+  <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+  <script type="text/javascript" src="js/jquery.appear.js"></script>
+  <script type="text/javascript" src="js/count-to.js"></script>
+  <script type="text/javascript" src="js/jquery.textillate.js"></script>
+  <script type="text/javascript" src="js/jquery.lettering.js"></script>
+  <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+  <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax.js"></script>
+  <script type="text/javascript" src="js/mediaelement-and-player.js"></script>
+  <script type="text/javascript" src="js/jquery.slicknav.js"></script>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107005685-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments) };
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107005685-1');
+    </script>
+
+  
+
+  <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body>
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Start Header -->
+        <div class="hidden-header"></div>
+        <header class="clearfix">
+
+            <!-- Start Top Bar -->
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <!-- Start Contact Info -->
+                            <ul class="contact-details">
+                                <li>
+                                    <a href="https://www.google.com.tr/maps/place/DEPARTMENT+OF+CHEMISTRY,+METU/@39.8920798,32.7770875,16z/data=!4m5!3m4!1s0x0:0xc2afbee886494497!8m2!3d39.893275!4d32.7824092"><i class="fa fa-map-marker"></i> Orta Doğu Teknik Üniversitesi, Üniversiteler Mah., 06800, Ankara</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:chem@metu.edu.tr"><i class="fa fa-envelope-o"></i> kimya@metu.edu.tr</a>
+                                </li>
+                                <li>
+                                    <a href="callto:+903122103203"><i class="fa fa-phone"></i> +90 312 210 3203</a>
+                                </li>
+                            </ul>
+                            <!-- End Contact Info -->
+                        </div>
+                        <!-- .col-md-6 -->
+                        <div class="col-md-5">
+                            <!-- Start Social Links -->
+                            <ul class="social-list">
+                                <li>
+                                    <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="https://www.facebook.com/OdtuKimyaBolumu"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a class="twitter itl-tooltip" data-placement="bottom" title="Twitter" href="https://twitter.com/metuchem"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="https://www.linkedin.com/start/join?trk=login_reg_redirect&session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fgroups%2F4392406"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a class="instgram itl-tooltip" data-placement="bottom" title="Instagram" href="https://www.instagram.com/metu_chem/"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <!-- End Social Links -->
+                        </div>
+                        <!-- .col-md-6 -->
+                    </div>
+                    <!-- .row -->
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- .top-bar -->
+            <!-- End Top Bar -->
+            <!-- Start Header ( Logo & Naviagtion ) -->
+            <div class="navbar navbar-default navbar-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <!-- Stat Toggle Nav Link For Mobiles -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <!-- End Toggle Nav Link For Mobiles -->
+                        <a class="navbar-brand" href="http://chem.metu.edu.tr/"><img alt="" src="images/deptlogo.png" width="267"> </a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+
+                        <!-- Start Navigation List -->
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li>
+                                <a href="about">Department</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href="news">News & Announcements</a>
+                                    </li>
+                                    <li>
+                                        <a href="staff">Staff</a>
+                                    </li>
+                                    <li>
+                                        <a href="assistants">Research Assistants</a>
+                                    </li>
+                                    <li>
+                                        <a href="gradstudents">Graduate Students</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="faculty">Faculty</a>
+                            </li>
+                            <li>
+                                <a href="research">Research</a>
+                                <ul class="dropdown">
+                            </li>
+                            <li>
+                                <a href="researchoverview">Research Overview</a>
+                            </li>
+                            <li>
+                                <a href="seminars.html">Seminars</a>
+                            </li>
+                            <li>
+                                <a href="facility">Facility</a>
+                            </li>
+                            <li><a href="publications">Publications</a>
+                        </ul>
+                        </li>
+                        <li>
+                            <a href="education">Education</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="education">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="undergraduate">Undergraduate</a>
+                                </li>
+                                <li>
+                                    <a href="graduate">Graduate</a>
+                                </li>
+                                <li>
+                                    <a href="erasmus.html">Erasmus</a>
+                                </li>
+                                <li>
+                                    <a href="gradadmission.html">Graduate Admissions</a>
+                                </li>
+                                <li>
+                                    <a href="internship.html">Internship</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="healthsafety.html">Health & Safety</a>
+                        </li>
+                        <li>
+                            <a href="http://ocw.metu.edu.tr/course/index.php?categoryid=9&lang=tr">OpenCourseWare</a>
+                        </li>
+
+                        <li>
+                            <a href="alumni">Alumni</a>
+                        </li>
+
+                        <li>
+                            <a href="contact">Contact</a>
+                        </li>
+                        </ul>
+                        <!-- End Navigation List -->
+                    </div>
+                </div>
+                <!-- Mobile Menu Start -->
+                <ul class="wpb-mobile-menu">
+                    <li>
+                        <a class="active" href="http://chem.metu.edu.tr/">Home</a>
+                    </li>
+                    <li>
+                        <a href="about">Department</a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="news">News & Announcements</a>
+                            </li>
+                            <li>
+                                <a href="staff">Staff</a>
+                            </li>
+                            <li>
+                                <a href="assistants">Research Assistants</a>
+                            </li>
+                            <li>
+                                <a href="gradstudents">Graduate Students</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faculty">Faculty</a>
+                    </li>
+                    <li>
+                        <a href="research">Research</a>
+                        <ul class="dropdown">
+
+                    </li>
+                    <li>
+                        <a href="facility">Facility</a>
+                    </li>
+                    <li><a href="publications">Publications</a>
+                </ul>
+                </li>
+                <li>
+                    <a href="education">Education</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="education">Overview</a>
+                        </li>
+                        <li>
+                            <a href="undergraduate">Undergraduate</a>
+                        </li>
+                        <li>
+                            <a href="graduate">Graduate</a>
+                        </li>
+                        <li>
+                            <a href="erasmus">Erasmus</a>
+                        </li>
+                        <li>
+                            <a href="gradadmission.html">Graduate Admissions</a>
+                        </li>
+                        <li>
+                            <a href="internship.html">Internship</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="healthsafety">Health & Safety</a>
+                </li>
+                <li>
+                    <a href="http://ocw.metu.edu.tr/course/index.php?categoryid=9&lang=tr">OpenCourseWare</a>
+                </li>
+                </li>
+                <li>
+                    <a href="alumni">Alumni</a>
+                </li>
+                </li>
+                <li>
+                    <a href="contact">Contact</a>
+                </li>
+                </ul>
+                <!-- Mobile Menu End -->
+
+            </div>
+            <!-- End Header ( Logo & Naviagtion ) -->
+
+        </header>
+        <!-- End Header -->
+        </header>
+        <!-- End Header -->
+       
+        <!-- Start Content -->
+        <div id="content">
+            <div class="container">
+                <div class="page-content">
+                    <div class="error-page">
+                        <h1>404</h1>
+                        <h3>File not Found</h3>
+                        <p>We're sorry, but the page you were looking for doesn't exist.</p>
+                        <div class="text-center"><a href="http://chem.metu.edu.tr/" class="btn-system btn-small">Back To Home</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Content -->
+
+        <!-- Start Footer Section -->
+        <footer>
+               <div class="container">
+                  <div class="row footer-widgets">
+                     <!-- Start Subscribe & Social Links Widget -->
+                     <div class="col-md-4 col-xs-12">
+                        <div class="footer-widget contact-widget">
+                           <h4><img src="images/footer-deptlogo.png" alt="Footer Logo" width="300" class="img-responsive" /></h4>
+                           <p class="text-justify">Our department has been established in 1960 with a quite limited academic staff core having a wide scientific vision. The goals that have been determined during the foundation period still sustain their availability by evolving at the present day. </p>
+                           <ul>
+                              <li>
+                                 <a href="mailto:kimya@metu.edu.tr"><i class="fa fa-envelope-o"></i> <b>kimya@metu.edu.tr</b></a>
+                              </li>
+                              <li>
+                                 <a href="callto:+903122103203"><i class="fa fa-phone"></i> <b>+90 312 210 3203</b></a>
+                              </li>
+                           </ul>
+                        </div>
+						<div class="footer-widget social-widget">
+                           <h4>Follow Us<span class="head-line"></span></h4>
+                           <ul class="social-icons">
+                              <li>
+                                 <a class="facebook" href="https://www.facebook.com/OdtuKimyaBolumu"><i class="fa fa-facebook"></i></a>
+                              </li>
+                              <li>
+                                 <a class="twitter" href="https://twitter.com/metuchem"><i class="fa fa-twitter"></i></a>
+                              </li>
+                              <li>
+                                 <a class="linkdin" href="https://www.linkedin.com/start/join?trk=login_reg_redirect&session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fgroups%2F4392406"><i class="fa fa-linkedin"></i></a>
+                              </li>
+							  <li>
+                                 <a class="linkdin" href="https://chem.metu.edu.tr/indexemre#"><i class="fa fa-instagram"></i></a>
+                              </li>
+							  
+                           </ul>
+                        </div>
+                     </div>
+                     <!-- .col-md-3 -->
+                     <!-- End Subscribe & Social Links Widget -->
+                     <!-- Start Twitter Widget -->
+                     <div class="col-md-4 col-xs-12">
+                        <div class="footer-widget twitter-widget">
+                           <a class="twitter-timeline" data-width="350" data-height="520" data-theme="dark" data-link-color="#F5F8FA" href="https://twitter.com/METUChem">Tweets by METUChem</a>
+                           <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                     </div>
+                     <!-- .col-md-3 -->
+                     <!-- End Twitter Widget -->
+                     <!-- Start Contact Widget -->
+                     <div class="col-md-4 col-xs-12">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.2696222043737!2d32.77929201544144!3d39.89059529539289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d3463e8f9459d7%3A0xc2afbee886494497!2sDEPARTMENT%20OF%20CHEMISTRY%2C%20METU!5e0!3m2!1str!2str!4v1646744365459!5m2!1str!2str" width="350" height="520" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                     </div>
+                     <!-- .col-md-3 -->
+                     <!-- End Contact Widget -->
+                  </div>
+                  <!-- .row -->
+                  <!-- Start Copyright -->
+                  <div class="copyright-section">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <p>&copy; 2022 Department of Chemistry - All Rights Reserved </p>
+                        </div>
+                        <!-- .col-md-6 -->
+                        <div class="col-md-6">
+                           <ul class="footer-nav">
+                              <li><a href="sitemap">Sitemap</a>
+                              </li>
+                              <li><a href="http://www.metu.edu.tr/">METU</a>
+                              </li>
+                              <li><a href="contact">Contact</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <!-- .col-md-6 -->
+                     </div>
+                     <!-- .row -->
+                  </div>
+                  <!-- End Copyright -->
+               </div>
+            </footer>
+        <!-- End Footer Section -->
+
+    </div>
+    <!-- End Container -->
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

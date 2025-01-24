@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: rgb(231, 206, 255);
+        }
+
+        img {
+            width: 60%;
+            align-self: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        video {
+            width: 60%;
+            align-self: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        figcaption {
+            align-items: center;
+            text-align: center;
+            font-style: italic;
+            margin: 10px;
+        }
+
+        .flag {
+            width: 50px;
+            align-self: left;
+            display: block;
+            margin-left: 0px;
+        }
+
+        @media (max-width: 480px) {
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            video {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            body {
+                margin: 10px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            ul {
+                font-size: 20px;
+            }
+
+            figcaption {
+                font-size: 18px;
+            }
+
+            figure {
+                margin: 10px;
+            }
+            
+        }
+    </style>
+
+    <h1><i>Palestine Online Processing Org Fellowship Documentation</i></h1>
+    <img class="flag" src="public/palestineflag.gif" width="30px"/>
+
+    <h2>Background</h2>
+    <p>Palestine Online was first "exhibited" in November 2023, at Pioneer Works in Brooklyn, at a table for <a
+            href="https://sfpc.study/">School For Poetic Computation's</a> <a
+            href="https://pioneerworks.org/programs/software-for-artists-day-8">Software For Artists Day</a>. The
+        original installation consisted of a linux laptop connected to a CRT monitor and a mouse, running the websites
+        in a full screen firefox window. Through screen mirroring, I showcased a number of scraped websites stitched
+        together with a rudimentary landing page, providing guidance across the table. The first version of
+        palestineonline.net, which was to become the home of the project, was built over the following weekend and
+        launched shortly after, with the simple aim of letting the original installation's archived sites be accessible
+        anywhere. <br><br>
+    </p>
+    <figure>
+        <img src="processing-org-doc-images/p5-pioneer-works-1.png" />
+        <figcaption>Installation at Software for artists day</figcaption>
+    </figure>
+    <figure>
+        <img src="processing-org-doc-images/p5-pioneer-works-2.png" />
+        <figcaption>Installation at Software for artists day</figcaption>
+    </figure>
+    <figure>
+        <img src="processing-org-doc-images/p5-pal-online-v1.png" />
+        <figcaption>Palestine Online Version 1</figcaption>
+    </figure>
+
+    <p>
+        I came back to Palestine Online in January of 2024, after being invited by <a href="https://toddwords.com/">Todd
+            Anderson</a> to give a talk on the project for Wordhack at Wonderville. I used the talk as an opportunity to
+        research and compile more original sites for the archive, as well as to build out a more fleshed out version of
+        palestineonline.net, with some added features such as loading a random site, site info notes, and linking pages
+        to
+        their original Wayback Machine links (Though in the process of this major structural update, I abandoned the
+        primitive mobile responsiveness of the original site).
+
+    <figure>
+        <img src="processing-org-doc-images/p5-pal-online-v2.png" />
+        <figcaption>Palestine Online Version 2</figcaption>
+    </figure>
+
+
+    <p>This updated web version was developed alongside a custom version of Palestine Online created for an exhibition
+        by
+        <a href="https://www.instagram.com/sa__la__sil_/">studio salasil</a> entitled <i>Crystal Clear</i>, shown at <a
+            href="https://www.baytalmamzar.org/">Bayt Al Mamzar</a> in Dubai, which revisited the project as a full
+        screen
+        installation (though this time a standaolone, unsupervised one). I continued finding and collecting new websites
+        for
+        workshops and lectures (and Sara bin Safwan and Zainab Hassoon of studio salasil helped find and curate some
+        incredible sites for the archive as well), though did not make any ugprades to the UI.
+    </p>
+
+    <figure>
+        <img src="processing-org-doc-images/p5-crystal-clear-ui.png" />
+        <figcaption>Crystal Clear UI</figcaption>
+    </figure>
+    <figure>
+        <img src="processing-org-doc-images/p5-crystal-clear-installation.png" />
+        <figcaption>Crystal Clear Installation</figcaption>
+    </figure>
+
+    <h2>Fellowship plan</h2>
+
+    <p>
+        I applied to the Processing Foundation's <a
+            href="https://processingfoundation.org/fellowships/fellowships-2024">Annual Fellowship</a> with Palestine
+        Online, in hopes of getting support for the continual development and expansion of the project. Since this was
+        already an existing work, my proposal consisted of improvements and laying additional foundation to encourage
+        the future viability of the archive, compiled from observations of its needs from my continued work:<br>
+    <ul>
+        <li>
+            UI interface updates to support a variety of contexts on the site (installation and mobile version)
+        </li>
+        <li>
+            More efficient and methodical scraping of Wayback Machine websites
+        </li>
+        <li>
+            Further exploration of Palestine Online in educational and arts programming
+        </li>
+    </ul>
+
+    <p>I was lucky enough to be paired with designer and artist <a href="https://zai.zone/">Zainab Aliyu</a> as my mentor
+    for the fellowship, who brought with her expertise in reimagining expansive archives of the global south in digital
+    form, which maintain reverence for their source materials while also creatively reconfiguring the bounds and
+    presentation of the web browser. Her attention to detail (at the end of the fellowship, we've now accumulated
+    countless hours nitpicking over where to best place buttons and other nav) was much appreciated and integral to the
+    improved design of the archive.
+    </p>
+
+    <h2>Some Bookkeeping</h2>
+    <p>
+        After meeting with Zainab for the first time and presenting my hodge podge of ideas, we decided to compile all
+        of Palestine Online's website info onto a <a
+            href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR3DsMusqOliGWsbxVuxFoQlwJAkBpSOvMDJUMvhhOLIaodBrwt0ep6d06wWKWVmQj8S_ZP7L-rqX9G/pubhtml">spreadsheet</a>,
+        to have a better sense of how to organize the websites and also keep track of what steps need to be taken to
+        gradually expand the archive's roster.
+    </p>
+    <h2>Navigation Changes</h2>
+    <p>
+        Palestine Online's previous version was organized in a singular, thematic structure taken from the
+        lecture/walkthrough format it was adapted from - a table of contents on the front page, and two green arrows on
+        both sides of the window to navigate across the websites in the table's order. From Zai's perspective, this
+        layout was easily overlooked, confusingly redundant, and too similar to the "Global" navigation green buttons,
+        so we decided a replacement for site navigation was a good initial improvement. Exploring different options
+        including an expanding sidebar and a tab system, I decided that a dropdown menu on the top nav would be the
+        best, resembling a URL bar which users can easily identify as a global point of navigation. Opening this "URL
+        bar" reveals sites nested in categories across multiple themes, which are more flexible than the original rigid
+        linear table of contents. I also revamped the config of this menu from a solely linear array of objects to this
+        array and a companion nested "category" object, to allow easy changes.
+    </p>
+    <figure>
+        <img src="processing-org-doc-images/p5-nav-bar.png" />
+        <figcaption>New Navigation Bar and Dropdown</figcaption>
+    </figure>
+
+    <h2>Full Screen Mode</h2>
+    <p>
+        For Crystal Clear, I built an instance of Palestine Online from the ground up, meant to be displayed for full
+        screen presentation on a period correct, lower resolution display for immersion. I took note of the importance
+        of a solution for easier public installation that is not (physical, not web) site-specific, and for the
+        fellowship, decided to experiment with implementing this display mode right into the main project, especially
+        now that all site navigation was contained within the window. This was as simple as making the window full
+        screen when the breakpoint matches a ~4:3 aspect ratio at ~1024x768.
+    </p>
+    <figure>
+        <img src="processing-org-doc-images/p5-fullscreen.jpg" />
+        <figcaption>Full Screen on a CRT Monitor</figcaption>
+    </figure>
+    <h2>Mobile Version</h2>
+    <p>
+        Though I stressed the use of Palestine Online as a Desktop first archive, meant to be browsed in a viewport
+        which closely simulates the original layout that the sites in the archive would have had, I could not discount
+        the importance of mobile as a platform many users browse web content on, and which is crucially proximate to
+        sharing capabilties on social media, messaging, etc. <br><br>
+
+        I initially imagined a simple full screen viewport of the selected website, and a floating menu which would stay
+        fixed as the site viewport is scrolled, swiped, and pinched to zoom. However, this proved near impossible with
+        the limitations of HTML and CSS, especially for zooming, as the whole website including the UI would zoom on
+        pinch. Experimenting with alternatives, I landed on disabling pinch to zoom on mobile entirely and using CSS
+        Scale to simulate a zoom. By accident, I found that this method also directly manipulates the webpage DOM, and
+        many simpler websites of this time could be scaled up to pseudo native mobile versions, and scaled down to allow
+        a birds-eye examination of the structure of these early sites, now providing a new dimension of interactivity
+        that adds depth to the mobile experience, rather than compromises. I packaged this interaction into a css
+        slider, a tactile UI element whose linearity refers back to the simpler design language this project pays homage
+        to. <br><br>
+
+        With this new central nav feature on mobile in place, I decided to build out the rest of the mobile interface as
+        an alternate reality imagining of how user interfaces could have taken a turn another way at the beginning of
+        the 21st century. With Zai, I continued developing an interface that reappropriates the clear, simple design
+        language of Windows 98, and overlays them on top of modern layouts as a sort of Détournement, emulating safari
+        with address bar at the top, and nav, share, other buttons at the bottom. With zoom disabled, and the site
+        essentially a single page web app (SPA), I realized I could configure the website to be "installable" as a <a
+            href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps">Progressive Web App</a> (PWA) on
+        iPhone and Android, so the interface could take up the whole screen, and effectively be a reskinned, sandboxed
+        web browser.
+
+    </p>
+
+    <figure>
+        <img src="processing-org-doc-images/p5-pal-online-mobile-ui.PNG" />
+        <figcaption>Mobile PWA Screenshot</figcaption>
+    </figure>
+
+    <!-- <figure>
+        <video>
+            <source src="processing-org-doc-images/p5-zoom.mp4" type="video/mp4" />
+        </video>
+        <figcaption>zoom in action</figcaption>
+        
+    </figure> -->
+
+    <figure>
+        <img src="processing-org-doc-images/p5-mobile.jpg" />
+        <figcaption>on an iPhone SE + iPhone Mini</figcaption>
+    </figure>
+
+    <h2>Palestine Online as an educational tool</h2>
+
+    <p>
+        I had been wanting to introduce Palestine Online to younger audiences for a while - I saw potential in such a
+        resource's ability to aid in teaching kids about history, history of technology and the internet, and software
+        and creative coding - especially to Arab or Muslim youth who are more familiar with the history and occupation
+        of Palestine. I was lucky to have recently met my friend Gufran, who works with a Muslim Youth Program in Bay
+        Ridge, Brooklyn, and we collaborated to organize three Palestine Online workshops as part of this program,
+        involving a number of young adults aged 12-18. <br><br>
+
+        I went into the first workship with a loose agenda, opening with introductions and gauging students' knowledge
+        and experience with the internet and social media, and other content on it today, and how the internet has been
+        a central medium for hearing Palestinian voices. Students offered great observations about censorship on social
+        media, the homogoneous structure and appearance of the feeds we interact with, and how they use the internet,
+        which segued into a dive into Palestine Online, and my goals/perspectives in making the archive. <br><br>
+        </p>
+        <figure>
+            <img src="processing-org-doc-images/p5-workshop-1.jpeg" />
+        </figure>
+        <figure>
+            <img src="processing-org-doc-images/p5-workshop-2.jpeg" />
+            <figcaption>Workshop in progress!</figcaption>
+        </figure>
+    <p>
+        I was interested in learning and examining what would draw a young audience to Palestine Online, and to
+        potential similar projects, and noted that the project's interdisciplinary nature led to discussions and demos
+        in all directions - we talked about history, parents, access, questions about the code behind the project and
+        how to use Wayback Machine, I live coded the "share" feature... <br><br>
+        Some students who had coding experience or goals of pursuing engineering had sotware specific questions:
+        iframes, how the web works, web hosting, etc. The workshops shined optimistic potential of Palestine Online as a
+        multifaceted teaching tool that engages younger students with an unfamiliar digital world (especially in an era
+        with a newfound fear of declining literacy and increasing internet usage), and invites discussion of so many
+        tightly and loosely related subjects - and the possibility of orgs like the Processing Foundation engaging in
+        community building efforts through novel code, tech, and art education.
+    </p>
+
+    <h2>Web Scraping From the Internet Archive</h2>
+    <p>
+        Palestine Online's websites are discovered on, and pieced together entirely from, the Internet Archive's Wayback
+        Machine. The original goal for the archive was to have downloaded copies of each website (at least, every page
+        on it that still exists on the Wayback Machine), for quick loading, offline access, and solidity of the archive.
+        However, as the few open source tools that offer out of the box scraping of the Wayback Machine required heavy
+        intervention and were often ineffective against bot detection, I started simply linking the original hosted
+        websites on the Wayback Machine through cross origin access within palestineonline.net's iframe. This worked in
+        a pinch, but I found during larger workshops that Internet Archive (understandably) would start rate limiting
+        users on IP Addresses, interfering with access. Also, the recent hack and outtage of the Internet Archive shows
+        that even this behemoth of a service is not immune to going down, and for the permanence of the archive and its
+        guaranteed access, it is vital to have as much of these sites downloaded as possible, and having a consistent,
+        methodical way to do so. <br><br>
+
+        Though a secondary goal for the fellowship, I began exploring the creation of a custom crawler to fulfill my
+        needs for Palestine Online. Forgoing simple requests which are easily caught by bot detection, I explored modern
+        headless browser and web crawler libraries in JS - specifically <a href="https://crawlee.dev/">Crawlee</a> and
+        <a href="https://playwright.dev/">Playwright</a>, to build a scraper which can reliably and discreetly collect
+        all the files I need (html pages, as well as images, fonts, audio files, etc.) for long term preservation of
+        each site to the fullest extent possible. After the fellowship, I aim to continue refining the new scraper I
+        have started building, and adding other necessary interventions such as converting the plethora of encodings on
+        the old webpages to the now standard unicode, to confirm that special characters and non-english langauges (esp.
+        Arabic) are preserved forever.
+    </p>
+
+
+    <h2>Next Steps</h2>
+    <p>
+        This fellowship has been a vital opportunity to expand and refine Palestine Online, and secure the groundwork
+        for its consistent future development. After the end of the fellowship I hope to continue this work by:
+
+    <ul>
+        <li>
+            Organizing more public exhibitions and installations of Palestine Online across arts institutions, Arab and
+            Muslim organizations, educational spaces, really anywhere
+        <li>
+            Refine palestineonline.net's frontend and the (still WIP) Wayback Machine scrapers into an open source
+            toolset for others to compile and build old web archives for their own uses
+        </li>
+        <li>
+            As more websites are scraped and downloaded, create an Image Search to browse through the archive via visual
+            elements
+        </li>
+        <li>
+            Enlist volunteers to help write "info" pages for individual sites in the archive, which provide another
+            layer of navigation and guide
+        </li>
+    </ul>
+    </p>
+
+
+</body>
+
+</html>

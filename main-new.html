@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="public/main-page.css" />
+  <link rel="stylesheet" href="https://unpkg.com/98.css" />
+  <title>Document</title>
+</head>
+<body style="background-image: none; background-color: silver; padding: 0px; margin: 0px; height: 100%; padding: 4px;">
+  <div style="height: 100%;">
+      <menu role="tablist">
+        <li role="tab" id="selected" aria-selected="true"><a href="#tabs" onclick="selector(event)">Site Map</a></li>
+        <li role="tab" id="selected"><a href="#tabs" onclick="selector(event)">Year</a></li>
+        <li role="tab" id="selected"><a href="#tabs" onclick="selector(event)">Images</a></li>
+      </menu>
+
+      <div role="tabpanel">
+      
+  
+    
+    <ul class="tree-view" style="height: 534px; overflow-y: scroll;">
+      <li>
+        <details>
+          <summary>⟡⟡ The Early Palestinian Web ⟡⟡ </summary>
+          <ul>
+            <li>
+              <details>
+                <summary>Birzeit University</summary>
+                <ul>
+                  <li><a href="">ME Report - Adam Hanieh</a></li>
+                  <li><a href="">Nigel Parry's Open Letter To Palestinians</a></li>
+                  <li><a href="">The Complete Guide to Palestine's Websites</a></li>
+                  <li><a href="">1998 Golden Olive Awards</a></li>
+                  <li><a href="">On the Ground in Ramallah</a></li>
+                  <li><a href="">September 1996 Memorial</a></li>
+                  <li><a href="">Destroyed Palestinian Villages Map</a></li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary>Early Connectivity</summary>
+                <ul>
+                  <li><a href="">Palestine Yellow Pages</a></li>
+                  <li><a href="">Planet.edu</a></li>
+                  <li><a href="">Palsoft internet Cafe</a></li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary>Internet Service Providers</summary>
+                <ul>
+                  <li><a href="">Palnet</a></li>
+                  <li><a href="">Zaytonasoft</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </details>
+      </li>
+
+      <li>
+        <details>
+          <summary>Putting places online</summary>
+          <ul>
+            <li>
+              <details>
+                <summary>Cities and Municipalities</summary>
+                <ul>
+                  <li><a href="">Palestine Net Cities Page</a></li>
+                  <li><a href="">Gaza Municipality</a></li>
+                  <li><a href="">Ramallah</a></li>
+                  <li><a href="">Salfeet</a></li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary>Tourism</summary>
+                <ul>
+                  <li><a href="">Jerusalem Hotel</a></li>
+                  <li><a href="">Ministry of Tourism and Antiquities</a></li>
+                  <li><a href="">Municipality of Gaza</a></li>
+                  <li><a href="">Gaza International Airport</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </details>
+      </li>
+
+      <li>
+        <details>
+          <summary>Art and Culture</summary>
+          <ul>
+            <li>
+              <details>
+                <summary>Visual Arts</summary>
+                <ul>
+                  <li><a href="">Samia Halaby's site</a></li>
+                  <li><a href="">Omayya Joha's site</a></li>
+                  <li><a href="">Sakakini Cultural Centre</a></li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary>Literature</summary>
+                <ul>
+                  <li><a href="">Al Karmel Magazine</a></li>
+                  <li><a href="">Barghouti.com</a></li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary>Crafts</summary>
+                <ul>
+                  <li><a href="">Palestinian Embroidery</a></li>
+                </ul>
+              </details>
+            </li>
+
+          </ul>
+        </details>
+      </li>
+
+
+    </ul>
+  </div>
+  </div>
+  <script>
+    function selector(e) {
+      console.log('e', e.currentTarget.ariaSelected);
+      const select = document.getElementById('selected');
+      console.log('select', select);
+      select.ariaSelected = false;
+    }
+  </script>
+</body>
+
+</html>

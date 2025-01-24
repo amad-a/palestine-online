@@ -289,73 +289,110 @@ button {
   grid-column-end: 2;
 }
 
-#b0 {
-  background-image: url('tiles/keffiyeh-dithered.gif');
-  background-repeat: repeat;
-}
-
-iframe {
-  background-color: white;
-}
-
 #b1 {
   background-image: url('tiles/aqwa-man-tile-bg.jpg');
   background-repeat: repeat;
 }
+
 #b2 {
   background-image: url('tiles/arabic-html-tutorial-tile-bg.jpg');
   background-repeat: repeat;
 }
+
 #b3 {
   background-image: url('tiles/hadisoft-tile-bg.jpeg');
   background-repeat: repeat;
 }
+
 #b4 {
   background-image: url('tiles/jukebox-arabia-tile-bg.gif');
   background-repeat: repeat;
 }
+
 #b5 {
   background-image: url('tiles/lina-online-tile-bg.GIF');
   background-repeat: repeat;
 }
+
 #b6 {
   background-image: url('tiles/nidal-jayyousi-tile-bg.jpg');
   background-repeat: repeat;
 }
+
 #b7 {
+  /* change */
   background-image: url('tiles/palestine-youth-union-tile-bg.jpg');
   background-repeat: repeat;
 }
+
 #b8 {
   background-image: url('tiles/people-of-palestine-tile-bg.gif');
   background-repeat: repeat;
 }
+
 #b9 {
   background-image: url('tiles/zuhair-tile-bg.gif');
   background-repeat: repeat;
   background-size: 20%;
 }
+
 #b10 {
   background-image: url('tiles/rani-tile-bg.jpg');
   background-repeat: repeat;
 }
+
 #b11 {
   background-image: url('tiles/samia-halaby-1-tile-bg.gif');
   background-repeat: repeat;
 }
+
 #b12 {
   background-image: url('tiles/sharabati-tile-bg.JPG');
   background-repeat: repeat;
 }
+
 #b13 {
-  background-image: url('tiles/fruit.gif');
+  /* change */
+
+  background-image: url('tiles/pals2.gif');
   background-repeat: repeat;
 }
+
 #b14 {
-  background-image: url('tiles/ocean.gif');
+  background-image: url('tiles/back1.jpg');
   background-repeat: repeat;
-  background-size: 5%;
 }
+
+#b15 {
+  background-image: url('tiles/back4.jpg');
+  background-repeat: repeat;
+}
+
+#b16 {
+  background-image: url('tiles/hanthbg.gif');
+  background-repeat: repeat;
+}
+
+#b17 {
+  background-image: url('tiles/cloudtil.jpg');
+  background-repeat: repeat;
+}
+
+#b18 {
+  background-image: url('tiles/welcome.gif');
+  background-repeat: repeat;
+}
+
+#b19 {
+  background-image: url('tiles/back.jpg');
+  background-repeat: repeat;
+}
+
+#b20 {
+  background-image: url('tiles/starz.jpg');
+  background-repeat: repeat;
+}
+
 
 body {
   background-repeat: repeat;

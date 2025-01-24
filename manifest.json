@@ -1,0 +1,21 @@
+{
+    "name": "Palestine Online",
+    "short_name": "🇵🇸 online",
+    "description": "Archive of early Palestinian websites",
+    "icons": [
+      {
+        "src": "public/pal32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "public/pal512.png",        
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "index.html?site=samia-halaby",
+    "display": "fullscreen",
+    "theme_color": "#C0C0C0",
+    "background_color": "#C0C0C0"
+  }

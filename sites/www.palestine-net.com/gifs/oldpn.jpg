@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wayback Machine</title>
+<script src="//archive.org/includes/athena.js" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app215.us.archive.org';v.server_ms=295;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=HxkREWBo" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=3PDvdIFv" />
+<script src="/_static/js/jquery-1.11.1.min.js"></script>
+</head>
+<body style="height:100vh;overflow:hidden;margin:0;display:flex;flex-flow:column nowrap;align-items:stretch;">
+<div style="flex:0 0;">
+ </div>
+<iframe id="playback" src="https://web.archive.org/web/20011230121037if_/http://palestine-net.com:80/gifs/oldpn.jpg" frameborder="0" style="flex:1 0">
+</iframe>
+<script>
+if (window.location.hash) {
+  document.getElementById("playback").src += window.location.hash;
+}
+</script>
+</body>
+</html>

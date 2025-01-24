@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Reveal Animation</title>
+    <style>
+        .dropdown {
+            position: relative;
+            width: 200px;
+            margin: 50px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for the button */
+        .dropdown-btn {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        /* Styling for the dropdown content */
+        .dropdown-content {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.1s ease-in-out;
+            background-color: #f1f1f1;
+            border-radius: 0 0 5px 5px;
+            position: absolute
+        }
+
+        /* Content inside the dropdown */
+        .dropdown-content p {
+            padding: 10px;
+            margin: 0;
+            font-size: 14px;
+            border-top: 1px solid #ddd;
+        }
+
+        /* Class to open the dropdown */
+        .dropdown-content.open {
+            max-height: 300px; /* Adjust this value to fit the content height */
+        }
+    </style>
+</head>
+<body>
+
+<div class="dropdown">
+    <button class="dropdown-btn">Toggle Dropdown</button>
+    <div class="dropdown-content" style="overflow-y: scroll;">
+        <!-- <p>This is some content inside the dropdown.</p>
+        <p>More content here...</p>
+        <p>Even more content...</p> -->
+        <div>
+            <ul class="tree-view" style="height: 534px;">
+                <li>
+                  <details>
+                    <summary>⟡⟡ The Early Palestinian Web ⟡⟡ </summary>
+                    <ul>
+                      <li>
+                        <details>
+                          <summary>Birzeit University</summary>
+                          <ul>
+                            <li><a href="">ME Report - Adam Hanieh</a></li>
+                            <li><a href="">Nigel Parry's Open Letter To Palestinians</a></li>
+                            <li><a href="">The Complete Guide to Palestine's Websites</a></li>
+                            <li><a href="">1998 Golden Olive Awards</a></li>
+                            <li><a href="">On the Ground in Ramallah</a></li>
+                            <li><a href="">September 1996 Memorial</a></li>
+                            <li><a href="">Destroyed Palestinian Villages Map</a></li>
+                          </ul>
+                        </details>
+                      </li>
+          
+                      <li>
+                        <details>
+                          <summary>Early Connectivity</summary>
+                          <ul>
+                            <li><a href="">Palestine Yellow Pages</a></li>
+                            <li><a href="">Planet.edu</a></li>
+                            <li><a href="">Palsoft internet Cafe</a></li>
+                          </ul>
+                        </details>
+                      </li>
+          
+                      <li>
+                        <details>
+                          <summary>Internet Service Providers</summary>
+                          <ul>
+                            <li><a href="">Palnet</a></li>
+                            <li><a href="">Zaytonasoft</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+          
+                <li>
+                  <details>
+                    <summary>Putting places online</summary>
+                    <ul>
+                      <li>
+                        <details>
+                          <summary>Cities and Municipalities</summary>
+                          <ul>
+                            <li><a href="">Palestine Net Cities Page</a></li>
+                            <li><a href="">Gaza Municipality</a></li>
+                            <li><a href="">Ramallah</a></li>
+                            <li><a href="">Salfeet</a></li>
+                          </ul>
+                        </details>
+                      </li>
+          
+                      <li>
+                        <details>
+                          <summary>Tourism</summary>
+                          <ul>
+                            <li><a href="">Jerusalem Hotel</a></li>
+                            <li><a href="">Ministry of Tourism and Antiquities</a></li>
+                            <li><a href="">Municipality of Gaza</a></li>
+                            <li><a href="">Gaza International Airport</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+          
+                <li>
+                  <details>
+                    <summary>Art and Culture</summary>
+                    <ul>
+                      <li>
+                        <details>
+                          <summary>Visual Arts</summary>
+                          <ul>
+                            <li><a href="">Samia Halaby's site</a></li>
+                            <li><a href="">Omayya Joha's site</a></li>
+                            <li><a href="">Sakakini Cultural Centre</a></li>
+                          </ul>
+                        </details>
+                      </li>
+          
+                      <li>
+                        <details>
+                          <summary>Literature</summary>
+                          <ul>
+                            <li><a href="">Al Karmel Magazine</a></li>
+                            <li><a href="">Barghouti.com</a></li>
+                          </ul>
+                        </details>
+                      </li>
+          
+                      <li>
+                        <details>
+                          <summary>Crafts</summary>
+                          <ul>
+                            <li><a href="">Palestinian Embroidery</a></li>
+                          </ul>
+                        </details>
+                      </li>
+          
+                    </ul>
+                  </details>
+                </li>
+          
+          
+              </ul>
+        </div>
+    </div>
+</div>
+<div>eeee</div>
+
+<script>
+    document.querySelector('.dropdown-btn').addEventListener('click', function() {
+        const dropdownContent = document.querySelector('.dropdown-content');
+        dropdownContent.classList.toggle('open');
+    });
+</script>
+
+</body>
+</html>
