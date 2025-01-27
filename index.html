@@ -41,6 +41,7 @@
     <link rel="preload" href="/public/tiles/back.jpg" as="image">
 
     <script src="src/functions.js"></script>
+
   </head>
 
   <body onload="setFramePage()">
@@ -67,10 +68,10 @@
         </div>
       </button>
       <button class="mobile-button">
-        <img class="mobile-button-graphic" src="public/back.svg" height="30px" onclick="window.history.back()" />
+        <img class="mobile-button-graphic" src="public/back.svg" height="30px" onclick="historyNav(window, 'back')" />
       </button>
       <button class="mobile-button">
-        <img class="mobile-button-graphic" src="public/front.svg" height="30px" onclick="window.history.forward()" />
+        <img class="mobile-button-graphic" src="public/front.svg" height="30px" onclick="historyNav(window, 'forward')" />
       </button>
       <button class="mobile-button">
         <img class="mobile-button-graphic" height="30px" src="public/icons/envelope_closed-1.svg" onclick="shareSite('mobile')"/>
@@ -100,12 +101,12 @@
         <div class="window-body" style="margin: 0px; overflow: hidden;">
           <section style="margin: 6px 8px 4px 8px" class="field-row" style="justify-content: flex-start">
             <a class="tooltip">
-              <input type="image" onclick="window.history.back()" src="public/back.svg" height="24px"
+              <input type="image" onclick="historyNav(window, 'back')" src="public/back.svg" height="24px"
                 style="margin-bottom: 2px" />
               <span class="tooltiptext">Go Back</span>
             </a>
             <a class="tooltip">
-              <input type="image" onclick="window.history.forward()" src="public/front.svg" height="24px"
+              <input type="image" onclick="historyNav(window, 'forward')" src="public/front.svg" height="24px"
                 style="margin-bottom: 2px" />
               <span class="tooltiptext">Go Forward</span>
             </a>
@@ -122,11 +123,12 @@
               <input style="opacity: 1; cursor: pointer" type="image" src="public/netmeeting-1.svg" height="25px" onclick="setFramePage(true)" />
               <span class="tooltiptext">Reset current site</span>
             </a>
-            <!-- <a class="tooltip">
+            <a class="tooltip">
               <input type="image" onclick="shareSite()" src="public/icons/envelope_closed-1.svg" height="25px" />
               <span id="share-page-tooltip" class="tooltiptext">Share Page</span>
-            </a> -->
+            </a>
             <a class="tooltip">
+              <!-- (empty tooltip for spacing) -->
             </a>
             <div class="dropdown-container">
               <pre id="current-site">
@@ -178,7 +180,6 @@
                 </div>
               </div>
             </div> 
-
             <iframe id="frame" title="Frame" width="99.5%" src="">
             </iframe>
           </div>
@@ -189,178 +190,42 @@
     </div>
     </div>
     <script>
-
       const queryString = window.location.search;
       const params = new URLSearchParams(queryString);
+
       let mode = params.get('mode');
       let site = params.get('site');
 
-      if (mode === 'presenter') {
-        const demoIds = 
-
-        // EARLY INFRASTRUCTURE
-        ['hanieh-middle-east-report', // atrocities in gaza
-        'birzeit-guide-to-palestinian-websites', // adam hanieh was a webmaster of first guide to Pal websites, pre proliferation of search engines, yahoo -> google maps
-        'birzeit-golden-olive-awards',
-        'planetedu', // [not archived] WAN, web statistics
-        'palestine-yellow-pages', // [not archived]
-        'palsoft',
-
-        // PLACES
-        'palestine-net-geography', // cities/municipalities homepages, placemaking ofc nothing new but definitely held a particular significance for 
-        'salfeet', // gif slideshows, 3d animations and custom buttons which were the norm, scale of these websites allowed very volunteer-y, singular efforts, designer 
-        'municipality-gaza', // as the web matured we saw more robust sites like municipality of gaza - centers -> public library, gaza city -> photo gallery
-        'gaza-airport', // tone of hope and looking to the future, flight schedules, even in seemingly mundane info
-        'jerusalem-hotel', // tourism efforts emerge : services -> quick view -> history
-        'ministry-tourism', // reclaim the image of palestine as a destination, esp by the PA here
-        // NEWS
-        'al-quds-news', // on the flipside, news esp during the second intifada stands in stark contrast: the graphically and typographically dense news print is translated on the virtual hypertext document,
-        'alayyam-news', // arabic text as images
-
-        // ART, CULTURE, HERITAGE
-        'sakakini', // institutional websites ofc [not archived]
-        'palestine-wildlife-society', // official, for large orgs
-        'hanna-safieh', // the web as a bridge for older, traditional artists, their father
-        'omayya-joha', // political cartoonist who animated static analogue drawings w the then new GIF form
-        'samia-halaby', // maybe most prolific pali artist who used tech was samia halaaby : words about palestine, kinetic painting
-        'barghouti', // other than indivual artists, you had collective efforts or anonymous projects to translate existing palestinian culture to the web
-        'palestine-embroider', //cross stitch - wedding, pillows TATRIZ
-        'jukebox-arabia',
-        // though web tech was limited compared to what we are used to today, 
-        'villages-map', //bzu center for pal ?
-        'palestine-history-timeline', // also independent efforts -> palestine history
-        'al-aqsa-tour', // 
-        'esam-shashaa-bio',
-        'tutorials-in-arabic', // people were able to make their own websites 
-        'web-4',
-
-        // RECORDKEEPING, HONORING MARTYRS
-        'ramallah-1996', // earliest days -> documentation, photo diary 
-        'september-1996-memorial', // british guy: efforts to collect palestinian voices and saw potential of them , and as evidence and appeal to westerners who he said were often unfamiliar w the conflict 
-        'september-2000-info', // martyrs list
-        'barghouti-memorial', // blood gif, titled blood bar.gif, tho crude by todays standards, used by palestinians
-
-        // PEOPLE OF PALESTINE ONLINE
-        'people-of-palestine', // directory of people, hand collected 
-        'the-holly-land', // anonymous, homepage type websites
-        'amnah-site', // what you could find on a more personal site, often times students would take a class on web development, like we saw w barghouti, the demarcation of web1.0 and having a martyrs section, black and red
-        'jayyousi-pages', // connection
-        'asa-group', //
-        'zuhair-page',
-        'reality-of-palestine'
-      ]
-        let demoCounter = 0;
-        queryUpdate(demoIds[demoCounter]);
-
-        document.addEventListener("keydown", (e) => {
-        if (!e.repeat &&  (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) {
-          if (e.key === 'ArrowRight') demoCounter++;
-          if (e.key === 'ArrowLeft') demoCounter--;
-          if (demoCounter < 0) demoCounter = demoIds.length - 1;
-          if (demoCounter > demoIds.length - 1) demoCounter = 0;
-          console.log(`DEMO COUNTER "${demoCounter} ${demoIds[demoCounter]}"`);
-          queryUpdate(demoIds[demoCounter]);
-        } else {
-          console.log(`Key "${e.key}" repeating [event: keydown]`);
-        }
-      });
-      }
-
-      const mobileZoomOut = document.getElementById('mobile-zoom-out');
-      const mobileZoomIn = document.getElementById('mobile-zoom-in');
-      const zoomSlider = document.getElementById('zoom-slider');
-      let zoomValue;
-
-      let addressBar = document.querySelector(".address-bar");
-      addressBar.disabled = true;
-
-      let sliderButton = document.getElementById("zoomSlider");
-      sliderButton.disabled = true;
-
-      let mobileShareAlert = document.querySelector(".mobile-share-alert");
-      mobileShareAlert.disabled = true;
-
-      mobileZoomOut.addEventListener('touchstart', () => {
-        zoomSlider.value -= 1;
-        changeZoom(zoomSlider.value)
-      });
-
-      mobileZoomIn.addEventListener('touchstart', () => {
-        zoomSlider.value++;
-        changeZoom(zoomSlider.value)
-      });
-
-      // change wallpaper on click of page body  
-      document.body.addEventListener('click', function (event) {
-        setWallpaper();
-      });
-      // but not window
-      document.querySelector('.window-grid').addEventListener('click', function (event) {
-        event.stopPropagation();
-      });
-
-      // adjust dropdown size based on flex address bar
-      document.querySelector('#current-site').addEventListener('click', function () {
-        const dropdownContent = document.querySelector('#dropdown-content');
-        dropdownContent.style.width = `${document.querySelector('.dropdown-container').offsetWidth - 2}px`;
-        dropdownContent.classList.toggle('open');
-      });
-
-      // add event listener to dropdown bar and button
-      document.querySelector('.dropdown').addEventListener('click', function () {
-        const dropdownContent = document.querySelector('#dropdown-content');
-        dropdownContent.style.width = `${document.querySelector('.dropdown-container').offsetWidth - 3}px`;
-        dropdownContent.classList.toggle('open');
-      });
-
-      document.querySelector('.mobile-top-nav').addEventListener('click', function () {
-        const dropdownContent1 = document.querySelector('#mobile-dropdown-content');
-        dropdownContent1.classList.toggle('open');
-      });
-
-      const treeViewContainer = document.getElementById('tree');
-      const treeViewContainerOriginal = document.getElementById('tree-original');
-
-      // Create the tree view from the data object and append it to the container
-      treeViewContainer.appendChild(createTreeView(siteTree));
-      treeViewContainerOriginal.appendChild(createTreeView(siteTree));
+      initDocumentSetup(document);
+      if (mode === 'presenter') presenterModeSetup(document);
       
-      document.getElementById('frame').onload = function () {
-        changeZoom(zoomValue);
-      }
+      shareSite = shareCurrentSite;
 
-      function shareSite(mode = 'desktop') {
-  console.log('share site');
-  const scrollPosition = document.getElementById('frame').contentWindow.scrollY;
+      const iframe = document.getElementById('frame');
 
-  let dummy = document.createElement('input'),
-  windowLocation = (window.location.href).replace(/&page=.*$/, '');
-  // const iframe = document.getElementById('frame')
-  
-  const regex = /\/sites\/(.*)/;
-  
-  // console.log('path', document.getElementById("frame").contentWindow.location.href);
+      // Detects when iframe finishes loading new content
 
-  const path = (document.getElementById("frame").contentWindow.location.href).match(regex)[1];
-  console.log('path', path);
-  windowLocation += `&page=${path}`;
-  document.body.appendChild(dummy);
-  dummy.value = windowLocation;
-  dummy.select();
-  document.execCommand('copy');
-  document.body.removeChild(dummy);
+      window.addEventListener('popstate', (event) => {
+        const iframe = document.getElementById('frame');
 
-  const tooltip = document.getElementById('share-page-tooltip');
-  tooltip.innerHTML = 'Link copied.';
+        const currentUrl = new URL(window.location.href);
+        console.log('CURR URL', currentUrl.href);
+        // Get the current URL after navigation
+        let params = new URLSearchParams(window.location.search);
+        let site = params.get('site');
+        console.log('🌎', site);
 
-  if (mode === 'desktop') {
-    setTimeout(() => tooltip.innerHTML = 'Share Page' , 2500)
-  }
-  if (mode = 'mobile') {
-    mobileShareAlert.style.visibility = 'visible';
-    setTimeout(() => mobileShareAlert.style.visibility = 'hidden', 2500)
-  }
-};
+        const siteSrc = pagesTour.find((page) => page.id === site);
+
+        document.getElementById(
+          'current-site'
+        ).innerHTML = `${siteSrc.title} <i>${siteSrc.year}</i>`;
+
+        document.getElementById(
+          'address-bar-text'
+        ).innerHTML = `${siteSrc.title} <i>${siteSrc.year}</i>`;
+      });
+
     </script>
   </body>
 </html>
