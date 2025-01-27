@@ -1314,7 +1314,7 @@ function createTreeView(obj) {
         //   redClass = 'red-class'
         // }
 
-        li.innerHTML = `<a class="menu-link" onmouseover="navHoverImage('${pageMatch.id}')" onmouseleave="navHoverLeave()" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
+        li.innerHTML = `<a class="menu-link" onclick="queryUpdate('${value}')">${pageMatch.title} <i>${pageMatch.year}</i></a>`;
 
       }
       return li;
@@ -1372,6 +1372,16 @@ function showInformation() {
   }
 }
 
+function historyNav(window, dir = 'back') {
+
+  if (dir === 'back') {
+    window.history.back();
+  } else {
+    window.history.forward();
+  }
+
+}
+
 
 
 function queryUpdate(pageId) {
@@ -1398,6 +1408,8 @@ function queryUpdate(pageId) {
   let mode = params.get('mode');
 
   if (mode === 'presenter') presenterQuery = '&mode=presenter'
+
+  console.log('HISTORY', history, window.history);
 
   if (history.pushState) {
     let newurl =
@@ -1441,7 +1453,7 @@ function setFramePage(reset = false) {
   if (pageParam && !reset) {
     document.getElementById('frame').src = '/sites/' + pageParam;
   } else {
-    document.getElementById('frame').src = siteSrc.url;
+    document.getElementById('frame').contentWindow.location.replace(siteSrc.url);
   }
     // document.getElementById('loading').style.display = 'block';
   
@@ -1530,7 +1542,7 @@ const siteTree = {
   'Palestine Online Documentation': ['pr-preso-2024', 'web-4']
 };
 
-function shareSite(mode = 'desktop') {
+function shareCurrentSite(mode = 'desktop') {
   const scrollPosition = document.getElementById('frame').contentWindow.scrollY;
 
   let dummy = document.createElement('input'),

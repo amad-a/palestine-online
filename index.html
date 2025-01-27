@@ -68,10 +68,10 @@
         </div>
       </button>
       <button class="mobile-button">
-        <img class="mobile-button-graphic" src="public/back.svg" height="30px" onclick="window.history.back()" />
+        <img class="mobile-button-graphic" src="public/back.svg" height="30px" onclick="historyNav(window, 'back')" />
       </button>
       <button class="mobile-button">
-        <img class="mobile-button-graphic" src="public/front.svg" height="30px" onclick="window.history.forward()" />
+        <img class="mobile-button-graphic" src="public/front.svg" height="30px" onclick="historyNav(window, 'forward')" />
       </button>
       <button class="mobile-button">
         <img class="mobile-button-graphic" height="30px" src="public/icons/envelope_closed-1.svg" onclick="shareSite('mobile')"/>
@@ -101,12 +101,12 @@
         <div class="window-body" style="margin: 0px; overflow: hidden;">
           <section style="margin: 6px 8px 4px 8px" class="field-row" style="justify-content: flex-start">
             <a class="tooltip">
-              <input type="image" onclick="window.history.back()" src="public/back.svg" height="24px"
+              <input type="image" onclick="historyNav(window, 'back')" src="public/back.svg" height="24px"
                 style="margin-bottom: 2px" />
               <span class="tooltiptext">Go Back</span>
             </a>
             <a class="tooltip">
-              <input type="image" onclick="window.history.forward()" src="public/front.svg" height="24px"
+              <input type="image" onclick="historyNav(window, 'forward')" src="public/front.svg" height="24px"
                 style="margin-bottom: 2px" />
               <span class="tooltiptext">Go Forward</span>
             </a>
@@ -200,6 +200,32 @@
       if (mode === 'presenter') presenterModeSetup(document);
       
       shareSite = shareCurrentSite;
+
+      const iframe = document.getElementById('frame');
+
+      // Detects when iframe finishes loading new content
+
+      window.addEventListener('popstate', (event) => {
+        const iframe = document.getElementById('frame');
+
+        const currentUrl = new URL(window.location.href);
+        console.log('CURR URL', currentUrl.href);
+        // Get the current URL after navigation
+        let params = new URLSearchParams(window.location.search);
+        let site = params.get('site');
+        console.log('🌎', site);
+
+        const siteSrc = pagesTour.find((page) => page.id === site);
+
+        document.getElementById(
+          'current-site'
+        ).innerHTML = `${siteSrc.title} <i>${siteSrc.year}</i>`;
+
+        document.getElementById(
+          'address-bar-text'
+        ).innerHTML = `${siteSrc.title} <i>${siteSrc.year}</i>`;
+      });
+
     </script>
   </body>
 </html>
