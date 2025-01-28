@@ -625,30 +625,30 @@ let pagesTour = [
   {
     id: 'salfeet',
     title: 'Salfeet Municipality',
-    year: '?',
+    year: '2001',
     label: 'Putting Places Online',
     headerText: 'Putting Places Online',
-    waybackUrl: '?',
+    waybackUrl: 'https://web.archive.org/web/20010929184447/http://www.salfeet.org',
     url: 'sites/www.salfeet.org/index.html',
     description: '',
   },
   {
     id: 'jerusalem-hotel',
     title: 'Jerusalem Hotel',
-    year: '?',
+    year: '2001',
     label: 'Putting Places Online',
     headerText: 'Putting Places Online',
-    waybackUrl: '?',
+    waybackUrl: 'https://web.archive.org/web/20010422010252/http://www.jrshotel.com/',
     url: 'sites/jrshotel.com/index.html',
     description: '',
   },
   {
     id: 'ministry-tourism',
     title: 'Ministry of Tourism and Antiquities',
-    year: '?',
+    year: '2001',
     label: 'Putting Places Online',
     headerText: 'Putting Places Online',
-    waybackUrl: '?',
+    waybackUrl: 'https://web.archive.org/web/20010301220900/http://www.visit-palestine.com',
     url: 'crystal-clear/www.visit-palestine.com/index.html',
     description: '',
   },
@@ -1634,7 +1634,16 @@ function initDocumentSetup(document) {
   treeViewContainerOriginal.appendChild(createTreeView(siteTree));
   
   document.getElementById('frame').onload = function () {
-    changeZoom(zoomValue);
+    console.log("🎨 zoomy");
+    try {
+      changeZoom(zoomValue);
+      document.getElementById('zoom-panel').style.visibility = "visible";
+      document.getElementById('zoom-unavailable').style.visibility = "hidden";
+    } catch(err) {
+      console.log('🔒 zoom unavailable');
+      document.getElementById('zoom-panel').style.visibility = "hidden";
+      document.getElementById('zoom-unavailable').style.visibility = "visible";
+    }
   }
 }
 
