@@ -6,9 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link rel="stylesheet" href="/public/98.css" />
     <style>
       :root {
-        background-image: linear-gradient(rgb(255, 68, 68), white);
+        background: #c3c3c3;
         height: 100%;
       }
     </style>
@@ -16,50 +17,76 @@
     <title>404</title>
   </head>
   <body>
-
     <style>
+      @font-face {
+        font-family: 'Los Altos';
+        font-style: normal;
+        font-weight: 700;
+        src: url(public/fonts/Los\ Altos.woff) format('woff');
+      }
 
+      @font-face {
+        font-family: 'Parc Place Legacy';
+        font-style: normal;
+        font-weight: 700;
+        src: url(public/fonts/Parc\ Place\ Legacy.woff) format('woff');
+      }
 
-.logo  {
-  font-family: arial;
-  font-size: 24px;
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
+      @font-face {
+        font-family: 'Parc Place';
+        font-style: normal;
+        font-weight: 700;
+        src: url(public/fonts/Parc\ Place.woff) format('woff');
+      }
 
-.logo {
-  /* Center horizontally*/
-  text-align: center;
-}
+      @font-face {
+        font-family: 'Valencia';
+        font-style: normal;
+        font-weight: 700;
+        src: url(public/fonts/Valencia.woff) format('woff');
+      }
+      
+      .logo {
+        font-family: arial;
+        font-size: 24px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+      }
 
-.intro-text {
-  font-size: 18px;
-}
+      .logo {
+        /* Center horizontally*/
+        text-align: center;
+      }
 
-::-moz-selection { /* Code for Firefox */
-  color: white;
-  background: green;
-}
+      .intro-text {
+        font-size: 18px;
+      }
 
-::selection {
-  color: white;
-  background: green;
-}
+      ::-moz-selection {
+        /* Code for Firefox */
+        color: white;
+        background: green;
+      }
 
-.use-icon {
-  margin: 0px 2px 2px 0px;
-}
+      ::selection {
+        color: white;
+        background: green;
+      }
 
-.how-to-use-text {
-  margin: 0px 0px 0px 0px;
-}
+      .use-icon {
+        margin: 0px 2px 2px 0px;
+      }
 
-.how-to-use{
-  padding-bottom: 20px;
-  font-size: 18px;
-}
+      .how-to-use-text {
+        margin: 0px 0px 0px 0px;
+      }
 
-/* hr {
+      .how-to-use {
+        padding-bottom: 20px;
+        font-size: 18px;
+      }
+
+      /* hr {
   display: block;
   unicode-bidi: isolate;
   margin-block-start: 0.5em;
@@ -71,44 +98,55 @@
   border-width: 1px;
 } */
 
+      h2 {
+        font-style: italic;
+        margin-top: 0px;
+        padding-top: 10px;
+      }
 
-h2 {
-  font-style: italic;
-  margin-top: 0px;
-  padding-top: 10px;
+      .content-link {
+        font-size: 18px;
+        padding: 10px;
+      }
 
-}
+      .content-link:hover {
+        font-style: italic;
+        cursor: pointer;
+      }
 
-.content-link {
-font-size: 18px;
-margin-bottom  : 10px;
-color: blue;
-text-decoration: underline;
+      .table-of-contents {
+        padding-bottom: 15px;
+      }
 
-}
-
-.content-link:hover {
-  font-style: italic;
-  cursor: pointer;
-}
-
-.table-of-contents {
-  padding-bottom: 15px;
-}
-
-.content-link:visited {
-  color: blue;
-}
+      .content-link:visited {
+        color: blue;
+      }
     </style>
 
-
     <div class="logo-container">
-      <div class="logo" style="color: rgb(172, 0, 0);">
-        <div style="font-size: 130px; padding-top: 25vh; padding-bottom: 10px; font-family: 'Times New Roman', Times, serif; font-style: oblique;">404</div>
-        <div style="font-size: 30px; padding-bottom: 20px; font-family: 'Times New Roman', Times, serif;">Page not found :(</div>
-        <a style="font-size: 25px; font-family: 'Times New Roman', Times, serif;" class="content-link" onclick="window.history.back()">
-          ← Go back
-        </a>
+      <div class="logo">
+        <div
+          style="
+            font-size: 100px;
+            padding-top: 25vh;
+            padding-bottom: 10px;
+            font-family: 'Times New Roman', Times, serif;
+          "
+        >
+          404
+        </div>
+        <div style="font-size: 20px; padding-bottom: 20px">
+          Page not found
+        </div>
+        <button class="content-link" onclick="window.history.back()">
+          <img
+            class="mobile-button-graphic"
+            src="/public/back.svg"
+            height="18px"
+            onclick="historyNav(window, 'back')"
+          />
+          Go back
+        </button>
       </div>
     </div>
   </body>

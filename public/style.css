@@ -23,6 +23,10 @@ button:disabled.zoom-disabled {
 
 }
 
+#zoom-panel {
+  background-color: #c3c3c3;
+}
+
 .opacity {
   background: rgba(255, 255, 255, 0.5);
 }
@@ -1109,8 +1113,8 @@ input[type='image' i]:hover {
     z-index: 99999999;
     max-width: 100vw;
     width: 100vw;
-    height: 81vh;
-    max-height: 81vh;
+    height: 80vh;
+    max-height: 80vh;
     margin-bottom: 15vh;
     margin-top: 0vh;
     top: 5vh;

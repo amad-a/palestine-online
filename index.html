@@ -61,9 +61,16 @@
     </button>
     <div class="mobile-buttons-grid" id="mobile-nav">
       <button id="zoomSlider">
-        <div class="field-row">
+        <div id="zoom-unavailable" style="position: absolute; z-index: 100; left: 0; 
+        right: 0; top: 14px;
+        margin-inline: auto; 
+        width: fit-content;
+        visibility: hidden;">
+          page zoom unavailable
+        </div>
+        <div class="field-row" id="zoom-panel">
           <label id="mobile-zoom-out" class="slider-label">-</label>
-          <input id="zoom-slider" step="any" onchange="changeZoom(this.value)" id="range26" type="range" min="1" max="21" value="11" />
+          <input id="zoom-slider" step="any" oninput="changeZoom(this.value)" id="range26" type="range" min="1" max="21" value="11" />
           <label class="slider-label" id="mobile-zoom-in">+</label>
         </div>
       </button>
@@ -208,12 +215,15 @@
       window.addEventListener('popstate', (event) => {
         const iframe = document.getElementById('frame');
 
+        // iframe.onload = function() {
+        //   console.log("🎨 onload", iframe.contentWindow.document);
+        // }
+
         const currentUrl = new URL(window.location.href);
         console.log('CURR URL', currentUrl.href);
         // Get the current URL after navigation
         let params = new URLSearchParams(window.location.search);
         let site = params.get('site');
-        console.log('🌎', site);
 
         const siteSrc = pagesTour.find((page) => page.id === site);
 
