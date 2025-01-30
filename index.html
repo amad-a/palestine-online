@@ -70,7 +70,7 @@
         </div>
         <div class="field-row" id="zoom-panel">
           <label id="mobile-zoom-out" class="slider-label">-</label>
-          <input id="zoom-slider" step="any" oninput="changeZoom(this.value)" id="range26" type="range" min="1" max="21" value="11" />
+          <input id="zoom-slider" step="any" oninput="changeZoom(this.value, document)" id="range26" type="range" min="1" max="21" value="11" />
           <label class="slider-label" id="mobile-zoom-in">+</label>
         </div>
       </button>
@@ -149,10 +149,14 @@
                 <ul class="tree-view" id="tree-original"></ul>
               </div>
             </div>
-            <a class="tooltip">
+            <!-- <a class="tooltip">
               <input type="image" onclick="showInformation()" src="public/icons/info.svg" height="25px" />
               <span class="tooltiptext tooltip-right">About Palestine Online</span>
-            </a>
+            </a> -->
+            <!-- <a class="tooltip">
+              <input type="image" onclick="shareSite()" src="public/icons/envelope_closed-1.svg" height="25px" />
+              <span id="share-page-tooltip" class="tooltiptext">Share Page</span>
+            </a> -->
           </section>
           <iframe id="menu" title="Menu" width="100%" src=""
             style="position: absolute; width: 0; height: 0; border: 0; border: none; position: absolute; overflow-y: hidden; background-color: silver;"></iframe>

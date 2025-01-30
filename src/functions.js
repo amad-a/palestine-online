@@ -99,7 +99,7 @@ let pagesTour = [
   },
   {
     id: 'palnet',
-    title: 'Hadisoft Group',
+    title: 'Palnet ISP',
     year: '2000',
     label: 'Early Infrastructure',
     headerText: 'Early Infrastructure',
@@ -241,18 +241,18 @@ let pagesTour = [
   {
     id: 'planet-message-board',
     title: 'planet.edu Message Board',
-    year: '?',
+    year: '2000',
     label: 'Online Commonts ',
     headerText: 'Palestinians Communicating Online',
     waybackUrl:
-      'https://web.archive.org/web/20000930105048/http://www.planet.edu/board/posting.shtm',
-    url: 'https://web.archive.org/web/20000930105048/http://www.planet.edu/board/posting.shtm',
+      'https://web.archive.org/web/20000930105048/http://www.planet.edu/board/posting.shtml',
+    url: 'https://web.archive.org/web/20000930105048/http://www.planet.edu/board/posting.shtml',
     description: '',
   },
   {
     id: 'barghouti-guestbook',
     title: 'Barghouti.com Guestbook',
-    year: '?',
+    year: '2001',
     label: 'Palestinians Communicating Online',
     headerText: 'Palestinians Communicating Online',
     waybackUrl: '?',
@@ -534,7 +534,7 @@ let pagesTour = [
   },
   {
     id: 'barghouti',
-    title: 'Barghouti.com',
+    title: 'Barghouti (Folklore and Poetry)',
     year: '1998',
     label: 'Palestinian Art and Artists on the Early Web',
     headerText: 'Palestinian Art and Artists on the Early Web',
@@ -554,7 +554,7 @@ let pagesTour = [
   },
   {
     id: 'sakakini',
-    title: 'Sakakini',
+    title: 'Khalil Sakakini Cultural Centre',
     year: '2000',
     label: 'Palestinian Art and Artists on the Early Web',
     headerText: 'Palestinian Art and Artists on the Early Web',
@@ -813,17 +813,17 @@ let pagesTour = [
   },
   {
     id: 'pr-preso-2024',
-    title: "Processing Fellowship",
+    title: "Processing Fellowship Documentation",
     year: '2024',
     label: '',
     headerText: '',
     waybackUrl: '',
-    url: 'sites/pr-preso-2024/1.html',
+    url: 'https://palestineonline.net/processing-org-fellowship.html',
     description: '',
   },
   {
     id: 'web-4',
-    title: "Web4 Presentation",
+    title: "'Images of the early Palestinian Web' Presentation",
     year: '2024',
     label: '',
     headerText: '',
@@ -831,6 +831,78 @@ let pagesTour = [
     url: 'sites/secret-project-riso/web-4.html',
     description: '',
   },
+  {
+    id: 'tulkarm',
+    title: "Tulkarm",
+    year: '2002',
+    label: '',
+    headerText: '',
+    waybackUrl: 'https://web.archive.org/web/20020530035142/http://www.geocities.com/Heartland/Acres/3200/',
+    url: 'https://web.archive.org/web/20020530035142/http://www.geocities.com/Heartland/Acres/3200/',
+    description: '',
+  },
+
+  {
+    id: 'attil',
+    title: "Attil",
+    year: '2002',
+    label: '',
+    headerText: '',
+    waybackUrl: '',
+    url: 'https://web.archive.org/web/20020817045008/http://www.geocities.com/SouthBeach/Strand/4051/index.html',
+    description: 'https://web.archive.org/web/20020817045008/http://www.geocities.com/SouthBeach/Strand/4051/index.html',
+  },
+  {
+    id: 'shuqba',
+    title: "Shuqba",
+    year: '2001',
+    label: '',
+    headerText: '',
+    waybackUrl: 'https://web.archive.org/web/20010806072345/http://www.cyberpalestine.org/Wael/shuqba/Shuqba.htm',
+    url: 'https://web.archive.org/web/20010806072345/http://www.cyberpalestine.org/Wael/shuqba/Shuqba.htm',
+    description: '',
+  },
+  {
+    id: 'bethlehem',
+    title: "Bethlehem City",
+    year: '2024',
+    label: '',
+    headerText: '',
+    waybackUrl: '',
+    url: 'sites/secret-project-riso/web-4.html',
+    description: '',
+  },
+  {
+    id: 'jericho',
+    title: "Jericho",
+    year: '2002',
+    label: '',
+    headerText: '',
+    waybackUrl: 'https://web.archive.org/web/20020802051640/http://jericho-city.org',
+    url: 'https://web.archive.org/web/20020802051640/http://jericho-city.org',
+    description: '',
+  },
+  {
+    id: 'crdps',
+    title: "Center For Research & Documentation of Palestinian Society",
+    year: '1997',
+    label: '',
+    headerText: '',
+    waybackUrl: '',
+    url: '/sites/www.birzeit.edu/crdps/palarch.html',
+    description: '',
+  },
+  {
+    id: 'carma-cyber-club',
+    title: "Carma Cyber Club",
+    year: '2000',
+    label: '',
+    headerText: '',
+    waybackUrl: 'https://web.archive.org/web/20000816224913/http://www.al-carma.com',
+    url: 'https://web.archive.org/web/20000816224913/http://www.al-carma.com',
+    description: '',
+  },
+
 
 ];
 
@@ -945,6 +1017,10 @@ function historyNav(window, dir = 'back') {
     window.history.back();
   } else {
     window.history.forward();
+    setTimeout(() => {
+      console.log(':) after', iframe.src);
+      // your code
+    }, 0);
   }
 }
 
@@ -1047,13 +1123,16 @@ function setFramePage(reset = false) {
   // if (siteParam) setBreadcrumbs(siteParam);
 }
 
-function changeZoom(currentValue) {
+function changeZoom(currentValue, document) {
+  console.log('doccy', document);
   const scale = currentValue / 10;
   const frameStyle = document.getElementById('frame').contentWindow.document.body.style;
   frameStyle.transform = `scale(${scale})`;
   frameStyle.width = `${100 / scale}%`;
   frameStyle.height = `${100 / scale}%`;
   frameStyle.transformOrigin = `0 0`;
+
+  zoomValue = currentValue;
 }
 
 function setRandomPage() {
@@ -1100,19 +1179,25 @@ const siteTree = {
     // 'Institutions': ['sakakini', 'aaa-ny'],
   ,
   'Personal Homepages':
-    ['the-holly-land', 'jayyousi-pages', 'amnah-site', 'palestine-oasis', 'esam-shashaa-bio', 'faaz', 'hopes-space', 'omars-site', 'musa-budieri', 'aimans-site', 'asa-group', 'doctor-hani', 'alsharabatis-homepages', 'abboud-page', 'zuhair-page', 'reality-of-palestine'],
-  'Tourism and Travel': [ 'jerusalem-hotel', 'ministry-tourism'],
-  'Cities Online': [
-    'palestine-net-geography', 'ramallah-city', 'salfeet', 'municipality-gaza'
+    ['people-of-palestine', 'the-holly-land', 'jayyousi-pages', 'amnah-site', 'palestine-oasis', 'esam-shashaa-bio', 'hopes-space', 'omars-site', 'musa-budieri', 'aimans-site', 'asa-group', 'doctor-hani', 'alsharabatis-homepages', 'abboud-page', 'zuhair-page', 'reality-of-palestine'],
+  'Guides and Directories': [
+    'palestine-net-geography', 'people-of-palestine', 'birzeit-guide-to-palestinian-websites', 'palestine-yellow-pages'
   ],
   'News': ['al-quds-news', 'alayyam-news', 'palestinian-information-center','hanthala', 'palestinian-information-center-hamas'],
-  'Documenting and Memorializing': ['barghouti-memorial', 'ramallah-1996', 'september-1996-memorial', 'villages-map'],
+  'Documenting and Memorializing': ['barghouti-memorial', 'ramallah-1996', 'september-1996-memorial', 'villages-map', 'crdps'],
+  'Tourism and Travel': [ 'jerusalem-hotel', 'ministry-tourism'],
+  'Cities & Villages Online': [
+    'palestine-net-geography', 'ramallah-city', 'salfeet', 'municipality-gaza', 'tulkarm', 'attil', 'shuqba', 'bethlehem', 'jericho'
+  ],
+  'Message Boards & Guestbooks': ['planet-message-board', 'barghouti-guestbook', 'al-karmel-guestbook', 'pal-voice-forums-2005'],
+  'Internet Cafes & Infrastructure': ['palsoft', 'carma-cyber-club', 'zaytonasoft', 'planetedu', 'palnet', 'tutorials-in-arabic'],
   'Nature': ['gazelle', 'palestine-wildlife-society'],
   'Magazines': ['jerusalem-i-love-you', 'palestine-times-uk'],
-  'Birzeit University': ['parry-open-letter','birzeit-guide-to-palestinian-websites', 'birzeit-golden-olive-awards', 'hanieh-middle-east-report'],
-  'Communicating on the Internet': ['planet-message-board', 'barghouti-guestbook', 'al-karmel-guestbook', 'pal-voice-forums-2005'],
-  'Early Internet Infrastructure': ['palestine-yellow-pages', 'palsoft', 'zaytonasoft', 'planetedu', 'palnet', 'tutorials-in-arabic'],
+  // 'Birzeit University': ['parry-open-letter','birzeit-guide-to-palestinian-websites', 'birzeit-golden-olive-awards', 'hanieh-middle-east-report'],
   'Palestine Online Documentation': ['pr-preso-2024', 'web-4']
+
+  // blog posts
+  //
 };
 
 function shareCurrentSite(mode = 'desktop') {
@@ -1146,11 +1231,13 @@ function shareCurrentSite(mode = 'desktop') {
   }
 };
 
+let zoomValue;
+
 function initDocumentSetup(document) {
   const mobileZoomOut = document.getElementById('mobile-zoom-out');
   const mobileZoomIn = document.getElementById('mobile-zoom-in');
   const zoomSlider = document.getElementById('zoom-slider');
-  let zoomValue;
+
 
   let addressBar = document.querySelector(".address-bar");
   addressBar.disabled = true;
@@ -1163,12 +1250,12 @@ function initDocumentSetup(document) {
 
   mobileZoomOut.addEventListener('touchstart', () => {
     zoomSlider.value -= 1;
-    changeZoom(zoomSlider.value)
+    changeZoom(zoomSlider.value, document)
   });
 
   mobileZoomIn.addEventListener('touchstart', () => {
     zoomSlider.value++;
-    changeZoom(zoomSlider.value)
+    changeZoom(zoomSlider.value, document)
   });
 
   // change wallpaper on click of page body  
@@ -1226,9 +1313,9 @@ function initDocumentSetup(document) {
 
       prevFrame = curFrame;
       curFrame = (iframe?.contentWindow.location.pathname).match(slashRegex)[0]; 
-      // console.log('🌹', curFrame, prevFrame);
+console.log('🌹', curFrame, prevFrame);
 
-      changeZoom(zoomValue);
+      changeZoom(zoomValue, document);
       document.getElementById('zoom-panel').style.visibility = "visible";
       document.getElementById('zoom-unavailable').style.visibility = "hidden";
       console.log("🎨 zoomer", curFrame);
