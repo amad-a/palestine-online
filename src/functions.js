@@ -1171,33 +1171,15 @@ function getRandomSiteFromSiteTree(siteTree) {
 const siteTree = {
   'Gaza': ['gaza-airport', 'municipality-gaza', 'gaza-mental-health'],
   'Art and Culture':
-    ['samia-halaby', 'hanna-safieh', 'omayya-joha', 'al-aqsa-tour', 'barghouti', 'al-karmel-guestbook', 'jukebox-arabia', 'palestine-embroider', 'sakakini', 'palestine-history-timeline']
-    // 'Visual Art': ['samia-halaby', 'hanna-safieh', 'omayya-joha', 'al-aqsa-tour'],
-    // 'Literature': ['barghouti', 'al-karmel-guestbook'],
-    // 'Music': ['jukebox-arabia'],
-    // 'Crafts': ['palestine-embroider'],
-    // 'Institutions': ['sakakini', 'aaa-ny'],
-  ,
+    ['samia-halaby', 'hanna-safieh', 'omayya-joha', 'al-aqsa-tour', 'barghouti', 'al-karmel-guestbook', 'jukebox-arabia', 'palestine-embroider', 'sakakini', 'palestine-history-timeline'],
   'Personal Homepages':
     ['people-of-palestine', 'the-holly-land', 'jayyousi-pages', 'amnah-site', 'palestine-oasis', 'esam-shashaa-bio', 'hopes-space', 'omars-site', 'musa-budieri', 'aimans-site', 'asa-group', 'doctor-hani', 'alsharabatis-homepages', 'abboud-page', 'zuhair-page', 'reality-of-palestine'],
-  'Guides and Directories': [
-    'palestine-net-geography', 'people-of-palestine', 'birzeit-guide-to-palestinian-websites', 'palestine-yellow-pages'
-  ],
-  'News': ['al-quds-news', 'alayyam-news', 'palestinian-information-center','hanthala', 'palestinian-information-center-hamas'],
-  'Documenting and Memorializing': ['barghouti-memorial', 'ramallah-1996', 'september-1996-memorial', 'villages-map', 'crdps'],
   'Tourism and Travel': [ 'jerusalem-hotel', 'ministry-tourism'],
   'Cities & Villages Online': [
-    'palestine-net-geography', 'ramallah-city', 'salfeet', 'municipality-gaza', 'tulkarm', 'attil', 'shuqba', 'bethlehem', 'jericho'
+    'ramallah-city', 'salfeet', 'municipality-gaza', 'tulkarm', 'attil', 'shuqba', 'bethlehem', 'jericho'
   ],
-  'Message Boards & Guestbooks': ['planet-message-board', 'barghouti-guestbook', 'al-karmel-guestbook', 'pal-voice-forums-2005'],
   'Internet Cafes & Infrastructure': ['palsoft', 'carma-cyber-club', 'zaytonasoft', 'planetedu', 'palnet', 'tutorials-in-arabic'],
-  'Nature': ['gazelle', 'palestine-wildlife-society'],
-  'Magazines': ['jerusalem-i-love-you', 'palestine-times-uk'],
-  // 'Birzeit University': ['parry-open-letter','birzeit-guide-to-palestinian-websites', 'birzeit-golden-olive-awards', 'hanieh-middle-east-report'],
-  'Palestine Online Documentation': ['pr-preso-2024', 'web-4']
-
-  // blog posts
-  //
+  'Nature': ['gazelle', 'palestine-wildlife-society']
 };
 
 function shareCurrentSite(mode = 'desktop') {
