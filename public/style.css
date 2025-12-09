@@ -882,6 +882,10 @@ input[type='image' i]:hover {
 
 @media only screen and (max-width: 450px) {
 
+  :root {
+    touch-action: pan-x pan-y;
+  }
+
   ul.tree-view {
     
   }
